@@ -1,0 +1,2805 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://ifomis.uni-saarlande.de/~pgrenon/pdco/philontology.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://ifomis.uni-saarlande.de/~pgrenon/pdco/philontology.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
+  </owl:Ontology>
+  
+  <!-- CLASSES -->
+
+
+  <!-- CLASSES OF PHILOSOPHICAL FIELDS -->
+
+  <owl:Class rdf:ID="Philosophical_Field"/>
+
+  <!-- BASIC .1 -->
+
+  <owl:Class rdf:ID="Basic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Mixed_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .1.1 -->
+
+  <owl:Class rdf:ID="Topic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Basic_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Temporal_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Geography_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .1.2 -->
+
+ <owl:Class rdf:ID="Time_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Basic_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Geography_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Topic_Geographical_Field"/>
+  </owl:Class>
+
+  <!-- .1.3 -->
+
+  <owl:Class rdf:about="#Geography_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Basic_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Topic_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Time_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .1.3.1 -->
+
+  <owl:Class rdf:ID="Geographical_Area_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Geography_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Religion_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Ethnic_Philosophical_Field"/>
+  </owl:Class>
+
+   <!-- .1.3.2 -->
+
+  <owl:Class rdf:about="#Ethnic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Geography_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Religion_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Geographical_Area_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .1.3.3 -->
+
+  <owl:Class rdf:about="#Religion_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Geography_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Ethnic_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Geographical_Area_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- MIXED .2 -->
+
+  <owl:Class rdf:ID="Mixed_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Basic_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .2.1 -->
+
+  <owl:Class rdf:ID="Once_Mixed_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Mixed_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Twice_Mixed_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .2.1.1 -->
+  
+  <owl:Class rdf:about="#Time_Geography_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Once_Mixed_Philosophical_Field"/>
+    <!--  <owl:disjointWith rdf:resource="#Geography_Topic_Philosophical_Field"/> -->
+    <!--  <owl:disjointWith rdf:resource="#Time_Topic_Philosophical_Field"/> -->
+  </owl:Class>
+
+  <!-- .2.1.2 -->
+
+  <owl:Class rdf:ID="Time_Topic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Once_Mixed_Philosophical_Field"/>
+    <!--  <owl:disjointWith rdf:resource="#Geography_Topic_Philosophical_Field"/> -->
+    <!--  <owl:disjointWith rdf:resource="#Time_Geography_Philosophical_Field"/> -->
+  </owl:Class>
+
+  <!-- .2.1.3 -->
+   
+  <owl:Class rdf:ID="Geography_Topic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Once_Mixed_Philosophical_Field"/>
+    <!--  <owl:disjointWith rdf:resource="#Time_Geography_Philosophical_Field"/> -->
+    <!--  <owl:disjointWith rdf:resource="#Time_Topic_Philosophical_Field"/> -->
+  </owl:Class>
+
+  <!-- .2.2 -->
+
+  <owl:Class rdf:about="#Twice_Mixed_Field">
+    <rdfs:subClassOf rdf:resource="#Mixed_Philosophical_Field"/>
+    <owl:disjointWith rdf:resource="#Once_Mixed_Philosophical_Field"/>
+  </owl:Class>
+
+  <!-- .2.2.1 -->
+
+  <owl:Class rdf:ID="Time_Geography_Topic_Philosophical_Field">
+    <rdfs:subClassOf rdf:resource="#Twice_Mixed_Field"/>
+  </owl:Class>
+
+
+  <!-- CLASSES OF PHILOSOPHERS -->
+
+  <owl:Class rdf:ID="Philosopher"/>
+
+<!-- CLASSES OF PHILOSOPHERS BY FIELD --> 
+
+  <owl:Class rdf:ID="Philosopher_by_Field">
+    <rdfs:subClassOf rdf:resource="#Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Aesthetician"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Art_criticist"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Feminist_art_criticist"> 
+    <rdfs:subClassOf rdf:resource="#Art_criticist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Literary_criticist"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Feminist_literary_criticist"> 
+    <rdfs:subClassOf rdf:resource="#Literary_criticist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_music"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_movement"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_the_visual_arts"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_architecture"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_the_performing_arts"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_literature"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_literature"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Aesthetician_of_poetry"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_poetry"/>
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_literature"/> 
+  </owl:Class> 
+
+
+  <owl:Class rdf:ID="Epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Informal_epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Epistemologist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Formal_epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Epistemologist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Applied_epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Epistemologist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Moral_epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_epistemologist"/> 
+  </owl:Class> 
+
+<!-- down below  <owl:Class rdf:ID="Religious_epistemology"> -->
+<!-- <rdfs:subClassOf rdf:resource="#Applied_epistemologist"/> -->
+<!-- </owl:Class> -->
+
+  <owl:Class rdf:ID="Social_epistemologist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_epistemologist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Axiology"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Meta_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Theoretical_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist"/> 
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Applied_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist"/> 
+  </owl:Class> 
+    
+  <owl:Class rdf:ID="Ethicist_of_the_visual_arts"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Ethicist_of_the_performing_arts"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+  
+  <owl:Class rdf:ID="Bioethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Ethicist_of_biology"> -->
+<!--  <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> -->
+<!--  </owl:Class> -->
+
+  <owl:Class rdf:ID="Health_care_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Bioethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Animal_welfare_ethics"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Business_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Marketing_ethics"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Computer_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Education_ethics"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Environmental_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Legal_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Media_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Entertainment_media_ethics"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Journalism_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Media_ethicist"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Public_relations_ethics"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Sport_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Social_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Applied_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Logician"> 
+  <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Philosophical_logic"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+<!--  <owl:Class rdf:ID="Formal_logic"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+<!--  <owl:Class rdf:ID="Informal_logic"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+<!--  <owl:Class rdf:ID="Applied_logic"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Meta_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+<!--  <owl:Class rdf:ID="Philosophical_methodology"> <rdfs:subClassOf rdf:resource="#Philosopher_by_Topic"/> </owl:Class> -->
+
+  <owl:Class rdf:ID="Metaphysician"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Cosmologist_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Metaphysician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Ontologist"> 
+    <rdfs:subClassOf rdf:resource="#Metaphysician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Speculative_metaphysician"> 
+    <rdfs:subClassOf rdf:resource="#Metaphysician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Theologian"> 
+    <rdfs:subClassOf rdf:resource="#Metaphysician"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Historian_of_philosophy"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Applied_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Field"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Political_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_language"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_science"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_formal_sciences"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_science"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_mathematics"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_formal_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_mathematical_logic"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_formal_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_natural_sciences"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_science"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_biology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_natural_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_chemistry"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_natural_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_physics"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_natural_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_astronomy"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_physics"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_health_sciences"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_science"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_human_medicine"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_health_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Medical_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_human_medicine"/> 
+    <rdfs:subClassOf rdf:resource="#Health_care_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_biomedicine"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_human_medicine"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Biomedical_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_biomedicine"/> 
+    <rdfs:subClassOf rdf:resource="#Medical_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_psychiatry"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_human_medicine"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Psychiatry_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_biomedicine"/> 
+    <rdfs:subClassOf rdf:resource="#Medical_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_midwifery"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_health_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Midwifery_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_midwifery"/> 
+    <rdfs:subClassOf rdf:resource="#Health_care_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_nursing"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_health_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Nursing_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_nursing"/> 
+    <rdfs:subClassOf rdf:resource="#Health_care_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_pharmacy"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_health_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Pharmacy_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_pharmacy"/> 
+    <rdfs:subClassOf rdf:resource="#Health_care_ethicist"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_veterinary_medicine"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_health_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Veterinary_medicine_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_veterinary_medicine"/> 
+    <rdfs:subClassOf rdf:resource="#Health_care_ethicist"/> 
+  </owl:Class>
+  <owl:Class rdf:ID="Philosopher_of_social_sciences"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_science"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_education"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_criminology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_international_relations"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_economics"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_political_science"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_sociology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_anthropology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_archaeology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_geography"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_social_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_human_sciences"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_science"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_history"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_humanities"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_linguistics"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_human_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_psychology"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_human_sciences"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_technology"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_computation"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_computer_science"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_artificial_intelligence"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_the_humanities"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_literature"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_humanities"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_poetry"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_literature"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_religious_studies"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_humanities"/> </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_law"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_action"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_mind"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_sport"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+<!-- religion -->
+
+  <owl:Class rdf:ID="Philosopher_of_religion"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Comparative_Philosopher_of_religion"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Religious_cosmology_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Religious_ethicist"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Religious_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Applied_epistemologist"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_buddhism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Buddhist_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_buddhism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+    </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_buddhism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_buddhism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Buddhist_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_buddhism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_christianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Christian_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_christianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_christianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_christianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Christian_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_christianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_gnosticism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Gnostic_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_gnosticism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_gnosticism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_gnosticism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Gnostic_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_gnosticism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_hinduism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Hindu_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_hinduism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_hinduism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_hinduism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Hindu_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_hinduism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_islam"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Islamic_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_islam"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_islam"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_islam"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Islamic_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_islam"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_judaism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Judaic_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_judaism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_judaism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_judaism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Judaic_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_judaism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_shintoism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Shinto_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_shintoism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_shintoism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_shintoism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Shinto_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_shintoism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_jainism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Jaina_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_jainism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_jainaism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_jainism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Jaina_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_jainism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_rastafarianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Rastafarian_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_rastafarianism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_rastafarianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_rastafarianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Rastafarian_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_rastafarianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_sikhism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Sikh_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_sikhism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_sikhism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_sikhism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/>
+  </owl:Class> 
+  <owl:Class rdf:ID="Sikh_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_sikhism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_taoism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Taoist_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_taoism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_taoism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_taoism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Taoist_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_taoism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_zoroastrianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_religion"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Zoroastrian_epistemology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_zoroastrianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_epistemology_philosopher"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_zoroastrianism"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_zoroastrianism"/>
+    <rdfs:subClassOf rdf:resource="#Religious_ethicist"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Zoroastrian_cosmology_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_zoroastrianism"/> 
+    <rdfs:subClassOf rdf:resource="#Religious_cosmology_Philosopher"/>
+  </owl:Class> 
+
+<!-- arts -->
+
+  <owl:Class rdf:ID="Philosopher_of_the_arts"> 
+    <rdfs:subClassOf rdf:resource="#Applied_philosopher"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_music"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_movement"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_architecture"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_the_visual_arts"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_drawing"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_drawing"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_drawing"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_drawing"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_drawing"/> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_visual_arts"/> 
+  </owl:Class> 
+  
+  <owl:Class rdf:ID="Philosopher_of_painting"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_painting"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_painting"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_painting"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_painting"/> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_visual_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_photography"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_photography"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_photography"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_photography"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_photography"/> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_visual_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_printmaking"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_printmaking"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_photography"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_printmaking"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_photography"/> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_visual_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_sculpture"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_sculpture"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_sculpture"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_visual_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_sculpture"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_sculpture"/>   
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_visual_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_the_performing_arts"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_arts"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_motion_pictures"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_performing_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_motion_pictures"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_motion_pictures"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_motion_pictures"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_motion_pictures"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_theater"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_performing_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_theater"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_theater"/> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_performing_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_theater"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_theater"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_dance"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_performing_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_dance"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_dance"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_dance"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_dance"/> 
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Philosopher_of_opera"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_the_performing_arts"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Aesthetician_of_opera"> 
+    <rdfs:subClassOf rdf:resource="#Aesthetician_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_opera"/> 
+  </owl:Class> 
+  <owl:Class rdf:ID="Ethicist_of_opera"> 
+    <rdfs:subClassOf rdf:resource="#Ethicist_of_the_performing_arts"/> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_of_opera"/> 
+  </owl:Class> 
+
+
+  <!-- CLASSES OF PHILOSOPHERS BY TIME -->
+
+  <owl:Class rdf:ID="Philosopher_by_Time">
+    <rdfs:subClassOf rdf:resource="#Philosopher"/>
+  </owl:Class>
+
+  <!-- ANCIENT -->
+ 
+  <owl:Class rdf:ID="Ancient_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Time"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_fifth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_fourth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_third_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_second_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_first_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twentieth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Nineteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Eighteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Seventeenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fifteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Fourteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Thirteenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twelfth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eleventh_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+   <owl:Class rdf:ID="Tenth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Ninth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eighth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Seventh_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fifth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fourth_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Third_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Second_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="First_Century_BCE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="First_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Second_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Third_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fourth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosopher"/>
+  </owl:Class>
+  
+  <!-- MEDIEVAL --> 
+
+  <owl:Class rdf:ID="Medieval_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Fifth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Seventh_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Eighth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Ninth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Tenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Eleventh_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twelfth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Thirteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+
+ <owl:Class rdf:ID="Fourteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosopher"/>
+  </owl:Class>
+
+<!-- RENAISSANCE -->
+
+  <owl:Class rdf:ID="Renaissance_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Fifteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Renaissance_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Renaissance_Philosopher"/>
+  </owl:Class>
+
+  <!-- MODERN -->
+
+  <owl:Class rdf:ID="Modern_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Time"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Early_Modern_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Modern_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Seventeenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Early_Modern_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eighteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Early_Modern_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Recent_Modern_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Modern_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Nineteenth_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Recent_Modern_Philosopher"/>
+  </owl:Class>
+  
+  <!-- CONTEMPORARY -->
+   
+  <owl:Class rdf:ID="Contemporary_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_first_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Contemporary_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Twenty_Century_CE_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Contemporary_Philosopher"/>
+  </owl:Class>
+
+
+  <!-- PHILOSPHERS BY GEOGRAPHY -->
+
+  <owl:Class rdf:ID="Philosopher_by_geography">
+    <rdfs:subClassOf rdf:resource="#Philosopher"/>
+  </owl:Class>
+  
+  <!-- .1 PHILOSPHERS BY GEOGRAPHICAL AREA -->
+
+  <owl:Class rdf:ID="Philosopher_by_Geographical_Area">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_geography"/>
+  </owl:Class>
+
+  <!-- .1.1 AFRICAN -->
+
+  <owl:Class rdf:ID="African_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Geographical_Area"/>
+    <owl:disjointWith rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Oceanian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eastern_african_Philosopher">
+    <rdfs:subClassOf rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Middle_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_african_Philosopher"/>
+   </owl:Class>
+
+  <owl:Class rdf:ID="Middle_african_Philosopher">
+    <rdfs:subClassOf rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_african_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Northern_african_Philosopher">
+    <rdfs:subClassOf rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Middle_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_african_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Southern_african_Philosopher">
+    <rdfs:subClassOf rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Middle_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_african_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Western_african_Philosopher">
+    <rdfs:subClassOf rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Middle_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_african_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_african_Philosopher"/>
+  </owl:Class>
+
+  <!-- .1.2 AMERICAN -->
+
+  <owl:Class rdf:ID="American_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Geographical_Area"/>
+    <owl:disjointWith rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Oceanian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="North_American_Philosopher">
+    <rdfs:subClassOf rdf:resource="#American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#South_American_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Northern_American_Philosopher">
+    <rdfs:subClassOf rdf:resource="#North_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Carribean_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Central_American_Philosopher">
+    <rdfs:subClassOf rdf:resource="#North_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Carribean_Philosopher"/>
+  </owl:Class>  
+  
+  <owl:Class rdf:ID="Carribean_Philosopher">
+    <rdfs:subClassOf rdf:resource="#North_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_American_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="South_American_Philosopher">
+    <rdfs:subClassOf rdf:resource="#American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#North_American_Philosopher"/>
+  </owl:Class>
+
+  <!-- .1.3 ASIAN -->
+
+  <owl:Class rdf:ID="Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Geographical_Area"/>
+    <owl:disjointWith rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Oceanian_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Eastern_Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Eastern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_Asian_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Southern_Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Eastern_Asian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Northern_Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Eastern_Asian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Central_Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Eastern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_Asian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Southern_Eastern_Asian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Central_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_Asian_Philosopher"/>
+  </owl:Class>
+
+  <!-- .1.4 EUROPEAN -->
+
+  <owl:Class rdf:ID="European_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Geographical_Area"/>
+    <owl:disjointWith rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Oceanian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#African_Philosopher"/>
+    <owl:disjointWith rdf:resource="#American_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eastern_European_Philosopher">
+    <rdfs:subClassOf rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_European_Philosopher"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Northern_European_Philosopher">
+    <rdfs:subClassOf rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_European_Philosopher"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Southern_European_Philosopher">
+    <rdfs:subClassOf rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Western_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_European_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Western_European_Philosopher">
+    <rdfs:subClassOf rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Southern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Northern_European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Eastern_European_Philosopher"/>
+  </owl:Class>
+
+  <!-- .1.5 OCEANIA -->
+
+  <owl:Class rdf:ID="Oceanian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_Geographical_Area"/>
+    <owl:disjointWith rdf:resource="#Asian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#European_Philosopher"/>
+    <owl:disjointWith rdf:resource="#American_Philosopher"/>
+    <owl:disjointWith rdf:resource="#African_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Australasian_Philospher">
+    <rdfs:subClassOf rdf:resource="#Oceanian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Polynesia_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Micronesian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Melanesian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Polynesia_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Oceanian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Australasian_Philospher"/>
+    <owl:disjointWith rdf:resource="#Melanesian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Micronesian_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Micronesian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Oceanian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Melanesian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Australasian_Philospher"/>
+    <owl:disjointWith rdf:resource="#Polynesia_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Melanesian_Philosopher">
+    <rdfs:subClassOf rdf:resource="#Oceanian_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Australasian_Philospher"/>
+    <owl:disjointWith rdf:resource="#Polynesia_Philosopher"/>
+    <owl:disjointWith rdf:resource="#Micronesian_Philosopher"/>
+  </owl:Class>
+
+  <!-- .2 PHILOSPHERS BY ETHNICITY -->
+
+  <owl:Class rdf:ID="Philosopher_by_ethnicity"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_geography"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Indigenous_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_ethnicity"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="African_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Indigenous_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="American_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Indigenous_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="North_American_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#American_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Native_American_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#North_American_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="South_American_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#American_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Asian_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Indigenous_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="European_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Indigenous_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Oceanian_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Indigenous_Ethnicity_Philosopher"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Ancestral_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_ethnicity"/>
+  </owl:Class>  
+  
+  <owl:Class rdf:ID="Ancestral_Ethnicity_American_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Ancestral_Ethnicity_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Hispanics_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Ancestral_Ethnicity_American_Philosopher"/>
+  </owl:Class> 
+
+  <owl:Class rdf:ID="Afro_American_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Ancestral_Ethnicity_American_Philosopher"/>
+  </owl:Class> 
+  
+  <owl:Class rdf:ID="Jamaican_Ethnicity_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Afro_American_Philosopher"/>
+  </owl:Class> 
+  
+  <!-- .2 PHILOSPHERS BY RELIGION -->
+    
+  <owl:Class rdf:ID="Philosopher_by_religion"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_geography"/>
+  </owl:Class>  
+  
+  <!-- NOTE: NO DISJOINTNESS OF CHILDREN BECAUSE THERE IS NO WAY TO ACCOUNT FOR CHANGE OF RELIGIOUS BELIEF -->
+
+  <owl:Class rdf:ID="Non_Religious_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_religion"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Atheist_philosopher">
+    <rdfs:subClassOf rdf:resource="#Non_Religious_Philosopher"/>
+  </owl:Class>  
+  
+  <owl:Class rdf:ID="Agnostic_philosopher">
+    <rdfs:subClassOf rdf:resource="#Non_Religious_Philosopher"/>
+  </owl:Class>  
+  
+  <owl:Class rdf:ID="Theist_philosopher">
+    <rdfs:subClassOf rdf:resource="#Non_Religious_Philosopher"/>
+  </owl:Class>  
+
+  <!-- .2 RELIGIOUS PHILOSPHERS  -->
+
+  <owl:Class rdf:ID="Religious_Philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Philosopher_by_religion"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Buddhist_philosopher">
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Christian_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Gnostic_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Hindu_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Islamic_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Jaina_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Judaic_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Rastafarian_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Shinto_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Sikh_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Taoist_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+
+  <owl:Class rdf:ID="Zoroastrian_philosopher"> 
+    <rdfs:subClassOf rdf:resource="#Religious_Philosopher"/>
+  </owl:Class>  
+  
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS -->
+  <!-- NOTE: NO DISJOINT ASSERTIONS FOR THE TIME BEING -->
+
+  <owl:Class rdf:ID="Philosophical_concept"/>
+ 
+  <!-- BASIC -->  
+
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY TOPIC -->
+
+  <owl:Class rdf:ID="Philosophical_concept_by_topic">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept"/>
+  </owl:Class>  
+
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY TIME -->
+  
+  <owl:Class rdf:ID="Philosophical_concept_by_time">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept"/>
+  </owl:Class>  
+  
+  <!-- ANCIENT -->
+ 
+  <owl:Class rdf:ID="Ancient_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_time"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_fifth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_fourth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_third_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_second_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twenty_first_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twentieth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Nineteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Eighteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Seventeenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fifteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Fourteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Thirteenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twelfth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eleventh_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+   <owl:Class rdf:ID="Tenth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Ninth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eighth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Seventh_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fifth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fourth_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Third_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Second_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="First_Century_BCE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="First_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Second_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Third_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Fourth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Ancient_Philosophical_concept"/>
+  </owl:Class>
+  
+  <!-- MEDIEVAL --> 
+
+  <owl:Class rdf:ID="Medieval_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Fifth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Seventh_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Eighth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Ninth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Tenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Eleventh_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Twelfth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Thirteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+
+ <owl:Class rdf:ID="Fourteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Medieval_Philosophical_concept"/>
+  </owl:Class>
+
+<!-- RENAISSANCE -->
+
+  <owl:Class rdf:ID="Renaissance_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Fifteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Renaissance_Philosophical_concept"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Sixteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Renaissance_Philosophical_concept"/>
+  </owl:Class>
+
+  <!-- MODERN -->
+
+  <owl:Class rdf:ID="Modern_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_time"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Early_Modern_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Modern_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Seventeenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Early_Modern_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Eighteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Early_Modern_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Recent_Modern_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Modern_Philosophical_concept"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Nineteenth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Recent_Modern_Philosophical_concept"/>
+  </owl:Class>
+  
+  <!-- CONTEMPORARY -->
+   
+  <owl:Class rdf:ID="Contemporary_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_time"/>
+  </owl:Class>
+  
+  <owl:Class rdf:ID="Twenty_first_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Contemporary_Philosophical_concept"/>
+  </owl:Class>
+ 
+  <owl:Class rdf:ID="Twentieth_Century_CE_Philosophical_concept">
+    <rdfs:subClassOf rdf:resource="#Contemporary_Philosophical_concept"/>
+  </owl:Class>
+
+  
+  
+
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY GEOGRAPHY -->
+
+  <owl:Class rdf:ID="Philosophical_concept_by_geography">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept"/>
+  </owl:Class>  
+  
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY GEOGRAPHICAL AREA -->
+
+  <owl:Class rdf:ID="Philosophical_concept_by_geographical_area">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_geography"/>
+  </owl:Class>  
+  
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY ETHNICITY -->
+
+  <owl:Class rdf:ID="Philosophical_concept_by_ethnicity">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_geography"/>
+  </owl:Class>  
+  
+  <!-- CLASSES OF PHILOSOPHICAL CONCEPTS BY RELIGION -->
+
+  <owl:Class rdf:ID="Philosophical_concept_by_religion">
+    <rdfs:subClassOf rdf:resource="#Philosophical_concept_by_geography"/>
+  </owl:Class>  
+  
+  
+  <!-- OBJECT PROPERTIES (RELATIONS) -->
+  
+  <!-- RELATIONS BETWEEN PHILOSOPHICAL FIELDS -->
+
+  <owl:TransitiveProperty rdf:ID="subfields">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Philosophical_Field"/>
+    <rdfs:range rdf:resource="#Philosophical_Field"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(X subfields Y) means X has as a subfield Y. For instance, (Philosophy subfields Ethics) or (Philosophy subfields African_Philosophy) are  true. Desirable Inferential Support: Transitivity. </rdfs:comment>
+  </owl:TransitiveProperty>
+
+  <!-- RELATIONS BETWEEN PHILOSOPHERS AND PHILOSOPHICAL FIELDS -->
+
+  <owl:ObjectProperty rdf:ID="active_in_fields">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Philosopher"/>
+    <rdfs:range rdf:resource="#Philosophical_Field"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(X active_in_fields Y) means philosopher X contributred to philosophical field Y. For instance, (Aristotle active_in_fields Ethics) is true but more specifically (Aristotle active_in_fields Ancient_greek_ethics) is preferrable. Desirable Inferential Support: If (X active_in_fields Y) and (Z subfields Y), then (X active_in_fields Z). So, it should follow from (Aristotle active_in_fields Ancient_greek_ethics) and (Ethics subfields Ancient_greek_ethics) that (Aristotle active_in_fields Ethics).</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <!-- RELATIONS BETWEEN PHILOSOPHICAL CONCEPTS AND PHILOSOPHICAL FIELDS -->
+
+  <owl:ObjectProperty rdf:ID="concept_in_fields">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Philosophical_concept"/>
+    <rdfs:range rdf:resource="#Philosophical_Field"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(X concept_in_fields Y) means that the philosophical concept X occurs or is discussed in philosophical field Y. For instance, (Beauty concept_in_fields Aesthetics). Desirable Inferential Support: If (X active_in_fields Y) and (Z subfields Y), then (X active_in_fields Z). So, it should follow from (Aristotle active_in_fields Aesthetics) and (Aesthetics subfields Philosophy) that (Beauty concept_in_fields Philosophy).</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <!-- INDIVIDUALS -->
+  
+  <!-- INDIVIDUALS: PHILOSOPHICAL FIELDS -->
+
+  <!--   <Philosophical_Field rdf:ID="Philosophy"> -->
+  <!--     <subfields rdf:resource="#Ethics"/> -->
+  <!--     <subfields rdf:resource="#Theory_of_knowledge"/> -->
+  <!--     <subfields rdf:resource="#Metaphysics"/> -->
+  <!--     <subfields rdf:resource="#Aesthetics"/> -->
+  <!--     <subfields rdf:resource="#Logic"/> -->
+  <!--    <subfields rdf:resource="#Meta_philosophy"/> -->
+  <!--     <subfields rdf:resource="#Applied_philosophy"/> -->
+  <!--     <subfields rdf:resource="#History_of_philosophy"/> -->
+  <!--   </Philosophical_Field> -->
+
+<!-- DISTINCT INDIVIDUALS -->
+
+<Philosophical_Field rdf:ID="Philosophy"> 
+     <subfields rdf:resource="#Aesthetics"/>
+     <subfields rdf:resource="#Theory_of_knowledge"/> 
+     <subfields rdf:resource="#Ethics"/>
+     <subfields rdf:resource="#Logic"/>
+     <subfields rdf:resource="#Meta_philosophy"/>
+     <subfields rdf:resource="#Metaphysics"/>
+     <subfields rdf:resource="#History_of_philosophy"/>
+     <subfields rdf:resource="#Applied_philosophy"/>
+</Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Aesthetics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Aesthetics"> 
+     <subfields rdf:resource="#Art_criticism"/> 
+     <subfields rdf:resource="#Literary_criticism"/> 
+     <subfields rdf:resource="#Aesthetics_of_music"/> 
+     <subfields rdf:resource="#Aesthetics_of_movement"/> 
+     <subfields rdf:resource="#Aesthetics_of_the_visual_arts"/> 
+     <subfields rdf:resource="#Aesthetics_of_architecture"/> 
+     <subfields rdf:resource="#Aesthetics_of_the_performing_arts"/> 
+     <subfields rdf:resource="#Aesthetics_of_literature"/> 
+     <subfields rdf:resource="#Aesthetics_of_poetry"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Art_criticism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Art_criticism"> 
+     <subfields rdf:resource="#Feminist_art_criticism"/>
+</Topic_Philosophical_Field>
+
+<Topic_Philosophical_Field rdf:ID="Feminist_art_criticism"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Literary_criticism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Literary_criticism"> 
+     <subfields rdf:resource="#Feminist_literary_criticism"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Feminist_literary_criticism"/> 
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_music"/> 
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_movement"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_the_visual_arts"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Aesthetics_of_the_visual_arts"> 
+     <subfields rdf:resource="#Aesthetics_of_drawing"/> 
+     <subfields rdf:resource="#Aesthetics_of_painting"/> 
+     <subfields rdf:resource="#Aesthetics_of_photography"/> 
+     <subfields rdf:resource="#Aesthetics_of_printmaking"/> 
+     <subfields rdf:resource="#Aesthetics_of_sculpture"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_architecture"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_the_performing_arts"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Aesthetics_of_the_performing_arts"> 
+     <subfields rdf:resource="#Aesthetics_of_motion_pictures"/> 
+     <subfields rdf:resource="#Aesthetics_of_theater"/> 
+     <subfields rdf:resource="#Aesthetics_of_dance"/> 
+     <subfields rdf:resource="#Aesthetics_of_opera"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_literature"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Aesthetics_of_literature">
+     <subfields rdf:resource="#Aesthetics_of_poetry"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_poetry"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Theory_of_knowledge"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Theory_of_knowledge"> 
+     <subfields rdf:resource="#Informal_epistemology"/>
+     <subfields rdf:resource="#Formal_epistemology"/>
+     <subfields rdf:resource="#Applied_epistemology"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Informal_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Formal_epistemology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Applied_epistemology"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Applied_epistemology"> 
+     <subfields rdf:resource="#Moral_epistemology"/> 
+     <subfields rdf:resource="#Religious_epistemology"/> 
+     <subfields rdf:resource="#Social_epistemology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Moral_epistemology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Religious_epistemology"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Religious_Epistemology"> 
+     <subfields rdf:resource="#Buddhist_epistemology"/> 
+     <subfields rdf:resource="#Christian_epistemology"/> 
+     <subfields rdf:resource="#Gnostic_epistemology"/> 
+     <subfields rdf:resource="#Hindu_epistemology"/> 
+     <subfields rdf:resource="#Islamic_epistemology"/> 
+     <subfields rdf:resource="#Jaina_epistemology"/> 
+     <subfields rdf:resource="#Judaic_epistemology"/> 
+     <subfields rdf:resource="#Rastafarian_epistemology"/> 
+     <subfields rdf:resource="#Shinto_epistemology"/> 
+     <subfields rdf:resource="#Sikh_epistemology"/> 
+     <subfields rdf:resource="#Taoist_epistemology"/> 
+     <subfields rdf:resource="#Zoroastrian_epistemology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Social_epistemology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Ethics"> 
+     <subfields rdf:resource="#Applied_ethics"/>
+     <subfields rdf:resource="#Axiology"/>
+     <subfields rdf:resource="#Meta_ethics"/>
+     <subfields rdf:resource="#Theoretical_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Axiology"/> 
+  <Topic_Philosophical_Field rdf:ID="Meta_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Theoretical_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Applied_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Applied_ethics"> 
+     <subfields rdf:resource="#Animal_welfare_ethics"/>
+     <subfields rdf:resource="#Bioethics"/>
+     <subfields rdf:resource="#Business_ethics"/>
+     <subfields rdf:resource="#Computer_ethics"/>
+     <subfields rdf:resource="#Education_ethics"/>
+     <subfields rdf:resource="#Environmental_ethics"/>
+     <subfields rdf:resource="#Legal_ethics"/>
+     <subfields rdf:resource="#Media_ethics"/>
+     <subfields rdf:resource="#Religious_ethics"/>
+     <subfields rdf:resource="#Ethics_of_sport"/>
+     <subfields rdf:resource="#Social_ethics"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Bioethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Bioethics"> 
+     <subfields rdf:resource="#Ethics_of_biology"/>
+     <subfields rdf:resource="#Health_care_ethics"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_biology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Health_care_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Health_care_ethics"> 
+     <subfields rdf:resource="#Medical_ethics"/>
+     <subfields rdf:resource="#Pharmacy_ethics"/>
+     <subfields rdf:resource="#Nursing_ethics"/>
+     <subfields rdf:resource="#Midwifery_ethics"/>
+     <subfields rdf:resource="#Veterinary_medicine_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Animal_welfare_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Business_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Business_ethics"> 
+     <subfields rdf:resource="#Marketing_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Marketing_ethics"/> 
+  
+  <Topic_Philosophical_Field rdf:ID="Computer_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Education_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Environmental_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Legal_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Media_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Media_ethics"> 
+     <subfields rdf:resource="#Entertainment_media_ethics"/>
+     <subfields rdf:resource="#Journalism_ethics"/>
+     <subfields rdf:resource="#Public_relations_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Entertainment_media_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Journalism_ethics"/> 
+  <Topic_Philosophical_Field rdf:ID="Public_relations_ethics"/> 
+  
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_sport"/> 
+  <Topic_Philosophical_Field rdf:ID="Social_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Logic"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Logic"> 
+     <subfields rdf:resource="#Philosophical_logic"/>
+     <subfields rdf:resource="#Formal_logic"/>
+     <subfields rdf:resource="#Informal_logic"/> 
+     <subfields rdf:resource="#Applied_logic"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophical_logic"/> 
+  <Topic_Philosophical_Field rdf:ID="Formal_logic"/> 
+  <Topic_Philosophical_Field rdf:ID="Informal_logic"/> 
+  <Topic_Philosophical_Field rdf:ID="Applied_logic"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Meta_philosophy"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Meta_philosophy"> 
+     <subfields rdf:resource="#Meta_ethics"/> 
+     <subfields rdf:resource="#Philosophical_methodology"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophical_methodology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Metaphysics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Metaphysics"> 
+     <subfields rdf:resource="#Cosmology"/>
+     <subfields rdf:resource="#Ontology"/>
+     <subfields rdf:resource="#Speculative_metaphysics"/> 
+     <subfields rdf:resource="#Theology"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Cosmology"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Cosmology"> 
+     <subfields rdf:resource="#Religious_cosmology"/>
+</Topic_Philosophical_Field>
+
+<!-- <Topic_Philosophical_Field rdf:ID="Religious_cosmology"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Religious_cosmology"> 
+     <subfields rdf:resource="#Buddhist_cosmology"/> 
+     <subfields rdf:resource="#Christian_cosmology"/> 
+     <subfields rdf:resource="#Gnostic_cosmology"/> 
+     <subfields rdf:resource="#Hindu_cosmology"/> 
+     <subfields rdf:resource="#Islamic_cosmology"/> 
+     <subfields rdf:resource="#Jaina_cosmology"/> 
+     <subfields rdf:resource="#Judaic_cosmology"/> 
+     <subfields rdf:resource="#Rastafarian_cosmology"/> 
+     <subfields rdf:resource="#Shinto_cosmology"/> 
+     <subfields rdf:resource="#Sikh_cosmology"/> 
+     <subfields rdf:resource="#Taoist_cosmology"/> 
+     <subfields rdf:resource="#Zoroastrian_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Ontology"/> 
+  <Topic_Philosophical_Field rdf:ID="Speculative_metaphysics"/> 
+  <Topic_Philosophical_Field rdf:ID="Theology"/> 
+  <Topic_Philosophical_Field rdf:ID="History_of_philosophy"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Applied_philosophy"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Applied_philosophy"> 
+     <subfields rdf:resource="#Philosophy_of_the_arts"/>
+     <subfields rdf:resource="#Political_philosophy"/>
+     <subfields rdf:resource="#Philosophy_of_science"/>
+     <subfields rdf:resource="#Philosophy_of_technology"/>
+     <subfields rdf:resource="#Philosophy_of_the_humanities"/> 
+     <subfields rdf:resource="#Philosophy_of_religion"/> 
+     <subfields rdf:resource="#Philosophy_of_language"/> 
+     <subfields rdf:resource="#Philosophy_of_law"/>
+     <subfields rdf:resource="#Philosophy_of_action"/> 
+     <subfields rdf:resource="#Philosophy_of_mind"/>
+     <subfields rdf:resource="#Philosophy_of_religion"/> 
+     <subfields rdf:resource="#Philosophy_of_sport"/>
+     <subfields rdf:resource="#Philosophy_of_computer_science"/>
+     <subfields rdf:resource="#Philosophy_of_computation"/>
+     <subfields rdf:resource="#Philosophy_of_artificial_intelligence"/>
+</Topic_Philosophical_Field>
+
+
+  <Topic_Philosophical_Field rdf:ID="Political_philosophy"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_language"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_science"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_science"> 
+     <subfields rdf:resource="#Philosophy_of_formal_sciences"/>
+     <subfields rdf:resource="#Philosophy_of_natural_sciences"/>
+     <subfields rdf:resource="#Philosophy_of_health_sciences"/>
+     <subfields rdf:resource="#Philosophy_of_human_sciences"/>
+     <subfields rdf:resource="#Philosophy_of_social_sciences"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_formal_sciences"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_formal_sciences"> 
+     <subfields rdf:resource="#Philosophy_of_mathematics"/>
+     <subfields rdf:resource="#Philosophy_of_mathematical_logic"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_mathematics"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_mathematical_logic"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_natural_sciences"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_natural_sciences"> 
+     <subfields rdf:resource="#Philosophy_of_biology"/>
+     <subfields rdf:resource="#Philosophy_of_chemistry"/>
+     <subfields rdf:resource="#Philosophy_of_physics"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_biology"/> -->
+    
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_biology"> 
+     <subfields rdf:resource="#Ethics_of_biology"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_chemistry"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_physics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_physics"> 
+     <subfields rdf:resource="#Philosophy_of_astronomy"/>
+</Topic_Philosophical_Field>
+  
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_astronomy"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_health_sciences"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_health_sciences"> 
+     <subfields rdf:resource="#Philosophy_of_human_medicine"/>
+     <subfields rdf:resource="#Philosophy_of_midwifery"/>
+     <subfields rdf:resource="#Philosophy_of_nursing"/>
+     <subfields rdf:resource="#Philosophy_of_pharmacy"/>
+     <subfields rdf:resource="#Philosophy_of_veterinary_medicine"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_human_medicine"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_human_medicine"> 
+     <subfields rdf:resource="#Philosophy_of_biomedicine"/>
+     <subfields rdf:resource="#Philosophy_of_psychiatry"/>
+     <subfields rdf:resource="#Medical_ethics"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Medical_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Medical_ethics"> 
+     <subfields rdf:resource="#Biomedical_ethics"/>
+     <subfields rdf:resource="#Psychiatry_ethics"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_biomedicine"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_biomedicine"> 
+     <subfields rdf:resource="#Biomedical_ethics"/>
+</Topic_Philosophical_Field>
+  
+  <Topic_Philosophical_Field rdf:ID="Biomedical_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_psychiatry"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_psychiatry"> 
+     <subfields rdf:resource="#Psychiatry_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Psychiatry_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_midwifery"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_midwifery"> 
+     <subfields rdf:resource="#Midwifery_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Midwifery_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_nursing"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_nursing"> 
+     <subfields rdf:resource="#Nursing_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Nursing_ethics"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_pharmacy"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_pharmacy"> 
+     <subfields rdf:resource="#Pharmacy_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Pharmacy_ethics"/> 
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_veterinary_medicine"> 
+     <subfields rdf:resource="#Veterinary_medicine_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Veterinary_medicine_ethics"/> 
+
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_social_sciences"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_social_sciences"> 
+     <subfields rdf:resource="#Philosophy_of_criminology"/>
+     <subfields rdf:resource="#Philosophy_of_education"/>
+     <subfields rdf:resource="#Philosophy_of_economics"/>
+     <subfields rdf:resource="#Philosophy_of_gender_studies"/>
+     <subfields rdf:resource="#Philosophy_of_international_relations"/>
+     <subfields rdf:resource="#Philosophy_of_political_science"/>
+     <subfields rdf:resource="#Philosophy_of_sociology"/>
+     <subfields rdf:resource="#Philosophy_of_anthropology"/>
+     <subfields rdf:resource="#Philosophy_of_archaeology"/>
+     <subfields rdf:resource="#Philosophy_of_geography"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_criminology"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_international_relations"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_economics"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_gender_studies"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_education"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_education"> 
+     <subfields rdf:resource="#Education_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_political_science"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_sociology"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_technology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_computer_science"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_computer_science"> 
+     <subfields rdf:resource="#Computer_ethics"/>
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_artificial_intelligence"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_computation"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_the_humanities"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_the_humanities">
+     <subfields rdf:resource="#Philosophy_of_literature"/>
+     <subfields rdf:resource="#Philosophy_of_religious_studies"/>
+     <subfields rdf:resource="#Philosophy_of_history"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_human_sciences"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_human_sciences"> 
+     <subfields rdf:resource="#Philosophy_of_linguistics"/>
+     <subfields rdf:resource="#Philosophy_of_psychology"/>
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_literature"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_literature">
+     <subfields rdf:resource="#Philosophy_of_poetry"/>
+     <subfields rdf:resource="#Aesthetics_of_literature"/>
+</Topic_Philosophical_Field>
+  
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_poetry"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_poetry">
+     <subfields rdf:resource="#Aesthetics_of_poetry"/> 
+</Topic_Philosophical_Field>
+
+  
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_religious_studies"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_anthropology"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_archaeology"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_geography"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_history"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_linguistics"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_psychology"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_law"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_action"/> 
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_mind"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_sport"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_sport"> 
+     <subfields rdf:resource="#Ethics_of_sport"/>
+</Topic_Philosophical_Field>
+
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_religion"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_religion"> 
+     <subfields rdf:resource="#Religious_cosmology"/>
+     <subfields rdf:resource="#Religious_ethics"/>
+     <subfields rdf:resource="#Religious_epistemology"/>
+     <subfields rdf:resource="#Comparative_philosophy_of_religion"/>
+     <subfields rdf:resource="#Philosophy_of_buddhism"/> 
+     <subfields rdf:resource="#Philosophy_of_christianism"/> 
+     <subfields rdf:resource="#Philosophy_of_gnosticism"/>
+     <subfields rdf:resource="#Philosophy_of_hinduism"/> 
+     <subfields rdf:resource="#Philosophy_of_islam"/> 
+     <subfields rdf:resource="#Philosophy_of_jainism"/> 
+     <subfields rdf:resource="#Philosophy_of_judaism"/> 
+     <subfields rdf:resource="#Philosophy_of_rastafarianism"/> 
+     <subfields rdf:resource="#Philosophy_of_shintoism"/> 
+     <subfields rdf:resource="#Philosophy_of_sikhism"/> 
+     <subfields rdf:resource="#Philosophy_of_taoism"/> 
+     <subfields rdf:resource="#Philosophy_of_zoroastrianism"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Comparative_philosophy_of_religion"/> 
+
+
+<!--  <Topic_Philosophical_Field rdf:ID="Religious_ethics"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Religious_ethics"> 
+     <subfields rdf:resource="#Ethics_of_buddhism"/> 
+     <subfields rdf:resource="#Ethics_of_christianism"/> 
+     <subfields rdf:resource="#Ethics_of_gnosticism"/> 
+     <subfields rdf:resource="#Ethics_of_hinduism"/> 
+     <subfields rdf:resource="#Ethics_of_islam"/> 
+     <subfields rdf:resource="#Ethics_of_jainism"/> 
+     <subfields rdf:resource="#Ethics_of_judaism"/> 
+     <subfields rdf:resource="#Ethics_of_rastafarianism"/> 
+     <subfields rdf:resource="#Ethics_of_shintoism"/> 
+     <subfields rdf:resource="#Ethics_of_sikhism"/> 
+     <subfields rdf:resource="#Ethics_of_taoism"/> 
+     <subfields rdf:resource="#Ethics_of_zoroastrianism"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_buddhism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_buddhism">
+     <subfields rdf:resource="#Buddhist_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_buddhism"/> 
+     <subfields rdf:resource="#Buddhist_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Buddhist_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_buddhism"/> 
+  <Topic_Philosophical_Field rdf:ID="Buddhist_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_christianism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_christianism">
+     <subfields rdf:resource="#Christian_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_christianism"/> 
+     <subfields rdf:resource="#Christian_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Christian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_christianism"/> 
+  <Topic_Philosophical_Field rdf:ID="Christian_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_gnosticism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_gnosticism">
+     <subfields rdf:resource="#Gnostic_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_gnosticism"/>
+     <subfields rdf:resource="#Gnostic_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Gnostic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_gnosticism"/> 
+  <Topic_Philosophical_Field rdf:ID="Gnostic_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_hinduism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_hinduism">
+     <subfields rdf:resource="#Hindu_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_hinduism"/> 
+     <subfields rdf:resource="#Hindu_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Hindu_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_hinduism"/> 
+  <Topic_Philosophical_Field rdf:ID="Hindu_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_islam"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_islam">
+     <subfields rdf:resource="#Islamic_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_islam"/> 
+     <subfields rdf:resource="#Islamic_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Islamic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_islam"/> 
+  <Topic_Philosophical_Field rdf:ID="Islamic_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_judaism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_judaism">
+     <subfields rdf:resource="#Judaic_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_judaism"/> 
+     <subfields rdf:resource="#Judaic_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Judaic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_judaism"/> 
+  <Topic_Philosophical_Field rdf:ID="Judaic_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_shintoism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_shintoism">
+     <subfields rdf:resource="#Shinto_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_shintoism"/> 
+     <subfields rdf:resource="#Shinto_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Shinto_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_shintoism"/> 
+  <Topic_Philosophical_Field rdf:ID="Shinto_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_jainism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_jainism">
+     <subfields rdf:resource="#Jaina_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_jainism"/> 
+     <subfields rdf:resource="#Jaina_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Jaina_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_jainism"/> 
+  <Topic_Philosophical_Field rdf:ID="Jaina_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_rastafarianism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_rastafarianism">
+     <subfields rdf:resource="#Rastafarian_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_rastafarianism"/> 
+     <subfields rdf:resource="#Rastafarian_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Rastafarian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_rastafarianism"/> 
+  <Topic_Philosophical_Field rdf:ID="Rastafarian_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_sikhism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_sikhism">
+     <subfields rdf:resource="#Sikh_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_sikhism"/> 
+     <subfields rdf:resource="#Sikh_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Sikh_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_sikhism"/> 
+  <Topic_Philosophical_Field rdf:ID="Sikh_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_taoism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_taoism">
+     <subfields rdf:resource="#Taoist_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_taoism"/> 
+     <subfields rdf:resource="#Taoist_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Taoist_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_taoism"/> 
+  <Topic_Philosophical_Field rdf:ID="Taoist_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_zoroastrianism"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_zoroastrianism">
+     <subfields rdf:resource="#Zoroastrian_epistemology"/> 
+     <subfields rdf:resource="#Ethics_of_zoroastrianism"/> 
+     <subfields rdf:resource="#Zoroastrian_cosmology"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Zoroastrian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_zoroastrianism"/> 
+  <Topic_Philosophical_Field rdf:ID="Zoroastrian_cosmology"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_the_arts"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_the_arts">
+     <subfields rdf:resource="#Philosophy_of_the_visual_arts"/> 
+     <subfields rdf:resource="#Philosophy_of_the_performing_arts"/> 
+     <subfields rdf:resource="#Philosophy_of_music"/> 
+     <subfields rdf:resource="#Philosophy_of_movement"/> 
+     <subfields rdf:resource="#Philosophy_of_architecture"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_the_visual_arts"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_the_visual_arts">
+     <subfields rdf:resource="#Aesthetics_of_the_visual_arts"/> 
+     <subfields rdf:resource="#Philosophy_of_drawing"/> 
+     <subfields rdf:resource="#Philosophy_of_painting"/> 
+     <subfields rdf:resource="#Philosophy_of_photography"/> 
+     <subfields rdf:resource="#Philosophy_of_printmaking"/> 
+     <subfields rdf:resource="#Philosophy_of_sculpture"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_drawing"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_drawing">
+     <subfields rdf:resource="#Aesthetics_of_drawing"/> 
+     <subfields rdf:resource="#Ethics_of_drawing"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_drawing"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_drawing"/> 
+  
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_painting"/> -->
+  
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_painting">
+     <subfields rdf:resource="#Aesthetics_of_painting"/> 
+     <subfields rdf:resource="#Ethics_of_painting"/> 
+</Topic_Philosophical_Field>
+  
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_painting"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_painting"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_photography"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_photography">
+     <subfields rdf:resource="#Aesthetics_of_photography"/> 
+     <subfields rdf:resource="#Ethics_of_photography"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_photography"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_photography"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_printmaking"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_printmaking">
+     <subfields rdf:resource="#Aesthetics_of_printmaking"/> 
+     <subfields rdf:resource="#Ethics_of_printmaking"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_printmaking"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_printmaking"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_sculpture"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_sculpture">
+     <subfields rdf:resource="#Aesthetics_of_sculpture"/> 
+     <subfields rdf:resource="#Ethics_of_sculpture"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_sculpture"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_sculpture"/> 
+  
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_the_performing_arts"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_the_performing_arts">
+     <subfields rdf:resource="#Aesthetics_of_the_performing_arts"/> 
+     <subfields rdf:resource="#Philosophy_of_motion_pictures"/> 
+     <subfields rdf:resource="#Philosophy_of_theater"/> 
+     <subfields rdf:resource="#Philosophy_of_dance"/> 
+     <subfields rdf:resource="#Philosophy_of_opera"/> 
+</Topic_Philosophical_Field>
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_motion_pictures"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_motion_pictures">
+     <subfields rdf:resource="#Aesthetics_of_motion_pictures"/> 
+     <subfields rdf:resource="#Ethics_of_motion_pictures"/> 
+</Topic_Philosophical_Field>
+  
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_motion_pictures"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_motion_pictures"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_theater"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_theater">
+     <subfields rdf:resource="#Aesthetics_of_theater"/> 
+     <subfields rdf:resource="#Ethics_of_theater"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_theater"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_theater"/> 
+  
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_dance"/> -->
+
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_dance">
+     <subfields rdf:resource="#Aesthetics_of_dance"/> 
+     <subfields rdf:resource="#Ethics_of_dance"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_dance"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_dance"/> 
+
+<!--  <Topic_Philosophical_Field rdf:ID="Philosophy_of_opera"/> -->
+<Topic_Philosophical_Field rdf:ID="Philosophy_of_opera">
+     <subfields rdf:resource="#Aesthetics_of_opera"/> 
+     <subfields rdf:resource="#Ethics_of_opera"/> 
+</Topic_Philosophical_Field>
+
+  <Topic_Philosophical_Field rdf:ID="Aesthetics_of_opera"/> 
+  <Topic_Philosophical_Field rdf:ID="Ethics_of_opera"/> 
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_music"/> 
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_movement"/> 
+
+  <Topic_Philosophical_Field rdf:ID="Philosophy_of_architecture"/> 
+
+
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+  <Philosophical_Field rdf:about="#Philosophy"/>
+  <Topic_Philosophical_Field rdf:about="#Aesthetics"/> 
+  <Topic_Philosophical_Field rdf:about="#Art_criticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Feminist_art_criticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Literary_criticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Feminist_literary_criticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_music"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_movement"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_the_visual_arts"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_architecture"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_the_performing_arts"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_literature"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_poetry"/> 
+  <Topic_Philosophical_Field rdf:about="#Theory_of_knowledge"/> 
+  <Topic_Philosophical_Field rdf:about="#Informal_theory_of_knowledge"/> 
+  <Topic_Philosophical_Field rdf:about="#Formal_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Applied_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Moral_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Religious_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Social_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Axiology"/> 
+  <Topic_Philosophical_Field rdf:about="#Meta_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Theoretical_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Applied_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_biology"/> 
+  <Topic_Philosophical_Field rdf:about="#Health_care_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Veterinary_medicine_ethics"/>
+  <Topic_Philosophical_Field rdf:about="#Philosphy_of_veterinary_medicine"/>
+  <Topic_Philosophical_Field rdf:about="#Animal_welfare_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Business_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Marketing_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Computer_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Education_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Environmental_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Legal_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Media_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Entertainment_media_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Journalism_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Public_relations_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_sport"/> 
+  <Topic_Philosophical_Field rdf:about="#Social_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophical_logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Formal_logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Informal_logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Applied_logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Meta_philosophy"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophical_methodology"/> 
+  <Topic_Philosophical_Field rdf:about="#Metaphysics"/> 
+  <Topic_Philosophical_Field rdf:about="#Cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ontology"/> 
+  <Topic_Philosophical_Field rdf:about="#Speculative_metaphysics"/> 
+  <Topic_Philosophical_Field rdf:about="#Theology"/> 
+  <Topic_Philosophical_Field rdf:about="#History_of_philosophy"/> 
+  <Topic_Philosophical_Field rdf:about="#Applied_philosophy"/> 
+  <Topic_Philosophical_Field rdf:about="#Political_philosophy"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_language"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_science"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_formal_sciences"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_mathematics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_mathematical_logic"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_natural_sciences"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_biology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_chemistry"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_physics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_astronomy"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_health_sciences"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_human_medicine"/> 
+  <Topic_Philosophical_Field rdf:about="#Medical_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_biomedicine"/> 
+  <Topic_Philosophical_Field rdf:about="#Biomedical_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Bioethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_psychiatry"/> 
+  <Topic_Philosophical_Field rdf:about="#Psychiatry_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_midwifery"/> 
+  <Topic_Philosophical_Field rdf:about="#Midwifery_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_nursing"/> 
+  <Topic_Philosophical_Field rdf:about="#Nursing_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_pharmacy"/> 
+  <Topic_Philosophical_Field rdf:about="#Pharmacy_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_social_sciences"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_education"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_criminology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_international_relations"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_economics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_political_science"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_sociology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_anthropology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_archaeology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_geography"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_human_sciences"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_history"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_linguistics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_psychology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_technology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_computation"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_computer_science"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_artificial_intelligence"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_the_humanities"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_literature"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_religious_studies"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_law"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_action"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_mind"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_sport"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_religion"/> 
+  <Topic_Philosophical_Field rdf:about="#Comparative_philosophy_of_religion"/> 
+  <Topic_Philosophical_Field rdf:about="#Religious_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Religious_ethics"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_buddhism"/> 
+  <Topic_Philosophical_Field rdf:about="#Buddhist_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_buddhism"/> 
+  <Topic_Philosophical_Field rdf:about="#Buddhist_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_islam"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_judaism"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_christianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Christian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_christianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Christian_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_gnosticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Gnostic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_gnosticism"/> 
+  <Topic_Philosophical_Field rdf:about="#Gnostic_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_hinduism"/> 
+  <Topic_Philosophical_Field rdf:about="#Hindu_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_hinduism"/> 
+  <Topic_Philosophical_Field rdf:about="#Hindu_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Islamic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_islam"/> 
+  <Topic_Philosophical_Field rdf:about="#Islamic_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Judaic_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_judaism"/> 
+  <Topic_Philosophical_Field rdf:about="#Judaic_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_shintoism"/> 
+  <Topic_Philosophical_Field rdf:about="#Shinto_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_shintoism"/> 
+  <Topic_Philosophical_Field rdf:about="#Shinto_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_jainism"/> 
+  <Topic_Philosophical_Field rdf:about="#Jaina_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_jainaism"/> 
+  <Topic_Philosophical_Field rdf:about="#Jaina_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_rastafarianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Rastafarian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_rastafarianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Rastafarian_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_sikhism"/> 
+  <Topic_Philosophical_Field rdf:about="#Sikh_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_sikhism"/> 
+  <Topic_Philosophical_Field rdf:about="#Sikh_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_taoism"/> 
+  <Topic_Philosophical_Field rdf:about="#Taoist_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_taoism"/> 
+  <Topic_Philosophical_Field rdf:about="#Taoist_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_zoroastrianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Zoroastrian_epistemology"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_zoroastrianism"/> 
+  <Topic_Philosophical_Field rdf:about="#Zoroastrian_cosmology"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_the_arts"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_the_visual_arts"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_drawing"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_drawing"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_drawing"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_painting"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_painting"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_painting"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_photography"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_photography"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_photography"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_printmaking"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_printmaking"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_printmaking"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_sculpture"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_sculpture"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_sculpture"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_the_performing_arts"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_motion_pictures"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_motion_pictures"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_motion_pictures"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_theater"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_theater"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_theater"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_dance"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_dance"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_dance"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_opera"/> 
+  <Topic_Philosophical_Field rdf:about="#Aesthetics_of_opera"/> 
+  <Topic_Philosophical_Field rdf:about="#Ethics_of_opera"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_music"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_movement"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_poetry"/> 
+  <Topic_Philosophical_Field rdf:about="#Philosophy_of_architecture"/> 
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+
+</rdf:RDF>
+
+

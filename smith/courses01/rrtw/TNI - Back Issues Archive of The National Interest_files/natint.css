@@ -1,0 +1,12 @@
+A:link {
+	COLOR: #060
+}
+A:visited {
+	COLOR: #663
+}
+.dropcap {
+	FONT-SIZE: 30pt; FLOAT: left; BORDER-TOP-STYLE: none; FONT-FAMILY: serif; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; align: top
+}
+.ArticleTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}

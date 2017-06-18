@@ -1,0 +1,84 @@
+A:active {
+	COLOR: #ff9900; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cc0000; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+BODY {
+	FONT-FAMILY: "Times New Roman", Times, serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; COLOR: #666666; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+H4 {
+	MARGIN-TOP: 6px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 6px; COLOR: #666666; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+H5 {
+	FONT-WEIGHT: bold; COLOR: #999999; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffcc99; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cc0000; FONT-VARIANT: small-caps
+}
+LI {
+	MARGIN-TOP: 6px; LIST-STYLE-IMAGE: url(../images/pointer2.gif); FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+OL {
+	LIST-STYLE-IMAGE: none; LIST-STYLE-TYPE: decimal
+}
+P {
+	FONT-FAMILY: "Times New Roman", Times, serif
+}
+UL {
+	FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.BT {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; TEXT-INDENT: 25pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.BTFO {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.BTendpara {
+	MARGIN-TOP: 0px; TEXT-INDENT: 25pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.BTsans {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; TEXT-INDENT: 25px; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.BTsansFO {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.BTsansRAlign {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; TEXT-INDENT: 25px; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.contrib {
+	FONT-SIZE: smaller; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.footer {
+	FONT-WEIGHT: normal; FONT-SIZE: smaller; VISIBILITY: visible; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; POSITION: relative
+}
+.lettAuthor {
+	MARGIN-TOP: 3px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: right
+}
+.revbookdetail {
+	FONT-SIZE: smaller; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.smallBTsans {
+	FONT-SIZE: 9pt; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.smallTableData {
+	FONT-SIZE: 9pt; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+.cream {
+	COLOR: #ffffee
+}

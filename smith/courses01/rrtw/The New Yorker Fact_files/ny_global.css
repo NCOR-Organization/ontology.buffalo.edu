@@ -1,0 +1,282 @@
+BODY {
+	MARGIN: 0px; BACKGROUND-COLOR: rgb(101,101,101)
+}
+DIV {
+	FONT-FAMILY: 'times new roman',times,serif
+}
+P {
+	MARGIN: 10px 0px 0px
+}
+A {
+	COLOR: rgb(0,0,0)
+}
+A.contributors {
+	COLOR: rgb(224,0,55); TEXT-DECORATION: none
+}
+A.contributors:visited {
+	COLOR: rgb(224,0,55); TEXT-DECORATION: none
+}
+A.printable {
+	TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: rgb(51,51,51)
+}
+A.talk {
+	COLOR: rgb(224,0,55); TEXT-DECORATION: none
+}
+A.talk:visited {
+	COLOR: rgb(224,0,55)
+}
+A.store {
+	COLOR: rgb(224,0,55)
+}
+A.store:visited {
+	COLOR: rgb(224,0,55)
+}
+A.home {
+	TEXT-TRANSFORM: lowercase; COLOR: rgb(255,255,255); TEXT-DECORATION: none
+}
+A.home:visited {
+	COLOR: rgb(255,255,255)
+}
+A.footer {
+	COLOR: rgb(51,51,51)
+}
+A.listings {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.menubox {
+	COLOR: rgb(224,0,55)
+}
+A.menubox:visited {
+	COLOR: rgb(224,0,55)
+}
+.white {
+	BACKGROUND-COLOR: rgb(255,255,255)
+}
+.grey {
+	BACKGROUND-COLOR: rgb(204,204,204)
+}
+.charcoal {
+	BACKGROUND-COLOR: rgb(101,101,101)
+}
+.black {
+	BACKGROUND-COLOR: rgb(0,0,0)
+}
+.blue {
+	BACKGROUND-COLOR: rgb(0,122,190)
+}
+.red {
+	BACKGROUND-COLOR: rgb(224,0,55)
+}
+DIV.issuepublish {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; COLOR: rgb(102,102,102); PADDING-TOP: 10px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.slideshow {
+	COLOR: rgb(224,0,55)
+}
+A.slideshow:hover {
+	COLOR: rgb(153,0,0)
+}
+A.slideshow:visited {
+	COLOR: rgb(224,0,55)
+}
+DIV.slideshowlinks {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 5px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.slideshowlink {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 3px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.slideshowcurrentlink {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 2px; PADDING-TOP: 3px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.slideshowcontent {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 32px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+DIV.slideshowunit {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 8px; PADDING-TOP: 6px
+}
+DIV.slideshowheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: 0px
+}
+DIV.slideshowtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowauthor {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowsource {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowimage {
+	PADDING-TOP: 12px; TEXT-ALIGN: center
+}
+DIV.slideshowcredit {
+	PADDING-RIGHT: 24px; TEXT-ALIGN: right
+}
+DIV.slideshowcontrols {
+	FONT-WEIGHT: 700
+}
+P.poem {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,san-serif
+}
+DIV.archiveunit {
+	PADDING-RIGHT: 21px; PADDING-LEFT: 21px; PADDING-BOTTOM: 0px; PADDING-TOP: 7px
+}
+DIV.archivesubsection {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 0px; COLOR: rgb(224,0,55); PADDING-TOP: 3px
+}
+SPAN.archivetitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.9em
+}
+SPAN.archivepagetitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 1em; TEXT-DECORATION: underline
+}
+SPAN.archiveauthor {
+	FONT-SIZE: 0.9em
+}
+SPAN.archiveblurb {
+	FONT-SIZE: 0.8em
+}
+DIV.archivesummary {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.archivedates {
+	FONT-SIZE: 0.8em; COLOR: rgb(102,102,102); FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.content {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 32px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+DIV.index {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 16px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+DIV.menubox {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 5px; FONT-SIZE: 0.6em; PADDING-BOTTOM: 0px; PADDING-TOP: 6px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.footer {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.credit {
+	FONT-SIZE: 0.8em; COLOR: rgb(102,102,102); FONT-FAMILY: arial,helvetica,verdana,san-serif; TEXT-ALIGN: right
+}
+DIV.caption {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.issuedate {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; COLOR: rgb(102,102,102); PADDING-TOP: 10px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.date {
+	PADDING-RIGHT: 16px; PADDING-LEFT: 0px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 2px; COLOR: rgb(255,255,255); PADDING-TOP: 2px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.summary {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.image {
+	MARGIN: 10px 0px 0px
+}
+DIV.author {
+	FONT-SIZE: 0.9em
+}
+DIV.subsection {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 14px; FONT-STYLE: italic
+}
+DIV.subtitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.9em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.center {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 16px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; TEXT-ALIGN: center
+}
+DIV.floatright {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; FLOAT: right; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+DIV.floatleft {
+	FLOAT: left
+}
+DIV.cover {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 16px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; PADDING-TOP: 2px; FONT-FAMILY: arial,helvetica,san-serif
+}
+DIV.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 1px; PADDING-TOP: 2px
+}
+DIV.talksubsection {
+	COLOR: rgb(224,0,55)
+}
+DIV.printheader {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.8em; COLOR: rgb(224,0,55); FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.shortlist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 6px; PADDING-TOP: 18px; FONT-STYLE: italic
+}
+DIV.topimage {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 16px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 16px; PADDING-TOP: 8px
+}
+DIV.topstory {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 16px; PADDING-TOP: 0px
+}
+DIV.cartoon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; TEXT-ALIGN: center
+}
+DIV.contributors {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 32px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; PADDING-TOP: 6px
+}
+DIV.store {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+P.descender:first-letter {
+	FONT-SIZE: 2em; TEXT-ALIGN: left
+}
+P.quote {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.question {
+	FONT-WEIGHT: 700
+}
+P.introduction {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.answer {
+	
+}
+P.information {
+	
+}
+SPAN.date {
+	COLOR: rgb(255,255,255)
+}
+SPAN.bold {
+	FONT-WEIGHT: 700
+}
+SPAN.subtitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.9em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+SPAN.italic {
+	FONT-STYLE: italic
+}
+SPAN.cartoon {
+	FONT-STYLE: italic
+}
+SPAN.opening {
+	FONT-SIZE: 0.9em
+}
+SPAN.uppercase {
+	TEXT-TRANSFORM: uppercase
+}
+SPAN.smallcaps {
+	FONT-SIZE: 0.8em; TEXT-TRANSFORM: uppercase
+}
+#magazine {
+	LEFT: 99px; VISIBILITY: hidden; POSITION: absolute; TOP: 135px
+}
+#goat {
+	LEFT: 99px; VISIBILITY: hidden; POSITION: absolute; TOP: 190px
+}
+#talk {
+	LEFT: 99px; VISIBILITY: hidden; POSITION: absolute; TOP: 225px
+}
+#critics {
+	LEFT: 99px; VISIBILITY: hidden; POSITION: absolute; TOP: 255px
+}
+#cartoons {
+	LEFT: 99px; VISIBILITY: hidden; POSITION: absolute; TOP: 370px
+}

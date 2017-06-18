@@ -1,0 +1,15 @@
+Philosophical_Field
+	Basic_Philosophical_Field
+		Geography_Philosophical_Field
+			Ethnic_Philosophical_Field
+			Geographical_Area_Philosophical_Field
+			Religion_Philosophical_Field
+		Time_Philosophical_Field
+		Topic_Philosophical_Field
+	Mixed_Philosophical_Field
+		Once_Mixed_Philosophical_Field
+			Geography_Topic_Philosophical_Field
+			Time_Geography_Philosophical_Field
+			Time_Topic_Philosophical_Field
+		Twice_Mixed_Field
+			Time_Geography_Topic_Philosophical_Field

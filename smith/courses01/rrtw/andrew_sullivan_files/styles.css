@@ -1,0 +1,24 @@
+A.infoLinks {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #e1e1e1; FONT-FAMILY: arial,helvetica
+}
+A.hitsLinks {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #d3d39c; FONT-FAMILY: arial,helvetica
+}
+A.articleLinks {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #e1e1e1; FONT-FAMILY: arial,helvetica
+}
+SPAN.articleSubText {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #d3d39c; FONT-FAMILY: arial,helvetica
+}
+SPAN.articleDate {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #d3d39c; FONT-FAMILY: arial,helvetica
+}
+SPAN.copyright {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #cccccc; FONT-FAMILY: arial,helvetica
+}
+SPAN.articleBodyHeadline {
+	FONT-WEIGHT: normal; FONT-SIZE: 16pt; COLOR: #ffffff; FONT-FAMILY: arial,helvetica
+}
+SPAN.articleBodyText {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: arial,helvetica
+}

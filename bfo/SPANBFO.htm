@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>SPANBFO</title>
+  <META NAME="Titel" CONTENT="MedO">
+  <META NAME="Thema" CONTENT="">
+  <META NAME="Autor" CONTENT="bsmith">
+  <META NAME="Manager" CONTENT="">
+  <META NAME="Firma" CONTENT="IFOMIS Uni Leipzig">
+  <META NAME="Kategorie" CONTENT="">
+  <META NAME="Schlüsselwörter" CONTENT="">
+  <META NAME="Beschreibung" CONTENT="">
+
+<script>
+<!--
+var appVer = navigator.appVersion;
+var msie = appVer.indexOf( "MSIE " );
+var msieWin31 = (appVer.indexOf( "Windows 3.1" ) >= 0)
+var isMac = (appVer.indexOf("Macintosh") >= 0);
+var ver = 0;
+
+if( msie >= 0 )
+	ver = parseFloat(appVer.substring(msie + 5, appVer.indexOf(";", msie)));
+else
+	ver = parseInt(appVer);
+
+var loadPage = true;
+
+if ( !(!msieWin31 && ((msie >= 0 && ver >= 4.0) || (msie < 0 && ver >= 4))) )
+{
+	if (window.confirm("Ihr Browser unterstützt nicht alle Features, die für diese Webseite erforderlich sind. Möchten Sie die Seite trotzdem laden?"))
+		window.location.href = "SPANBFO_dateien/SPANBFO_gif_1.htm";
+
+	loadPage = false;
+}
+
+if ( loadPage )
+{
+	if( msie >= 0 && ( (isMac && ver>=5) || (!isMac && ver>=4) ) )
+		window.location.replace("SPANBFO_dateien/SPANBFO_frames.htm");
+	else
+	{
+		if ( !msieWin31 && ((msie >= 0 && ver >= 3.02) || (msie < 0 && ver >= 3)) )
+			window.location.replace("SPANBFO_dateien/SPANBFO_frames.htm");
+		else
+			window.location.href = "SPANBFO_dateien/SPANBFO_frames.htm";
+	}
+}
+//-->
+</script>
+</head>
+
+<frameset>
+ <noframes>
+  <body>
+  <p>Diese Seite erfordert einen Browser, der Frames unterstützt. Ihr aktueller Browser unterstützt keine Frames.</p>
+  </body>
+ </noframes>
+</frameset>
+</html>
+

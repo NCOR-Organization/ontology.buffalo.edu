@@ -1,0 +1,54 @@
+A {
+	COLOR: #3366cc
+}
+A:hover {
+	COLOR: #cc3333
+}
+A.footer {
+	FONT-SIZE: 12px; COLOR: #516caf; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.menu {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.menu:hover {
+	COLOR: #ffff00
+}
+SPAN.head {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+SPAN.deck {
+	FONT-STYLE: italic
+}
+SPAN.caption {
+	FONT-SIZE: 10px
+}
+P {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+BLOCKQUOTE {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+LI {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+TABLE {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+P.footer {
+	FONT-SIZE: 12px; COLOR: #516caf; TEXT-DECORATION: none
+}
+.small {
+	FONT-SIZE: 10px
+}
+SPAN.toc {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #000000; FONT-FAMILY: times,palatino
+}
+SPAN.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px
+}
+SPAN.red {
+	COLOR: red
+}

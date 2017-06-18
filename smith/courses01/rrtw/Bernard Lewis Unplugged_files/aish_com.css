@@ -1,0 +1,129 @@
+BODY {
+	COLOR: #000000; FONT-FAMILY: 'Trebuchet MS', Arial, Helvetica
+}
+.issuesNavBar {
+	FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: Verdana, Arial
+}
+.familyNavBar {
+	FONT-SIZE: 10px; COLOR: #663399; FONT-FAMILY: Verdana, Arial
+}
+.datingNavBar {
+	FONT-SIZE: 10px; COLOR: #ff3300; FONT-FAMILY: Verdana, Arial
+}
+.spiritualityNavBar {
+	FONT-SIZE: 10px; COLOR: #663300; FONT-FAMILY: Verdana, Arial
+}
+.holocaustStudiesNavBar {
+	FONT-SIZE: 10px; COLOR: #663300; FONT-FAMILY: Verdana, Arial
+}
+.askTheRabbiNavBar {
+	FONT-SIZE: 10px; COLOR: #000033; FONT-FAMILY: Verdana, Arial
+}
+.weeklyTorahPortionNavBar {
+	FONT-SIZE: 10px; COLOR: #000033; FONT-FAMILY: Verdana, Arial
+}
+.holidaysNavBar {
+	FONT-SIZE: 10px; COLOR: #0065ce; FONT-FAMILY: Verdana, Arial
+}
+.onlineSeminarsNavBar {
+	FONT-SIZE: 10px; COLOR: #000033; FONT-FAMILY: Verdana, Arial
+}
+.wallCameraNavBar {
+	FONT-SIZE: 10px; COLOR: #0065ce; FONT-FAMILY: Verdana, Arial
+}
+.programsInIsraelNavBar {
+	FONT-SIZE: 10px; COLOR: #000033; FONT-FAMILY: Verdana, Arial
+}
+.aboutAishIntlNavBar {
+	FONT-SIZE: 10px; COLOR: #0065ce; FONT-FAMILY: Verdana, Arial
+}
+.emailListsNavBar {
+	FONT-SIZE: 10px; COLOR: #0065ce; FONT-FAMILY: Verdana, Arial
+}
+.lightGrayNavBar {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #99ccff; TEXT-DECORATION: none
+}
+.NavBar {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial
+}
+.darkGrayNavBar {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #003399; TEXT-DECORATION: none
+}
+.jewishLiteracyNavBar {
+	FONT-SIZE: 10px; COLOR: #006600; FONT-FAMILY: Verdana, Arial
+}
+.NavBar A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.NavBar A:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.NavBar A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.lightGrayNavBar A:link {
+	COLOR: #000000; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.lightGrayNavBar A:active {
+	COLOR: #000000; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.lightGrayNavBar A:visited {
+	COLOR: #000000; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.darkGrayNavBar A:active {
+	COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.darkGrayNavBar A:link {
+	COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.darkGrayNavBar A:visited {
+	COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.darkGrayNavBar A:hover {
+	COLOR: #ff0000
+}
+.lightGrayNavBar A:hover {
+	COLOR: #ff0000
+}
+.NavBar A:hover {
+	COLOR: #ff0000
+}
+.tenpt {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.eightpt {
+	FONT-SIZE: 8pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.twelvept {
+	FONT-SIZE: 12pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.orange {
+	FONT-SIZE: 8pt; COLOR: #cc3300
+}
+.ninept {
+	FONT-SIZE: 9pt; FONT-FAMILY: Arial, Helvetica, Sans-Serif
+}
+.NewHomeTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #cc3300; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.mission {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial, Verdana
+}
+.tenpx {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, helvetica, san-serif
+}
+.Independence {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: none
+}
+.jewishissuesNavBar {
+	FONT-SIZE: 11px; COLOR: #339999; FONT-FAMILY: Arial, Verdana
+}
+.twelvepx {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana, helvetica, Arial, Sans-Serif
+}
+.ArticleText {
+	FONT-SIZE: 16px; COLOR: black; FONT-FAMILY: Arial, Verdana, Helvetica
+}

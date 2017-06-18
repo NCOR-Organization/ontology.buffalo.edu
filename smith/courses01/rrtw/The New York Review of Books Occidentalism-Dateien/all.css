@@ -1,0 +1,72 @@
+HR {
+	COLOR: #666; HEIGHT: 1px
+}
+LI {
+	LIST-STYLE-TYPE: square
+}
+.grey-background {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ddd
+}
+.green-background {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN-RIGHT: 10px; PADDING-TOP: 2px; BACKGROUND-COLOR: #9c9
+}
+.orange-background {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN-RIGHT: 10px; PADDING-TOP: 2px; BACKGROUND-COLOR: #f90
+}
+.grey-border {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #666 1px solid; BACKGROUND-COLOR: #ddd
+}
+A:visited {
+	COLOR: #999
+}
+.nav {
+	FONT-SIZE: small; FONT-FAMILY: Helvetica, Arial, Verdana, sans-serif
+}
+.footer {
+	FONT-SIZE: small; FONT-FAMILY: Helvetica, Arial, Verdana, sans-serif
+}
+.menu {
+	FONT-SIZE: small; FONT-FAMILY: Helvetica, Arial, Verdana, sans-serif
+}
+.menu A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.nav A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.footer A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+.menu A:hover {
+	COLOR: #00f; TEXT-DECORATION: underline
+}
+.nav A:hover {
+	COLOR: #00f; TEXT-DECORATION: underline
+}
+.footer A:hover {
+	COLOR: #00f; TEXT-DECORATION: underline
+}
+.nav-nyrb {
+	FONT-SIZE: 0.75em
+}
+A.nav-nyrb {
+	FONT-WEIGHT: bold; COLOR: #369; TEXT-DECORATION: none
+}
+A.subs {
+	COLOR: #000
+}
+.price {
+	COLOR: #c30
+}
+.bn-link {
+	COLOR: #600
+}
+.message-subject {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #666 1px solid; BACKGROUND-COLOR: #ccc
+}
+.message-byline {
+	MARGIN-TOP: 0px; TEXT-ALIGN: right
+}
+.ipl {
+	MARGIN-BOTTOM: 0px; COLOR: #603
+}

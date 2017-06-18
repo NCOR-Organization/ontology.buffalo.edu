@@ -1,0 +1,429 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="WordPerfect 9">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (Win98; U) [Netscape]">
+   <meta name="Author" content="Barry Smith">
+   <title>Ontology: Philosophical and Computational</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>&nbsp;
+<center>
+<p><b><font size=+2>Ontology: Philosophical and Computational</font></b>
+<p><font size=+1>Barry Smith</font></center>
+
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>Draft: September 28, 1999</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<b>Philosophical Ontology</b>
+<br>Ontology as a branch of philosophy is the science of what is, of the
+kinds and structures of the objects, properties and relations in every
+area of reality. 'Ontology' in this sense is often used in such a way as
+to be synonymous with 'metaphysics'. In simple terms it seeks the classification
+of entities. Each scientific field will of course have its own preferred
+ontology, defined by the field's vocabulary and by the canonical formulations
+of its theories. Traditional (philosophical) ontologists have tended to
+model themselves on these scientific ontologies, either by producing theories
+which are like scientific theories but radically more general than these,
+or by producing theories which represent a regimentation of scientific
+theories or a clarification of their foundations. Philosophical ontologists
+have more recently begun to concern themselves not only with the world
+as this is studied by the sciences, but also with domains of practical
+activity such as law, medicine, engineering, commerce. They seek to apply
+the tools of philosophical ontology in order to solve problems which arise
+in these domains.
+<br>&nbsp;
+<p><b>Ontology and Information Systems</b>
+<br>In the field of information processing there arises what we might call
+the Tower of Babel problem. Different groups of data-gatherers have their
+own idiosyncratic terms and concepts in terms of which they represent the
+information they receive. When the attempt is made to put this information
+together, methods must be found to resolve terminological and conceptual
+incompatibilities. Initially, such incompatibilities were resolved on a
+case-by-case basis. Gradually, however, it was realized that the provision,
+once and for all, of a 'concise and unambiguous description of principal,
+relevant entities of an application domain and their potential relations
+to each other' (Schulze-Kremer 1997) would provide significant advantages
+over the case-by-case resolution of incompatibilities.<sup><a href="#N_1_">
+(1)</a></sup>
+<p>This is because each group of data-gatherers would then need to perform
+the task of making its terms and concepts compatible with those of other
+such groups only once: by calibrating its results in the terms of the single
+canonical description. The term 'ontology' is used by information scientists
+to refer precisely to a canonical description of this sort or to an associated
+classificatory theory. An ontology is a neutral and computationally tractable
+description or theory of a given domain which can be accepted and reused
+by all information gatherers in that domain.
+<br>&nbsp;
+<p><b>Uses of Ontology</b>
+<br>We can distinguish the following broad areas in which ontological methods
+are currently being used in the way described:<sup><a href="#N_2_"> (2)</a></sup>
+<blockquote>
+<li>
+<i>Knowledge engineering, knowledge representation, knowledge management,
+knowledge sharing, knowledge integration. </i>Consider for example the
+Knowledge Interchange Format (KIF) developed by Mike Genesereth and associates
+(Genesereth 1991), and the language developed Ontolingua on the basis of
+KIF by Tom Gruber and his associates (Gruber 1995). KIF is designed as
+a
+framework for the interchange of knowledge among disparate programs and
+which comprehends modules designed to allow the representation of, for
+example, mathematical and physical information. The Ontolingua, the KIF
+translation language, is used as a working tool for the construction of
+medical ontologies, for example by the Ontology group of the Medical Informatics
+Unit in Rome.</li>
+
+<li>
+<i>Information retrieval and extraction. </i>Consider for example the problem
+of internet navigation, a problem which turns not least on the immense
+diversity of sources from which internet content is derived. Here a common
+ontology can in principle provide a means to tame this diversity in a way
+which would involve not only producers but also the consumers of on-line
+information (Guarino, Masolo and Vetere 1999).</li>
+
+<li>
+<i>Natural language translation. </i>One goal of applied information systems
+ontology is the provision of an Interlingua, a common target language for
+natural language translation which would alleviate the need to construct
+ad hoc translators for each pair of natural languages by constructing for
+each such language a single translator into the common target. Thus for
+example the Semantic Networks Research Group (SNeRG) of the University
+at Buffalo tackles the problem of natural language understanding via the
+development of a computational agent that can perform common-sense reasoning.
+(Rapaport, Shapiro and Wiebe, J. M. 1997)</li>
+
+<li>
+<i>Database design, conceptual modeling, information systems design, information
+systems integration. </i>The Tower of Babel problem arises above all in
+the realm of database construction. In constructing software tools for
+merging large databases, it has proved fruitful to develop common ontologies
+in terms of which divergent bodies of data derived from different sources
+can be unified together into a single system. In any given field there
+is characteristically a wide variety of databases using their own categories
+for storing data objects. Different databases may use identical labels
+but with different meanings; alternatively the same meaning may be expressed
+via different names. Here again, ontologies are used to resolve these problems
+by supplying a single explicit specification of the meanings and relations
+involved in given application domains. If all databases are capable of
+being calibrated in terms of a single ontology (a single consistent set
+of category labels) then the prospect arises of leveraging the thousands
+of person-years of effort that has been invested in creating separate database
+resources in such a way as to create, in more or less automatic fashion,
+integrated knowledge bases of a scale hitherto unimagined. On the other
+hand, the obstacles standing in the way of the construction of such a single
+ontology can be prodigious also. Consider the task of establishing a common
+ontology which would provide a neutral and common framework for all descriptions
+of historical facts (a common ontology for world history).</li>
+
+<li>
+<i>Enterprise integration. </i>Consider a large international banking corporation
+with subsidiaries in different countries throughout the world. The corporation
+seeks to integrate the information systems within its separate parts, to
+make them intercommunicable. Here again a common ontology is needed in
+order to provide a common framework of communication, and the provision
+of such a common ontology is by no means an easy task, given that the objects
+in the realms of finance, credit, securities, collateral and so on are
+structured and partitioned in different ways in different cultures. (Smith
+and Zaibert 1997) Or consider the work of the firm Ontek - short for 'ontological
+technology' - of Laguna Beach, California, which employs ontologists in
+the design of software systems to serve as 'white color robots' for the
+performance of administrative tasks involved in the running of repair shops
+for large aircraft maintenance. Such systems require ontologies embracing
+within a single framework not only aircraft parts and functions, but also
+the raw-materials and processes involved in repair, the times these processes
+and sub-processes take, job-shop space and equipment, an array of different
+types of personnel, as well as counterparts of the costs and other economic
+properties of all of these entities, including costs of transport, storage,
+and much much more.</li>
+
+<li>
+<i>Military applications. </i>Consider the problems which arise when military
+units from different armies need to be integrated together into a single
+force, or when militarily relevant information from different regional
+and international sources needs to be coded within a single framework for
+purposes of tactical or strategic planning or of risk evaluation. Consider
+the problems which arise when cartographic data from different sources
+needs to be integrated within a single automated system for missile targeting
+or other purposes.</li>
+
+<br>&nbsp;</blockquote>
+<b>Meanings of 'Ontology'</b>
+<br>There is a certain tension between the philosophical understanding
+of the term 'ontology' and the use of the term that is proliferating through
+the information-processing world. For the philosopher, ontology is a theoretical
+enterprise whose content remains the same independently of the language
+which is used to express it. In the world of information systems, in contrast,
+an ontology is a software artifact designed with a specific use and computational
+environment in mind. Thus also it is constituted by a specific vocabulary
+and programming environment. Moreover, the theoretical concerns of philosopher-ontologists
+imply that they are attempting, in principle at least, to establish the
+truth about the domain in question. The concerns of the ontological engineers
+in the world of information systems, in contrast, lead to a neglect of
+the standard of truth in favour of other, putatively more practical standards,
+such as computational tractability. Again, philosopher-ontologists are
+distinguished from ontological engineers by the fact that the former are
+concerned with the things themselves (the objects, properties and relations,
+the states, events and processes) within a given domain; the latter, in
+contrast, are concerned much rather with languages, descriptions, or concepts,
+and with software representations constructed in relation to a given domain,
+or with representations in people's heads.
+<p>A compromise position is provided by recent attempts to use ontological
+methods derived from information science as a basis for the regimentation
+of scientific knowledge in fields such as medicine, anatomy, genetics,
+or pharmacology. The different branches of biology have long been afflicted
+by nomenclature wars, and different communities of biologists use idiosyncratic
+terms and concepts for representing biological information. The term 'gene',
+for example, is associated with different meanings in the major international
+genomic databases. The construction of ontologies in such fields can force
+researchers to reconcile their different frameworks by requiring explicit
+specifications of the meanings of fundamental concepts in a common vocabulary.
+The methods employed for the construction of this common vocabulary and
+for the formulation of appropriate translation rules will then be not only
+those derived from biology proper, and from the software engineering world
+of information systems, but also recognizably philosophical methods derived
+from more traditional metaphysical concerns (methods illustrated for example
+in the literature on the ontology of biological species).
+<br>&nbsp;
+<p><b>The Closed World Assumption</b>
+<br>Ontology has been used by governments, for example in the design and
+construction of new computerized systems of land registration in the post-communist
+countries of Eastern Europe. Andrew Frank has distinguished in this connection
+two types of ontology in the information systems domain. On the one hand
+there are ontologies built to represent pre-existing aspects of reality.
+Such
+an ontology must reflect observable properties of the relevant portions
+of reality and there must obtain substantial and systematic correlations
+between reality and the model of reality which the ontology implies. On
+the other hand there are <i>administrative information systems </i>where
+there is no reality other than the one created through the system itself,
+so that the system is, by definition, correct. Stock examples are provided
+within the world of banking, 'where the only operations possible are the
+ones built into the program and there is no attempt to model connections
+to an independently existing external reality. The definition of a client
+of a bank is "a person listed in the database of bank clients".' (Frank
+1997) In such circumstances the ontologist can take advantage of a closed
+world assumption (which is required, for example, in the construction of
+a database query language). Without the closed world assumption, the ontologist's
+job becomes harder and one obvious consequence of modeling an exterior
+reality is that the closed world assumption is not valid any more.'
+<br>&nbsp;
+<p><b>Endnotes</b>
+<p><a NAME="N_1_"></a>1. Ontological engineering of this sort was pioneered
+by Tom Gruber and his colleagues on the Knowledge Interchange Project in
+Stanford. It is represented in Italy by Nicola Guarino and his co-workers
+at LADSEB-CNR in Padua.
+<p><a NAME="N_2_"></a>2. See Guarino 1998 for a recent overview of the
+role of ontologies in computer science.
+<br>&nbsp;
+<br>&nbsp;
+<p><span STYLE="font-family: Times New Roman"><b>Literature</b></span>
+<p><span STYLE="font-family: Times New Roman">Ashenhurst, R. L. 1996 "Ontological
+Aspects of Information Modelling", <i>Minds and Machines</i>, 6, 287-394.</span>
+<p><span STYLE="font-family: Times New Roman">Bateman, John A. 1995 "On
+the Relatioship between Ontology Construction and Natural Language: A Socio-Semiotic
+View", <i>International Journal of Human-Computer Studies</i>, 43, 929-44.</span>
+<p><span STYLE="font-family: Times New Roman">Benjamins, V. R. and Fensel,
+D. 1998 "The Ontological Engineering Initiative (KA)<sup>2</sup>", in N.
+Guarino (ed.) <i>Formal Ontology in Information Systems</i>, IOS Press.</span>
+<p><span STYLE="font-family: Times New Roman">Byckling, Eero 1993 "Formal
+Methods in Philosophy", in R. Casati and G. White, eds., <i>Philosophy
+and the Cognitive Sciences</i>, Kirchberg: The Austrian Ludwig Wittgenstein
+Society, 81-87.</span>
+<p><span STYLE="font-family: Times New Roman">Casati, Roberto and Varzi,
+Achille C. 1994 <i>Holes and Other Superficialities</i>, Cambridge, Mass.:
+MIT Press.</span>
+<p><span STYLE="font-family: Times New Roman">Cheng, Tao and Molenaar,
+Martien 1998 "A Process-Oriented Spatio-Temporal Data Model to Support
+Physical Environmental Modeling", <i>SDH '98. Proceedings of the 8th International
+Symposium on Spatial Data Handling, </i>T. K. Poiker and N. Chrisman, eds.,
+Vancouver: International Geographic Union, 418-430.</span>
+<p><span STYLE="font-family: Times New Roman">Cohn, A. G. 1997 "Qualitative
+Spatial Representation and Reasoning Techniques", in G. Brewka,
+<i>et al.
+</i>(eds.),
+<i>Proceedings
+of KI-97 </i>(Lecture Notes in Artificial Intelligence), Berlin: Springer
+Verlag, 1-30<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Cohn, A. G.<i>, </i>Bennett,
+B., Gooday, J. and Gotts, N. M. 1997 "Qualitative Spatial Representation
+and Reasoning with the Reason Connection Calculus", <i>Geoinformatica</i>,
+1, 1-44<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Cohn, A. G. and Varzi, Achille
+C. 1998 "Connection Relations in Mereotopology", ECAI98. Proceedings of
+the 13th European Conference on Artificial Intelligence, Henri Prade (ed.),
+London and New York: John Wiley &amp; Sons, Ltd., 150-54.</span>
+<p><span STYLE="font-family: Times New Roman">Cohn, A. G., Bennett, B.,
+Gooday, J. and Gotts, N. M. 1997 "Representing and Reasoning with Qualitative
+Spatial Relations about Regions", in Stock, Oliviero (ed.), 1997, <i>Spatial
+and Temporal Reasoning</i>, Dodrecht/Boston/London: Kluwer, 97-134.</span>
+<p><span STYLE="font-family: Times New Roman">Dahlgren, Kathleen 1995 "A
+Linguistic Ontology", <i>International Journal of Human-Computer Studies</i>,
+43, 809-818.</span>
+<p><span STYLE="font-family: Times New Roman">Frank, A.U. 1997 "Spatial
+Ontology: A Geographical Point of View", in: <i>Spatial and Temporal Reasoning,
+</i>O.
+Stock (ed.), Dordrecht: Kluwer Academic Publishers, 135-153.</span>
+<p><span STYLE="font-family: Times New Roman">Gangemi, A., Pisanelli, D.,
+and Steve, G. 1998 "Ontology Alignment: Experiences With Medical Terminologies",
+in N. Guarino (ed.) <i>Formal Ontology in Information Systems</i>, IOS
+Press.</span>
+<p><span STYLE="font-family: Times New Roman">Genesereth, M. R. and Fikes,
+R. 1991. Knowledge Interchange Format, Version 3.0 Reference Manual. Computer
+Science Department, Stanford University, June 1991.</span>
+<p><span STYLE="font-family: Times New Roman">Grassl, Wolfgang 1999 "The
+Reality of Brands: Towards an Ontology of Marketing", <i>American Journal
+of Economics and Sociology</i>, 58, 313-359.</span>
+<p><span STYLE="font-family: Times New Roman">Gruber, T. R. 1993 "A Translation
+Approach to Portable Ontology Specifications", <i>Knowledge Acquisition</i>,
+5, 199-220.</span>
+<p><span STYLE="font-family: Times New Roman">Gruber, T. R. 1995 "Toward
+Principles for the Design of Ontologies Used for Knowledge Sharing",
+<i>International
+Journal of Human and Computer Studies</i>, 43(5/6), 907-928.</span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola 1992 "Concepts,
+Attributes and Arbitrary Relations. Some Linguistic and Ontological Criteria
+for Structuring Knowledge Bases", <i>Data and Knowledge Engineering</i>,
+8, 249-261<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola 1994 "The
+Ontological Level", in R. Casati, B. Smith and G. White (eds.),
+<i>Philosophy
+and the Cognitive Sciences</i>, Vienna: H&ouml;lder-Pichler-Tempsky, 443-456<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola 1995 "Formal
+Ontology, Conceptual Analysis and Knowledge Representation",
+<i>International
+Journal of Human-Computer Studies</i>, 43, 625-640<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola 1998 "Formal
+Ontology and Information Systems", in Guarino (ed.), 3-15.</span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola (ed.) 1998
+<i>Formal
+Ontology in Information Systems</i> Amsterdam, Berlin, Oxford, Tokyo, Washington,
+DC: IOS Press (Frontiers in Artificial Intelligence and Applications),
+1998.</span>
+<p><span STYLE="font-family: Times New Roman">Guarino, N., Masolo, C.,
+and Vetere, G. 1999 "OntoSeek: Using Large Linguistic Ontologies for Accessing
+On-Line Yellow Pages and Product Catalogs", <i>IEEE Intelligent Systems</i>,
+May/June, 70-80.</span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola and Boldrin,
+Luca 1992 "Concepts and Relations", LADSEB-CNR Reports, 1/92 (Padua)<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Guarino, Nicola, Carrara,
+Massimiliano and Giaretta, Pierdaniele (forthcoming) "An Ontology of Meta-Level
+Categories", in J. Doyle, E. Sandewall and P. Torasso (eds.), <i>Principles
+of Knowledge Representation and Reasoning: Proceedings of the Fourth International
+Conference (KR94)</i>, San Mateo, CA: Morgan Kaufmann.</span>
+<p><span STYLE="font-family: Times New Roman">Hornsby, Kathleen and Egenhofer,
+Max 1997 "Qualitative Representation of Change", in Hirtle, Stephen C.
+and Frank, Andrew U. (eds.), <i>Spatial Information Theory. A Theoretical
+Basis for GIS (International Conference COSIT '97</i>, <i>Laurel Highlands,
+Pennsylvania</i>, <i>October 1997)</i>, Springer Lecture Notes in Computer
+Science 1329, 15-33<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Hornsby, Kathleen and Egenhofer,
+Max 1998 "Identity-Based Change Operations for Composite Objects", <i>SDH
+'98. Proceedings of the 8th International Symposium on Spatial Data Handling,
+</i>T.
+K. Poiker and N. Chrisman, eds., Vancouver: International Geographic Union,
+202-213<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Koepsell, David R. 1999 "Introduction
+to Applied Ontology",<i> </i>in Koepsell (ed.),&nbsp;</span>
+<p><span STYLE="font-family: Times New Roman"></span><span STYLE="font-family: Times New Roman">Koepsell,
+David (ed.) 1999 <i>Invited Symposium on Applied Ontology in the Social
+Sciences</i>, <i>The American Journal of Economics and Sociology</i>, 58:
+2.&nbsp;</span>
+<p><span STYLE="font-family: Times New Roman">Mark, David, Barry Smith
+and Barbara Tversky "Ontology and Geographic Objects: An Empirical Study
+of Cognitive Categorization," forthcoming in C. Freksa, ed., <i>Spatial
+Information Theory. International Conference COSIT '99 </i>(Springer Lecture
+Notes in Computer Science).</span>
+<p><span STYLE="font-family: Times New Roman">Rapaport, W. J., Shapiro,
+S. C., and Wiebe, J. M. 1997 "Quasi-indexicals and knowledge reports",
+<i>CognitiveScience</i>,
+21, 63-107.</span>
+<p><span STYLE="font-family: Times New Roman">Rossi Mori, A., Gangemi,
+A., Steve, G., Consorti, F., Galeazzi, E. 1997 "An Ontological Analysis
+of Surgical Deeds",<i> </i>in<i>,</i> C. Garbay, <i>et al.</i> (eds), <i>Proceedings
+of Artificial Intelligence in Europe AIME '97</i>, Berlin: Spinger Verlag.</span>
+<p><span STYLE="font-family: Times New Roman">Schulze-Kremer, Steffen 1997
+"Adding Semantics to Genome Databases: Towards an Ontology for Molecular
+Biology", in <i>Proceedings of the Fifth International Conference on Intelligent
+Systems for Molecular Biology,</i> T. Gaasterland, <i>et al.</i> (eds.),
+Halkidiki, Greece, June 1997, http://www.aaai.org/Press/Proceedings/ISMB/1997/Abstracts/schulze-kremer.html.</span>
+<p><span STYLE="font-family: Times New Roman">Searle, John R. <i>The Construction
+of Social Reality</i></span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry 1995 "More Things
+in Heaven and Earth", <i>Grazer Philosophische Studien</i>, 50 (1995),
+187-201.</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry 1995a "The Structures
+of the Commonsense World", <i>Acta Philosophica Fennica</i>, 58, 1995,
+290-317.</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry 1996 "Mereotopology:
+A Theory of Parts and Boundaries", <i>Data and Knowledge Engineering</i>,
+20, 287-303.</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry 1997 "On Substances,
+Accidents and Universals: In Defence of a Constituent Ontology", <i>Philosophical
+Papers</i>, 26, 105-127</span><span STYLE="font-family: Times New Roman"></span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry (forthcoming)&nbsp;</span><span STYLE="font-family: Times New Roman">"Agglomerations,"
+forthcoming in C. Freksa, ed., <i>Spatial Information Theory. International
+Conference COSIT '99 </i>(Springer Lecture Notes in Computer Science).</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry "Surrounding
+Space: Principles of Topological Ecology", forthcoming in U. Meixner and
+P. M. Simons, eds., <i>Metaphysics in an Unmetaphysical Age. Proceedings
+of the 22nd International Ludwig Wittgenstein Symposium</i>, Vienna: H&ouml;lder-Pichler-Tempsky.</span><span STYLE="font-family: Times New Roman"></span>
+<p><span STYLE="font-family: Times New Roman"></span><span STYLE="font-family: Times New Roman">Smith,
+Barry (forthcoming) "Objects and Their Environments: From Aristotle to
+Ecological Psychology", in Andrew Frank (ed.), <i>The Life and Motion of
+Socioeconomic Units</i>, London: Taylor and Francis, forthcoming</span>
+<p><span STYLE="font-family: Times New Roman"></span><span STYLE="font-family: Times New Roman">Smith,
+Barry and David Mark 1999 "Ontology with Human Subjects Testing: An Empirical
+Investigation of Geographic Categories", <i>American Journal of Economics
+and Sociology</i>, 58: 2, April 1999, 245-272.&nbsp;</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry and Achille
+Varzi, "The Formal Structure of Ecological Contexts", forthcoming in
+<i>Proceedings
+of Context '99</i>, Lecture Notes on Artificial Intelligence, Berlin/Heidelberg/New
+York, etc.: Springer-Verlag.</span>
+<p><span STYLE="font-family: Times New Roman">Smith, Barry and Zaibert,
+Leonardo 1997 "The Metaphysics of Real Estate", http://wings.buffalo.edu/philosophy/faculty/smith/articles/lz.htm.</span>
+<p><span STYLE="font-family: Times New Roman">Stock, Oliviero (ed.) 1997
+<i>Spatial
+and Temporal Reasoning</i>, Dordrecht: Kluwer.</span>
+<p><span STYLE="font-family: Times New Roman">Uschold, M., King, M., Moralee,
+S., and Zorgios, Y. (to appear) "The Enterprise Ontology", <i>The Knowledge
+Engineering Review.</i></span>
+<p><span STYLE="font-family: Times New Roman">Wand, Y. and Weber, R. 1990
+"An Ontological Model of an Information System", <i>IEEE Transactions on
+Software Engineering</i>, 16(11), 1282-1292.</span>
+<p><span STYLE="font-family: Times New Roman">Varzi, Achille 1993 "Spatial
+Reasoning in a Holey World", in P. Torasso, eds., <i>Advances in Artificial
+Intelligence</i>, Berlin/New York: Springer, 326-336.</span>
+<p><span STYLE="font-family: Times New Roman">Varzi, Achille C. 1994 "On
+the Boundary between Mereology and Topology", in R. Casati, B. Smith and
+G. White (eds.), <i>Philosophy and the Cognitive Sciences</i>, Vienna:
+H&ouml;lder-Pichler-Tempsky, 423-442.</span>
+<p><span STYLE="font-family: Times New Roman">Varzi, Achille C. 1996 "Parts,
+Wholes and Part-Whole Relations: The Prospects of Mereotopology", <i>Data
+and Knowledge Engineering, </i>20, 259-286<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Varzi, Achille C. 1996a "Reasoning
+About Space: The Hole Story", <i>Logic and Logical Philosophy, </i>4, 3-39.</span>
+<p><span STYLE="font-family: Times New Roman">Varzi, Achille C. 1997 "Boundaries,
+Continuity, and Contact", <i>No&ucirc;s</i>, 31:1, 26-58<i>.</i></span>
+<p><span STYLE="font-family: Times New Roman">Vieu, Laure 1997 "Spatial
+Representation and Reasoning in Artificial Intelligence", in Stock, Oliviero
+(ed.), 1997, <i>Spatial and Temporal Reasoning</i>, Dodrecht/Boston/London:
+Kluwer, 5-41.</span>
+<p><span STYLE="font-family: Times New Roman">Visser, P.R.S. and Bench-Capon,
+T.J.M. 1998 "A Comparison of Four Ontologies for the Design of Legal Knowledge
+Systems", <i>Artificial Intelligence and Law</i>, 6 (1), 27-57.&nbsp;</span>
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+P {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+TH {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+BLOCKQUOTE {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+UL {
+	LIST-STYLE-TYPE: square
+}
+.AgendaH3 {
+	FONT-SIZE: 12pt; COLOR: #9d7b75; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Author {
+	FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.AuthorAddress {
+	FONT-SIZE: 8pt; MARGIN-LEFT: 50px; LINE-HEIGHT: 10pt; FONT-STYLE: italic; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.AuthorName {
+	FONT-SIZE: 12pt; MARGIN-BOTTOM: 2pt; COLOR: #ffb643; LINE-HEIGHT: 13pt; FONT-STYLE: italic; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.AuthorText {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 4pt; MARGIN-LEFT: 15px; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.AuthorPublication {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Button {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarDates {
+	FONT-SIZE: 10pt; MARGIN-LEFT: 20px; LINE-HEIGHT: 14pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarInst {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarLink {
+	MARGIN-TOP: 7px; FONT-SIZE: 10pt; MARGIN-LEFT: 35px; LINE-HEIGHT: 16pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarMarg {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 15pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarSubtitle {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarTheme {
+	MARGIN-TOP: 7px; FONT-SIZE: 8pt; MARGIN-LEFT: 20px; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarTitle {
+	FONT-SIZE: 12pt; COLOR: #9d7b75; LINE-HEIGHT: 16pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.CalendarType {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 13pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ContentLink {
+	FONT-SIZE: 9pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.eVTitle {
+	FONT-SIZE: 24pt; COLOR: #e6dfd5; LINE-HEIGHT: 28pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.FirstLetter {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt
+}
+.Footer {
+	FONT-SIZE: 8pt; COLOR: #000000; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.FormInput {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ForumMessage {
+	FONT-SIZE: 10pt; COLOR: #1d2179; FONT-FAMILY: Courier New,Courier
+}
+.ForumRef {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ForumTitle {
+	FONT-SIZE: 15pt; LINE-HEIGHT: 18pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.H1 {
+	FONT-SIZE: 18pt; COLOR: #808080; LINE-HEIGHT: 22pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.H2 {
+	FONT-SIZE: 15pt; COLOR: #808080; LINE-HEIGHT: 18pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.H3 {
+	FONT-SIZE: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Language {
+	FONT-SIZE: 8pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.LeftMargin {
+	FONT-SIZE: 9pt; MARGIN-LEFT: 14px; COLOR: #000000; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.LeftMargin2 {
+	MARGIN-LEFT: 14px
+}
+.LeftMargin3 {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 25px
+}
+.LiteratureH3 {
+	FONT-SIZE: 12pt; COLOR: #9d7b75; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.LiteratureText {
+	FONT-SIZE: 9pt; MARGIN-LEFT: 55px; COLOR: #666666; TEXT-INDENT: -26px; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Marginal {
+	FONT-SIZE: 8pt; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.MarginalGrey {
+	FONT-SIZE: 8pt; COLOR: #707070; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.NaviLink {
+	FONT-SIZE: 8pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.NotesLink {
+	FONT-SIZE: 8pt; FONT-FAMILY: Arial,Helvetica,Sans Serif; BACKGROUND-COLOR: #e8e6e2
+}
+.NotesRef {
+	FONT-SIZE: 8pt; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif; BACKGROUND-COLOR: #e8e6e2
+}
+.NotesText {
+	MARGIN-TOP: 3pt; FONT-SIZE: 9pt; MARGIN-BOTTOM: 9pt; COLOR: #666666; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Paragraph {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 4pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ParagraphMargin {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 4pt; MARGIN-LEFT: 14px; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ProfileParagraph {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 4pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ProfileParagraphSmall {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ProfileSubHeading {
+	FONT-SIZE: 12pt; COLOR: #878787; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ProfileTitle {
+	FONT-SIZE: 24pt; COLOR: #808080; LINE-HEIGHT: 28pt; FONT-FAMILY: Times New Roman,Times,Serif
+}
+.RubricAuthor {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricDescription {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricFocus {
+	FONT-SIZE: 10pt; COLOR: #808080; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricName {
+	FONT-SIZE: 15pt; COLOR: #808080; LINE-HEIGHT: 16pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricTip {
+	MARGIN-TOP: 2px; FONT-SIZE: 8pt; MARGIN-LEFT: 14px; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricTitle {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.RubricReview {
+	FONT-SIZE: 8pt; COLOR: #808080; LINE-HEIGHT: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Sentence {
+	FONT-SIZE: 10pt; COLOR: #808080; LINE-HEIGHT: 14pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ServiceLink {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ServiceLinkText {
+	FONT-SIZE: 9pt; MARGIN-LEFT: 25px; LINE-HEIGHT: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ServiceSubHeading {
+	FONT-SIZE: 12pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.SmallCaps {
+	FONT-VARIANT: small-caps
+}
+.Summary {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.SubHeading {
+	FONT-SIZE: 10pt; LINE-HEIGHT: 13pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Subtitle {
+	FONT-SIZE: 11pt; COLOR: #000000; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.ThemesH3 {
+	FONT-SIZE: 12pt; COLOR: #ffb643; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.TipInfo {
+	FONT-SIZE: 11pt; COLOR: #808080; LINE-HEIGHT: 14pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.TipTitle {
+	FONT-SIZE: 12pt; COLOR: #808080; LINE-HEIGHT: 15pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.Title {
+	FONT-SIZE: 16pt; COLOR: #808080; LINE-HEIGHT: 17pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+.TitlesText {
+	FONT-SIZE: 9pt; MARGIN-LEFT: 15px; COLOR: #000000; TEXT-INDENT: -15px; LINE-HEIGHT: 11pt; FONT-FAMILY: Arial,Helvetica,Sans Serif
+}
+A:link {
+	COLOR: #cc3333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #8e6262; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #981616; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #8e6262; TEXT-DECORATION: underline
+}

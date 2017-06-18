@@ -1,0 +1,183 @@
+BODY {
+	BACKGROUND: #ffffff
+}
+HR {
+	COLOR: #000000
+}
+P {
+	COLOR: #000000
+}
+H3 {
+	PADDING-TOP: 8px
+}
+.text {
+	COLOR: #000000
+}
+A:link {
+	COLOR: #0033cc; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #0033cc; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #0099ff; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.redbread:link {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.redbread:visited {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.redbread:active {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.redbread:hover {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #0033ff; TEXT-DECORATION: underline
+}
+TD.goldbar A:link {
+	VERTICAL-ALIGN: middle; COLOR: #0033cc; TEXT-DECORATION: none
+}
+TD.goldbar A:visited {
+	VERTICAL-ALIGN: middle; COLOR: #0033cc; TEXT-DECORATION: none
+}
+TD.goldbar A:active {
+	VERTICAL-ALIGN: middle; COLOR: #0033cc; TEXT-DECORATION: none
+}
+TD.goldbar A:hover {
+	VERTICAL-ALIGN: middle; COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.goldbar {
+	PADDING-RIGHT: 3px; MARGIN-TOP: 4px; PADDING-LEFT: 5px; FONT-SIZE: 90%; MARGIN-BOTTOM: 4px; PADDING-BOTTOM: 0px
+}
+.typeslug {
+	FONT-WEIGHT: bold; FONT-SIZE: 90%; TEXT-TRANSFORM: uppercase; COLOR: #cc0000
+}
+.chapbar {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+.text {
+	COLOR: #000000
+}
+.columnbyline {
+	FONT-SIZE: 150%; COLOR: #cc0000
+}
+TD.boxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: small; TEXT-TRANSFORM: uppercase; COLOR: #ffffff
+}
+.bars {
+	COLOR: #ffffff; WHITE-SPACE: nowrap
+}
+TD.bars A:link {
+	COLOR: #ffffff; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+TD.bars A:visited {
+	COLOR: #ffffff; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+TD.bars A:active {
+	COLOR: #cccccc; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+TD.bars A:hover {
+	COLOR: #ffff00; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+TD.crumbbar A:link {
+	FONT-SIZE: small; COLOR: #ff0000; TEXT-DECORATION: none
+}
+TD.crumbbar A:visited {
+	FONT-SIZE: small; COLOR: #ff0000; TEXT-DECORATION: none
+}
+TD.crumbbar A:active {
+	FONT-SIZE: small; COLOR: #ff3333; TEXT-DECORATION: none
+}
+TD.crumbbar A:hover {
+	FONT-SIZE: small; COLOR: #0033ff; TEXT-DECORATION: underline
+}
+.bread {
+	FONT-WEIGHT: bold
+}
+TD.crumbbar {
+	COLOR: #ff0000
+}
+.hphed {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; COLOR: #000000; FONT-FAMILY: Georgia, Verdana, serif
+}
+.biohed {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; COLOR: #000000; FONT-FAMILY: Georgia, Verdana, serif
+}
+.hpbyline {
+	FONT-WEIGHT: bold; FONT-SIZE: 90%; TEXT-TRANSFORM: uppercase
+}
+.hpsmaller {
+	FONT-SIZE: 90%
+}
+.hpbardate {
+	FONT-SIZE: 90%; COLOR: #666666; FONT-STYLE: italic
+}
+.hpbarhed {
+	FONT-WEIGHT: bold; FONT-SIZE: small; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; TEXT-ALIGN: center
+}
+.hpcover {
+	MARGIN-TOP: 5px; FONT-SIZE: 90%; MARGIN-BOTTOM: 5px; TEXT-ALIGN: center
+}
+.hpwhite {
+	FONT-SIZE: small; MARGIN: 5px; COLOR: #ffffff
+}
+.hpinput {
+	BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+.hptoched {
+	FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase; COLOR: #990000
+}
+.rnblurb {
+	PADDING-RIGHT: 3px; MARGIN-TOP: 0px; PADDING-LEFT: 5px; FONT-SIZE: 90%; PADDING-BOTTOM: 4px
+}
+A.free:link {
+	FONT-WEIGHT: bold; COLOR: #0033cc; TEXT-DECORATION: underline
+}
+A.free:visited {
+	FONT-WEIGHT: bold; COLOR: #0033cc; TEXT-DECORATION: underline
+}
+A.free:active {
+	FONT-WEIGHT: bold; COLOR: #0099ff; TEXT-DECORATION: underline
+}
+A.free:hover {
+	FONT-WEIGHT: bold; COLOR: #ff0000; TEXT-DECORATION: underline
+}
+A.premium:link {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.premium:visited {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.premium:active {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+A.premium:hover {
+	FONT-WEIGHT: bold; COLOR: #000000; TEXT-DECORATION: underline
+}
+.category {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.adult {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000
+}
+.children {
+	COLOR: #000000; PADDING-TOP: 5px
+}
+LI.children {
+	LIST-STYLE-TYPE: none
+}
+.biotitle {
+	FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase; COLOR: #000000
+}
+.biocredit {
+	FONT-SIZE: 90%; COLOR: #999999
+}
+.inmate {
+	FONT-WEIGHT: bold
+}
+.state {
+	COLOR: #666666
+}

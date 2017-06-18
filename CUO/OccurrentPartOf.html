@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta name="description" content="CUO">
+<meta name="author" content="Fabian Neuhaus">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="expires" content="0">
+
+<STYLE>BODY {
+    FONT-SIZE: 10pt; FONT-FAMILY: Verdana
+}
+
+</STYLE>
+
+</STYLE>
+<STYLE fprolloverstyle>A:hover {
+    FONT-WEIGHT: bold; COLOR: #ff0000}
+</STYLE>
+
+
+</head>
+
+<body bgColor=White>
+
+
+
+
+    <h1>OccurrentPartOf</h1>
+;; Comment: A binary formal between occurrents. 
+
+    <h2>Defined formal relations </h2>    
+    	<a HREF="SpatioTemporalRegionPartOf.html" >SpatioTemporalRegionPartOf </a>  
+	
+    <h2>Axioms </h2>
+  <h3> Domain and range </h3 >
+
+<p>
+	 (forall 
+	 	(x y)
+		(if 
+			(OccurrentPartOf x y)
+			(Occurrent x)
+		)
+
+ </p>
+
+<p>
+	 (forall 
+	 	(x y)
+		(if 
+			(OccurrentPartOf x y)
+			(Occurrent y)
+		)
+
+ </p>
+  
+<h3> Arity </h3 >
+<p>
+(not (OccurrentPartOf ())
+ <br />
+(forall (x) (not (OccurrentPartOf x) )
+ <br />
+(forall (x y z ...s) (not (OccurrentPartOfx y z ...s) ) 
+</p>	   
+<h3> Other </h3 >   
+<p>
+ (forall ((x Occurrent)) (OccurrentPartOf x x))
+<br />
+Reflexivity
+ </p>
+<p>
+	 (forall 
+	 	((x Occurrent) (y Occurrent))
+		(if 
+			(and
+				(OccurrentPartOf x y)
+				(OccurrentPartOf y x)
+			)
+			(x =y)
+		)
+<br />
+Antisymmetry 
+ </p>
+
+<p>
+	 (forall 
+	 	((x Occurrent) (y Occurrent) (z Occurrent))
+		(if 
+			(and
+				(OccurrentPartOf x y)
+				(OccurrentPartOf y z)
+			)
+			(OccurrentPartOf x z)
+		)
+<br />
+Transitivity 
+ </p>
+
+<p>
+	 (forall 
+	 	(x y)
+		(if 
+			(OccurrentPartOf x y)
+			( iff 
+				(<a HREF="ProcessualEntity.html" >ProcessualEntity </a>  x)
+				(<a HREF="ProcessualEntity.html" >ProcessualEntity </a>  y)
+			)
+		)
+<br />
+Only processural entities are parts of processual entities. 
+ </p>
+
+<p>
+	 (forall 
+	 	(x y)
+		(if 
+			(OccurrentPartOf x y)
+			( iff 
+				(<a HREF="SpatioTemporalRegion.html" >SpatioTemporalRegion</a> x)
+				(<a HREF="SpatioTemporalRegion.html" >SpatioTemporalRegion</a> y)
+			)
+		)
+<br />
+Only spatio temporal regions are parts of spatio temporal regions
+ </p>
+
+<p>
+	 (forall 
+	 	(x y)
+		(if 
+			(OccurrentPartOf x y)
+			( iff 
+				(<a HREF="TemporalRegion.html" > TemporalRegion</a> x)
+				(<a HREF="TemporalRegion.html" > TemporalRegion</a>  y)
+			)
+		)
+<br />
+Only] temporal regions are parts of  regions
+ </p>
+
+

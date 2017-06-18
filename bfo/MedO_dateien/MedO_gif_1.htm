@@ -1,0 +1,87 @@
+<html>
+<head>
+<LINK REL="stylesheet" TYPE="text/css" HREF="MedO.css">
+<title>
+MedO
+</title>
+
+<script src="MedO_utils.js"></script>
+<script>
+<!--
+var pageID = 0;
+
+function BodyOnLoad ()
+{
+	var pageIndex = PageIndexFromID (pageID);
+	if (pageIndex >= 0)
+	{
+		PageUpdated(pageIndex);
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" onload="BodyOnLoad()" onclick="clickMenu()">
+<base target="_top">
+
+<div id=menu1 
+  onclick="clickMenu()" 
+  onmouseover="toggleMenu()" 
+  onmouseout="toggleMenu()" 
+  style="position:absolute; 
+         display:none; 
+         border: 2px outset black; 
+         width:220; 
+         background-color:menu; 
+		 z-index:10"> 
+</div> 
+
+<DIV id=RasterDiv>
+
+<center>
+  <IMG SRC="MedO_gif_1.gif" ALT="" BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 791,401 791,344 678,344 678,401 791,401" onmouseover="UpdateProps(0,63)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 279,57 279,0 20,0 20,57 279,57" onmouseover="UpdateProps(0,43)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 767,533 767,477 654,477 654,533 767,533" onmouseover="UpdateProps(0,53)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 598,466 598,426 468,426 468,466 598,466" onmouseover="UpdateProps(0,48)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 395,533 395,477 282,477 282,533 395,533" onmouseover="UpdateProps(0,47)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 643,533 643,477 530,477 530,533 643,533" onmouseover="UpdateProps(0,46)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 271,533 271,477 158,477 158,533 271,533" onmouseover="UpdateProps(0,42)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 147,533 147,477 34,477 34,533 147,533" onmouseover="UpdateProps(0,41)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 519,533 519,477 406,477 406,533 519,533" onmouseover="UpdateProps(0,40)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 209,466 209,426 96,426 96,466 209,466" onmouseover="UpdateProps(0,39)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 395,415 395,375 282,375 282,415 395,415" onmouseover="UpdateProps(0,38)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 792,333 792,282 679,282 679,333 792,333" onmouseover="UpdateProps(0,36)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 106,344 106,296 11,296 11,344 106,344" onmouseover="UpdateProps(0,34)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 101,277 101,232 11,232 11,277 101,277" onmouseover="UpdateProps(0,32)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 91,201 91,161 11,161 11,201 91,201" onmouseover="UpdateProps(0,30)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 202,203 202,161 118,161 118,203 202,203" onmouseover="UpdateProps(0,26)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 791,212 791,172 678,172 678,212 791,212" onmouseover="UpdateProps(0,28)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 792,274 792,223 679,223 679,274 792,274" onmouseover="UpdateProps(0,24)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 410,285 410,234 343,234 343,285 410,285" onmouseover="UpdateProps(0,22)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 315,285 315,234 213,234 213,285 315,285" onmouseover="UpdateProps(0,20)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 377,223 377,167 264,167 264,223 377,223" onmouseover="UpdateProps(0,18)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 667,223 667,167 512,167 512,223 667,223" onmouseover="UpdateProps(0,16)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 511,155 511,116 398,116 398,155 511,155" onmouseover="UpdateProps(0,11)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 501,223 501,167 388,167 388,223 501,223" onmouseover="UpdateProps(0,10)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 202,291 202,257 118,257 118,291 202,291" onmouseover="UpdateProps(0,9)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 202,330 202,296 118,296 118,330 202,330" onmouseover="UpdateProps(0,8)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 780,161 780,116 667,116 667,161 780,161" onmouseover="UpdateProps(0,6)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 202,251 202,215 118,215 118,251 202,251" onmouseover="UpdateProps(0,4)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 162,150 162,116 49,116 49,150 162,150" onmouseover="UpdateProps(0,2)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 471,105 471,62 358,62 358,105 471,105" onmouseover="UpdateProps(0,1)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 483,60 448,60 448,105 615,105 615,60 580,60 580,55 483,55 483,60" onmouseover="UpdateProps(0,65)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 503,415 510,415 510,375 503,375 503,368 405,368 405,375 398,375 398,415 405,415 405,417 503,417 503,415" onmouseover="UpdateProps(0,66)" >
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>

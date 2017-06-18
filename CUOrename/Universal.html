@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta name="description" content="CUO">
+<meta name="author" content="Fabian Neuhaus">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="expires" content="0">
+
+<STYLE>BODY {
+    FONT-SIZE: 10pt; FONT-FAMILY: Verdana
+}
+
+</STYLE>
+
+</STYLE>
+<STYLE fprolloverstyle>A:hover {
+    FONT-WEIGHT: bold; COLOR: #ff0000}
+</STYLE>
+
+
+</head>
+
+<body bgColor=White>
+
+
+
+
+
+
+
+    <h1>Universal</h1>
+    <h2> Definition </h2>
+
+<p>
+(forall 
+ (x)
+ (iff
+	(<a HREF="Universal.html">Universal</a> x
+	)
+	(exists 
+		(x1)
+		(<a HREF="Instantiates.html">Instantiates</a>  x x1)
+	)
+  )	
+)
+	
+
+<br />
+;; Comment: definition of Universal as the domain of Instantiates 
+
+</p>	   
+
+    <h2> Axioms </h2>
+<p>
+(forall 
+	((x Universal))
+	(not
+		(x)
+	)
+) 
+<br />
+(forall 
+	((x Universal) y z ...s)
+	(not
+		(x y z ...s)
+	)
+) 
+<br />
+;; Comment: universals are unary
+</p>	   
+
+    <h3>References </h3>
+<p>
+see     <a HREF="CUO.html">CUO</a>    	
+</p>	   
+

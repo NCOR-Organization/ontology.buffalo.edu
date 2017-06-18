@@ -1,0 +1,66 @@
+.bodylink {
+	FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bodyhed {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bodyhed2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.bodybasic {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bodybasicbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bodybasic2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.scroller {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Georgia, sans-serif
+}
+.artsubhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.artsubheadbuy {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.bodytext-override {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif, "MS sans serif"
+}
+.bodytext {
+	FONT-WEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif, "MS sans serif"
+}
+.subhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.test {
+	
+}
+.showcasemore {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.showcaseblurb {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.showcaseexhibit {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #cc6600; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.navsublink {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: arial, verdana, helvetica, sans-serif; TEXT-DECORATION: none
+}
+.navsublink:active {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: arial, verdana, helvetica, sans-serif
+}
+.navsublink:hover {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: arial, verdana, helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.navlink {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial, verdana, helvetica, sans-serif; TEXT-DECORATION: none
+}
+.navlink:active {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: arial, verdana, helvetica, sans-serif
+}
+.navlink:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: arial, verdana, helvetica, sans-serif; TEXT-DECORATION: underline
+}

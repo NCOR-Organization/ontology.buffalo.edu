@@ -1,0 +1,624 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+
+}
+
+img {
+	display:block;
+	border:none;
+}
+
+fieldset {
+	border:none;
+}
+
+legend {
+	display:none;
+}
+
+a span {
+	display:none;
+}
+
+a span.arrow {
+	display:inline;
+}
+
+a.floatright {
+	float:right;
+}
+
+div.clear {
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+
+div.framework {
+	margin:0px auto;
+	width:930px;
+}
+
+div.framework a.maincontentanchor {
+	display:none;
+}
+
+
+
+/* STIL FOR TOPPEN MED HOVEDMENY */
+
+div.framework div.header h1 {
+	padding:6px 0px 6px 20px;
+}
+
+/* Hovedmeny */
+div.framework div.header div.mainmenu {
+	border-top:1px solid white;
+}
+
+div.framework div.header div.mainmenu li {
+	float:left;
+	width:140px;
+	list-style:none;
+	border-right:1px solid white;
+}
+
+div.framework div.header div.mainmenu li a {
+	display:block;
+	padding:6px 0px 6px 0px;
+	text-align:center;
+}
+
+div.framework div.header div.mainmenu h2 {
+	display:none;
+}
+
+div.framework div.header div.mainmenu form {
+	display:block;
+	float:left;
+	width:225px;
+}
+
+div.framework div.header div.mainmenu input {
+	margin-top:4px;
+}
+
+div.framework div.header div.mainmenu input.text {
+	margin-left:9px;
+	width:146px;
+}
+
+div.framework div.header div.mainmenu input.button {
+	margin:0px 0px 0px 0px;
+	border:none;
+	width:57px;
+	height:16px;
+	text-indent:-100px;
+}
+
+div.framework div.header div.mainmenu div.clear {
+	height:15px;
+	width:930px;
+}
+
+
+
+/* STIL TIL VENSTRE KOLONNE */
+div.framework div.center div.left {
+	float:left;
+	overflow:hidden;
+	margin-right:8px;
+	width:209px;
+}
+
+div.framework div.center div.left h2 {
+	padding:2px 0px 2px 11px;
+}
+
+/* Undermeny */
+div.framework div.center div.left div.submenu h2 {
+	display:none;
+}
+
+div.framework div.center div.left div.submenu ul {
+	padding-bottom:8px;
+}
+
+div.framework div.center div.left div.submenu li {
+	margin-bottom:2px;
+	list-style:none;
+}
+
+div.framework div.center div.left div.submenu li a {
+	display:block;
+	margin-left:20px;
+	padding:5px 0px 5px 0px;
+	width:189px;
+}
+
+div.framework div.center div.left div.submenu li ul {
+	padding:2px 0px 2px 0px;
+}
+
+div.framework div.center div.left div.submenu li ul li {
+	margin:0px;
+	padding:0px;
+}
+
+div.framework div.center div.left div.submenu li ul li a {
+	display:block;
+	padding:2px 0px 2px 0px;
+	line-height:10px;
+	width:180px;
+}
+
+/* Nyhetsbrev */
+div.framework div.center div.left div.newsletter {
+	padding-bottom:11px;
+	padding-right:11px;
+}
+
+div.framework div.center div.left div.newsletter p {
+	padding:10px 0px 4px 44px;
+}
+
+div.framework div.center div.left div.newsletter a.button {
+	margin-left:154px;
+}
+
+/* Medlemssider */
+div.framework div.center div.left div.memberlogin {
+	padding-bottom:13px;
+	padding-top:7px;
+}
+
+div.framework div.center div.left div.memberlogin label {
+	display:block;
+	text-indent:20px;
+}
+
+div.framework div.center div.left div.memberlogin input {
+	margin-left:10px;
+	width:186px;
+}
+
+div.framework div.center div.left div.memberlogin div.buttons {
+	margin:11px 10px 0px 10px;
+}
+
+div.framework div.center div.left div.memberlogin a {
+	display:block;
+	float:left;
+	padding-top:2px;
+	width:90px;
+}
+
+div.framework div.center div.left div.memberlogin input.button {
+	float:right;
+	position:relative;
+	margin-right:1px;
+	width:auto;
+}
+
+/* Bannere */
+div.framework div.center div.left div.banners {
+	padding:21px 0px 21px 11px;
+}
+
+div.framework div.center div.left div.banners flash {
+	position: relative; margin-bottom: 14px;
+}
+
+div.framework div.center div.left div.banners a {
+	display:block;
+	padding-bottom:4px;
+}
+div.framework div.center div.left div.banners table {
+	padding: 0px;
+	margin: 0px;*/
+	border-collapse: collapse;
+	margin-bottom:4px;
+}
+
+
+/* MIDTERSTE KOLONNE: HOVEDINNHOLD */
+div.framework div.center div.content {
+	float:left;
+	width:488px;
+}
+
+div.framework div.center div.content h1 {
+	padding:0px 0px 7px 0px;
+}
+
+div.framework div.center div.content span.imgtext {
+	display:block;
+	padding:8px 0px 0px 0px;
+}
+
+div.framework div.center div.content a span {
+	display:inline;
+}
+
+div.framework div.center div.content a.archive {
+	display:block;
+	width:100px;
+	margin-top:15px;
+}
+
+div.framework div.center div.content img {
+	float:left;
+	margin:0px 9px 0px 0px;
+}
+
+div.framework div.center div.content img.block {
+	float:none;
+	margin:10px 0px 0px 0px;
+}
+
+div.framework div.center div.content img.project {
+	float:none;
+	margin:0px 0px 10px 0px;
+}
+
+div.framework div.center div.content p {
+	padding:0px 0px 7px 0px;
+}
+
+div.framework div.center div.content ul {
+	margin:8px 0px 8px 0px;
+}
+
+div.framework div.center div.content span.date {
+	
+}
+
+div.framework div.center div.content div.breadcrumbs {
+	padding:8px 0px 0px 20px;
+}
+
+div.framework div.center div.content div.contentpadding {
+	padding:24px 48px 20px 20px;
+}
+
+div.framework div.center div.content div.contentpadding div.listelement {
+	margin:0px 0px 10px 0px;
+}
+
+div.framework div.center div.content div.contentpadding div.abbrivated {
+	margin:0px 0px 6px 0px;
+}
+
+div.framework div.center div.content div.contentpadding div.main {
+	margin:0px 0px 16px 0px;
+}
+
+div.framework div.center div.content div.contentpadding div.main img {
+	margin:0px 16px 8px 0px;
+}
+
+div.framework div.center div.content div.contentpadding div.main img.block {
+	display:block;
+	margin-right:0px;
+}
+
+div.framework div.center div.content div.contentpadding div.tipprint {
+	padding:3px 0px 2px 8px;
+}
+
+div.framework div.center div.content div.contentpadding div.tipprint a {
+	padding-right:10px;
+}
+
+div.framework div.center div.content form.dynamicform {
+	padding-bottom:20px;
+	border-bottom:1px solid #d5dddd;
+}
+
+div.framework div.center div.content form.dynamicform fieldset {
+	padding-top:20px;
+	width:420px;
+}
+
+div.framework div.center div.content form.dynamicform fieldset label {
+	padding-right:20px;
+}
+
+div.framework div.center div.content form.dynamicform fieldset label input {
+	margin-right:7px;
+}
+
+div.framework div.center div.content form.dynamicform input.button {
+	float:right;
+	margin-right:10px;
+}
+
+div.framework div.center div.content form.dynamicform fieldset.columns {
+	padding:0px;
+	width:420px;
+	overflow:hidden;
+}
+
+div.framework div.center div.content form.dynamicform fieldset.columns label {
+	display:block;
+	position:relative;
+	float:left;
+	padding:9px 0px 0px 0px;
+	width:199px;
+}
+
+div.framework div.center div.content form.dynamicform fieldset.columns label.left {
+	margin-right:13px;
+	display:inline;
+}
+
+div.framework div.center div.content form.dynamicform fieldset.columns label input {
+	margin:2px 0px 0px 0px;
+	width:196px;
+}
+
+div.framework div.center div.content form.dynamicform fieldset.columns label select {
+	margin-top:2px;
+	width:198px;
+}
+
+div.framework div.center div.content form.dateselector {
+	padding:0px 0px 20px 0px;
+}
+
+div.framework div.center div.content form.dateselector select {
+	width:134px;
+}
+
+div.framework div.center div.content table {
+	margin-bottom:20px;
+	padding:0px;
+	border:none;
+	width:420px;
+}
+
+div.framework div.center div.content caption {
+	padding:5px 0px 5px 8px;
+}
+
+div.framework div.center div.content th {
+	padding:2px 8px 2px 8px;
+	border:none;
+	text-align:left;
+}
+
+div.framework div.center div.content td {
+	padding:2px 8px 2px 8px;
+	border:none;
+}
+
+div.framework div.center div.content table.filelist a.download {
+	display:block;
+	width:45px;
+	text-align:right;
+}
+
+div.framework div.center div.content table.calender td {
+	vertical-align:top;
+}
+
+div.framework div.center div.content table.calender td.date {
+	width:63px;
+}
+
+div.framework div.center div.content div.paging {
+	padding-bottom:5px;
+}
+
+div.framework div.center div.content div.paging div {
+	padding-bottom:5px;
+}
+
+div.framework div.center div.content div.paging a {
+	padding:0px 2px 0px 2px;
+}
+
+div.framework div.center div.content div.paging a.button {
+	padding:2px 5px 2px 5px;
+}
+
+div.framework div.center div.content div.paging a.left {
+	margin-right:10px;
+}
+
+div.framework div.center div.content div.paging a.right {
+	margin-left:10px;
+}
+
+div.framework div.center div.content div.paging span.grey {
+	padding-right:2px;
+}
+
+div.framework div.center div.content div.match {
+	margin-top:20px;
+}
+
+div.framework div.center div.content div.match a {
+	display:block;
+	text-indent:8px;
+}
+
+div.framework div.center div.content div.match a.header {
+	position:relative;
+	padding:3px 0px 1px 0px;
+	width:420px;
+	text-indent:8px;
+}
+
+div.framework div.center div.content div.match a.header span.date {
+	position:absolute;
+	right:8px;
+	top:3px;
+	width:50px;
+}
+
+div.framework div.center div.content div.match p {
+	padding:8px;
+}
+
+
+div.framework div.center div.content div.person {
+	margin-bottom:10px;
+	min-height:90px;
+	width:420px;
+}
+
+div.framework div.center div.content div.person div {
+	padding:8px 10px 8px 8px;
+}
+
+div.framework div.center div.content div.person div h3 {
+	position:relative;
+}
+
+div.framework div.center div.content div.person div h3 span {
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:320px;
+	text-align:right;
+}
+
+div.framework div.center div.content div.person div a {
+	display:block;
+	margin-bottom:8px;
+}
+
+
+/* HØYRE KOLONNE */
+
+div.framework div.center div.right {
+	float:right;
+	width:225px;
+}
+
+div.framework div.center div.right h2 {
+	padding:2px 0px 3px 8px;
+}
+
+/* Kalender */
+div.framework div.center div.right div.calender {
+	padding:11px 8px 0px 8px;
+}
+
+div.framework div.center div.right div.calender a {
+	display:block;
+	margin:0px 0px 11px 0px;
+}
+
+div.framework div.center div.right div.calender a.archive {
+	margin-top:28px;
+}
+
+/* Poll */
+div.framework div.center div.right div.poll {
+	padding:11px 8px 12px 8px;
+}
+
+div.framework div.center div.right div.poll ul {
+	padding:10px 0px 7px 0px;
+}
+
+div.framework div.center div.right div.poll li {
+	display:block;
+	clear:left;
+	list-style:none;
+}
+
+div.framework div.center div.right div.poll label {
+	position:relative; 
+	padding-bottom:5px;
+	float:left; 
+	padding-left:26px;
+}
+
+div.framework div.center div.right div.poll label input {
+	position:absolute; 
+	left:0px; 
+	top:1px;
+}
+
+div.framework div.center div.right div.poll input.button {
+	float:right;
+}
+
+div.framework div.center div.right div.poll table {
+	margin:12px 0px 12px 0px;
+	width:193px;
+}
+
+div.framework div.center div.right div.poll td {
+	padding-top:3px;
+}
+
+div.framework div.center div.right div.poll td.text {
+	width:145px;
+}
+
+div.framework div.center div.right div.poll td.number {
+	width:48px;
+	padding-right:10px;
+	text-align:right;
+}
+
+div.framework div.center div.right div.poll td.column {
+	padding:0px;
+}
+
+/* Tema */
+div.framework div.center div.right div.topical {
+	padding:11px 8px 12px 8px;
+}
+
+div.framework div.center div.right div.topical a {
+	display:block;
+	padding:0px 0px 11px 0px;
+}
+
+div.framework div.center div.right div.topical a.more {
+	margin-top:18px;
+}
+
+
+
+/* BUNN FOOTER */
+
+div.framework div.footer {
+	clear:both;
+	padding-top:15px;
+	margin-bottom:20px;
+	width:930px;
+}
+
+div.framework div.footer div.left {
+	float:left;
+	padding-left:11px;
+}
+
+div.framework div.footer div.logo {
+	float:right;
+	display:inline;
+	margin-right:10px;
+	margin-left:15px;
+}
+
+div.framework div.footer div.right {
+	float:right;
+	padding-top:6px;
+}
+
+.button {
+	padding:2px 5px 2px 5px;
+}
+
+
+

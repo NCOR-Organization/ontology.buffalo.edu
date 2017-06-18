@@ -1,0 +1,1 @@
+document.write ('<span class="credit-pagenumber">Copyright 2002 by Forbes, Inc.<br /> All Rights Reserved</span>');

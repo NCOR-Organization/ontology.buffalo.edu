@@ -1,0 +1,249 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: rgb(153,153,153); MARGIN: 0px; SCROLLBAR-ARROW-COLOR: rgb(224,0,55); SCROLLBAR-TRACK-COLOR: rgb(0,0,0); BACKGROUND-COLOR: rgb(102,102,102)
+}
+DIV {
+	FONT-FAMILY: 'times new roman',times,serif
+}
+DIV.content {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 18px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 12px; PADDING-TOP: 12px
+}
+P {
+	MARGIN: 10px 0px 0px
+}
+DIV.contentheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 6px
+}
+DIV.subsection {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1.2em; PADDING-BOTTOM: 3px; PADDING-TOP: 0px
+}
+DIV.talksubsection {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: rgb(224,0,55); PADDING-TOP: 0px
+}
+DIV.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+DIV.author {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.9em; PADDING-BOTTOM: 3px; PADDING-TOP: 0px
+}
+DIV.summary {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 3px; PADDING-TOP: 0px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.issuepublish {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; COLOR: rgb(102,102,102); PADDING-TOP: 6px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.subtitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.9em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+SPAN.subtitle {
+	FONT-WEIGHT: 700; FONT-SIZE: 0.9em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.descender:first-letter {
+	FONT-SIZE: 2em
+}
+P.question {
+	FONT-WEIGHT: 700
+}
+P.answer {
+	
+}
+P.quote {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.pullout {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.introduction {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+P.poem {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A {
+	COLOR: rgb(0,0,0)
+}
+DIV.forumcontent {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 18px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; PADDING-TOP: 12px; FONT-FAMILY: verdana,san-serif
+}
+DIV.previousheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 6px
+}
+DIV.previouscontent {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 18px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 12px; PADDING-TOP: 12px
+}
+DIV.previousunit {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+DIV.previoussubsection {
+	FONT-SIZE: 1.2em; COLOR: rgb(224,0,55)
+}
+SPAN.previoustitle {
+	FONT-WEIGHT: 700
+}
+SPAN.previousauthor {
+	
+}
+DIV.previoussummary {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+SPAN.previousissue {
+	FONT-SIZE: 0.8em; COLOR: rgb(102,102,102); FONT-FAMILY: arial,helvetica,san-serif
+}
+SPAN.previouspublish {
+	FONT-SIZE: 0.8em; COLOR: rgb(102,102,102); FONT-FAMILY: arial,helvetica,san-serif
+}
+DIV.image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+DIV.credit {
+	FONT-SIZE: 0.8em; COLOR: rgb(102,102,102); FONT-FAMILY: arial,helvetica,verdana,san-serif; TEXT-ALIGN: right
+}
+DIV.caption {
+	FONT-SIZE: 0.8em; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+SPAN.bold {
+	FONT-WEIGHT: 700
+}
+SPAN.italic {
+	FONT-STYLE: italic
+}
+SPAN.larger {
+	FONT-SIZE: 1.2em
+}
+SPAN.lowercase {
+	TEXT-TRANSFORM: lowercase
+}
+SPAN.smaller {
+	FONT-SIZE: 0.8em
+}
+SPAN.smallcaps {
+	FONT-SIZE: 0.8em; TEXT-TRANSFORM: uppercase
+}
+SPAN.uppercase {
+	TEXT-TRANSFORM: uppercase
+}
+SPAN.linethrough {
+	TEXT-DECORATION: line-through
+}
+DIV.menubox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 0.6em; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.relatedlinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+DIV.serieslinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+DIV.anchoredlinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+A.relatedlinks {
+	COLOR: rgb(224,0,55); FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.relatedlinks:visited {
+	COLOR: rgb(224,0,55)
+}
+A.anchoredlinks {
+	COLOR: rgb(224,0,55); FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.anchoredlinks:visited {
+	COLOR: rgb(224,0,55)
+}
+A.serieslinks {
+	COLOR: rgb(224,0,55); FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.serieslinks:visited {
+	COLOR: rgb(224,0,55)
+}
+DIV.slideshowcontent {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 18px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 12px; PADDING-TOP: 12px
+}
+DIV.popslideshowcontent {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 28px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 18px; PADDING-TOP: 7px
+}
+DIV.slideshowlinks {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+DIV.slideshowlink {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+DIV.slideshowcontrols {
+	FONT-WEIGHT: 700
+}
+A.slideshowlink {
+	COLOR: rgb(0,0,0); FONT-FAMILY: arial,helvetica,verdana,san-serif; TEXT-DECORATION: none
+}
+A.slideshowlink:hover {
+	COLOR: rgb(224,0,55)
+}
+DIV.slideshowunit {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: 6px
+}
+DIV.slideshowtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowauthor {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowcredit {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 7px
+}
+DIV.slideshowsource {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+DIV.slideshowimage {
+	TEXT-ALIGN: center
+}
+DIV.popcontent {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 6px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+SPAN.address {
+	FONT-SIZE: 0.9em
+}
+DIV.date {
+	PADDING-RIGHT: 16px; PADDING-LEFT: 0px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 2px; COLOR: rgb(255,255,255); PADDING-TOP: 2px; FONT-FAMILY: arial,helvetica,verdana,san-serif
+}
+A.home {
+	COLOR: rgb(255,255,255); TEXT-DECORATION: none
+}
+DIV.covercaption {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 0px; FONT-SIZE: 0.7em; PADDING-BOTTOM: 0px; PADDING-TOP: 2px; FONT-FAMILY: arial,helvetica,verdana,san-serif; TEXT-ALIGN: right
+}
+DIV.contentfooter {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 7px
+}
+DIV.footerauthor {
+	FONT-STYLE: italic; TEXT-ALIGN: right
+}
+DIV.footer {
+	FONT-SIZE: 0.7em; COLOR: rgb(0,0,0)
+}
+.white {
+	BACKGROUND-COLOR: rgb(255,255,255)
+}
+.grey {
+	BACKGROUND-COLOR: rgb(204,204,204)
+}
+.charcoal {
+	BACKGROUND-COLOR: rgb(101,101,101)
+}
+.black {
+	BACKGROUND-COLOR: rgb(0,0,0)
+}
+.blue {
+	BACKGROUND-COLOR: rgb(0,122,190)
+}
+.red {
+	BACKGROUND-COLOR: rgb(224,0,55)
+}
+#issue {
+	LEFT: 90px; VISIBILITY: hidden; POSITION: absolute; TOP: 140px
+}
+#goingson {
+	LEFT: 90px; VISIBILITY: hidden; POSITION: absolute; TOP: 170px
+}
+#critics {
+	LEFT: 90px; VISIBILITY: hidden; POSITION: absolute; TOP: 245px
+}
+#cartoons {
+	LEFT: 90px; VISIBILITY: hidden; POSITION: absolute; TOP: 370px
+}

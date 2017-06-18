@@ -1,0 +1,18 @@
+.clsHeadline1 {
+	FONT-SIZE: x-large; FONT-FAMILY: Arial, helvetica, geneva
+}
+.clsHeadline2 {
+	FONT-SIZE: large; FONT-FAMILY: Arial, helvetica, geneva
+}
+.clsSubhead {
+	FONT-SIZE: medium; FONT-FAMILY: Arial, helvetica, geneva
+}
+.clsByline {
+	CURSOR: hand; COLOR: #cc6600; FONT-FAMILY: Arial, Helvetica, Geneva; TEXT-DECORATION: underline
+}
+.clsBylineStaff {
+	FONT-FAMILY: Arial, Helvetica, Geneva
+}
+.clsDropCap {
+	FONT-WEIGHT: bold; FLOAT: left; WIDTH: 14pt; COLOR: #660033; LINE-HEIGHT: 28pt; FONT-FAMILY: Arial, 'Helvetica'; HEIGHT: 14pt
+}

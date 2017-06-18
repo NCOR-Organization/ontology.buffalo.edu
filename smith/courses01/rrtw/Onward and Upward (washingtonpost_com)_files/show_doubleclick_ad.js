@@ -1,0 +1,1 @@
+show_doubleclick_ad = true ;

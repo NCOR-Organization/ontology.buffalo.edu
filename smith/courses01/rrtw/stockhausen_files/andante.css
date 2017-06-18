@@ -1,0 +1,228 @@
+FORM {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+TEXTAREA {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+INPUT {
+	MARGIN-TOP: 0px; FONT-SIZE: xx-small; MARGIN-BOTTOM: 0px
+}
+SELECT {
+	MARGIN-TOP: 0px; FONT-SIZE: xx-small; MARGIN-BOTTOM: 0px
+}
+BODY {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #000000; TEXT-DECORATION: none
+}
+BLOCKQUOTE {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+P {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+LI {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+OL {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+UL {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+PRE {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+TH {
+	FONT-SIZE: x-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+DIV {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H1 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H2 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H3 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H4 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H5 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H6 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H7 {
+	COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A {
+	FONT-SIZE: x-small; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ffff99; TEXT-DECORATION: underline
+}
+.footer {
+	FONT-SIZE: 12px; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.footer:hover {
+	COLOR: #ffff99
+}
+.copyright {
+	FONT-SIZE: xx-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.copyright:hover {
+	COLOR: #ffff99
+}
+.copyrightBold {
+	FONT-WEIGHT: bold; FONT-SIZE: xx-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.KleeCredit {
+	FONT-SIZE: xx-small; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.error {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.sidebar {
+	FONT-SIZE: x-small; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.smallText {
+	FONT-SIZE: xx-small
+}
+.homepageQuote {
+	FONT-SIZE: x-small; FONT-FAMILY: Helvetica; TEXT-DECORATION: none
+}
+.pageTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: small; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.subnavbar {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.subsectionTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; FONT-FAMILY: Geneva, Verdana; TEXT-DECORATION: none
+}
+.more {
+	FONT-SIZE: 9px; FONT-FAMILY: Geneva, Verdana; TEXT-DECORATION: none
+}
+.MAG {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.MAG:hover {
+	COLOR: #eae27f; TEXT-DECORATION: none
+}
+.MAGColor {
+	COLOR: #eae27f
+}
+.MUS {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.MUS:hover {
+	COLOR: #a96c20; TEXT-DECORATION: none
+}
+.MUSColor {
+	COLOR: #a96c20
+}
+.CAL {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.CAL:hover {
+	COLOR: #d5b355; TEXT-DECORATION: none
+}
+.CALColor {
+	COLOR: #d5b355
+}
+.REF {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.REF:hover {
+	COLOR: #bb9017; TEXT-DECORATION: none
+}
+.REFColor {
+	COLOR: #bb9017
+}
+.DIR {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.DIR:hover {
+	COLOR: #85a456; TEXT-DECORATION: none
+}
+.DIRColor {
+	COLOR: #85a456
+}
+.PRO {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.PRO:hover {
+	COLOR: #7a8e57; TEXT-DECORATION: none
+}
+.PROColor {
+	COLOR: #7a8e57
+}
+.LRN {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.LRN:hover {
+	COLOR: #8c8852; TEXT-DECORATION: none
+}
+.LRNColor {
+	COLOR: #8c8852
+}
+.BOU {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.BOU:hover {
+	COLOR: #a67c30; TEXT-DECORATION: none
+}
+.BOUColor {
+	COLOR: #a67c30
+}
+.REG {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.REG:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.REGColor {
+	COLOR: #999999
+}
+.ABT {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.ABT:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.ABTColor {
+	COLOR: #999999
+}
+.LOG {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.LOG:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.LOGColor {
+	COLOR: #999999
+}
+.SCH {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.SCH:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.SCHColor {
+	COLOR: #999999
+}
+.MFIL {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.MFIL:hover {
+	COLOR: #999999; TEXT-DECORATION: none
+}
+.MFILColor {
+	COLOR: #999999
+}

@@ -1,0 +1,1762 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 10">
+<link id=Main-File rel=Main-File href="../Applied_philosophy(Berlin2002).htm">
+<meta name=Robots content=NoIndex>
+<script src=script.js></script><script><!--
+if( !(IsWin("PPTOtl")||IsWin("PPTNav")||IsWin("PPTOtlNav")) )
+{
+	obj = GetObj("Main-File")
+	parent.location.href=obj.href
+}
+var gOtlHiliteClr="#ffffff",gOtlNormalClr="#000000",gOtlActiveClr="#ffff00",gSelected="",gTxtState=false,gChildEntryTable=new Array()
+function Load()
+{
+	if( IsWin("PPTOtl" ) ){ LoadOtl(); parent.gOtlLoaded=true; return }
+	if( g_supportsPPTHTML ) {
+		if( IsWin("PPTNav" ) ){ LoadNav("NavObj",UpdNav); parent.gNavLoaded=true; return }
+		if( IsWin("PPTOtlNav" ) ){ LoadNav("OtlNavObj",UpdOtlNav); parent.gOtlNavLoaded=true; return }
+	}
+}
+function Upd(){ if( IsWin("PPTNav") ) LoadNav("NavObj",UpdNav) }
+function LoadNav( oId,UpdFunc )
+{
+	document.ondragstart=CancelDrag
+	document.onselectstart=CancelDrag
+	document.body.style.margin=2
+	UpdFunc()
+	obj=document.all.item(oId)
+	obj.style.display="block"
+	obj.style.visibility="visible"
+	document.bgColor="threedface"
+	if( parent.frames["PPTNts"] )
+		notesBtn.style.display = ""
+	if( parent.gHasNarration )
+		nb_voiceBorder.style.display = ""
+}
+function LoadOtl()
+{
+	var otl=GetObj("OtlObj")
+	otl.style.display="block"
+	otl.style.visibility="visible"
+	if( gOtlActiveClr == "" ) gOtlActiveClr=document.linkColor
+	if( gOtlHiliteClr == "" ) gOtlHiliteClr=document.fgColor
+	if( gOtlNormalClr == "" )
+		gOtlNormalClr=document.bgColor
+	else
+		document.bgColor=gOtlNormalClr
+	InitArray()
+	if( ObjExists( parent.gCurSld ) ) {
+		ChangeState( parent.gCurSld,gOtlNormalClr,gOtlHiliteClr )
+		gSelected=parent.gCurSld
+	}
+	else gSelected = -1
+	UpdOtl()
+}
+function UpdOtl(){ UpdIdx(parent.gCurSld) }
+function UpdIdx( idx )
+{
+	if( gSelected != idx ) {
+		if( gSelected > 0 )
+			ChangeState( gSelected,gOtlHiliteClr,gOtlNormalClr )
+		if( ObjExists( idx ) ) {
+			gSelected = idx
+			ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+		}
+		else gSelected = -1
+	}
+	if( gTxtState != parent.gOtlTxtExp ) {
+		state = "block"
+		if( !parent.gOtlTxtExp )
+			state="none"
+		for(ii=0; ii<gChildEntryTable.length; ii++) {
+			obj=gChildEntryTable[ii];
+			if( obj.id == null ) continue;
+			if( obj.id.indexOf("PPTC") >= 0 )
+				obj.style.display=state;
+		}
+		gTxtState=parent.gOtlTxtExp
+		if( ObjExists( gSelected ) )
+			ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+	}
+}
+function InitArray()
+{
+	count=0
+	var list=GetTags(document,"DIV");
+	for(ii=0; ii<list.length; ii++) {
+		obj=list.item(ii)
+		if( obj.id == null ) continue
+		if( obj.id.indexOf("PPTC") >= 0 )
+			gChildEntryTable[count++]=obj
+	}
+}
+function ChangeState( idx,fgColor,bgColor )
+{
+	obj=GetObj("PPTL"+idx)
+	obj.style.color=fgColor
+	obj=GetObj("PPTP"+idx)
+	obj.style.backgroundColor=bgColor
+}
+function ChgClr( o,clr ){ if( o.id != "PPTL"+gSelected ) o.style.color=clr }
+function Over( src ){ ChgClr(GetLink(src),gOtlActiveClr) }
+function Out( src ){ ChgClr(GetLink(src),gOtlHiliteClr) }
+function Follow(src){ window.location.href = GetLink(src).href; }
+function ObjExists( ii ) { obj=GetObj("PPTP"+ii ); return( obj ) }
+function GoToSld( href ){ UpdIdx(parent.GetSldNum(href)); parent.GoToSld( href ) }
+function CancelDrag(){ window.event.cancelBubble=true;window.event.returnValue=false}
+function GetLink(src)
+{
+   if(src.tagName=="A") return src
+   else return GetTags(src,"A").item(0)
+}
+function UpdNav()
+{
+	txt = "<center>";
+	if( parent.GetHrefObj( parent.gCurSld ).mOrigVis == 1 )
+		txt += "Slide " + parent.GetCurSldNum() + " of " + parent.GetNumSlds()
+	else
+		txt += "Hidden Slide"
+	txt += "</center>";
+	nav_text.innerHTML = txt;
+	if( !parent.HasPrevSld() )
+		gBtnArr["nb_prev"].Enabled(0)
+	else
+		gBtnArr["nb_prev"].Enabled(1)
+	if( !parent.HasNextSld() )
+		gBtnArr["nb_next"].Enabled(0)
+	else
+		gBtnArr["nb_next"].Enabled(1)
+	gBtnArr["nb_nts"].SetEnabled()
+	gBtnArr["nb_nts"].SetFlag( parent.gHasNts )
+	gBtnArr["nb_sldshw"].Enabled(1)
+	gBtnArr["nb_voice"].Enabled(1)
+}
+function UpdOtlNav()
+{
+	gBtnArr["nb_otl"].SetEnabled();
+	if( parent.gOtlOpen )
+		gBtnArr["nb_otlTxt"].Enabled( true );
+	else
+		document.all.item("nb_otlTxtBorder").style.visibility = "hidden";
+}
+
+//--></script>
+<style>
+<!--.PTxt
+	{position:relative;
+	width:100%;
+	margin-top:5px;
+	padding-left:2px;
+	font-weight:bold;}
+.CTxt
+	{position:relative;
+	width:100%;
+	margin-top:5px;}
+a
+	{color:white;
+	text-decoration:none;}
+ul
+	{color:white;
+	margin-bottom:0px;
+	margin-left:20px;}
+.sldNum
+	{margin-top:5px;
+	color:white;}
+.button
+	{position:absolute;
+	width:32px;
+	height:20px;
+	border-style:solid;
+	border-width:1px;
+	border-color:threedface;}
+-->
+</style>
+</head>
+
+<body onload="Load()" style='margin:2px'>
+
+<div id=NavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="_KPH()" style='display:none;visibility:hidden'>
+<table id="notesBtn" style='position:absolute;display:none;width:70px' align=left cellpadding=0
+ cellspacing=0>
+ <td nowrap>
+ <div id="nb_ntsElem" align=center style='position:relative;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt'><img src="notes_flag.gif"
+ border=0 id="notes_flag" style='display:none'><span
+style='mso-spacerun:yes'>  </span>Notes</div>
+ <div title="Show/Hide Notes" id="nb_nts" style='position:absolute;top:0%;
+ left:0%;width:100%;height:100%'></div>
+ </td>
+</table>
+
+<table style='position:relative;width:70px' align=right cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_sldshwText" title="Full
+Screen Slide Show" align=center style='position:relative;margin-left:20px;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt;cursor:default'>Slide
+Show</div>
+ <div id="nb_sldshwBorder" title="Full Screen Slide Show" style='position:absolute;top:0%;left:0%;width:100%;height:20px'>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_sldshw" style='position:relative;left:-254px'></div>
+ </div>
+ </td>
+ <td>
+ <div id="nb_voiceBorder" style='display:none;position:absolute;top:0;left:-40px;
+ width:20px;height:20px'>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_voice" title="Pause/Play Narration" style='position:
+ relative;left:-290px'></div>
+ </div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_prevBorder" class=button style='left:-30px'>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_prev" title="Previous Slide" style='position:relative;
+ left:0px'></div>
+ </div>
+ <span id="nav_text" style='position:relative;top:3px;width:100px;font-family:
+ Arial;color:buttontext;font-size:9pt'></span>
+ <div id="nb_nextBorder" class=button>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_next" title="Next Slide" style='position:relative;
+ left:-90px'></div>
+ </div>
+ </td>
+</table>
+</div>
+
+<div id=OtlNavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="_KPH()" style='display:none;visibility:hidden'>
+
+<table style='position:relative;width:70px' align=left cellpadding=0 cellspacing=0>
+ <td nowrap><div title="Show/Hide
+Outline" id="nb_otl"
+ style='position:absolute;top:0%;left:0%;width:100%;height:100%;cursor:default'>
+ <div id="nb_otlElem" align=center style='position:relative;padding:3px;font-family:Arial;
+ color:buttontext;font-size:9pt'>Outline</div></div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td>
+ <div style='position:absolute;left:-18px;width:24px;height:20px;border-style:
+ solid;border-width:1px;border-color:threedface' id="nb_otlTxtBorder">
+ <div style='position:absolute;clip:rect(0px, 22px, 18px, 0px)'><img
+ src=buttons.gif id="nb_otlTxt" title="Expand/Collapse Outline"
+ style='position:relative;left:-157px'></div>
+ </div>
+ </td>
+</table>
+
+</div>
+
+<div id=OtlObj style='display:none;visibility:hidden;'>
+
+
+<table width="100%" style='font-family:Arial;font-size:9pt'>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>1</font></div>
+  </td>
+  <td width="100%">
+  <div id=PPTP1 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0400.htm');" id=PPTL1>How to test a
+  philosophical theory empirically</a></font></div>
+  <div id=PPTC1 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li><span style='mso-spacerun:yes'>  </span>Barry Smith</li>
+   <li>http://ifomis.de</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>2</font></div>
+  </td>
+  <td>
+  <div id=PPTP2 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0655.htm');" id=PPTL2>Ontology as a branch of
+  philosophy</a></font></div>
+  <div id=PPTC2 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	the science of the kinds and structures of objects, properties, events,
+       processes and relations in every domain of reality</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>3</font></div>
+  </td>
+  <td>
+  <div id=PPTP3 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0659.htm');" id=PPTL3>Ontology a kind of
+  generalized chemistry or zoology</a></font></div>
+  <div id=PPTC3 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	(Aristotle’s ontology grew out of biological classification)</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>4</font></div>
+  </td>
+  <td>
+  <div id=PPTP4 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0660.htm');" id=PPTL4>Aristotle</a></font></div>
+  <div id=PPTC4 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li></li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>5</font></div>
+  </td>
+  <td>
+  <div id=PPTP5 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0661.htm');" id=PPTL5>First ontology <br>
+    (from Porphyry’s Commentary on Aristotle’s Categories)</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>6</font></div>
+  </td>
+  <td>
+  <div id=PPTP6 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0759.htm');" id=PPTL6><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>7</font></div>
+  </td>
+  <td>
+  <div id=PPTP7 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0975.htm');" id=PPTL7>Medical Diagnostic
+  Hierarchy</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>8</font></div>
+  </td>
+  <td>
+  <div id=PPTP8 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0662.htm');" id=PPTL8>Ontology is
+  distinguished from the special sciences</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>9</font></div>
+  </td>
+  <td>
+  <div id=PPTP9 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0663.htm');" id=PPTL9>and to establish how
+  they hang together to form a single whole (‘reality’ or ‘being’)</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>10</font></div>
+  </td>
+  <td>
+  <div id=PPTP10 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0666.htm');" id=PPTL10>Sources for ontological
+  theorizing:</a></font></div>
+  <div id=PPTC10 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	the study of ancient texts</li>
+   <li>	thought experiments (we are philosophers, after all)</li>
+   <li>	the development of formal theories</li>
+   <li>	the results of natural science</li>
+   <li>now also:</li>
+   <li>	working with computers</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>11</font></div>
+  </td>
+  <td>
+  <div id=PPTP11 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0932.htm');" id=PPTL11>The existence of
+  computers</a></font></div>
+  <div id=PPTC11 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	and of large databases</li>
+   <li>	allows us to express old philosophical problems in a new light</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>12</font></div>
+  </td>
+  <td>
+  <div id=PPTP12 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0933.htm');" id=PPTL12>Example:<br>
+    The problem of the unity of science</a></font></div>
+  <div id=PPTC12 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	The logical positivist solution to this problem addressed a world in
+       which sciences are identified with</li>
+   <li>	printed texts</li>
+   <li>	What if sciences are identified with</li>
+   <li>	Large Databases ?</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>13</font></div>
+  </td>
+  <td>
+  <div id=PPTP13 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0936.htm');" id=PPTL13><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>14</font></div>
+  </td>
+  <td>
+  <div id=PPTP14 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0937.htm');" id=PPTL14>The Database Tower of
+  Babel Problem</a></font></div>
+  <div id=PPTC14 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	Each family of databases has its own idiosyncratic terms and concepts</li>
+   <li>	by means of which it represents the information it receives</li>
+   <li>	How to resolve the incompatibilities which result when databases need
+       to be merged?</li>
+   <li>	<span style='mso-spacerun:yes'>    </span>Compare: how to unify biology
+       and chemistry?</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>15</font></div>
+  </td>
+  <td>
+  <div id=PPTP15 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0684.htm');" id=PPTL15>The term ‘ontology’</a></font></div>
+  <div id=PPTC15 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	now used by information scientists to describe the building of standardized
+       taxonomies</li>
+   <li>	which are designed to make databases mutually compatible</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>16</font></div>
+  </td>
+  <td>
+  <div id=PPTP16 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0741.htm');" id=PPTL16>An ‘ontology’</a></font></div>
+  <div id=PPTC16 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	is a dictionary of terms formulated in a canonical syntax and with
+       commonly accepted definitions and axioms</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>17</font></div>
+  </td>
+  <td>
+  <div id=PPTP17 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0693.htm');" id=PPTL17>How has this idea been
+  realized?</a></font></div>
+  <div id=PPTC17 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	How have information systems engineers built ontologies?</li>
+   <li>	From where did they take the term ‘ontology’?</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>18</font></div>
+  </td>
+  <td>
+  <div id=PPTP18 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0935.htm');" id=PPTL18>From Quine</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>19</font></div>
+  </td>
+  <td>
+  <div id=PPTP19 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0742.htm');" id=PPTL19>the study of ontology
+  is confused with the study of<span style='mso-spacerun:yes'> 
+  </span>Ontological Commitment</a></font></div>
+  <div id=PPTC19 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	… for Quineans, the ontologist studies, not reality,</li>
+   <li>	but scientific theories</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>20</font></div>
+  </td>
+  <td>
+  <div id=PPTP20 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0743.htm');" id=PPTL20>Quine:</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>21</font></div>
+  </td>
+  <td>
+  <div id=PPTP21 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0934.htm');" id=PPTL21>Quineanism:</a></font></div>
+  <div id=PPTC21 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	ontology is the study of the ontological commitments or presuppositions
+       embodied in the different natural sciences</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>22</font></div>
+  </td>
+  <td>
+  <div id=PPTP22 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0973.htm');" id=PPTL22>In the hands of
+  information scientists</a></font></div>
+  <div id=PPTC22 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	this is transformed into the view that ontology should study</li>
+   <li>	the concepts people use</li>
+   <li>	Ontology becomes</li>
+   <li>	the study of concept systems</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>23</font></div>
+  </td>
+  <td>
+  <div id=PPTP23 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0947.htm');" id=PPTL23><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>24</font></div>
+  </td>
+  <td>
+  <div id=PPTP24 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0695.htm');" id=PPTL24>Arguments for Ontology
+  as Conceptual Modeling</a></font></div>
+  <div id=PPTC24 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Ontology is hard.</li>
+   <li>Life is short.</li>
+   <li>Let’s do conceptual modeling instead</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>25</font></div>
+  </td>
+  <td>
+  <div id=PPTP25 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0699.htm');" id=PPTL25>Ontological engineers</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>26</font></div>
+  </td>
+  <td>
+  <div id=PPTP26 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0753.htm');" id=PPTL26><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>27</font></div>
+  </td>
+  <td>
+  <div id=PPTP27 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0754.htm');" id=PPTL27>For an information
+  system ontology</a></font></div>
+  <div id=PPTC27 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>	there is no reality other than the one created through the system
+       itself,</li>
+   <li>	so that the system is, by definition, correct</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>28</font></div>
+  </td>
+  <td>
+  <div id=PPTP28 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0712.htm');" id=PPTL28>Ontological engineering</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>29</font></div>
+  </td>
+  <td>
+  <div id=PPTP29 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0974.htm');" id=PPTL29>‘Ontology’</a></font></div>
+  <div id=PPTC29 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>is tremendously popular in information systems research today</li>
+   <br>
+   <br>
+   <li><span style='mso-spacerun:yes'>                             
+       </span>…<span style='mso-spacerun:yes'>  </span>b u t</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>30</font></div>
+  </td>
+  <td>
+  <div id=PPTP30 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0717.htm');" id=PPTL30>ATTEMPTS TO SOLVE
+  THE<br>
+    TOWER OF BABEL PROBLEM<br>
+    VIA ONTOLOGIES AS<br>
+    CONCEPTUAL MODELS HAVE<br>
+    FAILED</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>31</font></div>
+  </td>
+  <td>
+  <div id=PPTP31 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0757.htm');" id=PPTL31><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>32</font></div>
+  </td>
+  <td>
+  <div id=PPTP32 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0976.htm');" id=PPTL32>To see why</a></font></div>
+  <div id=PPTC32 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	let us consider some examples of concept systems in the medical domain</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>33</font></div>
+  </td>
+  <td>
+  <div id=PPTP33 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1006.htm');" id=PPTL33>Attempts at such
+  standardization include:</a></font></div>
+  <div id=PPTC33 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>UMLS</li>
+   <li>SNOMED</li>
+   <li>GALEN</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>34</font></div>
+  </td>
+  <td>
+  <div id=PPTP34 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0613.htm');" id=PPTL34>Example 1: UMLS</a></font></div>
+  <div id=PPTC34 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Universal Medical Language System</li>
+   <li>Very large taxonomy maintained by National Library of Medicine in
+       Washington DC</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>35</font></div>
+  </td>
+  <td>
+  <div id=PPTP35 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0620.htm');" id=PPTL35>Example 1: UMLS</a></font></div>
+  <div id=PPTC35 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>134 semantic types</li>
+   <li>800,000 concepts</li>
+   <li>10 million interconcept relationships</li>
+   <li>UMLS is the product of fusion of several source vocabularies</li>
+   <li>(built out of concept trees)</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>36</font></div>
+  </td>
+  <td>
+  <div id=PPTP36 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0622.htm');" id=PPTL36>Example 2: SNOMED-RT</a></font></div>
+  <div id=PPTC36 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Systematized Nomenclature of Medicine</li>
+   <li>A Reference Terminology with Legal Force</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>37</font></div>
+  </td>
+  <td>
+  <div id=PPTP37 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0985.htm');" id=PPTL37>Example 2: SNOMED-RT</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>38</font></div>
+  </td>
+  <td>
+  <div id=PPTP38 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0951.htm');" id=PPTL38>Problems with UMLS and
+  SNOMED</a></font></div>
+  <div id=PPTC38 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Each is a ‘fusion’ of several source vocabularies</li>
+   <li>They were fused without an ontological system being established first</li>
+   <li>They contain circularities, taxonomic gaps, and unnatural ad hoc
+       determinations</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>39</font></div>
+  </td>
+  <td>
+  <div id=PPTP39 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0952.htm');" id=PPTL39>Example 3: GALEN</a></font></div>
+  <div id=PPTC39 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	Generalised Architecture for</li>
+   <li>	Languages, Encyclopaedias and</li>
+   <li>	Nomenclatures in Medicine</li>
+   <li>	Applied especially to surgical procedures</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>40</font></div>
+  </td>
+  <td>
+  <div id=PPTP40 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0977.htm');" id=PPTL40>Problems with GALEN</a></font></div>
+  <div id=PPTC40 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Ontology is ramshackle and has been subject to repeated fixes</li>
+   <li>Unnaturalness makes coding slow and expensive, hence narrow scope</li>
+   <li>Not gained wide acceptance</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>41</font></div>
+  </td>
+  <td>
+  <div id=PPTP41 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0643.htm');" id=PPTL41><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>42</font></div>
+  </td>
+  <td>
+  <div id=PPTP42 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0647.htm');" id=PPTL42>Representation of Blood
+  in GALEN</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>43</font></div>
+  </td>
+  <td>
+  <div id=PPTP43 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0648.htm');" id=PPTL43>Representation of Blood
+  in UMLS</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>44</font></div>
+  </td>
+  <td>
+  <div id=PPTP44 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0649.htm');" id=PPTL44>Representation of Blood
+  in SNOMED</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>45</font></div>
+  </td>
+  <td>
+  <div id=PPTP45 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0978.htm');" id=PPTL45>How make ONE SYSTEM out
+  of this?</a></font></div>
+  <div id=PPTC45 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	To reap the benefits of standardization we need to resolve such
+       incompatibilities?</li>
+   <li>	But how?</li>
+   <li>	Not just by looking at the concepts underlying the respective systems</li>
+   <li>	For how, just by looking at separate concepts, could we establish how
+       these concept systems relate to each other?</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>46</font></div>
+  </td>
+  <td>
+  <div id=PPTP46 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0979.htm');" id=PPTL46>different conceptual
+  systems</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>47</font></div>
+  </td>
+  <td>
+  <div id=PPTP47 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0980.htm');" id=PPTL47>need not interconnect
+  at all</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>48</font></div>
+  </td>
+  <td>
+  <div id=PPTP48 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1007.htm');" id=PPTL48>Database
+  standardization</a></font></div>
+  <div id=PPTC48 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	is desparately needed in medicine</li>
+   <li>	… to enable the huge amounts of data</li>
+   <li>	resulting from clinical trials by different groups working on the same
+       drugs/therapies/diagnostic methods</li>
+   <li>	<span style='mso-spacerun:yes'>                           </span>…to be
+       fused together</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>49</font></div>
+  </td>
+  <td>
+  <div id=PPTP49 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0981.htm');" id=PPTL49>the only way to make
+  them interconnect</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>50</font></div>
+  </td>
+  <td>
+  <div id=PPTP50 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0982.htm');" id=PPTL50>but also at the reality
+  beyond</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>51</font></div>
+  </td>
+  <td>
+  <div id=PPTP51 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0765.htm');" id=PPTL51><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>52</font></div>
+  </td>
+  <td>
+  <div id=PPTP52 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0764.htm');" id=PPTL52>How to solve the Tower
+  of Babel Problem</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>53</font></div>
+  </td>
+  <td>
+  <div id=PPTP53 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0956.htm');" id=PPTL53>Look not at concept
+  systems alone</a></font></div>
+  <div id=PPTC53 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	but at how concept systems relate to the world beyond</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>54</font></div>
+  </td>
+  <td>
+  <div id=PPTP54 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0987.htm');" id=PPTL54>Concept systems which
+  are transparent to reality</a></font></div>
+  <div id=PPTC54 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	have a reasonable chance of being integrated together into a single
+       ontological system</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>55</font></div>
+  </td>
+  <td>
+  <div id=PPTP55 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0993.htm');" id=PPTL55>This means we need to
+  return to the traditional view of ontology</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>56</font></div>
+  </td>
+  <td>
+  <div id=PPTP56 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0988.htm');" id=PPTL56>… as a maximally
+  opportunistic<br>
+    theory of reality</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>57</font></div>
+  </td>
+  <td>
+  <div id=PPTP57 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0990.htm');" id=PPTL57>Maximally opportunistic</a></font></div>
+  <div id=PPTC57 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>means:</li>
+   <li>don’t just look at concepts</li>
+   <li>look at the objects themselves</li>
+   <li>towards which such concepts are directed</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>58</font></div>
+  </td>
+  <td>
+  <div id=PPTP58 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1008.htm');" id=PPTL58>… look at the objects</a></font></div>
+  <div id=PPTC58 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>from every available direction</li>
+   <li>	both formal and informal</li>
+   <li>	scientific and non-scientific</li>
+   <li>	empirical and theoretical</li>
+   <li>attempting always to establish how these objects hang together
+       ontologically</li>
+   <br>
+   <br>
+   <li></li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>59</font></div>
+  </td>
+  <td>
+  <div id=PPTP59 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0992.htm');" id=PPTL59>Maximally opportunistic</a></font></div>
+  <div id=PPTC59 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>means:</li>
+   <li>	look at concepts critically</li>
+   <li>	and always in such a way as to</li>
+   <li>	include independent ways to access the objects themselves</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>60</font></div>
+  </td>
+  <td>
+  <div id=PPTP60 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0767.htm');" id=PPTL60><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>61</font></div>
+  </td>
+  <td>
+  <div id=PPTP61 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0766.htm');" id=PPTL61>How to test a
+  philosophical theory empirically?</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>62</font></div>
+  </td>
+  <td>
+  <div id=PPTP62 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1017.htm');" id=PPTL62>IFOMIS</a></font></div>
+  <div id=PPTC62 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Institute for Formal Ontology and Medical Information Science</li>
+   <li>Faculty of Medicine</li>
+   <li>University of Leipzig</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>63</font></div>
+  </td>
+  <td>
+  <div id=PPTP63 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1018.htm');" id=PPTL63>IFOMIS</a></font></div>
+  <div id=PPTC63 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	in collaboration with those groups of ontological engineers who have
+       recognized that they can improve their methods</li>
+   <li>	by drawing on the results of the philosophical work in ontology carried
+       out over the last 2000 years</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>64</font></div>
+  </td>
+  <td>
+  <div id=PPTP64 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1019.htm');" id=PPTL64><span
+  style='mso-spacerun:yes'>  </span>… above all:</a></font></div>
+  <div id=PPTC64 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>LADSEB, Padua/Trento</li>
+   <li>ITBM-CNR, Rome</li>
+   <li>ONTEK Corporation, Georgia</li>
+   <li>Language and Computing EV, Belgium</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>65</font></div>
+  </td>
+  <td>
+  <div id=PPTP65 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0996.htm');" id=PPTL65>It will develop medical
+  ontologies</a></font></div>
+  <div id=PPTC65 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>at different levels of granularity:</li>
+   <li>		cell ontology</li>
+   <li>		drug ontology *</li>
+   <li>		protein ontology</li>
+   <li>		gene ontology *</li>
+   <br>
+   <br>
+   <li>* = already exists (but in a variety of mutually incompatible forms)</li>
+   <br>
+   <br>
+   <li></li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>66</font></div>
+  </td>
+  <td>
+  <div id=PPTP66 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0997.htm');" id=PPTL66>and also</a></font></div>
+  <div id=PPTC66 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>		anatomical ontology *</li>
+   <li>		epidemiological ontology</li>
+   <li>		disease ontology</li>
+   <li>		therapy ontology</li>
+   <li>		pathology ontology *</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>67</font></div>
+  </td>
+  <td>
+  <div id=PPTP67 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0998.htm');" id=PPTL67>&quot;physician’s
+  ontology&quot;</a></font></div>
+  <div id=PPTC67 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>		physician’s ontology</li>
+   <li>		patient’s ontology</li>
+   <li>	and even</li>
+   <li>		hospital management ontology *</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>68</font></div>
+  </td>
+  <td>
+  <div id=PPTP68 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0963.htm');" id=PPTL68><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>69</font></div>
+  </td>
+  <td>
+  <div id=PPTP69 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0962.htm');" id=PPTL69>Ontology</a></font></div>
+  <div id=PPTC69 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	like cartography</li>
+   <li>	must work with maps at different scales</li>
+   <li>	How fit these maps (conceptual grids) together into a single system?</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>70</font></div>
+  </td>
+  <td>
+  <div id=PPTP70 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0999.htm');" id=PPTL70>Consider them</a></font></div>
+  <div id=PPTC70 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>as grids</li>
+   <li>transparent to reality</li>
+   <li>allowing our directedness towards objects beyond</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>71</font></div>
+  </td>
+  <td>
+  <div id=PPTP71 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1000.htm');" id=PPTL71>Cartographic Projection</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>72</font></div>
+  </td>
+  <td>
+  <div id=PPTP72 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1001.htm');" id=PPTL72>Optical Projection</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>73</font></div>
+  </td>
+  <td>
+  <div id=PPTP73 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1003.htm');" id=PPTL73>intentionality = the
+  directedness towards objects via conceptual grids</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>74</font></div>
+  </td>
+  <td>
+  <div id=PPTP74 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1004.htm');" id=PPTL74>Intentional
+  directedness</a></font></div>
+  <div id=PPTC74 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	… is effected via conceptual grids</li>
+   <li><br>
+              we are able to reach out to the objects themselves because our
+       conceptual grids are transparent</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>75</font></div>
+  </td>
+  <td>
+  <div id=PPTP75 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0811.htm');" id=PPTL75><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>76</font></div>
+  </td>
+  <td>
+  <div id=PPTP76 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0834.htm');" id=PPTL76>there are many
+  compatible map-like partitions</a></font></div>
+  <div id=PPTC76 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>at different scales,</li>
+   <li>which are all transparent <br>
+              to the reality beyond</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>77</font></div>
+  </td>
+  <td>
+  <div id=PPTP77 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0825.htm');" id=PPTL77>Universe/Periodic Table</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>78</font></div>
+  </td>
+  <td>
+  <div id=PPTP78 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0826.htm');" id=PPTL78>Universe/Periodic Table</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>79</font></div>
+  </td>
+  <td>
+  <div id=PPTP79 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0824.htm');" id=PPTL79>Ontological Zooming</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>80</font></div>
+  </td>
+  <td>
+  <div id=PPTP80 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0874.htm');" id=PPTL80>The job of the
+  ontologist</a></font></div>
+  <div id=PPTC80 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>	is to understand how different partitions of the same reality
+       interrelate</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>81</font></div>
+  </td>
+  <td>
+  <div id=PPTP81 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0896.htm');" id=PPTL81><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>82</font></div>
+  </td>
+  <td>
+  <div id=PPTP82 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0941.htm');" id=PPTL82>The Tests</a></font></div>
+  <div id=PPTC82 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Uniform top-level ontology for medicine applicable at distinct
+       granularities</li>
+   <li>Test-case development of partial medical domain ontologies applied to:</li>
+   <li>Standardization of clinical trial protocols</li>
+   <li>Clinical trial Merkmal-dictionary</li>
+   <li>Processing of unstructured patient records (www.landc.be)</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>83</font></div>
+  </td>
+  <td>
+  <div id=PPTP83 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0943.htm');" id=PPTL83>The Goals</a></font></div>
+  <div id=PPTC83 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Uniform top-level ontology for medicine</li>
+   <li>ONE YEAR</li>
+   <li>Applicable at distinct granularities (e.g. gene ontology)</li>
+   <li>FOUR YEARS</li>
+   <li>Standardization of clinical trial protocol</li>
+   <li>TWO YEARS</li>
+   <li>Clinical trial Merkmal-dictionary</li>
+   <li>TWO YEARS</li>
+   <li>Processing of unstructured patient records (www.landc.be)</li>
+   <li>THREE YEARS</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>84</font></div>
+  </td>
+  <td>
+  <div id=PPTP84 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0944.htm');" id=PPTL84>Measures of Success</a></font></div>
+  <div id=PPTC84 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Uniform top-level ontology for medicine</li>
+   <li>NO COMPETITOR</li>
+   <li>applicable at distinct granularities</li>
+   <li>NO COMPETITOR</li>
+   <li>Standardization of clinical trial protocol</li>
+   <li>NO SERIOUS COMPETITOR</li>
+   <li>Clinical trial Merkmal-dictionary</li>
+   <li>NO COMPETITOR</li>
+   <li>Processing of unstructured patient records</li>
+   <li>MANY COMPETITORS, BUT GOOD MEASURES OF EFFECTIVENESS</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>85</font></div>
+  </td>
+  <td>
+  <div id=PPTP85 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1010.htm');" id=PPTL85><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>86</font></div>
+  </td>
+  <td>
+  <div id=PPTP86 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1012.htm');" id=PPTL86><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>87</font></div>
+  </td>
+  <td>
+  <div id=PPTP87 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1013.htm');" id=PPTL87><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>88</font></div>
+  </td>
+  <td>
+  <div id=PPTP88 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide1020.htm');" id=PPTL88>The End</a></font></div>
+  </td>
+ </tr>
+</table>
+
+
+
+</div>
+
+<div style='display:none'><a href=master05.htm></a><a href=master05.xml></a><a
+href=master02.htm></a><a href=pres.xml></a><a href=editdata.mso></a><a
+href=slide0400.htm></a><a href=slide0655.htm></a><a href=slide0659.htm></a><a
+href=slide0660.htm></a><a href="slide0660_image001.jpg"></a><a
+href="slide0660_image002.jpg"></a><a href=slide0661.htm></a><a
+href="slide0661_image003.jpg"></a><a href="slide0661_image004.jpg"></a><a
+href=slide0759.htm></a><a href="slide0759_image005.jpg"></a><a
+href="slide0759_image006.gif"></a><a href=slide0975.htm></a><a
+href="slide0975_image007.png"></a><a href="slide0975_image008.jpg"></a><a
+href=slide0662.htm></a><a href=slide0663.htm></a><a href=slide0666.htm></a><a
+href=slide0932.htm></a><a href=slide0933.htm></a><a href=slide0936.htm></a><a
+href="slide0936_image009.jpg"></a><a href="slide0936_image010.jpg"></a><a
+href=slide0937.htm></a><a href=slide0684.htm></a><a href=slide0741.htm></a><a
+href=slide0693.htm></a><a href=slide0935.htm></a><a
+href="slide0935_image011.png"></a><a href="slide0935_image012.jpg"></a><a
+href=slide0742.htm></a><a href=slide0743.htm></a><a href=slide0934.htm></a><a
+href=slide0973.htm></a><a href=slide0947.htm></a><a
+href="slide0947_image013.jpg"></a><a href="slide0947_image014.jpg"></a><a
+href=slide0695.htm></a><a href=slide0699.htm></a><a href=slide0753.htm></a><a
+href="slide0753_image015.jpg"></a><a href=slide0754.htm></a><a
+href=slide0712.htm></a><a href=slide0974.htm></a><a href=slide0717.htm></a><a
+href="slide0717_image016.gif"></a><a href=slide0757.htm></a><a
+href="slide0757_image017.jpg"></a><a href=slide0976.htm></a><a
+href=slide1006.htm></a><a href=slide0613.htm></a><a href=slide0620.htm></a><a
+href=slide0622.htm></a><a href=slide0985.htm></a><a href=slide0951.htm></a><a
+href=slide0952.htm></a><a href=slide0977.htm></a><a href=slide0643.htm></a><a
+href=slide0647.htm></a><a href="slide0647_image018.gif"></a><a
+href=slide0648.htm></a><a href="slide0648_image019.gif"></a><a
+href=slide0649.htm></a><a href="slide0649_image020.gif"></a><a
+href=slide0978.htm></a><a href=slide0979.htm></a><a
+href="slide0979_image021.wmz"></a><a href="slide0979_image022.gif"></a><a
+href="slide0979_image023.wmz"></a><a href="slide0979_image024.gif"></a><a
+href=slide0980.htm></a><a href="slide0980_image025.gif"></a><a
+href="slide0980_image026.gif"></a><a href="slide0980_image027.gif"></a><a
+href="slide0980_image028.gif"></a><a href=slide1007.htm></a><a
+href=slide0981.htm></a><a href="slide0981_image029.gif"></a><a
+href="slide0981_image030.gif"></a><a href=slide0982.htm></a><a
+href="slide0982_image031.jpg"></a><a href="slide0982_image032.jpg"></a><a
+href="slide0982_image033.gif"></a><a href=slide0765.htm></a><a
+href="slide0765_image034.jpg"></a><a href=slide0764.htm></a><a
+href=slide0956.htm></a><a href=slide0987.htm></a><a href=slide0993.htm></a><a
+href=slide0988.htm></a><a href=slide0990.htm></a><a href=slide1008.htm></a><a
+href=slide0992.htm></a><a href=slide0767.htm></a><a
+href="slide0767_image035.jpg"></a><a href=slide0766.htm></a><a
+href=slide1017.htm></a><a href="slide1017_image036.gif"></a><a
+href="slide1017_image037.gif"></a><a href="slide1017_image038.gif"></a><a
+href=slide1018.htm></a><a href=slide1019.htm></a><a href=slide0996.htm></a><a
+href=slide0997.htm></a><a href=slide0998.htm></a><a href=slide0963.htm></a><a
+href="slide0963_image039.png"></a><a href="slide0963_image040.gif"></a><a
+href=slide0962.htm></a><a href=slide0999.htm></a><a href=slide1000.htm></a><a
+href="slide1000_image041.jpg"></a><a href="slide1000_image042.gif"></a><a
+href="slide1000_image043.wmz"></a><a href="slide1000_image044.pcz"></a><a
+href=oledata.mso></a><a href="slide1000_image045.gif"></a><a
+href=slide1001.htm></a><a href="slide1001_image046.png"></a><a
+href="slide1001_image047.jpg"></a><a href="slide1001_image048.gif"></a><a
+href=slide1003.htm></a><a href="slide1003_image049.png"></a><a
+href="slide1003_image050.gif"></a><a href="slide1003_image051.gif"></a><a
+href="slide1003_image052.gif"></a><a href="slide1003_image053.wmz"></a><a
+href="slide1003_image054.pcz"></a><a href="slide1003_image055.gif"></a><a
+href=slide1004.htm></a><a href="slide1004_image056.jpg"></a><a
+href="slide1004_image057.jpg"></a><a href=slide0811.htm></a><a
+href="slide0811_image058.jpg"></a><a href=slide0834.htm></a><a
+href=slide0825.htm></a><a href="slide0825_image059.gif"></a><a
+href="slide0825_image060.gif"></a><a href="slide0825_image061.gif"></a><a
+href="slide0825_image062.gif"></a><a href="slide0825_image063.gif"></a><a
+href=slide0826.htm></a><a href=slide0826.xml></a><a
+href="slide0826_image064.gif"></a><a href=slide0824.htm></a><a
+href="slide0824_image065.gif"></a><a href="slide0824_image066.gif"></a><a
+href="slide0824_image067.gif"></a><a href="slide0824_image068.gif"></a><a
+href=slide0874.htm></a><a href=slide0896.htm></a><a
+href="slide0896_image069.jpg"></a><a href=slide0941.htm></a><a
+href=slide0943.htm></a><a href=slide0944.htm></a><a href=slide1010.htm></a><a
+href="slide1010_image070.jpg"></a><a href=slide1012.htm></a><a
+href="slide1012_image071.jpg"></a><a href=slide1013.htm></a><a
+href="slide1013_image072.jpg"></a><a href=slide1020.htm></a><a
+href=master01.htm></a><a href="master05_stylesheet.css"></a><a
+href=font004.eot></a><a href=font005.eot></a><a href=font008.eot></a><a
+href=font016.eot></a><a href=font017.eot></a><a href=font018.eot></a><a
+href=font019.eot></a><a href=font020.eot></a><a href=font021.eot></a><a
+href=font022.eot></a><a href=font023.eot></a><a href=script.js></a><a
+href=fullscreen.htm></a><a href="notes_flag.gif"></a><a href=buttons.gif></a><a
+href=frame.htm></a><a href=outline.htm></a><a href=filelist.xml></a><a
+href=master05.htm></a><a href=master05.xml></a><a href=master02.htm></a><a
+href=pres.xml></a><a href=editdata.mso></a><a href=slide0400.htm></a><a
+href=slide0655.htm></a><a href=slide0659.htm></a><a href=slide0660.htm></a><a
+href="slide0660_image001.jpg"></a><a href="slide0660_image002.jpg"></a><a
+href=slide0661.htm></a><a href="slide0661_image003.jpg"></a><a
+href="slide0661_image004.jpg"></a><a href=slide0759.htm></a><a
+href="slide0759_image005.jpg"></a><a href="slide0759_image006.gif"></a><a
+href=slide0975.htm></a><a href="slide0975_image007.png"></a><a
+href="slide0975_image008.jpg"></a><a href=slide0662.htm></a><a
+href=slide0663.htm></a><a href=slide0666.htm></a><a href=slide0932.htm></a><a
+href=slide0933.htm></a><a href=slide0936.htm></a><a
+href="slide0936_image009.jpg"></a><a href="slide0936_image010.jpg"></a><a
+href=slide0937.htm></a><a href=slide0684.htm></a><a href=slide0741.htm></a><a
+href=slide0693.htm></a><a href=slide0935.htm></a><a
+href="slide0935_image011.png"></a><a href="slide0935_image012.jpg"></a><a
+href=slide0742.htm></a><a href=slide0743.htm></a><a href=slide0934.htm></a><a
+href=slide0973.htm></a><a href=slide0947.htm></a><a
+href="slide0947_image013.jpg"></a><a href="slide0947_image014.jpg"></a><a
+href=slide0695.htm></a><a href=slide0699.htm></a><a href=slide0753.htm></a><a
+href="slide0753_image015.jpg"></a><a href=slide0754.htm></a><a
+href=slide0712.htm></a><a href=slide0974.htm></a><a href=slide0717.htm></a><a
+href="slide0717_image016.gif"></a><a href=slide0757.htm></a><a
+href="slide0757_image017.jpg"></a><a href=slide0976.htm></a><a
+href=slide1006.htm></a><a href=slide0613.htm></a><a href=slide0620.htm></a><a
+href=slide0622.htm></a><a href=slide0985.htm></a><a href=slide0951.htm></a><a
+href=slide0952.htm></a><a href=slide0977.htm></a><a href=slide0643.htm></a><a
+href=slide0647.htm></a><a href="slide0647_image018.gif"></a><a
+href=slide0648.htm></a><a href="slide0648_image019.gif"></a><a
+href=slide0649.htm></a><a href="slide0649_image020.gif"></a><a
+href=slide0978.htm></a><a href=slide0979.htm></a><a
+href="slide0979_image021.wmz"></a><a href="slide0979_image022.gif"></a><a
+href="slide0979_image023.wmz"></a><a href="slide0979_image024.gif"></a><a
+href=slide0980.htm></a><a href="slide0980_image025.gif"></a><a
+href="slide0980_image026.gif"></a><a href="slide0980_image027.gif"></a><a
+href="slide0980_image028.gif"></a><a href=slide1007.htm></a><a
+href=slide0981.htm></a><a href="slide0981_image029.gif"></a><a
+href="slide0981_image030.gif"></a><a href=slide0982.htm></a><a
+href="slide0982_image031.jpg"></a><a href="slide0982_image032.jpg"></a><a
+href="slide0982_image033.gif"></a><a href=slide0765.htm></a><a
+href="slide0765_image034.jpg"></a><a href=slide0764.htm></a><a
+href=slide0956.htm></a><a href=slide0987.htm></a><a href=slide0993.htm></a><a
+href=slide0988.htm></a><a href=slide0990.htm></a><a href=slide1008.htm></a><a
+href=slide0992.htm></a><a href=slide0767.htm></a><a
+href="slide0767_image035.jpg"></a><a href=slide0766.htm></a><a
+href=slide1017.htm></a><a href="slide1017_image036.gif"></a><a
+href="slide1017_image037.gif"></a><a href="slide1017_image038.gif"></a><a
+href=slide1018.htm></a><a href=slide1019.htm></a><a href=slide0996.htm></a><a
+href=slide0997.htm></a><a href=slide0998.htm></a><a href=slide0963.htm></a><a
+href="slide0963_image039.png"></a><a href="slide0963_image040.gif"></a><a
+href=slide0962.htm></a><a href=slide0999.htm></a><a href=slide1000.htm></a><a
+href="slide1000_image041.jpg"></a><a href="slide1000_image042.gif"></a><a
+href="slide1000_image043.wmz"></a><a href="slide1000_image001.pcz"></a><a
+href=oledata.mso></a><a href="slide1000_image045.gif"></a><a
+href=slide1001.htm></a><a href="slide1001_image046.png"></a><a
+href="slide1001_image047.jpg"></a><a href="slide1001_image048.gif"></a><a
+href=slide1003.htm></a><a href="slide1003_image049.png"></a><a
+href="slide1003_image050.gif"></a><a href="slide1003_image051.gif"></a><a
+href="slide1003_image052.gif"></a><a href="slide1003_image053.wmz"></a><a
+href="slide1003_image002.pcz"></a><a href="slide1003_image055.gif"></a><a
+href=slide1004.htm></a><a href="slide1004_image056.jpg"></a><a
+href="slide1004_image057.jpg"></a><a href=slide0811.htm></a><a
+href="slide0811_image058.jpg"></a><a href=slide0834.htm></a><a
+href=slide0825.htm></a><a href="slide0825_image059.gif"></a><a
+href="slide0825_image060.gif"></a><a href="slide0825_image061.gif"></a><a
+href="slide0825_image062.gif"></a><a href="slide0825_image063.gif"></a><a
+href=slide0826.htm></a><a href=slide0826.xml></a><a
+href="slide0826_image064.gif"></a><a href=slide0824.htm></a><a
+href="slide0824_image065.gif"></a><a href="slide0824_image066.gif"></a><a
+href="slide0824_image067.gif"></a><a href="slide0824_image068.gif"></a><a
+href=slide0874.htm></a><a href=slide0896.htm></a><a
+href="slide0896_image069.jpg"></a><a href=slide0941.htm></a><a
+href=slide0943.htm></a><a href=slide0944.htm></a><a href=slide1010.htm></a><a
+href="slide1010_image070.jpg"></a><a href=slide1012.htm></a><a
+href="slide1012_image071.jpg"></a><a href=slide1013.htm></a><a
+href="slide1013_image072.jpg"></a><a href=slide1020.htm></a><a
+href=master01.htm></a><a href="master05_stylesheet.css"></a><a
+href=font004.eot></a><a href=font005.eot></a><a href=font008.eot></a><a
+href=font016.eot></a><a href=font017.eot></a><a href=font018.eot></a><a
+href=font019.eot></a><a href=font020.eot></a><a href=font021.eot></a><a
+href=font022.eot></a><a href=font023.eot></a><a href=script.js></a><a
+href="../Applied_philosophy(Berlin2002).htm"></a><a href=fullscreen.htm></a><a
+href="notes_flag.gif"></a><a href=buttons.gif></a><a href=frame.htm></a><a
+href=outline.htm></a></div>
+
+</body>
+
+</html>

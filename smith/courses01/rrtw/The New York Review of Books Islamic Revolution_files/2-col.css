@@ -1,0 +1,60 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#center-content {
+	BACKGROUND: #fff; MARGIN: 10px 10px 0px; voice-family: inherit
+}
+UNKNOWN {
+	MARGIN: 10px 10px 0px
+}
+#right-content {
+	RIGHT: 10px; BACKGROUND: #fff; WIDTH: 160px; POSITION: absolute; TOP: 72px
+}
+#banner {
+	BACKGROUND: url(/images/grey-white-line.gif) #fff repeat-x; HEIGHT: 43px; voice-family: inherit
+}
+UNKNOWN {
+	HEIGHT: 43px
+}
+H1 {
+	FONT-SIZE: 2em
+}
+H2 {
+	FONT-SIZE: 1.5em
+}
+H3 {
+	FONT-SIZE: 1.25em
+}
+H4 {
+	FONT-SIZE: 1em
+}
+H5 {
+	FONT-SIZE: 1em
+}
+SUP {
+	FONT-SIZE: 0.5em
+}
+.date {
+	FONT-VARIANT: small-caps
+}
+.nav {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: smaller; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.footer {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: smaller; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.footer {
+	CLEAR: both; BORDER-TOP: #666 7px solid
+}
+.sidebar {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #666 1px solid; PADDING-LEFT: 10px; FONT-SIZE: smaller; BACKGROUND: #ffc; PADDING-BOTTOM: 10px; BORDER-LEFT: #666 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #666 1px solid
+}
+P.initial:first-letter {
+	FONT-WEIGHT: bold; FONT-SIZE: 300%
+}
+.section-break {
+	DISPLAY: none
+}
+.hidden {
+	DISPLAY: none
+}

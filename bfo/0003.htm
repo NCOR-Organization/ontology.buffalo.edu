@@ -1,0 +1,1283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0040)http://ontology.buffalo.edu/bfo/0002.htm -->
+<!-- saved from url=(0040)http://ontology.buffalo.edu/bfo/0002.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="0003_files/filelist.xml">
+<link rel=Edit-Time-Data href="0003_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Basic Formal Ontology</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>bsmith</o:Author>
+  <o:LastAuthor>bsmith</o:LastAuthor>
+  <o:Revision>26</o:Revision>
+  <o:LastPrinted>2002-05-29T12:20:00Z</o:LastPrinted>
+  <o:Created>2002-05-28T08:04:00Z</o:Created>
+  <o:LastSaved>2002-05-29T12:25:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>356</o:Words>
+  <o:Characters>2245</o:Characters>
+  <o:Company>IFOMIS Uni Leipzig</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2596</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>75</w:Zoom>
+  <w:DontDisplayPageBoundaries/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:1190.9pt 841.7pt;
+	mso-page-orientation:landscape;
+	margin:28.05pt 28.05pt 28.05pt 28.05pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:49887627;
+	mso-list-type:hybrid;
+	mso-list-template-ids:396023998 1874987080 67567641 67567643 67567631 67567641 67567643 67567631 67567641 67567643;}
+@list l0:level1
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:198.0pt;
+	mso-level-number-position:left;
+	margin-left:198.0pt;
+	text-indent:-36.0pt;
+	color:blue;}
+@list l1
+	{mso-list-id:95251233;
+	mso-list-template-ids:604002374;}
+@list l1:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l1:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="16386"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule24" type="connector" idref="#_s1196">
+    <o:proxy end="" idref="#_s1202" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule25" type="connector" idref="#_s1133">
+    <o:proxy start="" idref="#_s1132" connectloc="1"/>
+    <o:proxy end="" idref="#_s1045" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule26" type="connector" idref="#_s1183">
+    <o:proxy start="" idref="#_s1182" connectloc="1"/>
+    <o:proxy end="" idref="#_s1041" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule27" type="connector" idref="#_s1111">
+    <o:proxy start="" idref="#_s1110" connectloc="1"/>
+    <o:proxy end="" idref="#_s1047" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule28" type="connector" idref="#_s1199"/>
+   <o:r id="V:Rule29" type="connector" idref="#_s1195">
+    <o:proxy end="" idref="#_s1203" connectloc="0"/>
+   </o:r>
+   <o:r id="V:Rule30" type="connector" idref="#_s1170">
+    <o:proxy start="" idref="#_s1041" connectloc="0"/>
+    <o:proxy end="" idref="#_s1028" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule31" type="connector" idref="#_s1113">
+    <o:proxy start="" idref="#_s1112" connectloc="1"/>
+    <o:proxy end="" idref="#_s1047" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule32" type="connector" idref="#_s1115">
+    <o:proxy start="" idref="#_s1114" connectloc="1"/>
+    <o:proxy end="" idref="#_s1047" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule33" type="connector" idref="#_s1105">
+    <o:proxy start="" idref="#_s1104" connectloc="1"/>
+    <o:proxy end="" idref="#_s1045" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule34" type="connector" idref="#_s1189">
+    <o:proxy start="" idref="#_s1188" connectloc="0"/>
+    <o:proxy end="" idref="#_s1186" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule35" type="connector" idref="#_s1135">
+    <o:proxy start="" idref="#_s1134" connectloc="1"/>
+    <o:proxy end="" idref="#_s1047" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule36" type="connector" idref="#_s1107">
+    <o:proxy start="" idref="#_s1106" connectloc="1"/>
+    <o:proxy end="" idref="#_s1045" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule37" type="connector" idref="#_s1109">
+    <o:proxy start="" idref="#_s1108" connectloc="1"/>
+    <o:proxy end="" idref="#_s1047" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule38" type="connector" idref="#_s1198">
+    <o:proxy start="" idref="#_s1207" connectloc="1"/>
+    <o:proxy end="" idref="#_s1203" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule39" type="connector" idref="#_s1172">
+    <o:proxy start="" idref="#_s1047" connectloc="0"/>
+    <o:proxy end="" idref="#_s1028" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule40" type="connector" idref="#_s1200">
+    <o:proxy start="" idref="#_s1205" connectloc="1"/>
+    <o:proxy end="" idref="#_s1203" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule41" type="connector" idref="#_s1191">
+    <o:proxy start="" idref="#_s1190" connectloc="0"/>
+    <o:proxy end="" idref="#_s1186" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule42" type="connector" idref="#_s1201">
+    <o:proxy start="" idref="#_s1204" connectloc="1"/>
+    <o:proxy end="" idref="#_s1203" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule43" type="connector" idref="#_s1151">
+    <o:proxy start="" idref="#_s1150" connectloc="1"/>
+    <o:proxy end="" idref="#_s1045" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule44" type="connector" idref="#_s1197">
+    <o:proxy start="" idref="#_s1209" connectloc="1"/>
+    <o:proxy end="" idref="#_s1203" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule45" type="connector" idref="#_s1171">
+    <o:proxy start="" idref="#_s1045" connectloc="0"/>
+    <o:proxy end="" idref="#_s1028" connectloc="2"/>
+   </o:r>
+   <o:r id="V:Rule46" type="connector" idref="#_s1187">
+    <o:proxy start="" idref="#_s1186" connectloc="1"/>
+    <o:proxy end="" idref="#_s1041" connectloc="2"/>
+   </o:r>
+  </o:rules>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=DE style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:108.0pt;margin-bottom:.0001pt;tab-stops:279.0pt'><span
+lang=EN-US style='font-size:24.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:108.0pt;margin-bottom:.0001pt;tab-stops:279.0pt'><span
+lang=EN-US style='font-size:24.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-7.5pt;margin-bottom:
+0cm;margin-left:108.0pt;margin-bottom:.0001pt;tab-stops:279.0pt'><span
+lang=EN-US style='font-size:24.0pt;mso-ansi-language:EN-US'>Basic Formal
+Ontology<span style='mso-tab-count:6'>                             </span><span
+style='mso-tab-count:1'>                         </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;text-indent:35.4pt'><span
+lang=EN-US style='font-size:24.0pt;mso-ansi-language:EN-US'>Draft 0.0003
+(26.5.02) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:70.8pt;text-indent:35.4pt'><span
+lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Basic Formal
+Ontology consists in a series of sub-<span class=SpellE>ontologies</span> (most
+properly conceived as a series of perspectives on reality), the most important
+of which are: <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:198.0pt;text-indent:-36.0pt;mso-list:
+l0 level1 lfo3;tab-stops:list 198.0pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;color:blue;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>i.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=SpellE><span lang=EN-US
+style='font-size:12.0pt;color:blue;mso-ansi-language:EN-US'>SnapBFO</span></span><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>, a series of
+snapshot <span class=SpellE>ontologies</span> (<span class=SpellE>O<i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:16.0pt'>t</span></sub></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:14.0pt'>i</span></sub></i></span>
+), indexed by times; <span style='mso-spacerun:yes'> </span>and<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:198.0pt;text-indent:-36.0pt;mso-list:
+l0 level1 lfo3;tab-stops:list 198.0pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;color:blue;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>ii.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=SpellE><span lang=IT
+style='font-size:12.0pt;color:blue;mso-ansi-language:IT'>SpanBFO</span></span><span
+lang=IT style='font-size:12.0pt;mso-ansi-language:IT'><span
+style='mso-spacerun:yes'>  </span>a single <span class=SpellE>videoscopic</span>
+<span class=SpellE>ontology</span> (O). </span><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:144.0pt'><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'>Each <span class=SpellE>O<i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:16.0pt'>t</span></sub></i><i
+style='mso-bidi-font-style:normal'><sub><span style='font-size:14.0pt'>i</span></sub></i></span>
+is an inventory of all entities existing at a time. <span class=SpellE>O<i
+style='mso-bidi-font-style:normal'><sub>v</sub></i></span> is an inventory (<span
+class=SpellE>processory</span>) of all processes unfolding through time. (Each <span
+class=SpellE>O<i style='mso-bidi-font-style:normal'><sub><span
+style='font-size:16.0pt'>t</span></sub></i><i style='mso-bidi-font-style:normal'><sub><span
+style='font-size:14.0pt'>i</span></sub></i></span> is thus analogous to
+anatomy; <span class=SpellE>O<i style='mso-bidi-font-style:normal'><sub>v</sub></i></span>
+is analogous to physiology.) <span class=GramE>Each snapshot ontology</span>
+represents a <span class=SpellE>presentistic</span> assay of the entities
+existing at some given present instant. <span class=SpellE>O<i
+style='mso-bidi-font-style:normal'><sub>v</sub></i></span><i style='mso-bidi-font-style:
+normal'><sub> </sub></i>is a (God’s eye) partition of the totality of
+processes.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:124.2pt'><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Both <span
+class=SpellE>SnapBFO</span> and <span class=SpellE>SpanBFO</span> will serve as
+basis for a series of sub-<span class=SpellE>ontologies</span> at different
+levels of granularity.<span style='mso-spacerun:yes'>  </span>The same portion
+of reality may appear at a plurality of levels of granularity. Thus masses at
+one level may be aggregates at another level.<span style='mso-spacerun:yes'> 
+</span>What counts as a unitary process at one level may be part of a
+process-continuum at another <span class=GramE>level.</span> <br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Examples given here
+<span style='color:red'>(indicated in red)</span> are for the <span
+class=SpellE>mesoscopic</span> level of common sense.</span><span lang=EN-US
+style='mso-ansi-language:EN-US'> <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=GramE><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>Each
+ontology</span></span><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'> represents some partition of reality into categories or universals.
+Individuals are then located in the cells depicted in the diagrams below.<span
+style='mso-spacerun:yes'>  </span><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>The <span
+class=SpellE>ontologies</span> here indicated are partial only (they are
+windows on just that portion of reality which is visible through the given
+ontology).<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>A cell labeled * within
+a given ontology represents a category division which involves some
+double-counting in relation to the categories within the same ontology represented
+by cells not so labeled.<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:142.2pt;text-indent:-18.0pt;mso-list:
+l1 level1 lfo2;tab-stops:list 142.2pt'><![if !supportLists]><span lang=EN-US
+style='font-size:12.0pt;mso-fareast-font-family:Arial;mso-bidi-font-family:
+Arial;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'>The spatial regions
+acknowledged by <span class=SpellE>SnapBFO</span> are on the <span
+class=SpellE>mesoscopic</span> level of granularity the sorts of domesticated spatial
+regions referred to by expressions such as ‘in the room’, ‘in the lung’, ‘on
+the table’, ‘in Poland’ etc. (Thus they are not the abstract spatial regions
+investigated by physics.) Free portions of space are spatial regions with no
+boundaries or retainers such as walls, floor, or ceiling. Bound portions of
+space can be <i style='mso-bidi-font-style:normal'>bound</i> either completely,
+as in the case of a closed room or an air-bubble inside your body, or
+partially, as in the case of a birdcage or nostril. Free and bound portions of
+space retain their identity from one instant to the next even though they are
+projected in succession onto distinct abstract spatial regions in the
+physicist’s sense (just as substances retain their identity from one instant to
+the next even though they are projected in succession on distinct aggregates of
+molecules).<o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:DE;mso-bidi-language:
+AR-SA'><br clear=all style='mso-special-character:line-break;page-break-before:
+always'>
+</span></b>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:group id="_x0000_s1027" editas="orgchart"
+ style='position:absolute;margin-left:0;margin-top:0;width:1111.1pt;height:506.15pt;
+ z-index:1;mso-position-horizontal:left;mso-position-vertical:top;
+ mso-position-vertical-relative:line' coordorigin="65981,17237" coordsize="25382,11934"
+ o:allowoverlap="f">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <o:diagram v:ext="edit" dgmstyle="15" dgmscalex="72041" dgmscaley="35774"
+  dgmfontsize="3" autoformat="t">
+  <o:relationtable v:ext="edit">
+   <o:rel v:ext="edit" idsrc="#_s1028" iddest="#_s1028"/>
+   <o:rel v:ext="edit" idsrc="#_s1041" iddest="#_s1028" idcntr="#_s1170"/>
+   <o:rel v:ext="edit" idsrc="#_s1182" iddest="#_s1041" idcntr="#_s1183"/>
+   <o:rel v:ext="edit" idsrc="#_s1186" iddest="#_s1041" idcntr="#_s1187"/>
+   <o:rel v:ext="edit" idsrc="#_s1188" iddest="#_s1186" idcntr="#_s1189"/>
+   <o:rel v:ext="edit" idsrc="#_s1190" iddest="#_s1186" idcntr="#_s1191"/>
+   <o:rel v:ext="edit" idsrc="#_s1045" iddest="#_s1028" idcntr="#_s1171"/>
+   <o:rel v:ext="edit" idsrc="#_s1104" iddest="#_s1045" idcntr="#_s1105"/>
+   <o:rel v:ext="edit" idsrc="#_s1132" iddest="#_s1045" idcntr="#_s1133"/>
+   <o:rel v:ext="edit" idsrc="#_s1106" iddest="#_s1045" idcntr="#_s1107"/>
+   <o:rel v:ext="edit" idsrc="#_s1150" iddest="#_s1045" idcntr="#_s1151"/>
+   <o:rel v:ext="edit" idsrc="#_s1047" iddest="#_s1028" idcntr="#_s1172"/>
+   <o:rel v:ext="edit" idsrc="#_s1108" iddest="#_s1047" idcntr="#_s1109"/>
+   <o:rel v:ext="edit" idsrc="#_s1112" iddest="#_s1047" idcntr="#_s1113"/>
+   <o:rel v:ext="edit" idsrc="#_s1114" iddest="#_s1047" idcntr="#_s1115"/>
+   <o:rel v:ext="edit" idsrc="#_s1110" iddest="#_s1047" idcntr="#_s1111"/>
+   <o:rel v:ext="edit" idsrc="#_s1134" iddest="#_s1047" idcntr="#_s1135"/>
+  </o:relationtable>
+ </o:diagram>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:65981;top:17237;width:25382;height:11934' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+ </v:shape><v:shapetype id="_x0000_t34" coordsize="21600,21600" o:spt="34"
+  o:oned="t" adj="10800" path="m,l@0,0@0,21600,21600,21600e" filled="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="val #0"/>
+  </v:formulas>
+  <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+  <v:handles>
+   <v:h position="#0,center"/>
+  </v:handles>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="_s1191" o:spid="_x0000_s1191" type="#_x0000_t34"
+  style='position:absolute;left:73474;top:22698;width:232;height:1582;
+  rotation:270;flip:x' o:connectortype="elbow" adj="10745,89675,-867838"
+  strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1189" o:spid="_x0000_s1189" type="#_x0000_t34" style='position:absolute;
+  left:71892;top:22697;width:232;height:1583;rotation:270' o:connectortype="elbow"
+  adj="10745,-89610,-564012" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shapetype id="_x0000_t33" coordsize="21600,21600" o:spt="33" o:oned="t"
+  path="m,l21600,r,21600e" filled="f">
+  <v:stroke joinstyle="miter"/>
+  <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="_s1187" o:spid="_x0000_s1187" type="#_x0000_t33"
+  style='position:absolute;left:69409;top:21239;width:454;height:1772;
+  rotation:180' o:connectortype="elbow" adj="-214915,-75392,-214915"
+  strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1183" o:spid="_x0000_s1183" type="#_x0000_t33" style='position:absolute;
+  left:69409;top:21239;width:454;height:595;rotation:180' o:connectortype="elbow"
+  adj="-214915,-182014,-214915" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1172" o:spid="_x0000_s1172" type="#_x0000_t34" style='position:absolute;
+  left:80701;top:18255;width:233;height:4289;rotation:270;flip:x'
+  o:connectortype="elbow" adj="10745,17999,-1691598" strokecolor="gray"
+  strokeweight="2.25pt"/>
+ <v:shape id="_s1171" o:spid="_x0000_s1171" type="#_x0000_t34" style='position:absolute;
+  left:77313;top:19157;width:233;height:2486;rotation:270' o:connectortype="elbow"
+  adj="10745,-31046,-1041186" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1170" o:spid="_x0000_s1170" type="#_x0000_t34" style='position:absolute;
+  left:73924;top:15768;width:233;height:9264;rotation:270' o:connectortype="elbow"
+  adj="10745,-8333,-390554" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1151" o:spid="_x0000_s1151" type="#_x0000_t33" style='position:absolute;
+  left:76187;top:21239;width:451;height:4127;rotation:180' o:connectortype="elbow"
+  adj="-540875,-44700,-540875" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1135" o:spid="_x0000_s1135" type="#_x0000_t33" style='position:absolute;
+  left:82962;top:21239;width:451;height:5303;rotation:180' o:connectortype="elbow"
+  adj="-865258,-39574,-865258" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1133" o:spid="_x0000_s1133" type="#_x0000_t33" style='position:absolute;
+  left:76187;top:21239;width:451;height:1772;rotation:180' o:connectortype="elbow"
+  adj="-540875,-75392,-540875" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1115" o:spid="_x0000_s1115" type="#_x0000_t33" style='position:absolute;
+  left:82962;top:21239;width:451;height:2949;rotation:180' o:connectortype="elbow"
+  adj="-865258,-53927,-865258" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1113" o:spid="_x0000_s1113" type="#_x0000_t33" style='position:absolute;
+  left:82962;top:21239;width:451;height:1772;rotation:180' o:connectortype="elbow"
+  adj="-865258,-75392,-865258" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1111" o:spid="_x0000_s1111" type="#_x0000_t33" style='position:absolute;
+  left:82962;top:21239;width:451;height:4127;rotation:180' o:connectortype="elbow"
+  adj="-865258,-44700,-865258" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1109" o:spid="_x0000_s1109" type="#_x0000_t33" style='position:absolute;
+  left:82962;top:21239;width:451;height:595;rotation:180' o:connectortype="elbow"
+  adj="-865258,-182014,-865258" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1107" o:spid="_x0000_s1107" type="#_x0000_t33" style='position:absolute;
+  left:76187;top:21239;width:451;height:2949;rotation:180' o:connectortype="elbow"
+  adj="-540875,-53927,-540875" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1105" o:spid="_x0000_s1105" type="#_x0000_t33" style='position:absolute;
+  left:76187;top:21239;width:451;height:595;rotation:180' o:connectortype="elbow"
+  adj="-540875,-182014,-540875" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:rect id="_s1028" o:spid="_x0000_s1028" style='position:absolute;left:77306;
+  top:19226;width:2733;height:1057;v-text-anchor:middle' o:dgmlayout="0"
+  o:dgmnodekind="1" o:dgmlayoutmru="0" fillcolor="#bbe0e3" strokecolor="#099">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#099" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1028' inset=".02033mm,.0101mm,.02033mm,.0101mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Enduring Entity<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>[Exists in space and time, <o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=GramE><span lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:
+     9.0pt;mso-ansi-language:EN-US'>has</span></span><span lang=EN-US
+     style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:EN-US'> no
+     temporal parts]<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1041" o:spid="_x0000_s1041" style='position:absolute;
+  left:68060;top:20515;width:2697;height:724;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0" o:dgmlayoutmru="2" fillcolor="#bbe0e3" strokecolor="#9c0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#9c0" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1041' inset=".02872mm,.01436mm,.02872mm,.01436mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:EN-US'>Spatial
+     Region<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=GramE><span lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:
+     EN-US'>of</span></span><span lang=EN-US style='mso-bidi-font-size:8.0pt;
+     mso-ansi-language:EN-US'> Dimension 0,1,2,3<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1045" o:spid="_x0000_s1045" style='position:absolute;
+  left:74838;top:20515;width:2697;height:724;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0" o:dgmlayoutmru="2" fillcolor="#bbe0e3" strokecolor="#9c0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#9c0" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1045' inset=".02872mm,.01436mm,.02872mm,.01436mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=SpellE><span style='font-size:8.5pt;mso-bidi-font-size:9.0pt'>Dependent</span></span><span
+     style='font-size:8.5pt;mso-bidi-font-size:9.0pt'> <span class=SpellE>Entity</span><o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     style='font-size:2.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1047" o:spid="_x0000_s1047" style='position:absolute;
+  left:81613;top:20515;width:2697;height:724;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0" o:dgmlayoutmru="2" fillcolor="#bbe0e3" strokecolor="#9c0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#9c0" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1047' inset=".02872mm,.01436mm,.02872mm,.01436mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     style='font-size:8.5pt;mso-bidi-font-size:9.0pt'>Independent <span
+     class=SpellE>Entity</span><o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1104" o:spid="_x0000_s1104" style='position:absolute;
+  left:76638;top:21471;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1104' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:EN-US'>Quality,
+     State (<span style='color:red'>Your redness, my tallness, the cat’s being
+     on the mat</span>)<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;mso-ansi-language:EN-US'>[Sometimes
+     form Quality Regions or Scales]<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1106" o:spid="_x0000_s1106" style='position:absolute;
+  left:76638;top:23825;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1106' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Role, Function, Power<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>[Have realizations (called: Processes)]<o:p></o:p></span></p>
+     <p class=MsoNormal><span lang=EN-US style='font-size:5.5pt;mso-bidi-font-size:
+     12.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1108" o:spid="_x0000_s1108" style='position:absolute;
+  left:83413;top:21471;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1108' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Substance<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>[<span class=GramE>maximally</span> connected causal unity]<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1110" o:spid="_x0000_s1110" style='position:absolute;
+  left:83413;top:25002;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1110' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Boundary of Substance *<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Fiat or Bona Fide or Mixed<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1112" o:spid="_x0000_s1112" style='position:absolute;
+  left:83413;top:22648;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1112' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Aggregate of Substances *<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'><span style='mso-spacerun:yes'> </span>(<span class=GramE>includes</span>
+     masses of stuff? liquids?)<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1114" o:spid="_x0000_s1114" style='position:absolute;
+  left:83413;top:23825;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1114' inset=".03422mm,.01708mm,.03422mm,.01708mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Fiat Part of Substance *<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'><span style='mso-spacerun:yes'> </span><span style='color:red'>Nose,
+     ear, mountain</span><o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1132" o:spid="_x0000_s1132" style='position:absolute;
+  left:76638;top:22648;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1132' inset=".47756mm,.23878mm,.47756mm,.23878mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Quasi-Quality, Quasi-State<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;color:red;mso-ansi-language:
+     EN-US'>Price, debt, contract, a state of being married,<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1134" o:spid="_x0000_s1134" style='position:absolute;
+  left:83413;top:26179;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1134' inset=".47756mm,.23878mm,.47756mm,.23878mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=SpellE><span style='font-size:8.5pt;mso-bidi-font-size:9.0pt'>Quasi-Substance</span></span><span
+     style='font-size:8.5pt;mso-bidi-font-size:9.0pt'><o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     style='font-size:8.5pt;mso-bidi-font-size:9.0pt;color:red'>Church,
+     college, clinic<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1150" o:spid="_x0000_s1150" style='position:absolute;
+  left:76638;top:25002;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1150' inset="1.39736mm,.69869mm,1.39736mm,.69869mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:8.5pt;mso-bidi-font-size:9.0pt;mso-ansi-language:
+     EN-US'>Quasi-Role/Function/Power<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-bidi-font-size:8.0pt;color:red;mso-ansi-language:
+     EN-US'>Plans, the functions of the President<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1182" o:spid="_x0000_s1182" style='position:absolute;
+  left:69863;top:21471;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1182' inset="2.07647mm,1.0382mm,2.07647mm,1.0382mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'>Free Portion of <span
+     class=SpellE>Space</span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1186" o:spid="_x0000_s1186" style='position:absolute;
+  left:69863;top:22648;width:5871;height:725;v-text-anchor:middle' o:dgmlayout="0"
+  o:dgmnodekind="0" o:dgmlayoutmru="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1186' inset="2.07647mm,1.0382mm,2.07647mm,1.0382mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-ansi-language:EN-US'>Physically Bound Portion of
+     Space<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='color:red;mso-ansi-language:EN-US'>Hole, Niche, Place<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1188" o:spid="_x0000_s1188" style='position:absolute;
+  left:69860;top:23605;width:2712;height:463;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1188' inset="2.41453mm,1.20725mm,2.41453mm,1.20725mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='mso-ansi-language:EN-US'>Stationary (<span
+     style='color:red'>Room, Porch</span>)<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1190" o:spid="_x0000_s1190" style='position:absolute;
+  left:73024;top:23605;width:2712;height:463;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1190' inset="2.41453mm,1.20725mm,2.41453mm,1.20725mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><st1:City><st1:place><span
+       lang=EN-US style='mso-ansi-language:EN-US'>Mobile</span></st1:place></st1:City><span
+     lang=EN-US style='mso-ansi-language:EN-US'> (<span style='color:red'>Cockpit,
+     Lung</span>)<o:p></o:p></span></p>
+     <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1192" type="#_x0000_t202" style='position:absolute;
+  left:66047;top:17519;width:10707;height:972' strokecolor="yellow"
+  strokeweight="4.5pt">
+  <v:textbox style='mso-next-textbox:#_x0000_s1192'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span class=SpellE><span lang=EN-US style='font-size:
+     18.0pt;color:blue;mso-ansi-language:EN-US'>SnapBFO</span></span><span
+     lang=EN-US style='font-size:18.0pt;color:blue;mso-ansi-language:EN-US'> (<span
+     class=SpellE>Ontologies</span> <span class=SpellE>O<i style='mso-bidi-font-style:
+     normal'><sub>ti</sub></i></span><i style='mso-bidi-font-style:normal'><sub>
+     </sub></i>indexed by time instants)<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="square"/>
+</v:group><![endif]--><![if !vml]><img width=1483 height=675
+src="0003_files/image002.gif" align=left alt="Organization Chart" v:shapes="_x0000_s1027 _x0000_s1026 _s1191 _s1189 _s1187 _s1183 _s1172 _s1171 _s1170 _s1151 _s1135 _s1133 _s1115 _s1113 _s1111 _s1109 _s1107 _s1105 _s1028 _s1041 _s1045 _s1047 _s1104 _s1106 _s1108 _s1110 _s1112 _s1114 _s1132 _s1134 _s1150 _s1182 _s1186 _s1188 _s1190 _x0000_s1192"><![endif]><span
+lang=EN-US style='font-size:12.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:DE;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:group id="_x0000_s1193" editas="orgchart"
+ style='position:absolute;margin-left:0;margin-top:0;width:903.1pt;height:470.15pt;
+ z-index:2;mso-position-horizontal:left;mso-position-vertical:top;
+ mso-position-vertical-relative:line' coordorigin="74187,17661" coordsize="22256,11086"
+ o:allowoverlap="f">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <o:diagram v:ext="edit" dgmstyle="15" dgmscalex="66425" dgmscaley="41373"
+  dgmfontsize="3" autolayout="f">
+  <o:relationtable v:ext="edit">
+   <o:rel v:ext="edit" idsrc="#_s1202" iddest="#_s1202"/>
+   <o:rel v:ext="edit" idsrc="#_s1203" iddest="#_s1202" idcntr="#_s1196"/>
+   <o:rel v:ext="edit" idsrc="#_s1204" iddest="#_s1203" idcntr="#_s1201"/>
+   <o:rel v:ext="edit" idsrc="#_s1205" iddest="#_s1203" idcntr="#_s1200"/>
+   <o:rel v:ext="edit" idsrc="#_s1209" iddest="#_s1203" idcntr="#_s1197"/>
+   <o:rel v:ext="edit" idsrc="#_s1206" iddest="#_s1203" idcntr="#_s1199"/>
+   <o:rel v:ext="edit" idsrc="#_s1207" iddest="#_s1203" idcntr="#_s1198"/>
+   <o:rel v:ext="edit" idsrc="#_s1208" iddest="#_s1202" idcntr="#_s1195"/>
+  </o:relationtable>
+ </o:diagram>
+ <v:shape id="_x0000_s1194" type="#_x0000_t75" style='position:absolute;left:74187;
+  top:17661;width:22256;height:11086' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+ </v:shape><v:shapetype id="_x0000_t35" coordsize="21600,21600" o:spt="35"
+  o:oned="t" adj="10800,10800" path="m,l@0,0@0@1,21600@1,21600,21600e"
+  filled="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="val #0"/>
+   <v:f eqn="val #1"/>
+   <v:f eqn="mid #0 width"/>
+   <v:f eqn="prod #1 1 2"/>
+  </v:formulas>
+  <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+  <v:handles>
+   <v:h position="#0,@3"/>
+   <v:h position="@2,#1"/>
+  </v:handles>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="_s1195" o:spid="_x0000_s1195" type="#_x0000_t35"
+  style='position:absolute;left:76555;top:21484;width:6857;height:619;
+  rotation:180' o:connectortype="elbow" adj="699,36411,-38608" strokecolor="gray"
+  strokeweight="2.25pt"/>
+ <v:shape id="_s1196" o:spid="_x0000_s1196" type="#_x0000_t33" style='position:absolute;
+  left:77474;top:20680;width:2731;height:376;flip:y' o:connectortype="elbow"
+  adj="-49984,195009,-49984" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1197" o:spid="_x0000_s1197" type="#_x0000_t33" style='position:absolute;
+  left:76556;top:22207;width:449;height:2981;rotation:180' o:connectortype="elbow"
+  adj="-922705,-106667,-922705" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1198" o:spid="_x0000_s1198" type="#_x0000_t33" style='position:absolute;
+  left:76556;top:22207;width:449;height:5332;rotation:180' o:connectortype="elbow"
+  adj="-922705,-69156,-922705" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1199" o:spid="_x0000_s1199" type="#_x0000_t33" style='position:absolute;
+  left:76556;top:23432;width:449;height:2981;rotation:180' o:connectortype="elbow"
+  adj="-922705,-104104,-922705" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1200" o:spid="_x0000_s1200" type="#_x0000_t33" style='position:absolute;
+  left:76556;top:22207;width:449;height:1806;rotation:180' o:connectortype="elbow"
+  adj="-922705,-161972,-922705" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:shape id="_s1201" o:spid="_x0000_s1201" type="#_x0000_t33" style='position:absolute;
+  left:76556;top:22207;width:449;height:631;rotation:180' o:connectortype="elbow"
+  adj="-922705,-423562,-922705" strokecolor="gray" strokeweight="2.25pt"/>
+ <v:rect id="_s1202" o:spid="_x0000_s1202" style='position:absolute;left:78182;
+  top:19624;width:4045;height:1056;v-text-anchor:middle' o:dgmlayout="0"
+  o:dgmnodekind="1" o:dgmlayoutmru="0" fillcolor="#bbe0e3" strokecolor="#099">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#099" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1202' inset=".02486mm,.0124mm,.02486mm,.0124mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>Concrete Entity<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>[Exists in
+     space and time,<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=GramE><span lang=EN-US style='font-size:9.0pt;mso-ansi-language:
+     EN-US'>unfolds</span></span><span lang=EN-US style='font-size:9.0pt;
+     mso-ansi-language:EN-US'> in time phase by phase]<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1203" o:spid="_x0000_s1203" style='position:absolute;
+  left:75076;top:21484;width:2958;height:723;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0" o:dgmlayoutmru="2">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1203' inset=".02486mm,.0124mm,.02486mm,.0124mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=SpellE><span style='font-size:9.0pt'>Processual</span></span><span
+     style='font-size:9.0pt'> <span class=SpellE>Entity</span><o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1204" o:spid="_x0000_s1204" style='position:absolute;
+  left:77005;top:22475;width:5486;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1204' inset=".05817mm,.02914mm,.05817mm,.02914mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>Process<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;color:red;mso-ansi-language:EN-US'>Exercise
+     of role, function, power<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1205" o:spid="_x0000_s1205" style='position:absolute;
+  left:77005;top:23650;width:5486;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1205' inset=".1105mm,.05531mm,.1105mm,.05531mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     style='font-size:9.0pt'>Aggregate of <span class=SpellE>Processes</span>*<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1206" o:spid="_x0000_s1206" style='position:absolute;
+  left:77005;top:26000;width:5486;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1206' inset=".15689mm,.07847mm,.15689mm,.07847mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>Instantaneous
+     Temporal Boundary of Process<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'><span
+     style='mso-spacerun:yes'> </span>(= <span class=SpellE>Ingarden’s</span>
+     'Event’)*<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1207" o:spid="_x0000_s1207" style='position:absolute;
+  left:77005;top:27175;width:5486;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1207' inset=".5095mm,.25472mm,.5095mm,.25472mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;mso-ansi-language:EN-US'>Quasi-Process<o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     lang=EN-US style='font-size:9.0pt;color:red;mso-ansi-language:EN-US'>Course
+     of treatment, clinical trial, tennis match<o:p></o:p></span></p>
+     <p class=MsoNormal><span lang=EN-US style='font-size:3.0pt;mso-bidi-font-size:
+     8.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1208" o:spid="_x0000_s1208" style='position:absolute;
+  left:82658;top:21484;width:4278;height:723;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1208' inset="1.70931mm,.85464mm,1.70931mm,.85464mm">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=SpellE><span lang=EN-US style='font-size:9.0pt;mso-ansi-language:
+     EN-US'>Spatio</span></span><span lang=EN-US style='font-size:9.0pt;
+     mso-ansi-language:EN-US'>-Temporal Region <o:p></o:p></span></p>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     class=GramE><span lang=EN-US style='font-size:9.0pt;mso-ansi-language:
+     EN-US'>of</span></span><span lang=EN-US style='font-size:9.0pt;mso-ansi-language:
+     EN-US'> Dimension </span><span lang=FR style='font-size:9.0pt;mso-ansi-language:
+     FR'>T, T+0, T+1, T+2, T+3<o:p></o:p></span></p>
+     <p class=MsoNormal><span style='font-size:6.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:rect id="_s1209" o:spid="_x0000_s1209" style='position:absolute;
+  left:77005;top:24825;width:5486;height:725;v-text-anchor:middle' o:dgmlayout="2"
+  o:dgmnodekind="0">
+  <v:fill focusposition="1" focussize="" focus="100%" type="gradientRadial">
+   <o:fill v:ext="view" type="gradientCenter"/>
+  </v:fill>
+  <v:shadow on="t" color="#bbe0e3" offset="4pt,-3pt" offset2="-4pt,6pt"/>
+  <v:textbox style='mso-next-textbox:#_s1209'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center'><span
+     style='font-size:9.0pt'>Fiat Part<span style='mso-spacerun:yes'> 
+     </span>of Process*<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:rect><v:shape id="_x0000_s1210" type="#_x0000_t202" style='position:absolute;
+  left:74530;top:18113;width:9106;height:972' strokecolor="yellow"
+  strokeweight="4.5pt">
+  <v:textbox style='mso-next-textbox:#_x0000_s1210'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><span class=SpellE><span lang=EN-US style='font-size:
+     18.0pt;color:blue;mso-ansi-language:EN-US'>SpanBFO</span></span><span
+     lang=EN-US style='font-size:18.0pt;color:blue;mso-ansi-language:EN-US'> (<span
+     class=SpellE>Videoscopic</span> Ontology <span class=SpellE>O<i
+     style='mso-bidi-font-style:normal'><sub>v</sub></i></span>)<i
+     style='mso-bidi-font-style:normal'><sub><o:p></o:p></sub></i></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="square"/>
+</v:group><![endif]--><![if !vml]><img width=1204 height=627
+src="0003_files/image004.gif" align=left alt="Organization Chart" v:shapes="_x0000_s1193 _x0000_s1194 _s1195 _s1196 _s1197 _s1198 _s1199 _s1200 _s1201 _s1202 _s1203 _s1204 _s1205 _s1206 _s1207 _s1208 _s1209 _x0000_s1210"><![endif]><span
+lang=EN-US style='font-size:24.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

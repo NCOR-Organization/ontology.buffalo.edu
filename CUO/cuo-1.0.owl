@@ -1,0 +1,733 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:cuo="http://cuo-ontology.org/cuo/1.0#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.ifomis.org/bfo/1.1">
+  <owl:Ontology rdf:about="http://cuo-ontology.org/cuo/1.0">
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pierre Grenon: "Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization"</dc:source>
+    <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >application/rdf+xml</dc:format>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Barry Smith and Pierre Grenon: "The Cornucopia of Formal Ontological Relations"</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pierre Grenon: "BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE"</dc:source>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Common Upper Ontology (CUO)</dc:title>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1.0</owl:versionInfo>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Barry Smith: "Against Fantology"</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gangemi, A., Guarino, N., Masolo, C., Oltramari, A., Schneider, L.: DOLCE - information available at http://www.loa-cnr.it/DOLCE.html</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pierre Grenon: "Nuts in BFO's Nutshell: Revisions to the Bi-categorial Axiomatization of BFO"</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Barry Smith: "Basic Tools of Formal Ontology"</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Barry Smith: "Beyond Concepts: Ontology as Reality Representation"</dc:source>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pierre Grenon and Barry Smith: "SNAP and SPAN: Towards Geospatial Dynamics"</dc:source>
+    <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://cuo-ontology.org/cuo/1.0</dc:identifier>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pierre Grenon, Barry Smith and Louis Goldberg: "Biodynamic Ontology: Applying BFO in the Biomedical Domain"</dc:source>
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >National Center for Ontological Research</dc:publisher>
+    <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</dc:language>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Barry Smith, National Center for Ontological Research (NCOR)</dc:creator>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2008-12-30</dc:date>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ScatteredTemporalRegion">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedTemporalRegion"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the time occupied by the individual games of the World Cup, the time occupied by the individual liaisons in a romantic affair</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A temporal region every point of which is not mediately or immediately connected with every other point of which.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scattered_temporal_region</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ZeroDimensionalRegion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TwoDimensionalRegion"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ThreeDimensionalRegion"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#OneDimensionalRegion"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a point</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A spatial region with no dimensions.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >zero_dimensional_region</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessualEntity">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatProcessPart"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Process"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessAggregate"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessBoundary"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An occurrent that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalRegion"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >processual_entity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ScatteredSpatiotemporalRegion">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedSpatiotemporalRegion"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scattered_spatiotemporal_region</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the space and time occupied by the individual games of the World Cup, the space and time occupied by the individual liaisons in a romantic affair</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A space time region that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#DependentContinuant">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#GenericallyDependentContinuant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpecificallyDependentContinuant"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dependent_continuant</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Continuant"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A continuant that is either dependent on one or other independent continuant bearers or inheres in or is borne by other entities.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessAggregate">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessBoundary"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Process"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatProcessPart"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >process_aggregate</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the beating of the hearts of each of seven individuals in the room, the playing of each of the members of an orchestra, a process of digestion and a process of thinking taken together</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A processual entity that is a mereological sum of process entities and possesses non-connected boundaries.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TwoDimensionalRegion">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ZeroDimensionalRegion"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ThreeDimensionalRegion"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#OneDimensionalRegion"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >two_dimensional_region</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the surface of a cube-shaped part of space, the surface of a sphere-shaped part of space, the surface of a rectilinear planar figure-shaped part of space</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A spatial region with two dimensions.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Continuant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >continuant</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: endurant</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#DependentContinuant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#OneDimensionalRegion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >one_dimensional_region</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the part of space that is a line stretching from one end of absolute space to the other, an edge of a cube-shaped part of space</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A spatial region with one dimension.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ZeroDimensionalRegion"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#TwoDimensionalRegion"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ThreeDimensionalRegion"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatialRegion">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#OneDimensionalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ThreeDimensionalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TwoDimensionalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ZeroDimensionalRegion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spatial_region</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: All instances of continuant are spatial entities, that is, they enter in the relation of (spatial) location with spatial region entities. As a particular case, the exact spatial location of a spatial region is this region itself.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: Space and spatial region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of space is sometimes called "absolutist" or "the container view". In BFO, the class site allows for a so-called relational view of space, that is to say, a view according to which spatiality is a matter of relative location between entities and not a matter of being tied to space. The bridge between these two views is secured through the fact that while instances of site are not spatial region entities, they are nevertheless spatial entities.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the sum total of all space in the universe, parts of the sum total of all space in the universe</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#Continuant"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: An instance of spatial region is a part of space. All parts of space are spatial region entities and only spatial region entities are parts of space. Space is the entire extent of the spatial universe, a designated individual, which is thus itself a spatial region.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A continuant that is neither bearer of quality entities nor inheres in any other entities.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#DependentContinuant"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatObjectPart">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#MaterialEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: fiat substance part</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant that is part of an object but is not demarcated by any physical discontinuities.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fiat_object_part</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Object"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Site"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectBoundary"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: upper and lower lobes of the left lung, the dorsal and ventral surfaces of the body, the east side of Saarbruecken, the lower right portion of a human torso</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInstant">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedSpatiotemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the space time region occupied by a single instantaneous temporal slice (part) of a process</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A connected space time region at a specific moment.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spatiotemporal_instant</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInterval"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Site">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectBoundary"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant consisting of a characteristic spatial shape in relation to some arrangement of other continuant entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site entities are entities that can be occupied by other continuant entities.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#FiatObjectPart"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >site</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a particular room in a particular hospital, Maria's nostril or her intestines for a variety of bacteria.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: An instance of Site is a mixture of independent continuant entities which act as surrounding environments for other independent continuant entities, most importantly for instances of object. A site is typically made of object or fiat object part entities and a surrounding medium in which is found an object occupying the site. Independent continuant entities may be associated with others (which, then, are sites) through a relation of "occupation". That relation is connected to, but distinct from, the relation of spatial location. Site entities are not to be confused with spatial region entities. In BFO, site allows for a so-called relational view of space which is different from the view corresponding to the class spatial region (see the comment on this class).</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Object"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Object">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: substance</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >object</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#MaterialEntity"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#FiatObjectPart"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectBoundary"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Site"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: an organism, a heart, a chair, a lung, an apple</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant that is spatially extended, maximally self-connected and self-contained (the parts of a substance are not separated from each other by spatial gaps) and possesses an internal unity. The identity of substantial object entities is independent of that of other entities and can be maintained through time.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessBoundary">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessAggregate"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Process"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatProcessPart"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >process_boundary</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: birth, death, the forming of a synapse, the onset of REM sleep, the detaching of a finger in an industrial accident, the final separation of two cells at the end of cell-division, the incision at the beginning of a surgery</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A processual entity that is the fiat or bona fide instantaneous temporal process boundary.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#GenericallyDependentContinuant">
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#DependentContinuant"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >generically_dependent_continuant</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpecificallyDependentContinuant"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatProcessPart">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessBoundary"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessAggregate"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Process"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: chewing during a meal, the middle part of a rainstorm, the worst part of a heart-attack, the most interesting part of Van Gogh's life</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A processual entity that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fiat_process_part</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#RealizableEntity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: If a realizable entity inheres in a continuant, this does not imply that it is actually realized.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A specifically dependent continuant that inheres in continuant entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Quality"/>
+    </owl:disjointWith>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >realizable_entity</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpecificallyDependentContinuant"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Role">
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#RealizableEntity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >role</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the role of a person as a surgeon, the role of a chemical compound in an experiment, the role of a patient relative as defined by a hospital administrative form, the role of a woman as a legal mother in the context of system of laws, the role of a biological grandfather as legal guardian in the context of a system of laws, the role of ingested matter in digestion, the role of a student in a university</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A realizable entity the manifestation of which brings about some result or end that is not essential to a continuant in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant in some kinds of natural, social or institutional contexts.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Function"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Disposition"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectBoundary">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#FiatObjectPart"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant that is a lower dimensional part of a spatial entity, normally a closed two-dimensional surface. Boundaries are those privileged parts of object entities that exist at exactly the point where the object is separated off from the rest of the existing entities in the world.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the surface of the skin, the surface of the earth, the surface of the interior of the stomach, the outer surface of a cell or cell wall</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Site"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: Boundaries are theoretically difficult entities to account for, however the intuitive notion of a physical boundary as a surface of some sort (whether inside or outside of a thing) will generally serve as a good guide for the use of this universal.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: substance boundary</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Object"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >object_boundary</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#IndependentContinuant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >independent_continuant</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#MaterialEntity"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectBoundary"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Site"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#DependentContinuant"/>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#Continuant"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: substantial entity</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: an organism, a heart, a leg, a person, a symphony orchestra, a chair, the bottom right portion of a human torso, the lawn and atmosphere in front of our building</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Entity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >entity</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Continuant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalRegion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: All instances of occurrent are temporal entities, that is, they enter in the relation of (temporal) location with temporal region entities. As a particular case, the exact spatiotemporal location of a temporal region is this region itself. Continuant entities are not temporal entities in the technical sense just explained; they are related to time in a different way, not through temporal location but through a relation of existence at a time or during a period of time (see continuant).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >temporal_region</rdfs:label>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedTemporalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ScatteredTemporalRegion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the time it takes to run a marathon, the duration of a surgical procedure, the moment of death</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An occurrent that is part of time.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: An instance of temporal region is a part of time. All parts of time are temporal region entities and only temporal region entities are parts of time. Time is the entire extent of the temporal universe, a designated individual, which is thus a temporal region itself.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: Time and temporal region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of time can be called "absolutist" or "the container view" in analogy to what is traditionally the case with space (see spatial region).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#MaterialEntity">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant that is made of matter.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: A person, a vehicle, the west side of Manhattan, the passengers on a train.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: material substance</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#IndependentContinuant"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#FiatObjectPart"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Object"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >material_entity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ObjectAggregate">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Object"/>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#MaterialEntity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >object_aggregate</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a heap of stones, a group of commuters on the subway, a collection of random bacteria, a flock of geese, the patients in a hospital</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: substance aggregate</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An independent continuant that is a mereological sum of separate object entities and possesses non-connected boundaries.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ObjectBoundary"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Site"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#FiatObjectPart"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpecificallyDependentContinuant">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >specifically_dependent_continuant</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Quality"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#RealizableEntity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: property, trope, mode</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#DependentContinuant"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#GenericallyDependentContinuant"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Process">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessBoundary"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessAggregate"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#FiatProcessPart"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the life of an organism, the process of sleeping, the process of cell-division</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A processual entity that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spatiotemporal_region</rdfs:label>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedSpatiotemporalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ScatteredSpatiotemporalRegion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the spatiotemporal region occupied by a human life, the spatiotemporal region occupied by the development of a cancer tumor, the spatiotemporal context occupied by a process of cellular meiosis</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: All instances of occurrent are spatiotemporal entities, that is, they enter in the relation of (spatiotemporal) location with spatiotemporal region entities. As a particular case, the exact spatiotemporal location of a spatiotemporal region is this region itself.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: An instance of the spatiotemporal region is a part of spacetime. All parts of spacetime are spatiotemporal region entities and only spatiotemporal region entities are parts of spacetime. In particular, neither spatial region entities nor temporal region entities are in BFO parts of spacetime. Spacetime is the entire extent of the spatiotemporal universe, a designated individual, which is thus itself a spatiotemporal region. Spacetime is among occurrents the analogous of space among continuant entities.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Comment: Spacetime and spatiotemporal region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of spacetime can be called "absolutist" or "the container view". In BFO, the class processual context allows for a so-called relational view of spacetime, that is to say, a view according to which spatiotemporality is a matter of relative location between entities and not a matter of being tied to spacetime. In BFO, the bridge between these two views is secured through the fact that instances of processual context are too spatiotemporal entities.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#TemporalRegion"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An occurrent at or in which processual entity entities can be located.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalInstant">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: right now, the moment at which a finger is detached in an industrial accident, the moment at which a child is born, the moment of death</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A connected temporal region comprising a single moment of time.</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalInterval"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedTemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >temporal_instant</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInterval">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedSpatiotemporalRegion"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the space time region occupied by a process or by a fiat processual part</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A connected space time region that endures for more than a single moment of time.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spatiotemporal_interval</rdfs:label>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInstant"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedTemporalRegion">
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#TemporalRegion"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalInstant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalInterval"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >connected_temporal_region</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the 1970s years, the time from the beginning to the end of a heart attack, the time taken up by cellular meiosis</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A temporal region every point of which is mediately or immediately connected with every other point of which.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ScatteredTemporalRegion"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Quality">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality</rdfs:label>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#RealizableEntity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A specifically dependent continuant that is exhibited if it inheres in an entity or entities at all (a categorical property).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#SpecificallyDependentContinuant"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Disposition">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Role"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Function"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#RealizableEntity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the disposition of vegetables to decay when not refrigerated, the disposition of a vase to brake if dropped, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease, the disposition of metal to conduct electricity.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A realizable entity that essentially causes a specific process or transformation in the object in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object has the disposition D to (transform, initiate a process) R under conditions C).</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >disposition</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ConnectedSpatiotemporalRegion">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the spatial and temporal location of an individual organism's life, the spatial and temporal location of the development of a fetus</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A space time region that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same space time region.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >connected_spatiotemporal_region</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInstant"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalInterval"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ScatteredSpatiotemporalRegion"/>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalInterval">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#TemporalInstant"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >temporal_interval</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#ConnectedTemporalRegion"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: any continuous temporal duration during which a process occurs</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A connected temporal region lasting for more than a single moment of time.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Occurrent">
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >occurrent</rdfs:label>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Continuant"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ProcessualEntity"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#SpatiotemporalRegion"/>
+          <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#TemporalRegion"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Synonyms: perdurant</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh's life, the spatiotemporal region occupied by the development of a cancer tumor</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#ThreeDimensionalRegion">
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#ZeroDimensionalRegion"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#TwoDimensionalRegion"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#OneDimensionalRegion"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: a cube-shaped part of space, a sphere-shaped part of space</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A spatial region with three dimensions.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >three_dimensional_region</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#SpatialRegion"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://cuo-ontology.org/cuo/1.0#Function">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >function</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples: the function of a birth canal to enable transport, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc., the function of reproduction in the transmission of genetic material, the digestive function of the stomach to nutriate the body, the function of a hammer to drive in nails, the function of a computer program to compute mathematical equations, the function of an automobile to provide transportation, the function of a judge in a court of law</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Definition: A realizable entity the manifestation of which is an essentially end-directed activity of a continuant entity in virtue of that continuant entity being a specific kind of entity in the kind or kinds of contexts that it is made for.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://cuo-ontology.org/cuo/1.0#RealizableEntity"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Role"/>
+    <owl:disjointWith rdf:resource="http://cuo-ontology.org/cuo/1.0#Disposition"/>
+  </owl:Class>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 519)  http://protege.stanford.edu -->

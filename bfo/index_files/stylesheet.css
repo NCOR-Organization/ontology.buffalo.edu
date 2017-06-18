@@ -1,0 +1,93 @@
+BODY {
+	BACKGROUND: rgb(215,220,205); MARGIN: 0px 10px 10px; COLOR: rgb(95,100,85)
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: rgb(0,95,170)
+}
+A:visited {
+	COLOR: rgb(0,95,170)
+}
+A:active {
+	COLOR: rgb(175,0,0)
+}
+A:hover {
+	COLOR: rgb(175,0,0)
+}
+H1 {
+	MARGIN: 0px; FONT-FAMILY: 'Trebuchet MS', Lucida, Arial, sans-serif
+}
+H2 {
+	MARGIN-BOTTOM: 5px; FONT-FAMILY: 'Trebuchet MS', Lucida, Arial, sans-serif
+}
+H3 {
+	MARGIN-BOTTOM: 5px; FONT-FAMILY: 'Trebuchet MS', Lucida, Arial, sans-serif
+}
+H4 {
+	MARGIN-BOTTOM: 5px; FONT-FAMILY: 'Trebuchet MS', Lucida, Arial, sans-serif
+}
+H5 {
+	MARGIN-BOTTOM: 5px; FONT-FAMILY: 'Trebuchet MS', Lucida, Arial, sans-serif
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+P {
+	MARGIN-TOP: 0px; TEXT-ALIGN: justify
+}
+OL {
+	MARGIN-TOP: 0px; TEXT-ALIGN: justify
+}
+UL {
+	MARGIN-TOP: 0px; TEXT-ALIGN: justify
+}
+TABLE {
+	MARGIN: auto; WIDTH: 800px; BORDER-COLLAPSE: collapse; HEIGHT: 100%
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10pt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+#body-left {
+	BACKGROUND: url(gfx/body-left.gif); WIDTH: 10px
+}
+#body-right {
+	BACKGROUND: url(gfx/body-right.gif); WIDTH: 10px
+}
+#body-bottom-left-left {
+	BACKGROUND: url(gfx/body-bottom-left-left.gif)
+}
+#body-bottom-left-right {
+	BACKGROUND: url(gfx/body-bottom-center.gif)
+}
+#body-bottom-center-left {
+	BACKGROUND: url(gfx/body-bottom-center.gif); WIDTH: 100%
+}
+#body-bottom-center-right {
+	BACKGROUND: url(gfx/body-bottom-center.gif); WIDTH: 100%
+}
+#body-bottom-right-left {
+	BACKGROUND: url(gfx/body-bottom-center.gif); TEXT-ALIGN: right
+}
+#body-bottom-right-right {
+	BACKGROUND: url(gfx/body-bottom-right-right.gif)
+}
+#header-left {
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; BACKGROUND: white; PADDING-BOTTOM: 10px; WIDTH: 100%; PADDING-TOP: 10px; BORDER-BOTTOM: rgb(175,0,0) 2px solid
+}
+#header-right {
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; BACKGROUND: white; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BORDER-BOTTOM: rgb(175,0,0) 2px solid; TEXT-ALIGN: right
+}
+#menu-left {
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; BACKGROUND: url(gfx/menu.gif) rgb(220,225,210); PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+#menu-right {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(gfx/menu.gif) rgb(220,225,210); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#content {
+	PADDING-RIGHT: 25px; BORDER-TOP: rgb(235,240,230) 1px solid; PADDING-LEFT: 25px; BACKGROUND: url(gfx/main.gif) rgb(235,240,225) repeat-x; PADDING-BOTTOM: 10px; VERTICAL-ALIGN: top; PADDING-TOP: 10px; HEIGHT: 100%
+}
+#footer {
+	PADDING-RIGHT: 25px; BORDER-TOP: rgb(175,180,165) 1px solid; PADDING-LEFT: 25px; BACKGROUND: white; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 10px
+}

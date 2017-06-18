@@ -1,0 +1,192 @@
+A {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+A.login {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.logintext {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.search {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.dateline {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.navhome {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.nav1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.nav2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.nav3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.secondnavhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.secondNavTd {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.secondnav1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.secondnav2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.mainhuge {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #cc0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.main {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #cc0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.summarysub {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.sectionhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.summarytxthead {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000066; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.storyhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.story {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.storyby {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.subh1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.subh2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.subh3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.caption {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.listory {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+PRE {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: courier
+}
+A.name {
+	COLOR: #000000
+}
+.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.external {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.boxhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.small {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.smallhead {
+	FONT-SIZE: 10px; COLOR: #cc0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.tiny {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: arial, sans-serif
+}
+.tinyhead {
+	FONT-SIZE: 10px; COLOR: #990000; FONT-FAMILY: arial, sans-serif
+}
+.statusbar {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.error {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+SELECT {
+	FONT-SIZE: 10px; FONT-FAMILY: arial, helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, helvetica, sans-serif
+}
+A.topfive {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #0033cc; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.whiteIndex {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.greyIndex {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.indexLvl1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.indexLvl2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.indexLvl3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.indexLvl4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #cccccc; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.pophead {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #cc0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.popdate {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.popfrom {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.popsect {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+TD.gap8 {
+	FONT-SIZE: 8px; FONT-FAMILY: arial
+}
+TD.gap4 {
+	FONT-SIZE: 4px; FONT-FAMILY: arial
+}
+TD.gap2 {
+	FONT-SIZE: 2px; FONT-FAMILY: arial
+}
+.searchauthor {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchdate {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #0033cc; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchinstruction {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchresults {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchheadlineresults {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #0033cc; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.searchdateandauthorresults {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+A.searchlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}

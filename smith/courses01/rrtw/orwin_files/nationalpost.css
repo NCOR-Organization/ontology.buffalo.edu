@@ -1,0 +1,108 @@
+BODY {
+	FONT-FAMILY: verdana, geneva, helvetica, arial; BACKGROUND-COLOR: #ffffff
+}
+A:link {
+	COLOR: blue
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.description {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.bodyboxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.bodybox {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #ffffff; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.bodyboxdescription {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.margin {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.marginboxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; LINE-HEIGHT: 11px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.centerheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.centerstory {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.rightheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; LINE-HEIGHT: 11px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.rightstory {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storyheadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: black; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storysubhead {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: black; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storybyline {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storypub {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storysource {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storypubdate {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial; TEXT-ALIGN: right
+}
+.storylastupdate {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial; TEXT-ALIGN: left
+}
+.storycredit {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storycaption {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storytext {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storytextbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: black; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.storynotes {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-STYLE: italic; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.boxtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.columnistpubdate {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial; TEXT-ALIGN: left
+}
+.summarypubdate {
+	FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.timestamp {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial
+}
+.navlinktext {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, geneva, helvetica, arial; TEXT-DECORATION: none
+}
+A.navlinktext:visited {
+	COLOR: #800080; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+A.navlinktext:link {
+	COLOR: blue; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+A.navlinktext:active {
+	COLOR: #800080; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+A.navlinktext:hover {
+	COLOR: black; TEXT-ALIGN: left; TEXT-DECORATION: none
+}

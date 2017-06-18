@@ -1,0 +1,66 @@
+<html>
+<head>
+<LINK REL="stylesheet" TYPE="text/css" HREF="SPANBFO.css">
+<title>
+SPANBFO
+</title>
+
+<script src="SPANBFO_utils.js"></script>
+<script>
+<!--
+var pageID = 0;
+
+function BodyOnLoad ()
+{
+	var pageIndex = PageIndexFromID (pageID);
+	if (pageIndex >= 0)
+	{
+		PageUpdated(pageIndex);
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" onload="BodyOnLoad()" onclick="clickMenu()">
+<base target="_top">
+
+<div id=menu1 
+  onclick="clickMenu()" 
+  onmouseover="toggleMenu()" 
+  onmouseout="toggleMenu()" 
+  style="position:absolute; 
+         display:none; 
+         border: 2px outset black; 
+         width:220; 
+         background-color:menu; 
+		 z-index:10"> 
+</div> 
+
+<DIV id=RasterDiv>
+
+<center>
+  <IMG SRC="SPANBFO_gif_1.gif" ALT="" BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 648,454 648,389 518,389 518,454 648,454" onmouseover="UpdateProps(0,40)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 505,454 505,389 374,389 374,454 505,454" onmouseover="UpdateProps(0,1)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 271,80 374,80 374,15 368,15 368,14 216,14 216,0 7,0 7,15 0,15 0,80 104,80 104,89 271,89 271,80" onmouseover="UpdateProps(0,43)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 791,454 791,389 661,389 661,454 791,454" onmouseover="UpdateProps(0,53)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 657,304 657,246 508,246 508,304 657,304" onmouseover="UpdateProps(0,48)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 576,382 576,317 446,317 446,382 576,382" onmouseover="UpdateProps(0,47)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 719,382 719,317 589,317 589,382 719,382" onmouseover="UpdateProps(0,46)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 277,369 277,304 147,304 147,369 277,369" onmouseover="UpdateProps(0,42)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 137,369 137,304 7,304 7,369 137,369" onmouseover="UpdateProps(0,41)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 209,275 209,230 78,230 78,275 209,275" onmouseover="UpdateProps(0,39)" >
+  <AREA shape="POLYGON" ALT="" TITLE=""  COORDS=" 423,223 423,165 293,165 293,223 423,223" onmouseover="UpdateProps(0,38)" >
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>

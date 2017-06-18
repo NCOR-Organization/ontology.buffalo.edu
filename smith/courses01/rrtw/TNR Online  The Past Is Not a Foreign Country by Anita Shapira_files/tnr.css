@@ -1,0 +1,129 @@
+FONT.articlehead {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #990000; LINE-HEIGHT: 20px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.articlesub {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.author {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.articlecontent {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-FAMILY: 'Times New Roman', times, serif
+}
+BLOCKQUOTE {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 13px; FONT-FAMILY: 'Times New Roman', times, serif
+}
+FONT.articleheadnext {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #990000; LINE-HEIGHT: 20px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.articlesubnext {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.authornext {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.printheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.printsubheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 14px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.subheader {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.tableheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.tablesubheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.content {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+FONT.contentbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+FONT.date {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; COLOR: #666633; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.frame {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #666633; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+FONT.footer {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.headerlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 10px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.smallerlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #990000; LINE-HEIGHT: 10px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.headlinelink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #990000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.subheaderlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.sidebarlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #990000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.bullet {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #990000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.nextlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 11px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.footerlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #990000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.icontext {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #990000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.bigeventlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #990000; LINE-HEIGHT: 18px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+#sidebar {
+	LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 1000px
+}
+FONT.headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #990000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.articlelink {
+	FONT-WEIGHT: normal; COLOR: #990000; FONT-FAMILY: 'Times New Roman', times, serif; TEXT-DECORATION: none
+}
+A.articlelinkOLD {
+	FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: #990000; LINE-HEIGHT: 19px; FONT-FAMILY: 'Times New Roman', times, serif; TEXT-DECORATION: none
+}
+FONT.indent {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: 'Times New Roman', times, serif
+}
+FONT.tnr {
+	FONT-WEIGHT: bold; FONT-SIZE: 10.5pt; COLOR: #000000; LINE-HEIGHT: 14px; FONT-FAMILY: verdana, sans-serif, arial, helvetica
+}
+A.authorlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+FONT.headlineblack {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+FONT.bigevent {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #990000; LINE-HEIGHT: 18px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+FONT.sidebar {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.headlinelinkblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333366; LINE-HEIGHT: 16px; FONT-FAMILY: verdana, sans-serif, arial, helvetica; TEXT-DECORATION: none
+}
+A.sidebarlinkblue {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #333366; LINE-HEIGHT: 12px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.headerlinkblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333366; LINE-HEIGHT: 10px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}
+A.subheaderlinkblue {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333366; LINE-HEIGHT: 13px; FONT-FAMILY: verdana, arial, sans-serif, helvetica; TEXT-DECORATION: none
+}

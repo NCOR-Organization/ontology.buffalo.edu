@@ -1,0 +1,935 @@
+<VisioDocument xmlns="urn:schemas-microsoft-com:office:visio">
+	<DocumentProperties>
+		<Title>MedO</Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Zeichenblatt-1" NameU="Zeichenblatt-1">
+			<Shapes>
+				<Shape ID="66" UniqueID="{102F3184-C19F-4EDB-8C74-421021ECF924}" Name="Führung.66" NameU="Executive.66" Master="4">
+					<Text>SPAN</Text>
+					<XForm>
+						<PinX Unit="MM">6.653543307086614</PinX>
+						<PinY Unit="MM">2.480314960629921</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">SPAN</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="65" UniqueID="{20C6728D-C9A5-4993-8662-4DC06C687104}" Name="Führung.65" NameU="Executive.65" Master="4">
+					<Text>SNAP</Text>
+					<XForm>
+						<PinX Unit="MM">7.736220472440945</PinX>
+						<PinY Unit="MM">6.850393700787402</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">SNAP</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{5D06B995-EA8E-49B5-A496-065C6661A42A}" Name="Führung" NameU="Executive" Master="4">
+					<Text>Enduring Entity
+[Exists in space and time, has no temporal parts]</Text>
+					<XForm>
+						<PinX Unit="MM">6.102362204724409</PinX>
+						<PinY Unit="MM">6.830708661417323</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Enduring Entity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[Exists in space and time, has no temporal parts]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{05BFEE4A-9A13-4345-90D7-03F9BC8AC266}" Name="Führung.2" NameU="Executive.2" Master="4">
+					<Text>Spatial Entity</Text>
+					<XForm>
+						<PinX Unit="MM">1.787647637795276</PinX>
+						<PinY Unit="MM">6.141732283464567</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Spatial Entity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{80F8C087-49C5-407D-B220-FBBEAACCA531}" Name="Dynamischer Verbinder" NameU="Dynamic connector" Master="0">
+					<XForm>
+						<PinX Unit="MM">3.945004921259843</PinX>
+						<PinY Unit="MM">6.456692913385826</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="4" UniqueID="{A889F13D-30F8-4A63-BBCA-E975403D8A74}" Name="Führung.4" NameU="Executive.4" Master="4">
+					<Text>Tunnel
+Alimentary Canal</Text>
+					<XForm>
+						<PinX Unit="MM">2.546751968503937</PinX>
+						<PinY Unit="MM">4.744094488188976</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Tunnel</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Alimentary Canal</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{62153E52-4707-4D59-84C7-6B21CDD59444}" Name="Dynamischer Verbinder.5" NameU="Dynamic connector.5" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.251476377952756</PinX>
+						<PinY Unit="MM">4.950787401574803</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="6" UniqueID="{A182287D-EAA6-4D6D-9707-77D4CAA9C7CA}" Name="Führung.6" NameU="Executive.6" Master="4">
+					<Text>Independent Entity</Text>
+					<XForm>
+						<PinX Unit="MM">10.417076771653543</PinX>
+						<PinY Unit="MM">6.062992125984252</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Independent Entity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{79569469-8917-42D1-AA81-CCC09CC485B3}" Name="Dynamischer Verbinder.7" NameU="Dynamic connector.7" Master="0">
+					<XForm>
+						<PinX Unit="MM">8.259719488188976</PinX>
+						<PinY Unit="MM">6.456692913385826</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{3B93AA0A-D332-4816-BCA4-9F186338FF02}" Name="Führung.8" NameU="Executive.8" Master="4">
+					<Text>Cavity
+Interior of Lung</Text>
+					<XForm>
+						<PinX Unit="MM">2.546751968503937</PinX>
+						<PinY Unit="MM">3.622047244094488</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Cavity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Interior of Lung</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="9" UniqueID="{6021E8AF-5315-4768-8368-0E2D69316F4C}" Name="Führung.9" NameU="Executive.9" Master="4">
+					<Text>Hollow
+Nostril</Text>
+					<XForm>
+						<PinX Unit="MM">2.546751968503937</PinX>
+						<PinY Unit="MM">4.173228346456693</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Hollow</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Nostril</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="10" UniqueID="{35FDB302-8AA9-4EE3-84D7-E8D930309D73}" Name="Führung.10" NameU="Executive.10" Master="4">
+					<Text>State
+Being pregnant, being thirsty</Text>
+					<XForm>
+						<PinX Unit="MM">6.519438976377953</PinX>
+						<PinY Unit="MM">5.275590551181102</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">State</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Being pregnant, being thirsty</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{04121CE1-2E6A-4858-8E83-05EE15094DDE}" Name="Führung.11" NameU="Executive.11" Master="4">
+					<Text>Dependent Entity
+[±Relational]</Text>
+					<XForm>
+						<PinX Unit="MM">6.667076771653544</PinX>
+						<PinY Unit="MM">6.102362204724409</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Dependent Entity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[±Relational]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="12" UniqueID="{3FF4AE76-AD4E-4E86-B67F-5A75F7EEDF48}" Name="Dynamischer Verbinder.12" NameU="Dynamic connector.12" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.251476377952753</PinX>
+						<PinY Unit="MM">4.665354330708661</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="14" UniqueID="{39235C26-6AF1-4FA0-B4C1-507E058773E9}" Name="Dynamischer Verbinder.14" NameU="Dynamic connector.14" Master="0">
+					<XForm>
+						<PinX Unit="MM">6.384719488188977</PinX>
+						<PinY Unit="MM">6.456692913385826</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{F75435BF-8AB2-4074-A528-69D9D909BF4F}" Name="Dynamischer Verbinder.15" NameU="Dynamic connector.15" Master="0">
+					<XForm>
+						<PinX Unit="MM">6.593257874015749</PinX>
+						<PinY Unit="MM">5.748031496062991</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="16" UniqueID="{8445336C-7BE1-4F81-8B0F-088ED189295E}" Name="Führung.16" NameU="Executive.16" Master="4">
+					<Text>Role, Function, Power, Disposition
+[Have realizations, called processes]
+To circulate blood, to secrete hormones</Text>
+					<XForm>
+						<PinX Unit="MM">8.546998031496063</PinX>
+						<PinY Unit="MM">5.275590551181102</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Role, Function, Power, Disposition</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[Have realizations, called processes]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="17" UniqueID="{C3209EA9-7C89-4A58-97E5-9DFB06301D14}" Name="Dynamischer Verbinder.17" NameU="Dynamic connector.17" Master="0">
+					<XForm>
+						<PinX Unit="MM">7.607037401574804</PinX>
+						<PinY Unit="MM">5.748031496062991</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="18" UniqueID="{69319C4D-7A0D-4F1F-918D-07CA4EF11A32}" Name="Führung.18" NameU="Executive.18" Master="4">
+					<Text>Quality
+[Sometimes form quality-regions or scales]</Text>
+					<XForm>
+						<PinX Unit="MM">4.787155511811023</PinX>
+						<PinY Unit="MM">5.275590551181102</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Quality</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[Sometimes form quality-regions or scales]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="19" UniqueID="{353CF839-D7B6-436D-8273-12F4DAE630E1}" Name="Dynamischer Verbinder.19" NameU="Dynamic connector.19" Master="0">
+					<XForm>
+						<PinX Unit="MM">5.727116141732283</PinX>
+						<PinY Unit="MM">5.748031496062991</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="20" UniqueID="{12E01AFA-4A9E-4E19-A847-F714D8FF26B2}" Name="Führung.20" NameU="Executive.20" Master="4">
+					<Text>Requisite
+[Have determinable/determinate structure]
+Temperature. height  </Text>
+					<XForm>
+						<PinX Unit="MM">4.003444881889764</PinX>
+						<PinY Unit="MM">4.370078740157481</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Requisite</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[Have determinable/determinate structure]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="21" UniqueID="{440FE6FA-4ED1-4683-BB31-00058AB6D769}" Name="Dynamischer Verbinder.21" NameU="Dynamic connector.21" Master="0">
+					<XForm>
+						<PinX Unit="MM">4.395300196850394</PinX>
+						<PinY Unit="MM">4.803149606299213</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="22" UniqueID="{D79F0B2D-2CC3-47F8-B79E-24E13559D2BC}" Name="Führung.22" NameU="Executive.22" Master="4">
+					<Text>Optional
+ Diabetes</Text>
+					<XForm>
+						<PinX Unit="MM">5.570866141732283</PinX>
+						<PinY Unit="MM">4.370078740157481</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Optional</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR"> Diabetes</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="23" UniqueID="{79AF504F-5AF9-463D-9581-ADF732316370}" Name="Dynamischer Verbinder.23" NameU="Dynamic connector.23" Master="0">
+					<XForm>
+						<PinX Unit="MM">5.179010826771654</PinX>
+						<PinY Unit="MM">4.803149606299212</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="24" UniqueID="{2F97C87A-D096-445B-8FCB-CD05D03B03EF}" Name="Führung.24" NameU="Executive.24" Master="4">
+					<Text>Fiat part of substance *
+Extremity, upper body</Text>
+					<XForm>
+						<PinX Unit="MM">10.590551181102361</PinX>
+						<PinY Unit="MM">4.527559055118110</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Fiat part of substance *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Extremity, upper body</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="25" UniqueID="{6D18B575-4295-4A93-8743-BD92FB5E5D1E}" Name="Dynamischer Verbinder.25" NameU="Dynamic connector.25" Master="0">
+					<XForm>
+						<PinX Unit="MM">10.110113188976378</PinX>
+						<PinY Unit="MM">5.137795275590552</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="28" UniqueID="{B185A096-0157-46D4-95E9-FB9083D9D8E9}" Name="Führung.28" NameU="Executive.28" Master="4">
+					<Text>Substance
+Organism, organ</Text>
+					<XForm>
+						<PinX Unit="MM">10.574557086614172</PinX>
+						<PinY Unit="MM">5.314960629921259</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Substance</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Organism, organ</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="29" UniqueID="{88DDFDCD-D9E2-44AE-BC01-9EA104809CA3}" Name="Dynamischer Verbinder.29" NameU="Dynamic connector.29" Master="0">
+					<XForm>
+						<PinX Unit="MM">10.102116141732282</PinX>
+						<PinY Unit="MM">5.531496062992126</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="26" UniqueID="{90AA7FF4-A4ED-4EFE-B793-A20011F6AD43}" Name="Führung.26" NameU="Executive.26" Master="4">
+					<Text>Unoccupied</Text>
+					<XForm>
+						<PinX Unit="MM">2.546751968503937</PinX>
+						<PinY Unit="MM">5.452755905511811</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Unoccupied</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="27" UniqueID="{A6009856-525E-4B69-998A-0379D354BEA6}" Name="Dynamischer Verbinder.27" NameU="Dynamic connector.27" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.167199803149607</PinX>
+						<PinY Unit="MM">5.826771653543307</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="30" UniqueID="{1616569E-C8FB-4557-BA9E-D407641619B7}" Name="Führung.30" NameU="Executive.30" Master="4">
+					<Text>Occupied</Text>
+					<XForm>
+						<PinX Unit="MM">1.028543307086614</PinX>
+						<PinY Unit="MM">5.467519685039370</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Occupied</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{C1A438DA-0E06-4054-BE39-C8D58235B16C}" Name="Dynamischer Verbinder.31" NameU="Dynamic connector.31" Master="0">
+					<XForm>
+						<PinX Unit="MM">1.408095472440945</PinX>
+						<PinY Unit="MM">5.826771653543307</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="32" UniqueID="{A0614D14-9485-4396-8801-491C47104947}" Name="Führung.32" NameU="Executive.32" Master="4">
+					<Text>Spatial region of 3 dimensions
+occupied by organism</Text>
+					<XForm>
+						<PinX Unit="MM">1.097440944881890</PinX>
+						<PinY Unit="MM">4.448818897637795</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Spatial region of 3 dimensions</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">occupied by organism</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="33" UniqueID="{D7985D49-5A18-4FC0-B407-5E2201B845A4}" Name="Dynamischer Verbinder.33" NameU="Dynamic connector.33" Master="0">
+					<XForm>
+						<PinX Unit="MM">0.748031496062992</PinX>
+						<PinY Unit="MM">4.817913385826771</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="34" UniqueID="{02A7575F-5F6A-4693-8E71-3BAD088840AD}" Name="Führung.34" NameU="Executive.34" Master="4">
+					<Text>Spatial region of 2 dimensions *
+occupied by burn, bruise</Text>
+					<XForm>
+						<PinX Unit="MM">1.133120078740157</PinX>
+						<PinY Unit="MM">3.525466535433071</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Spatial region of 2 dimensions *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">occupied by burn, bruise</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="35" UniqueID="{22EE7B27-69BE-4A89-9160-6345C3FD8297}" Name="Dynamischer Verbinder.35" NameU="Dynamic connector.35" Master="0">
+					<XForm>
+						<PinX Unit="MM">0.748031496062992</PinX>
+						<PinY Unit="MM">4.356237204724410</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="36" UniqueID="{41D11141-1686-4042-B326-191C0C3D507A}" Name="Führung.36" NameU="Executive.36" Master="4">
+					<Text>Boundary of substance *
+Surface of skin or hide</Text>
+					<XForm>
+						<PinX Unit="MM">10.590551181102363</PinX>
+						<PinY Unit="MM">3.700787401574803</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Boundary of substance *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Surface of skin or hide</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="37" UniqueID="{B8F9BB49-D5B2-4802-884D-813CC3CE20C2}" Name="Dynamischer Verbinder.37" NameU="Dynamic connector.37" Master="0">
+					<XForm>
+						<PinX Unit="MM">10.110113188976378</PinX>
+						<PinY Unit="MM">4.724409448818898</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="13" UniqueID="{B40D93F8-18DF-4BBE-AEB8-80ED2A23A60A}" Name="Dynamischer Verbinder.13" NameU="Dynamic connector.13" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.251476377952756</PinX>
+						<PinY Unit="MM">4.389763779527559</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="38" UniqueID="{542B876B-AE29-435B-84E8-DE5263A5C6BD}" Name="Führung.38" NameU="Executive.38" Master="4">
+					<Text>Entity extended in time</Text>
+					<XForm>
+						<PinX Unit="MM">5.039370078740157</PinX>
+						<PinY Unit="MM">2.480314960629921</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Entity extended in time</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="39" UniqueID="{AFA1330C-455F-4FED-919A-5A6357581A3F}" Name="Führung.39" NameU="Executive.39" Master="4">
+					<Text>Portion of Spacetime</Text>
+					<XForm>
+						<PinX Unit="MM">2.440944881889764</PinX>
+						<PinY Unit="MM">1.771653543307087</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Portion of Spacetime</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="40" UniqueID="{8E1DFAB5-93A0-4C02-9527-F3B562466F05}" Name="Führung.40" NameU="Executive.40" Master="4">
+					<Text>Fiat part of process *
+First phase of a clinical trial</Text>
+					<XForm>
+						<PinX Unit="MM">6.771653543307086</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Fiat part of process *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">First phase of a clinical trial</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="41" UniqueID="{B3BE0546-567C-4121-B8DF-D1995C8A4BB5}" Name="Führung.41" NameU="Executive.41" Master="4">
+					<Text>Spacetime worm of 3 + T dimensions
+occupied by life of organism </Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606299</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Spacetime worm of 3 + T dimensions</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">occupied by life of organism </Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="42" UniqueID="{701BC0E1-76D4-4E6B-A511-A49A44FCA2D4}" Name="Führung.42" NameU="Executive.42" Master="4">
+					<Text>Temporal interval *
+projection of organism’s life onto temporal dimension</Text>
+					<XForm>
+						<PinX Unit="MM">3.307086614173228</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Temporal interval *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">projection of organism’s life onto temporal dimension</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="46" UniqueID="{0D3C33EA-F3BC-41FA-AEDD-41EE42DA137D}" Name="Führung.5" NameU="Executive.5" Master="4">
+					<Text>Aggregate of processes *
+Clinical trial</Text>
+					<XForm>
+						<PinX Unit="MM">8.503937007874015</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Aggregate of processes *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">Clinical trial</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="47" UniqueID="{FE8A476E-2676-4122-821A-3A6657FB207D}" Name="Führung.47" NameU="Executive.47" Master="4">
+					<Text>Process
+[±Relational]
+Circulation of blood, secretion of hormones, course of disease, life</Text>
+					<XForm>
+						<PinX Unit="MM">5.039370078740157</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Process</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[±Relational]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="48" UniqueID="{FA0F8BE5-3F0A-47E5-85EC-771239EFBD25}" Name="Führung.7" NameU="Executive.7" Master="4">
+					<Text>Processual Entity
+[Exists in space and time, unfolds in time phase by phase]</Text>
+					<XForm>
+						<PinX Unit="MM">7.755905511811023</PinX>
+						<PinY Unit="MM">1.771653543307087</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Processual Entity</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">[Exists in space and time, unfolds in time phase by phase]</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="53" UniqueID="{A3C0A5D7-211F-4710-8F49-A477C8DF50DE}" Name="Führung.13" NameU="Executive.13" Master="4">
+					<Text>Temporal boundary of process *
+onset of disease, death</Text>
+					<XForm>
+						<PinX Unit="MM">10.236220472440944</PinX>
+						<PinY Unit="MM">0.944881889763780</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Temporal boundary of process *</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value Unit="STR">onset of disease, death</Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="55" UniqueID="{F9895912-AE10-4F6F-AF3C-B156E1F3096C}" Name="Dynamischer Verbinder.55" NameU="Dynamic connector.55" Master="0">
+					<XForm>
+						<PinX Unit="MM">3.740157480314961</PinX>
+						<PinY Unit="MM">2.125984251968504</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="56" UniqueID="{0B2FDE92-AA65-4128-9F99-5B3A1CD426F1}" Name="Dynamischer Verbinder.56" NameU="Dynamic connector.56" Master="0">
+					<XForm>
+						<PinX Unit="MM">7.263779527559056</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="57" UniqueID="{160F00BD-BF1E-4DAD-A5F2-B94066CC9E1B}" Name="Dynamischer Verbinder.57" NameU="Dynamic connector.57" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.007874015748032</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="58" UniqueID="{8481D148-2022-48CC-840C-7E39DBF96E79}" Name="Dynamischer Verbinder.58" NameU="Dynamic connector.58" Master="0">
+					<XForm>
+						<PinX Unit="MM">2.874015748031496</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="59" UniqueID="{61FA0BDB-8398-4090-92B9-9B7E32A7DD96}" Name="Dynamischer Verbinder.59" NameU="Dynamic connector.59" Master="0">
+					<XForm>
+						<PinX Unit="MM">8.129921259842519</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="60" UniqueID="{2276BE6F-E5E7-4F9A-B55E-26BE046DD259}" Name="Dynamischer Verbinder.60" NameU="Dynamic connector.60" Master="0">
+					<XForm>
+						<PinX Unit="MM">6.397637795275591</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="61" UniqueID="{1EB3E478-0589-4843-AF6C-BE1412AAE89B}" Name="Dynamischer Verbinder.61" NameU="Dynamic connector.61" Master="0">
+					<XForm>
+						<PinX Unit="MM">6.397637795275591</PinX>
+						<PinY Unit="MM">2.125984251968504</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="62" UniqueID="{79CF4C0D-4922-4898-9D95-E826C779F7BD}" Name="Dynamischer Verbinder.62" NameU="Dynamic connector.62" Master="0">
+					<XForm>
+						<PinX Unit="MM">8.996062992125983</PinX>
+						<PinY Unit="MM">1.417322834645669</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="43" UniqueID="{9537C590-CBAB-4FD1-8586-583AAEE564C4}" Name="Führung.43" NameU="Executive.43" Master="4">
+					<Text>MedO Draft 0.0004</Text>
+					<XForm>
+						<PinX Unit="MM">2.401574803149606</PinX>
+						<PinY Unit="MM">7.598425196850394</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">MedO Draft 0.0004</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="63" UniqueID="{A249399A-FDAA-4F44-AA82-7BEC3BA697E2}" Name="Führung.63" NameU="Executive.63" Master="4">
+					<Text>Aggregate of substances * Family, mother and fetus</Text>
+					<XForm>
+						<PinX Unit="MM">10.574559055118110</PinX>
+						<PinY Unit="MM">2.795275590551181</PinY>
+					</XForm>
+					<Prop ID="11" Name="Name" NameU="Name">
+						<Value Unit="STR">Aggregate of substances * Family, mother and fetus</Value>
+						<Label>Name</Label>
+					</Prop>
+					<Prop ID="12" Name="Title" NameU="Title">
+						<Value></Value>
+						<Label>Titel</Label>
+					</Prop>
+					<Prop ID="6" Name="Department" NameU="Department">
+						<Value Unit="STR">Attributes</Value>
+						<Label>Abteilung</Label>
+					</Prop>
+					<Prop ID="8" Name="Telephone" NameU="Telephone">
+						<Value></Value>
+						<Label>Telefon</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="64" UniqueID="{87433A9C-0DAB-4646-BCCC-F90BB4909ECD}" Name="Dynamischer Verbinder.64" NameU="Dynamic connector.64" Master="0">
+					<XForm>
+						<PinX Unit="MM">10.102117125984250</PinX>
+						<PinY Unit="MM">4.271653543307087</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

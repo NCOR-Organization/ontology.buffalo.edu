@@ -1,0 +1,111 @@
+.bodytext {
+	FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.bodytextsmall {
+	FONT-SIZE: 13px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.fpsection {
+	FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 18px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.fptitle {
+	FONT-SIZE: 13px; COLOR: #cc0000; LINE-HEIGHT: 15px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.fpsummary {
+	FONT-SIZE: 15px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.fpauthor {
+	FONT-SIZE: 14px; COLOR: #666666; LINE-HEIGHT: 15px; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: right
+}
+.fpcoverstorytitle {
+	FONT-SIZE: 24px; COLOR: #cc0000; LINE-HEIGHT: 25px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.fpcoverstory {
+	FONT-SIZE: 34px; COLOR: #cc0000; LINE-HEIGHT: 36px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.fpbookoftheweek {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: center
+}
+.date {
+	FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.asidemenuarticle {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.asidemenusection {
+	FONT-SIZE: 15px; COLOR: #ffffff; LINE-HEIGHT: 18px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: center
+}
+.atitle {
+	FONT-SIZE: 28px; COLOR: #000000; LINE-HEIGHT: 30px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.acoverstorytitle {
+	FONT-SIZE: 30px; COLOR: #cc0000; LINE-HEIGHT: 32px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.artitle {
+	FONT-SIZE: 16px; COLOR: #cc0000; LINE-HEIGHT: 16px; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.asummary {
+	FONT-SIZE: 18px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.aauthor {
+	FONT-SIZE: 17px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.abodytext {
+	FONT-SIZE: 15px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.acartoon {
+	FONT-SIZE: 14px; COLOR: #666666; LINE-HEIGHT: 16px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.alink {
+	FONT-SIZE: 14px; COLOR: #cc0000; LINE-HEIGHT: 18px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.acopyright {
+	FONT-SIZE: 12px; COLOR: #999999; LINE-HEIGHT: 13px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.ctitle {
+	FONT-SIZE: 28px; COLOR: #cc0000; LINE-HEIGHT: 30px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.ccartoon {
+	FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.brreviewauthor {
+	FONT-SIZE: 19px; COLOR: #000000; LINE-HEIGHT: 21px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.brreviewauthor2 {
+	FONT-SIZE: 16px; COLOR: #666666; LINE-HEIGHT: 18px; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: right
+}
+.brbooktitle {
+	FONT-SIZE: 18px; COLOR: #000000; LINE-HEIGHT: 19px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.brbooktitle2 {
+	FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 17px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.brbookauthor {
+	FONT-SIZE: 17px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.brdetails {
+	FONT-SIZE: 14px; COLOR: #666666; LINE-HEIGHT: 16px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.acomment {
+	FONT-SIZE: 24px; COLOR: #cc0000; LINE-HEIGHT: 26px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.stitle {
+	FONT-SIZE: 30px; COLOR: #cc0000; LINE-HEIGHT: 32px; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-ALIGN: left
+}
+.ssubheading {
+	FONT-SIZE: 20px; COLOR: #cc0000; LINE-HEIGHT: 22px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.ssubheading2 {
+	FONT-SIZE: 16px; COLOR: #cc0000; LINE-HEIGHT: 17px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.ssubheading3 {
+	FONT-SIZE: 19px; COLOR: #cc0000; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.sbodytext {
+	FONT-SIZE: 15px; COLOR: #000000; LINE-HEIGHT: 20px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.sbodytextsmall {
+	FONT-SIZE: 13px; COLOR: #cc0000; LINE-HEIGHT: 14px; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}
+.promptclicklogo {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-STYLE: italic; FONT-FAMILY: Times New Roman, Times, serif; TEXT-ALIGN: left
+}

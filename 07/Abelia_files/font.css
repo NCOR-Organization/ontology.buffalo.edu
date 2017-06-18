@@ -1,0 +1,231 @@
+* {
+	font-family:arial, helvetica, sans-serif;
+}
+
+abbr {
+	border:none;
+}
+
+body {
+	font-size: 0.75em;
+}
+
+a span.arrow {
+	font-size:0.8em;
+}
+
+div.framework a.button {
+	text-decoration:none;
+}
+
+div.framework a.button span {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+	font-size:0.8em;
+}
+
+
+
+/* STIL FOR TOPPEN MED HOVEDMENY */
+
+div.framework div.header h1 {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-size:0.8em;
+}
+
+div.framework div.header div.mainmenu li a {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:0.8em;
+}
+
+div.framework div.header div.mainmenu form input {
+	font-size:0.85em;
+}
+
+
+
+/* STIL TIL VENSTRE KOLONNE */
+
+div.framework div.center div.left h2 {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-size:0.8em;
+}
+
+/* Undermeny */
+div.framework div.center div.left div.submenu li a {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:0.8em;
+}
+
+div.framework div.center div.left div.submenu li.open ul li a {
+	font-weight:normal;
+	font-size:0.9em;
+}
+
+/* Nyhetsbrev */
+div.framework div.center div.left div.newsletter p {
+	font-size:0.8em;
+}
+
+/* Medlemssider */
+div.framework div.center div.left div.memberlogin label {
+	font-size:0.8em;
+}
+
+div.framework div.center div.left div.memberlogin a {
+	font-size:0.9em;
+	text-decoration:none;
+}
+
+
+/* STIL TIL HØYRE KOLONNE */
+
+div.framework div.center div.right {
+	font-size:0.9em;
+}
+
+div.framework div.center div.right h2 {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-size:0.9em;
+}
+
+div.framework div.center div.right h3 {
+	font-size:1em;
+}
+
+div.framework div.center div.right div.poll input.button {
+	font-size:0.9em;
+}
+
+/* Kalender */
+div.framework div.center div.right div.calender h3 {
+	font-weight:bold;
+}
+
+div.framework div.center div.right div.calender a {
+	text-decoration:none;
+}
+
+/* Tema */
+div.framework div.center div.right div.topical h3 {
+	font-weight:bold;
+}
+
+div.framework div.center div.right div.topical a {
+	text-decoration:none;
+}
+
+
+
+/* MIDTERSTE KOLONNE: HOVEDINNHOLD */
+
+div.framework div.center div.content {
+	font-size:0.9em;
+}
+
+div.framework div.center div.content h1,h2 {
+	font-weight:bold;
+}
+
+div.framework div.center div.content h1 {
+	font-size:1.7em;
+}
+
+div.framework div.center div.content h2,h3 {
+	font-size:1em;
+}
+
+div.framework div.center div.content h3 {
+	font-weight:normal;
+}
+
+div.framework div.center div.content span.imgtext {
+	font-style:italic;
+}
+
+div.framework div.center div.content p.ingress {
+	font-size:1.2em;
+}
+
+div.framework div.center div.content a {
+	text-decoration:none;
+}
+
+div.framework div.center div.content a span span {
+	font-size:0.8em;
+}
+
+div.framework div.center div.content a.archive span {
+	font-size:0.8em;
+}
+
+div.framework div.center div.main a {
+	font-size:1.2em;
+}
+
+div.framework div.center div.content span.date {
+	font-size:0.8em;
+}
+
+div.framework div.center div.content div.breadcrumbs {
+	font-size:0.9em;
+}
+
+div.framework div.center div.content div.breadcrumbs a {
+	text-decoration:underline;
+}
+
+div.framework div.center div.content caption {
+	font-weight:bold;
+	text-align:left;
+}
+
+div.framework div.center div.content th {
+	font-weight:bold;
+}
+
+div.framework div.center div.content div.paging {
+	font-size:1.1em;
+}
+
+div.framework div.center div.content div.person {
+	font-size:0.9em;
+}
+
+div.framework div.center div.content div.person h3 {
+	font-weight:bold;
+	font-size:1.1em;
+}
+
+div.framework div.center div.content div.person h3 span {
+	font-weight:normal;
+}
+
+
+
+/* BUNN FOOTER */
+
+div.framework div.footer {
+	font-size:0.8em;
+}
+
+div.framework div.footer div.left a {
+	text-decoration:none;
+}
+
+
+
+/* LØSE KLASSER */
+.button {
+	font-family: Tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+	font-size:0.8em;
+}
+
+.message {
+	font-size:1.2em;
+}

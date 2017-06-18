@@ -1,0 +1,150 @@
+.clsTIS {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial
+}
+.clsTIS A:link {
+	COLOR: #660033
+}
+.clsPostDate {
+	COLOR: #000000; FONT-FAMILY: Arial, helvetica, geneva, sans-serif
+}
+.clsAdDescription {
+	FONT-SIZE: 12pt; COLOR: #666666; FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText1 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText2 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText3 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText4 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText5 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText6 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBodyText7 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsLinks {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsBio {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsMediaCredit {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsClipDescription {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman, Times
+}
+.clsAudioInfo {
+	FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman, Times
+}
+.clsVideoInfo {
+	FONT-SIZE: 10pt; FONT-FAMILY: Times New Roman, Times
+}
+.clsSidebarHead1 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsSidebarHead2 {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsSidebarByline {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsSidebarBodyText {
+	FONT-FAMILY: Times New Roman, Times
+}
+.clsInlineSidebarBodyText {
+	FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+}
+.clsPhotoCap {
+	FONT-SIZE: 9pt; COLOR: #006699; FONT-FAMILY: Arial, Helvetica, Univers, Geneva
+}
+.clsPopup {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 11pt; VISIBILITY: hidden; PADDING-BOTTOM: 5px; BORDER-LEFT: 1px solid; CURSOR: hand; PADDING-TOP: 5px; BORDER-BOTTOM: 1px solid; FONT-FAMILY: Times New Roman, Times; POSITION: absolute; BACKGROUND-COLOR: infobackground
+}
+UL {
+	LIST-STYLE-TYPE: disc
+}
+A:link {
+	COLOR: #cc6600
+}
+A:visited {
+	COLOR: #999999
+}
+A:active {
+	COLOR: #cc0000
+}
+.clsAdLink {
+	FONT-SIZE: 10pt; COLOR: #996633; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+}
+.clsEditorsNote {
+	FONT-SIZE: 12pt; COLOR: #000000
+}
+.clsMSNLinks {
+	FONT-FAMILY: Arial
+}
+.clsMSNLinks A:link {
+	COLOR: #003366
+}
+.clsInfinitePost {
+	FONT-SIZE: 10pt; FONT-FAMILY: Arial, Helvetica, Univers, Geneva
+}
+.clsMSNLinks BR {
+	FONT-SIZE: 3pt
+}
+A.bql:link {
+	COLOR: #999999
+}
+A.bsl:link {
+	COLOR: #999999
+}
+A.sys:link {
+	COLOR: #999999
+}
+A.promo:link {
+	COLOR: #999999
+}
+A.search:link {
+	COLOR: #999999
+}
+.clsTISHead {
+	FONT-SIZE: 9pt
+}
+.clsSmallTIS {
+	FONT-FAMILY: Verdana
+}
+.clsSmallTIS A {
+	COLOR: #660033
+}
+.clsSmallMSNLinks {
+	
+}
+.clsSmallMSNLinks A {
+	COLOR: black; FONT-FAMILY: Verdana
+}
+.slateTable {
+	FONT-SIZE: smaller; FONT-FAMILY: Arial; BACKGROUND-COLOR: #ffffff
+}
+.slateTable TH {
+	BORDER-RIGHT: thin outset; PADDING-RIGHT: 10px; BORDER-TOP: thin outset; PADDING-LEFT: 10px; BORDER-LEFT: thin outset; BORDER-BOTTOM: thin outset
+}
+.slateTable TR {
+	
+}
+.slateTable TD {
+	
+}
+.slateTable THEAD {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: 800; TEXT-TRANSFORM: none; BORDER-LEFT: medium none; COLOR: #ffffff; BORDER-BOTTOM: medium none; FONT-FAMILY: Verdana,Arial; BACKGROUND-COLOR: #880000
+}
+.slateTable .THover {
+	TEXT-DECORATION: underline
+}

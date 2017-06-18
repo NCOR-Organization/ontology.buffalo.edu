@@ -1,0 +1,144 @@
+.textnew {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 18pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+UNKNOWN {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.issuesinthenews {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.issuesinthenews:visited {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.issuesinthenews:hover {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.issuesinthenews:active {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.globalsurvey {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.globalsurvey:visited {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.globalsurvey:hover {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.globalsurvey:active {
+	FONT-SIZE: 8.5pt; COLOR: #ffffff; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.sublink {
+	FONT-SIZE: 7.5pt; COLOR: #000000; LINE-HEIGHT: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.sublink:visited {
+	FONT-SIZE: 7.5pt; COLOR: #000000; LINE-HEIGHT: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.sublink:hover {
+	FONT-SIZE: 7.5pt; COLOR: #990000; LINE-HEIGHT: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.sublink:active {
+	FONT-SIZE: 7.5pt; COLOR: #000000; LINE-HEIGHT: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.generalinfo {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.generalinfo:visited {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.generalinfo:hover {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.generalinfo:active {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.bookreview {
+	FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.bookreview:visited {
+	FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.bookreview:hover {
+	FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: underline
+}
+A.bookreview:active {
+	FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.otherjournal {
+	FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+UNKNOWN {
+	FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+UNKNOWN {
+	FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+UNKNOWN {
+	FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.bookreview1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.bookreview1:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.bookreview1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.bookreview1:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.search {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.search:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.search:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.search:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.inner {
+	FONT-SIZE: 10pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.inner:visited {
+	FONT-SIZE: 10pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.inner:hover {
+	FONT-SIZE: 10pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.inner:active {
+	FONT-SIZE: 10pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.inner1 {
+	FONT-SIZE: 12pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.inner1:visited {
+	FONT-SIZE: 12pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.inner1:hover {
+	FONT-SIZE: 12pt; COLOR: #003399; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: underline
+}
+A.inner1:active {
+	FONT-SIZE: 12pt; COLOR: #990000; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.preview {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; LINE-HEIGHT: 20pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: underline
+}
+A.preview:visited {
+	FONT-SIZE: 18pt; COLOR: #0033cc; LINE-HEIGHT: 20pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.preview:hover {
+	FONT-SIZE: 18pt; COLOR: #0033cc; LINE-HEIGHT: 20pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.preview:active {
+	FONT-SIZE: 18pt; COLOR: #990000; LINE-HEIGHT: 20pt; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+.textnewbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; LINE-HEIGHT: 18pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+A.issuesinthenews2 {
+	FONT-SIZE: 8.5pt; COLOR: #000000; LINE-HEIGHT: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}

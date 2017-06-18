@@ -1,0 +1,15 @@
+.navlinks {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+.navlinks:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.bodylinks {
+	COLOR: #3366ff
+}
+.bodylinks:hover {
+	COLOR: #ffcc00; TEXT-DECORATION: underline
+}
+SELECT {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica; BACKGROUND-COLOR: #cccc99; font-color: 000000
+}

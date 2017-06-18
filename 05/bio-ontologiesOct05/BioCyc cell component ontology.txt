@@ -1,0 +1,50 @@
+
+
+FYI
+
+
+Anand.
+
+
+----- Weitergeleitete Nachricht von peifenz@acoma.Stanford.EDU -----
+     Datum: Mon, 31 Oct 2005 10:21:52 -0800
+       Von: peifen zhang <peifenz@acoma.Stanford.EDU>
+Antwort an: peifen zhang <peifenz@acoma.Stanford.EDU>
+   Betreff: cell component ontology
+        An: gofriends@genome.stanford.edu
+
+
+We are pleased to announce that the Cell Component Ontology (CCO)
+developed by the MetaCyc (http://metacyc.org) project is now freely
+accessible at http://bioinformatics.ai.sri.com/CCO. CCO was developed to
+provide a controlled vocabulary of terms for annotating the subcellular
+locations of enzymes and compartments involved in transport reactions in
+the MetaCyc biochemical pathway database. CCO contains 160 terms, many
+of them were adopted from GO (http://geneontology.com). The CCO terms
+are organized into a hierarchy strictly according to the is-a
+relationship. In addition to the is-a relationship, CCO has component-of
+and surrounded-by relationships. The latter is not used in GO. More
+information is on http://bioinformatics.ai.sri.com/CCO.
+
+
+The ontology can be downloaded in either OWL format or Ocelot format.
+
+
+Note that the web site has some known display issues with Internet
+Explorer. Please use another browser such as Firefox.
+
+
+Please send email to biocyc-support@ai.sri.com if you have any questions.
+
+
+--
+This message is from the GOFriends moderated mailing list.  A list of public
+announcements and discussion of the Gene Ontology (GO) project.
+Problems with the list?           E-mail: owner-gofriends@geneontology.org
+Subscribing   send   "subscribe"   to   gofriends-request@geneontology.org
+Unsubscribing send   "unsubscribe"  to  gofriends-request@geneontology.org
+Web:          http://www.geneontology.org/
+
+
+
+----- Ende der weitergeleiteten Nachricht -----

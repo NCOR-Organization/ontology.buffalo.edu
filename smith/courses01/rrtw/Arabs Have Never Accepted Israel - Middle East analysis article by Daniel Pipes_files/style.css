@@ -1,0 +1,120 @@
+BODY {
+	BACKGROUND: #ffffff; FONT-FAMILY: verdana,Arial,sans-serif
+}
+A:link {
+	COLOR: #3333cc
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #fe9104; FONT-FAMILY: verdana,Arial,sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #fe9104; FONT-FAMILY: verdana,Arial,sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #fe9104; FONT-FAMILY: verdana,Arial,sans-serif
+}
+P {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+LI {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+UL {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+DD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+DT {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+BLOCKQUOTE {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: verdana,Arial,sans-serif
+}
+LI {
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+}
+.new {
+	FONT-SIZE: 23px; COLOR: #d6d3ce; FONT-FAMILY: verdana
+}
+.subtitle {
+	FONT-SIZE: 12px
+}
+.srch {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+TD {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.title {
+	VERTICAL-ALIGN: middle; TEXT-ALIGN: center
+}
+.menu {
+	FONT-SIZE: 10px; TEXT-ALIGN: right
+}
+.menu A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.menu A:link {
+	COLOR: #000000
+}
+.menu A:visited {
+	COLOR: #000000
+}
+.menu A:hover {
+	COLOR: #fe9104
+}
+.synop {
+	MARGIN-RIGHT: 20px
+}
+.artable {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fe9104
+}
+.art {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; TEXT-ALIGN: center
+}
+.art A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.art A:link {
+	COLOR: #000000
+}
+.art A:visited {
+	COLOR: #000000
+}
+.art A:hover {
+	COLOR: #fe9104
+}
+.footnote {
+	FONT-SIZE: 10px
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #fe9104; FONT-FAMILY: verdana,Arial,sans-serif
+}
+.srchright {
+	TEXT-ALIGN: right
+}
+.field {
+	FONT-SIZE: 10px; WIDTH: 100px; HEIGHT: 18px
+}
+.smallfield {
+	FONT-SIZE: 10px; WIDTH: 78px; HEIGHT: 18px
+}
+.button {
+	FONT-SIZE: 10px
+}
+.center {
+	FONT-SIZE: 13px; TEXT-ALIGN: center
+}
+.copyright {
+	FONT-SIZE: 12px; COLOR: #fe9104
+}
+.red {
+	COLOR: red
+}
+.list {
+	MARGIN-TOP: 0px; FONT-SIZE: 10px; MARGIN-BOTTOM: 4px
+}

@@ -1,0 +1,15 @@
+.advancedSearch {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; Z-INDEX: 500; LEFT: 190px; VISIBILITY: hidden; BORDER-LEFT: #666666 1px solid; WIDTH: 400px; COLOR: #ffff00; BORDER-BOTTOM: #666666 1px solid; POSITION: absolute; TOP: 140px; BACKGROUND-COLOR: #333333; layer-background-color: 333333
+}
+.advancedSearchTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.advancedSearchText {
+	FONT-SIZE: 10px; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.advancedSearchHeading {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.advancedSearchHeading:hover {
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

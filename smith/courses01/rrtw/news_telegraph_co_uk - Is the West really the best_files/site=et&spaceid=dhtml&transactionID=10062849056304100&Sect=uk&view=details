@@ -1,0 +1,26 @@
+
+// click thru data, NB ensure you put the real click thru in the ClickURL field in Netgravity
+
+var NGclick = 'http://ads.telegraph.co.uk/event.ng/Type=click&ProfileID=822&RunID=3331&AdID=4626&GroupID=171&FamilyID=1&TagValues=155.161.697.724&Redirect=http:%2F%2F';
+    NGclick += "www.urbanlifesupport.co.uk/default.asp?bnr=gsky120ncg";
+var NGimg = 'http://ads.telegraph.co.uk/v/volvo/uls/volvo_120x240_1.gif';
+
+// define image dimension values and alt text for image
+
+    NGwidth = 120;
+   NGheight = 240;
+NGimgBorder = 0;
+      NGalt = "Volvo - Urban Life Support";
+
+// Where do you want the target yurl to appear, "_blank", "_new", "_top" or "_parent"
+
+NGtarget = "_blank";
+
+NGad = '';
+NGad += '<A HREF="' + NGclick + '" TARGET="' + NGtarget + '">';
+NGad += '<IMG SRC="' + NGimg + '" WIDTH="' + NGwidth + '" HEIGHT="' + NGheight + '" BORDER="' + NGimgBorder + '" alt="' + NGalt + '">';
+NGad += '</A>\n<P>\n';
+
+document.write(NGad);
+
+;

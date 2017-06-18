@@ -1,0 +1,548 @@
+/*  
+Theme Name: Xpress
+Theme URI: http://www.zeek.com
+Description: Xpress Theme
+Version: 1.70
+Author: Steve Zehngut
+Author URI: http://www.zeek.com
+Template: pjm
+*/
+
+@import url("http://cdn.pjmedia.com/wp-content/themes/pjm/style1.70.css?v=1.70");
+
+a {
+	color:#934c0d;
+}
+#xpress_navigation{
+	height:67px;
+	background-color:#000000;
+	border:1px solid #3f6078;
+}
+
+#promospace{
+	float:right;
+	width:313px;
+	background-color:#43090f;
+	border:1px solid #959595;
+	line-height: 1.15em;
+}
+#promospace img{
+	float:left;
+	
+}
+#promospace span{
+ display: block;
+    height: 40px;
+    margin-left: 75px;
+    padding: 5px;
+}
+#promospace span a{
+  color: #FFFFFF;
+    font-family: verdana;
+    font-size: 12px;
+    text-decoration: none;
+}
+#promospace span a:hover{
+	text-decoration: underline;
+}
+#xpress_navigation span.xpressnav{
+ display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+	padding-left:0px;
+}
+
+#xpress_navigation div.xpressnavlist{
+	float:left;	
+}
+#xpress_navigation .promo_on{
+	height:40px;
+	width:449px;	
+    float:left;
+}
+#xpress_navigation .pn{
+	display: block;
+	text-align: center;	
+    height: 40px;
+    margin-top: 15px;
+
+}
+
+.pninner{
+	margin: 0 auto;
+	display:inline;
+}
+.xpressnav div a{
+	display:block;
+	height:40px;
+	text-indent: -50000px;
+	width:97px;
+	background-image: url(images/navicons/navsprite.jpg);
+	background-attachment: scroll;
+	background-repeat:no-repeat;
+
+}
+.xpressnav .personal_menu_archives a{
+	background-position: 0 -200px;
+}
+.xpressnav .personal_menu_archives a:hover,.xpressnav .personal_menu_archives a.current_item{
+	background-position: -97px -200px;
+}
+.xpressnav .personal_menu_bio a{
+	background-position: 0px -160px;
+}
+.xpressnav .personal_menu_bio a:hover,.xpressnav .personal_menu_bio a.current_item{
+	background-position: -97px -160px;
+}
+.xpressnav .personal_menu_blog a{
+	background-position: 0px -120px;
+}
+.xpressnav .personal_menu_blog a:hover,.xpressnav .personal_menu_blog a.current_item{
+	background-position: -97px -120px;
+}
+.xpressnav .personal_menu_books a{
+	background-position: 0px -80px;
+}
+.xpressnav .personal_menu_books a:hover,.xpressnav .personal_menu_books a.current_item{
+	background-position: -97px -80px;
+}
+.xpressnav .personal_menu_films a{
+	background-position: 0px -40px;
+}
+.xpressnav .personal_menu_films a:hover,.xpressnav .personal_menu_films a.current_item{
+	background-position: -97px -40px;
+}
+.xpressnav .personal_menu_ww a{
+	background-position: 0px 0px;
+}
+.xpressnav .personal_menu_ww a:hover,.xpressnav .personal_menu_ww a.current_item{
+	background-position: -97px -0px;
+}
+
+#content h2{
+    margin-top: 0;
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+}
+#content  h2{
+}
+#content .post,#content .book,#content .film{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+#content .book{
+	padding:28px;
+	height:215px;
+}
+#content .book.firstbook{
+	height:auto;
+}
+#content .book .bookcover,#content .film .filmcover{
+	display:inline;
+	margin:0 auto;
+}
+#content .book .bookcover.firstimage{
+	float:left;
+}
+#content .post .headline{
+	border:1px solid #bdbdbd;
+	background-color:#c8c8c8;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    position:relative;
+    
+}
+#content h2.first_headline{
+	width: 65%; 
+}
+#content .post .headline h2 a{
+	color:#1d466b;
+	text-decoration: none;
+	font-size:18px;
+	line-height:1.3em;
+}
+#content .post .headline .date{
+	font-size:11px;
+}
+#content .headline .byline{
+   display: block;
+    height: 100%;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 42%;
+    width: 245px;
+}
+
+#content.single .headline .byline{
+	top:20%;
+	font-size:12px;
+}
+#content.single .headline .byline .pages{
+	font-size:11px;
+	margin-top:9px;
+}
+#content.single .headline .byline .pages a{
+	color:#834f1a;
+}
+#content .paged-nav-right, #content .post .entry .paged-nav-right{
+	font-size:12px;
+}
+
+#content.single .headline .byline strong{
+	font-size:14px;
+}
+
+.readmore .quotespan{
+	color: #934C0D;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.readmore {
+	color: #934C0D;
+}
+.readmorepage{
+	color:#000000;
+	font-weight:bold;
+}
+#content .img,#content .wp-post-image{
+	float:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+#content .book .entry,#content .book .entry p {
+	font-family:verdana;
+	font-size:14px;
+}
+#content .book .headline,#content .book .entry{
+	margin-left:285px;
+	margin-right:70px;
+	width:348px;
+}
+#content .book .readmore{
+	margin-top:20px;
+}
+.bookarchive,.filmarchive{
+	float:left;
+	text-align: center;
+    width: 197px;
+}
+.filmarchive{
+	width:250px;
+}
+#content.bookcontent,#content.filmcontent{
+	background-color:#ffffff;
+	border:3px solid #bdbdbd;
+
+}
+#content.filmcontent{
+	border-bottom:0px;
+}
+#content.filmcontent{
+	padding-top:40px;
+	z-index:0;
+	padding-bottom:190px;
+}
+.creepypeople{
+	background-image:url(images/navicons/film_people.png);
+	background-position: 66% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 179px;
+    padding-top: 40px;
+    z-index:1;
+    position:relative;
+    top:-217px;	
+
+}
+
+.inline-ad{
+	float:right;
+	margin-left:10px;
+}
+#advertisements{
+	text-align:center;
+}
+.bottomad{
+	text-align:center;
+	margin:0 auto;
+	width:728px;
+	margin-bottom:10px;
+}
+#wrapper .twitter-follow-button, #tatler .twitter-follow-button, #lifestyle .twitter-follow-button{
+	top:80px;
+}
+#footer{
+	margin-top:5px;
+}
+#content .social-networks{
+	border:0px;
+}
+#page{
+	border: 3px solid #BDBDBD;
+}
+#page .post{
+	padding:40px;
+	font-size:14px;
+	line-height:1.2889em;
+	
+}
+#page a{
+	font-weight:bold;
+	color:#944c14;
+}
+#page.bio{
+	background-image:url(images/navicons/bio_background.jpg);
+	background-position:50% 10px;
+	background-repeat: no-repeat;
+}
+#page.bio .post{
+	min-height: 600px;
+}
+#page.archive{
+	background-image:url(images/navicons/archive_background.jpg);
+	background-position:50% 10px;
+	background-repeat: no-repeat;
+	padding:40px;
+	
+}
+#page.archive{
+	min-height: 600px;
+}
+#page.archive li{
+	float:left;
+	width:200px;
+	line-height:2em;
+	font-size:18px;
+	margin-left:85px;
+	color:#834f1a;
+}
+#page.archive ul{
+	color:#834f1a;
+	background-image: url("images/navicons/divider.png");
+	background-position: center top;
+	background-repeat: repeat-y;    
+	
+}
+#page.archive li a{
+	text-decoration:none;
+	color:#834f1a;
+}
+#page.archive li a:hover{
+	text-decoration:underline;
+}
+
+#page.faveblogs li{
+
+}
+#page.faveblogs ul{
+	color:#834f1a;
+	list-style:none;
+	margin: 0;
+	padding: 0;	
+	background-image: url("images/navicons/divider.png");
+	background-position: center top;
+	background-repeat: repeat-y;    
+}
+#page.faveblogs li a{
+	text-decoration:none;
+	color:#834f1a;
+}
+#page.faveblogs li a:hover{
+	text-decoration:underline;
+}
+#page.faveblogs .linkcat h2{
+	display:none;
+}
+#page.faveblogs .linkcat{
+	list-style:none;
+}
+#page.faveblogs .linkcat ul li{
+	float:left;
+	width:255px;
+	line-height:1em;
+	font-size:18px;
+	margin-left:85px;
+	color:#834f1a;
+	padding-bottom:18px;
+
+}
+#page.vokdablogs .post{
+	padding: 17px 40px 40px;
+}
+#page.vodkablogs li{
+	float:left;
+	width:225px;
+}
+#page.vodkablogs ul{
+	color:#834f1a;
+	list-style:none;
+  margin: 0;
+    padding: 0;	
+}
+#page.vodkablogs ul ul{
+	list-style:disc outside none;
+}
+
+#page.vodkablogs li a{
+	text-decoration:none;
+	color:#834f1a;
+	font-weight:normal;
+}
+#page.vodkablogs li a:hover{
+	text-decoration:underline;
+}
+#page.vodkablogs .linkcat h2{
+	background-color:transparent;
+	border:0px;
+	text-indent:-6000px;
+	height:55px;
+}
+#page.vodkablogs .linkcat h2{
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+#page.vodkablogs #linkcat-32 h2{
+	background-image:url(images/navicons/barcrawl_header.gif);
+}
+
+#page.vodkablogs #linkcat-34 h2{
+	background-image:url(images/navicons/on_my_tab_header.gif);
+}
+#page.vodkablogs #linkcat-68 h2{
+	background-image:url(images/navicons/rocky_mountain_high_header.gif);
+}
+
+
+#page.vodkablogs .linkcat ul li{
+	line-height:1.2889em;
+	font-size:14px;
+	margin-left:24px;
+	color:#834f1a;
+
+}
+
+
+#page.ww{
+	background-image:url(images/navicons/ww_background.png);
+	background-position:50% 50px;
+	background-repeat: no-repeat;
+}
+
+#page.ww li{
+
+}
+#page.ww ul{
+	color:#834f1a;
+	list-style:none;
+  margin: 0;
+    padding: 0;	
+  background-image: url("images/navicons/divider.png");
+    background-position: center top;
+    background-repeat: repeat-y;    
+}
+
+#page.ww li a{
+	text-decoration:none;
+	color:#834f1a;
+}
+#page.ww li a:hover{
+	text-decoration:underline;
+}
+#page.ww .linkcat h2{
+	display:none;
+}
+#page.ww .linkcat{
+	list-style:none;
+}
+#page.ww .linkcat ul li{
+	float:left;
+	width:255px;
+	line-height:1em;
+	font-size:18px;
+	margin-left:85px;
+	color:#834f1a;
+	padding-bottom:1em;
+
+}
+#page.ww .post{
+	min-height: 600px;
+}
+.spacer{margin-top:6px !important;margin-bottom:6px !important;}
+.rounded-corner-top {
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    color: #000000;
+}
+
+
+.navcount_1{
+}
+.navcount_2 .xpressnavlist{
+  margin-left: 75px !important;
+    margin-right: 74px !important;	
+}
+.navcount_3 .xpressnavlist{
+	margin-left:60px !important;
+	margin-right:60px !important;	
+}
+.navcount_4 .xpressnavlist{
+	margin-left:40px !important;
+	margin-right:40px !important;	
+}
+.navcount_5 .xpressnavlist{
+	margin-left:25px !important;
+	margin-right:25px !important;	
+}
+.navcount_6 .xpressnavlist{
+	margin-left:10px !important;
+	margin-right:10px !important;	
+}
+
+
+
+
+.promo_on .navcount_1{
+}
+.promo_on .navcount_2 .xpressnavlist{
+	margin-left:45px !important;
+	margin-right:45px !important;	
+}
+.promo_on .navcount_3 .xpressnavlist{
+	margin-left:20px !important;
+	margin-right:20px !important;	
+}
+.promo_on .navcount_4 .xpressnavlist{
+	margin-left:6px !important;
+	margin-right:6px !important;	
+}
+.promo_on .navcount_5 .xpressnavlist{
+	margin-left:20px !important;
+	margin-right:20px !important;	
+}
+.promo_on .navcount_6 .xpressnavlist{
+	margin-left:20px !important;
+	margin-right:20px !important;	
+}
+
+
+.share {
+	width:40%;
+}
+.social-networks .date{
+	position:relative;
+	top:5px;
+	font-size:12px;
+}
+.archive-title{
+	color:#ffffff;
+	font-weight:bold;
+}
+
+#related_posts h3{margin-bottom:15px;}

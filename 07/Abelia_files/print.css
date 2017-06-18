@@ -1,0 +1,48 @@
+div {
+	background:#ffffff;
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+
+img {
+	border:none;
+}
+
+a.more {
+	display:none;
+}
+
+div.framework div.center {
+	background:#ffffff;
+}
+
+div.framework a.maincontentanchor {
+	display:none;
+}
+
+div.framework div.header {
+	display:none;
+}
+
+div.framework div.center div.left {
+	display:none;
+}
+
+div.framework div.center div.right {
+	display:none;
+}
+
+div.framework div.center div.content div.breadcrumbs {
+	display:none;
+}
+
+div.framework div.center div.content table.relations {
+	display:none;
+}
+
+div.framework div.footer div.logo {	
+	display:none;
+}

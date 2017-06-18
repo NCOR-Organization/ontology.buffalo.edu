@@ -1,0 +1,1115 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Corel WordPerfect 8">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Barry Smith: Structures of the Common-Sense World</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" alink="#FF0000">
+
+<blockquote>&nbsp;
+<center>
+<p><b><font size=+2>The Structures of the Common-Sense World</font><sup><a href="#N_1_">(1)</a></sup></b>
+<p><b><font size=+1>Barry Smith</font></b>
+<br><b><font size=-1><a href="mailto:phismith@acsu.buffalo.edu">phismith@acsu.buffalo.edu</a></font></b></center>
+
+<p><br>
+<br>
+<p>from <i>Acta Philosophica Fennica</i>, Vol. 58, 1995, 290-317.
+<br>&nbsp;
+<p><b>Introduction</b>
+<p>While contemporary philosophers have devoted vast amounts of attention
+to the language we use in describing and finding our way about the world
+of everyday experience, they have, with few exceptions, refused to see
+this world itself as a fitting object of theoretical concern. In what follows
+I shall seek to show how the commonsensical world might be treated ontologically
+as an object of investigation in its own right. At the same time I shall
+seek to establish how such a treatment might help us better philosophically
+to understand the structures of both physical reality and cognition.
+<p>My remarks are prompted by a number of important investigations which
+have been carried out by non-philosophers in recent years. Thus for example
+there is the project of a 'semiophysics' a physics of the salient structures
+in reality that has recently been advanced by the French thinkers Ren&eacute;
+Thom and Jean Petitot.<sup><a href="#N_2_">(2)</a></sup> There are the
+experiments of Gestalt psychologists such as Gaetano Kanizsa and Paolo
+Bozzi demonstrating the existence of a <i>sui generis</i> organization
+of the perceptual world, for example in respect of the categories of colour,
+shape, motion and contour.<sup><a href="#N_3_">(3)</a></sup> There is the
+work of J. J. Gibson and other ecological psychologists on perceptual salience,
+and on the substances, surfaces, affordances, etc. of the common-sense
+world.<sup><a href="#N_4_">(4)</a></sup> There are the investigations of
+E. Rosch and her associates on the role of prototypicality in our everyday
+experience, and of F. C. Keil and others on the ways in which our experience
+is structured via natural species-genus relations.<sup><a href="#N_5_">(5)</a></sup>
+And finally, and for our present purposes most importantly, there are experiments
+in the field of artificial intelligence issuing in the construction of
+models not only of the processes of common-sense reasoning but also of
+commonsensical reality itself.
+<br>&nbsp;
+<p><b>Common Sense and Artificial Intelligence</b>
+<p>As computer scientists have been forced, by degrees, to acknowledge,
+it is everyday knowledge that is hardest to convey to a computer. Such
+knowledge is, however, of tremendous importance. For it seems on the face
+of it that our commonsensical belief-systems enjoy not merely a remarkable
+efficiency when it comes to solving the problems raised in our everyday
+passage through the world, but also a no less remarkable adaptability,
+a capacity to maintain themselves in functioning order from situation to
+situation and from generation to generation, even in the face of sometimes
+catastrophic changes in environmental and other conditions. A good deal
+of effort has accordingly been invested in the construction of theories
+not merely of our common-sense beliefs but also of different aspects of
+that common-sense reality in which we live and move and work. One of the
+goals of the present paper, now, is that of using ideas on common-sense
+physics derived from artificial intelligence research as a preamble to
+a philosophical account of the structures of commonsensical reality with
+pretensions to the status of a theory.
+<p>Consider, for example, the so-called 'qualitative physics' of Kleer
+and Brown (1984). This seeks to predict and explain the behaviours of mechanisms
+by providing algorithms for determining the patterns of activity of complex
+devices from the generic behaviours of their components. The latter prove
+capable of being reduced to a rather small number of basic types, enjoying
+different but comparable realizations in highly disparate fields. (Conduits,
+for example, may be used to convey air, water, electric current, information,
+investment funds, and so on.) In relation to each type of constituent we
+may then distinguish, again, a rather small number of stable basic states
+(for example <i>on</i>/<i>off</i>, <i>leftward flow</i>/<i>rightward flow</i>),
+separated by instantaneous thresholds of transition. We are then faced
+not, as in standard physics, with unsurveyable quantitative continua, but
+rather with small finite spaces of alternative states, each one of which
+is perceptually easily distinguishable from its neighbours. Movements into
+and out of each of the basic states can moreover be represented by means
+of the equations of a qualitative differential calculus, within which
+<center>
+<p>p > 0, dp/dt > 0, d<sup>2</sup>p/dt<sup>2 </sup>= 0</center>
+
+<p>for example, might represent a situation in which the pressure in a
+given container is positive and increasing at a constant rate.<sup><a href="#N_6_">(6)</a></sup>
+<p>Or consider the attempt by Gardin, Meltzer and their students to develop
+a science of naive physics via the consideration of analogical computer-representations
+of everyday objects such as strings, rods, levers and pulleys. This is
+achieved via the construction of two-dimensional graphic arrays whose constituents
+are designed to exhibit patterns of behaviour which are acceptable as qualitatively
+correct for entities of the given sorts.<sup><a href="#N_7_">(7)</a></sup>
+Strings, for example, can be crudely modelled as one-dimensional aggregates
+of molecules satisfying the following four constraints, which turn out
+to be sufficient to give qualitatively correct behaviours in a range of
+situations:
+<br>&nbsp;
+<blockquote>1. Continuity: there is a fixed distance parameter (e.g. zero)
+between each molecule and its neighbours.
+<p>2. Flexibility: there is a fixed angle parameter, which is an upper
+bound to the amount the line joining the centres of two neigbouring molecules
+may rotate.
+<p>3. Impenetrability: there is no intersection between the pixels of a
+molecule with the pixel elements of environment objects.
+<p>4. Sensitivity to external forces: forces like gravity, wind, or viscous
+drag are stored in the data structure of each molecule.<sup><a href="#N_8_">(8)</a></sup></blockquote>
+
+<p><br>The given approach proves itself to be of high generality. Thus
+for example by adjusting the flexibility limit angle from 180 to 0 one
+is able to simulate the behaviour of a rigid bar, and selecting angles
+between these limits allows the simulation of rods with varying degrees
+of flexibility.
+<p>The constraints in question were discovered by means of trial-and-error
+experiments on a computer terminal: in this way the capacity of human subjects
+to recognize the qualitative rightness of a physical set-up governed by
+a range of variable parameters is used as a research instrument in establishing
+laws of naive physics. One is reminded here of experiments carried out
+much earlier, and without the benefits of computer simulations, by Albert
+Michotte (1946), experiments designed to demonstrate the ways in which
+(and the conditions under which) things and events in nature are perceived
+as standing to each other in relations (above all causal relations) of
+various sorts. The experiments of Michotte and his associates were of course
+carried out without the benefits of computer simulation. Thus Michotte
+did not even glimpse the possibility of building up by these methods a
+model of the entire world of everyday physical objects in interaction.
+(It must, however, be hastily admitted that Gardin and his associates are
+far removed from an outcome of this sort.)
+<p>The work of Hobbs <i>et al. (</i>1988) investigates the ways in which
+common-sense knowledge is used in understanding texts about mechanical
+devices and their failures. The resultant 'common-sense metaphysics' amounts
+to a theory of those core concepts (granularity, scales, time, space, force,
+causality, change, etc.) which figure in virtually every region of inquiry.
+Consider, for example, the family of concepts associated with the notion
+of force. A material body can be said to be shape-invariant with respect
+to a given force if, on application of that force, its shape remains the
+same. The topological invariance of a body can be similarly defined. A
+body will cease to be shape- and topology-invariant when forces beyond
+certain threshold intensities (say d<sub>1</sub> and d<sub>2</sub>) are
+applied (and note, again, that we have here in each case an example of
+a basic state-transition of the sort mentioned above). In these terms one
+can now define what it is for a material to be 'hard', 'flexible', 'malleable',
+'ductile', 'elastic', 'brittle', 'fluid', etc.<sup><a href="#N_9_">(9)</a></sup>
+Thus for forces of strength d &lt; d<sub>1</sub> the material is <i>hard</i>;
+for forces of strength d<sub>1</sub> &lt; d &lt; d<sub>2</sub> it is <i>flexible</i>,
+and so on. Similar methods can be used to investigate the family of concepts
+associated with the different varieties of causal connection between material
+bodies. The
+<i>attachment</i> of bodies, for example, can be defined by
+the fact that when either moves so, too, does the other. Attachment in
+this sense may be either <i>direct</i>, or <i>mediated</i> via paths of
+causal connections, and in terms of these notions one can go on to define
+further notions such as barrier, opening, penetration, and so on.<sup><a href="#N_10_">(10)</a></sup>
+<p>The naive physics of Patrick Hayes countenances a still more general
+theory incorporating massively large-scale formalizations of common-sense
+knowledge of a sort that is designed to yield a formal (first-order, axiomatic)
+theory of the entire domain of commonsensical reality. The axioms of this
+theory should be intuitively acceptable (this being decided here also in
+part by introspective means). Naive physics should in this sense be 'intelligent'.
+But it should also be 'naive' in the sense that it takes as one of its
+starting points the relevant commonsensical beliefs of normal human beings.
+<p>How, Hayes asks, could one construct a robot capable of finding its
+way efficiently around, say, a salad bar? Such a robot would need to have
+the capacity not merely to negotiate walls, doors, chairs, tables, and
+people. It would need also to be able to lift and manipulate crockery and
+cutlery, tomatoes, lettuce, and other bits, pieces and mixtures, to the
+extent that in order to succeed in its efforts it would need to be in possession
+of something approximating to a theory of the entire world of solids and
+liquids.<sup><a href="#N_11_">(11)</a></sup> A physics of the usual sort
+is of no help to him here. This is first of all because the relevant computations,
+if they are capable of being carried out at all on a standard physical
+basis (and if the relevant input data could somehow be obtained), would
+be by orders of magnitude too slow and too computationally expensive for
+the task in hand. But standard physics is of no help also because its theories
+seem not to address cuts through reality of the right sorts and dimensions,
+so that, even if exact solutions to standard physical equations could be
+derived, it would in general be impossible to extract therefrom the intuitive
+information relevant to further action. Hayes, accordingly, sets himself
+the task of laying down the axioms of a theory of just those properties
+and relations which structure the domain of normal or average or typical
+human experience for human beings do, after all, seem to have the capacity
+to negotiate salad bars in ways which suggest that they have somehow solved
+the problems of data-gathering and interpretation that here arise.
+<p>Hayes' goal, as we said, is a complete theory of commonsensical reality.
+Thus he is not willing to sacrifice the scope and detail of his theory
+for the sake of hasty implementation in the form of running programs which
+are as experience shows destined to collapse when the attempt is made to
+extend them to cope with new domains of problems. His project is hereby
+set in opposition to the small axiomatic theories of limited domains which
+were characteristic of the 'toy worlds' approaches once customary in artificial
+intelligence research. (It would be set in opposition also to the approach
+of Gardin and Meltzer mentioned above.) Indeed Hayes argues that the axioms
+of his theory would require of the order of 10<sup>4</sup> to 10<sup>5</sup>
+predicates for complete expression. These predicates can, however, be divided
+into various sub-clusters, representing tentatively and provisionally distinguishable
+branches of the discipline which he has in his sights. Thus in particular
+Hayes distinguishes sub-clusters of predicates relating to:
+<br>&nbsp;
+<blockquote>- places and positions
+<p>- spaces and objects
+<p>- qualities and quantities
+<p>- change and time
+<p>- energy, effect and motion
+<p>- composites and pieces of stuff.</blockquote>
+
+<p><br>Consider, for example, that sub-cluster which relates to places
+and positions. This might involve predicates coding notions such as: on,
+in, at, path, inside, outside, wall, boundary, container, obstacle, barrier,
+and so on (and note in passing the extent to which many of these notions
+are alien to the sorts of representations we find in standard physics).
+No one of the given notions as realized in Hayes' naive physics will be
+capable of being reduced to or defined in terms of any of the others. An
+adequate treatment of the predicate coding 'on', for example, would need
+to tie this predicate axiomatically to predicates coding notions such as
+friction, support, gravity, solidity, tension, load, pressure, and so on,
+in addition to the purely geometrical component of this notion upon which
+earlier research on toy worlds had normally concentrated. Moreover, each
+of these predicates, too, could be treated adequately only by means of
+axioms in which they are tied in non-trivial ways to some or all of the
+others. The theory of naive physics must therefore, in Hayes' eyes, be
+highly non-hierarchical, as contrasted with a system like Carnap's <i>Aufbau</i>
+(or Zermelo-Fraenkel set theory), where a very small number of primitive
+notions suffices for the construction of the entire edifice of the theory.
+The formal properties of non-hierarchical theories have, it seems, been
+hardly investigated, and in this sense also we may be in the dark as to
+the formal properties of everyday physical reality itself. There seem,
+however, to be important similarities between theories of the given sort
+and logical systems, such as those developed by Lesniewski, which allow
+the use of so-called 'creative definitions'.<sup><a href="#N_12_">(12)</a></sup>
+<br>&nbsp;
+<p><b>From Aristotle to Galileo</b>
+<p>Whether Hobbs, Hayes <i>et al. </i>are correct in supposing that one
+can arrive in this way at a computationally efficient theory of naive physics
+capable of resolving problems of the sort faced in robotics, is not a question
+I wish here to address. It seems, indeed, to be at this stage questionable
+whether a <i>predictive</i> science of the more usual sort can be achieved
+with these methods, for reasons to be set forth below.<sup><a href="#N_13_">(13)</a></sup>
+This is, however, of little importance for our purposes, since current
+work in naive physics is interesting and challenging already from a
+<i>descriptive</i>
+point of view, which is to say quite apart from any predictive or explanatory
+concerns which might be associated with it. In this and also in other respects,
+as we shall see, it echoes back to earlier forays in naive-physical theory
+on the part of Aristotle and his pre-Galilean successors.
+<p>Modern-day psychologists have indeed acknowledged the similarity between
+many of our folk-physical beliefs and the ideas on motion and impetus developed
+by thinkers such as Philoponus and Buridan still operating within a pre-Galilean
+framework.<sup><a href="#N_14_">(14)</a></sup> Philosophers had traditionally
+assumed, with Aristotle, that man is in a certain sense in harmony with
+the world: the forms we find in our minds <i>are</i> the forms of things
+we see. As Feyerabend puts it in his "Defence of Aristotle" (1978), Aristotle
+does not seek deeper theories of what lies 'behind' or 'beyond appearances',
+for to seek such theories would be to assume that the world is not as it
+appears to be. Certainly there is room for error on the Aristotelian view.
+This relates, however, to particular perceptions only; it leaves the general
+features of perceptual knowledge untouched. Thus the Aristotelian or commonsensical
+conception 'will never concede that it is false throughout. Error is a
+<i>local
+phenomenon</i>, it does not distort our <i>entire outlook</i>. Modern science,
+on the other hand (and the Platonic and Democritian philosophies it absorbed)
+postulated just such <i>global distortions</i>.' (Feyerabend 1978, p. 148)
+<p>Recent psychological interest in naive physics has understandably tended
+to concentrate on those quaint-seeming aspects of the Aristotelian/commonsensical
+conception of the world which subsequent physics has shown to rest (<i>per
+impossibile</i>, on Aristotle's view) on systematic error. That such systematic
+error exists should not, however, blind us to the fact that the central
+principles of the Aristotelian world-view have not in this way been exposed
+by subsequent
+<i>physics</i> as erroneous.<sup><a href="#N_15_">(15)</a></sup>
+Rather, to the extent that these central principles have been called into
+question at all, they have been subverted by a <i>philosophy</i> which
+would consign our commonsensical beliefs, <i>en bloc</i>, to the realm
+of systematic error.<sup><a href="#N_16_">(16)</a></sup> Truth, in this
+way, comes to be confined at best to a reality that is 'beyond appearance',
+and ontology, similarly, comes eventually to be confined to the mere repetition
+of post-Galilean physics.
+<p>Here, in contrast, we wish to establish in broad terms which portions
+of the Aristotelian world-view can still properly be counted as true true
+of a commonsensical reality whose relation to physical reality must then
+of course be independently established. (This latter question does not,
+be it noted, arise, where common-sense beliefs are treated from a purely
+psychological perspective.) Thus we follow Moore in holding that the common-sense
+view of the world 'is, in certain fundamental features, <i>wholly</i> true'.
+(1959, p. 44.) Our job will be one of determining, in part under the inspiration
+of modern naive-physical theory, precisely which fundamental features or
+components of the common-sense view <i>are</i> wholly true. But it will
+be one of determining also how the truths in question can be seen to be
+compatible (after all) with the truths of physics.
+<br>&nbsp;
+<p><b>Can there be a <i>Theory</i> of Naive Physics?</b>
+<p>Not all of those who have invested philosophically in the idea of a
+common-sense reality would embrace the idea that a <i>theory</i> of this
+reality is possible in anything like the standard sense in which we have
+theories in, say, physics or number theory. Indeed there are those who
+would deny this very possibility even while emphasizing the autonomy of
+commonsensical experience itself. As H. L. Dreyfus puts it, echoing ideas
+to be found also, in different forms, in Heidegger, Merleau-Ponty and Wittgenstein:
+<br>&nbsp;
+<blockquote>it just may be that the problem of finding a <i>theory</i>
+of common-sense physics is insoluble because the domain has no theoretical
+structure. By playing with all sorts of liquids and solids every day for
+several years, a child may simply learn to discriminate prototypical cases
+of solids, liquids, and so on and learn typical skilled responses to their
+typical behavior in typical circumstances. (Dreyfus 1988, p. 33)</blockquote>
+
+<p><br>The force of Dreyfus' argument here is, however, difficult to grasp;
+for surely something similar could be said, too, for example of the ways
+in which physics students learn 'typical skilled responses in typical circumstances'
+as they find out how to manipulate physical and mathematical equations
+and equipment in laboratories. Clearly this would not of itself sanction
+a claim to the effect that physics does not exist as theory. Hence much
+further argument would be needed to prove that our behaviourally relevant
+knowledge can exist <i>only</i> in tacit form so that the idea of a naive
+physics <i>made explicit</i> would be incoherent. (Something like this
+seems to be suggested by Augustine's remarks on time in the <i>Confessions</i>.)
+<p>One can, however, see ways in which it might be possible to put flesh
+on Dreyfus' suggestions concerning the resistance to theory of common sense.
+One might wish to argue that the appropriate theoretical account of how
+humans function in and find their ways about this domain must be provided
+not in terms of theoretical beliefs, but rather in terms of 'unintelligent'
+processes on the sensorimotor level. One might, that is, hold that the
+ways in which humans negotiate everyday obstacles are in their essence
+blind or mechanical, to the extent that there is nothing like a <i>theory</i>
+of the common-sense world present even implicitly in the corresponding
+bodily processes.
+<p>Even if we did not in any sense use a theory of common-sense physics
+in our everyday motor activity, however, we might still be in possession
+of such a theory on the level of belief. Indeed it seems clear that both
+children and adults do have the capacity to utilize naive-physical knowledge
+in abstract ways, which is to say independently of their engaging in the
+practical solution of any specific motor problems. Moreover, it is difficult
+to see how an account of commonsensical knowledge and action in terms of
+servomechanisms and the like could leave room for any theoretical explanation
+of our understanding of natural language; for such understanding (and indeed
+the very possibility of natural language itself) seems to rest essentially
+on a shared, systematic set of beliefs and judgments about the common-sense
+world, beliefs and judgments which are after all themselves capable of
+being formulated in natural-language terms.
+<p>A less radical suggestion has recently been advanced by Stroll (1990),
+in a somewhat different context, to the effect that the naive physicist
+or psychologist should abandon the search for a 'holistic' theory of the
+commonsensical domain and content himself instead, in Wittgensteinian spirit,
+with context-sensitive descriptions of separate cases. Stroll's arguments
+here recall Peripatetic criticisms of the 'abstractness' of Galileo, who
+was accused by his contemporaries of having constantly disregarded the
+single case in attempting to comprehend nature under general laws and principles.<sup><a href="#N_17_">(17)</a></sup>
+They recall also J. L. Austin's view in "A Plea for Excuses" to the effect
+that common sense is so subtle that it calls for a close, piecemeal approach
+allowing attention to nuance and detail, rather than an all-pervasive systematic
+account.
+<p>One problem for Stroll and his ilk, however, is that sizeable fragments
+of explicit naive-physical theory have been already worked out, at different
+times and in different fields. These are indeed in almost every case 'descriptive'
+in the sense Stroll favours (thus for example in Aristotle's <i>Physics</i>,
+or in Husserl's <i>Crisis</i>), but they are for all that holistic, at
+least in the sense that they do not resolve themselves into disconnected
+stories and <i>aper&ccedil;us</i> of the sort some Wittgensteinians favour.
+Moreover, as we have seen, attempts at explanatory-predictive theories
+along the lines ruled out by Stroll can be found in great quantities in
+the literature of artificial intelligence. Such attempts have, it is true,
+so far yielded little in the way of successful predictive engines which
+could even come close to approximating some small fragment of human competence.
+To suggest, in Strollian spirit, that the very practice of theorizing in
+this sphere should be abandoned, however, is to lend credence to a counsel
+of intellectual nihilism. Moreover, it is to foreclose on the possibility
+that an adequate theory of commonsensical reality might be developed whose
+very <i>failure</i> as an engine of prediction would throw illuminating
+light on the nature of this reality itself. (We shall give reasons below
+for supposing that an outcome of this sort is indeed to be expected.)
+<br>&nbsp;
+<p><b>The Status of Naive Physics</b>
+<p>I shall accordingly take it for granted in what follows that it is possible
+to construct a theory of the commonsensical world of the sort that is canvassed
+by recent practitioners of naive or qualitative physics. In coming to terms
+with recent work in artificial intelligence, however, it is important to
+note that practitioners in this and related fields typically embrace views
+as to the status of the discipline of naive physics above all in respect
+of its ontological commitments quite different from those to be canvassed
+here. In fact there are three partially overlapping groups of alternative
+views which can be distinguished, which we might refer to, respectively,
+as the <i>pragmatic</i>, the <i>psychological</i> and the <i>ontological</i>
+conceptions of naive-physical theory:
+<br>&nbsp;
+<blockquote><i>1. The pragmatic conception of naive physics</i>. This sees
+naive physics not as a matter of propositions <i>true of</i> some specific
+domain of 'commonsensical reality', but rather as a collection of computationally
+efficient rules of thumb. Naive physics might thereby be seen as a theory,
+of sorts, but then it is a theory conceived in purely instrumental terms,
+so that its putative object commonsensical reality itself would turn out
+to be a sort of 'theoretical entity' possessed of no autonomous status
+whatsoever.
+<p><i>2. The psychological conception of naive physics.</i> Another set
+of views might be classed loosely under the heading of psychological (one
+might also say 'epistemological' or 'cognitive') interpretations of the
+naive-physical discipline. These include, <i>inter alia</i>, conceptions
+of naive physics as a matter of 'mental models'.<sup><a href="#N_18_">(18)</a></sup>
+Naive physics, on views of this sort, is indeed a <i>theory, </i>rather
+than a merely pragmatically oriented collection of rules (or tacit habits)
+of thumb. But it is not, like physics proper, a theory of some transcendent
+domain. Rather, it is a sort of psychology in disguise; a science of the
+beliefs human beings share as concerns their everyday environment. The
+fact that some, at least, of these beliefs are false is of no consequence
+for the discipline on this perspective, since true and false beliefs will
+quite properly be treated as having equal psychological reality.
+<p><i>3. The ontological conception of naive physics.</i> The third set
+of views here distinguished sees naive physics as a theory in the limit
+<i>true</i>
+of a stable, well-delineated, precisely and naturally specifiable subject-matter
+of its own, distinct from that of psychology, a subject-matter properly
+deserving the title of 'common-sense world'. It was investigations of this
+subject-matter which predominated among metaphysicians and natural philosophers
+in the time before (and for some time after) Galileo. Here true and false
+beliefs about the physical environment are clearly not of equal value.
+Indeed the most important goal of naive physics on this conception is precisely
+that of finding systematic means of filtering out, from the totality of
+such beliefs, those which merit admission into the edifice of the theory.</blockquote>
+<i>Ad 1</i>. The pragmatic conception, which predominates especially among
+the practitioners of artificial intelligence research, will be of little
+further concern. One not inconsiderable problem with the doctrine is that
+it has the effect of inverting our usual intuitions in such a way that
+tables, chairs, loaves of bread, and the like, are now to count as 'theoretical
+entities'. Another problem is that, like all pragmatic doctrines, it tells
+us at most part of the story. What it does not and can not tell us is <i>why</i>,
+given two or more competing realizations of the naive-physical discipline,
+it should be the case that one is more or less useful or effective than
+the others. It is, again, a counsel of intellectual nihilism to deny the
+possibility of and the necessity for deeper questions here, questions which
+will yield reasons both for differing levels of intuitive adequacy and
+for computational or predictive success or failure.
+<br>&nbsp;
+<p><i>Ad 2</i>. Research in naive physics falls, on the psychological conception,
+within the domain of experimental psychology as standardly conceived, or
+within some neighbouring domain such as that of cognitive anthropology.
+One can, for example, investigate the naive-physical beliefs of children
+in light of the ways in which such beliefs come gradually to be modified
+or corrected on exposure to the Newtonian world-view encapsulated in standard
+physics textbooks.<sup><a href="#N_19_">(19)</a></sup> Or one can investigate
+the extent to which non-Newtonian beliefs about the physical world are
+tacitly retained even by those adults who are otherwise able to demonstrate
+a capacity to affirm the correct Newtonian principles.<sup><a href="#N_20_">(20)</a></sup>
+<p>There is surely a sense in which investigations of these matters may
+be useful and illuminating. One problem for us here, however, is that,
+when once this psychological (anthropological, developmental) perspective
+is taken seriously, it might appear difficult to justify talk in terms
+of some one single discipline of naive physics at all. For there seems
+to be a large number of different systems of naive-physical beliefs manifested
+among different groups of human subjects at different times and places.
+Not merely is there an opposition between children's and adult physics;
+there seems to be a diversity in physical beliefs also as between different
+cultures, to the extent that some have been led to conceive psychological
+naive physics as collapsing into a structureless mass of belief-systems
+manifesting limitless variety through time and space. Certainly if one
+looks for evidence to support a view of this sort, given the wealth of
+extant conceptions of the nature of reality in different cultures, one
+will undoubtedly find it. Much valuable work has indeed been done, in the
+area of what might be called 'ethnophysics', on the multiplicity of naive-physical
+belief-systems that have arisen in the course of human, perhaps even of
+animal, history.<sup><a href="#N_21_">(21)</a></sup>
+<p>It would be wrong, however, to assume as it were <i>a priori</i> that
+there can be no constraints on such diversity. Thus one should not suppose
+that wherever one has a systematic difference in behaviour one has therefore
+also a difference in what ought properly to count as the naive physics
+governing such behaviour. One may merely have a case of widespread error.
+It seems for example that there is a widespread misconception, at least
+among Americans, as to the workings of thermostats. This fact should not,
+however, be taken to imply that those who hold false beliefs about thermostats
+thereby manifest a non-standard naive-physical 'theory of heat', as for
+example Kempton (1987) seems to hold. From our present perspective there
+can be no common-sense theory about thermostats, any more than there can
+be a common-sense theory of osmosis or radioactive decay. Thermostats are,
+naively speaking, boxes which control the heat. Theories or popular prejudices
+which go beyond this naive basis do not belong to common sense, and can
+therefore lend no support to the idea that common sense is itself subject
+to massive diversity in the relevant respect.
+<br>&nbsp;
+<p><i>Ad 3. </i>It is the third (ontological) conception of naive physics
+that will be defended here. Underlying this conception is the idea that
+it is possible to formulate principles which will enable one, gradually,
+to remove errors and other foreign matter from the class of those beliefs
+that are relevant to the construction of a true naive-physical theory.
+Such principles give us a means of coping with the supposed diversity among
+folk-physical belief-systems, so that the common-sense world with which
+the ontological conception operates would be, in the limit, independent
+of variations in belief.
+<p>A parallel intuition is defended by those for example the so-called
+'Southern Fundamentalists'<sup><a href="#N_22_">(22)</a></sup> who give
+credence to the idea that our everyday psychological beliefs, too, constitute
+a <i>bona fide</i> system of truths. Indeed each of the physical issues
+dealt with here seems to have an exact equivalent in the issues addressed
+by philosophers and others under the heading of 'folk psychology'.<sup><a href="#N_23_">(23)</a></sup>
+There, too, one finds a wide variety of beliefs that have been maintained
+by human beings at different times and places. The existence of false beliefs
+about the mind does not of itself, however, imply that it is impossible
+to disengage therefrom some core of primary folk-psychological beliefs
+beliefs which might be true and claim a truly scientific status.
+<p>Similarly, I shall claim, the existence of more or less folksy physics
+is not of itself a sufficient warrant for rejecting the idea of a (true)
+naive physics more strictly conceived. Moreover if, as some hold, it is
+a worthy project to attempt to prune away the more folksy bits of common-sense
+psychology in order thereby to establish, as far as is possible, the laws
+governing the mental domain of beliefs and desires, then it ought, surely,
+to be a no less worthy project to attempt to prune away the more folksy
+bits of common-sense physics in order to establish the laws governing that
+domain of commonsensical things and events to which such beliefs and desires
+primarily relate. The dominance of the psychological and epistemological
+orientation among modern philosophers is indeed poignantly revealed in
+the extent to which questions of the given sort have been taken seriously
+as far as folk psychology is concerned, where their folk-physical counterparts
+have been virtually ignored.
+<br>&nbsp;
+<p><b>Naive Physics is True</b>
+<p>The anthropologist Robin Horton has drawn what is for our purposes a
+useful distinction between what he calls 'primary theory' and the different
+sorts of 'secondary theories' which are, he argues, characteristic of different
+economic and social settings.
+<p>Primary theory or what we have been calling 'common sense' is, as Horton
+points out, developed to different degrees by different peoples in its
+coverage of different areas. In other respects, however, it differs hardly
+at all from culture to culture. In the case of secondary or 'constructive'
+theory, in contrast,
+<blockquote>&nbsp;
+<br>differences of emphasis and degree give place to startling differences
+in kind as between community and community, culture and culture. For example,
+the Western anthropologist brought up with a purely mechanistic view of
+the world may find the spiritualistic worldview of an African community
+alien in the extreme. (1982, p. 228)</blockquote>
+
+<p><br>This agreement in primary theory has evolutionary roots:
+<br>&nbsp;
+<blockquote>there is a sense in which such theory must 'correspond' to
+at least certain aspects of the reality which it purports to represent.
+If it did not so 'correspond', its users down the ages could scarcely have
+survived. At the same time, its structure has a fairly obvius functional
+relationship to specific human aims and to the specific human equipment
+available for achieving them. In particular, it is well tailored to the
+specific kind of handeye coordination characteristic of the human species
+and to the associated manual technology which has formed the main support
+of everyday life from the birth of the species down to the present day.
+(op. cit., p. 232)</blockquote>
+Where, then, from the perspective of survival, we can believe what we like
+concerning micro-spirits and macro-devils residing on levels above or below
+the levels of everyday concern, we have been constrained as far as the
+broad physical structures of everyday reality are concerned, to believe
+the truth otherwise we would not be here.<sup><a href="#N_24_">(24)</a></sup>
+<p>It seems, indeed, to be the case that the commonsensical world is apprehended
+in all cultures as embracing a plurality of enduring substances possessing
+sensible qualities and undergoing changes (events and processes) of various
+sorts, all existing independently of our knowledge and awareness and all
+such as to constitute a single whole that is extended in space and time.
+This body of belief is put to the test of constant use, and survives and
+flourishes in very many different environments. No matter what sorts of
+changes might occur in their surroundings, human beings seem to have the
+ability to carve out for themselves, immediately and spontaneously, a haven
+of commonsensical reality. Moreover, our common-sense beliefs are readily
+translated from language to language and judgments expressing such beliefs
+are marked by a widespread unforced agreement.
+<br>&nbsp;
+<p><b>Common-Sense Theory and Physical Science</b>
+<p>Ever more pressing, now, is our question as to the relation of naive
+physics to physical science of the standard quantitative sort. Here, too,
+a range of variant conceptions can be distinguished. At one extreme is
+a view according to which commonsensical reality would itself be the only
+reality there is, so that standard physics would have to be understood
+in instrumental terms, as secondary to and derivative of the science of
+commonsensical reality. (There are traces of this view in Husserl's <i>Crisis</i>
+where we find also an important anticipation of Horton's ideas on primary
+and secondary theory.)
+<br>&nbsp;
+<p>Between this and the opposite extreme position which sees naive physics
+as simply false a position we have already had occasion to dismiss above
+is a family of emergentist views, according to which both commonsensical
+and standard physical reality are awarded an autonomous existence of their
+own, the former being seen as a matter of higher-level stable features
+of the latter. Such views parallel in some respects the view of minds as
+higher-level features of brains that has been defended most recently by
+Searle. Just as mind is, in Searle's terms, 'caused by . . . and realized
+in' certain portions of physical reality,<sup><a href="#N_25_">(25)</a></sup>
+namely in the operations and structure of the human brain, so commonsensical
+reality would be caused by and realized in that portion of physical reality
+which constitutes our external environment. Both mind and commonsensical
+reality are from this point of view perfectly autonomous objects of theoretical
+concern; both, however, are such that there are limits on the sorts of
+theory which they are able to support. Above all, as we shall see, commonsensical
+reality is not able to support the sort of predictive theory which we enjoy
+in regard to cuts through physical reality at certain lower levels.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><b>Physics of the Common-sense World</b><sup><a href="#N_26_">(26)</a></sup>
+<p>How, then, are we to select from the totality of structures of the physical
+world those precisely relevant to the level of naive physics as here conceived?
+We draw attention, first of all, to the ubiquitous role of sensible qualities
+in filling out the world of commonsensical experience. The sensible qualities
+of objects can in every case be identified with the properties of certain
+corresponding <i>physical variations</i>. Thus colours, for example, can
+be identified with surface spectral reflectances,<sup><a href="#N_27_">(27)</a></sup>
+the qualities of hot and cold with certain properties of the movements
+of molecules, and so on. Only some types of physical variation are able
+to support phenomena of the qualitative sort. Simple mechanical systems
+(pendulums, for example) fall out of court in this regard, even though
+they may <i>cause</i> properly qualitative variation in other media (for
+example in the air molecules which they set in motion). How, then, are
+we to focus in on variations of the relevant sort? Here the key idea, which
+has been set out in greater detail in the papers by Petitot referred to
+in the list of references below, is due to Ren&eacute; Thom. How can physical
+theories be enriched sufficiently to capture in scientific fashion the
+features specific to qualitative reality? The ground of a solution lies
+already in the fact that physics, for all that it is restricted to the
+quantitative, does indeed deal with the phenomena from out of which the
+qualitative world is composed. What it does not do is to deal with those
+specific ways in which these phenomena are composed or knitted together
+or are delineated from each other that are relevant to the world of our
+qualitative experience. It is in showing how to fill this gap that Thom's
+achievement lies.
+<p>Whatever appears, appears in the context of a spatio-temporally extended
+whole. There is, in other words, a relation of foundation or existential
+dependence between sensible qualities and spatio-temporal extension (no
+colour can, as a matter of necessity, exist without spatial extension,
+no sound without duration, etc.).<sup><a href="#N_28_">(28)</a></sup> The
+perceived qualities of a black and brown spotted dog, for example, have
+a certain spatial extension. The qualities distributed across any given
+extension are in addition either fused together phenomenally, in the sense
+that there is no observable separation between them (as when for example
+there is a smooth transition from one colour to another); or they are phenomenally
+'separated'. In the former case the underlying physical variation is continuous,
+in the latter case it manifests a certain sort of discontinuity.
+<p>Note that in the case of the spotted dog there is from our present perspective
+no intrinsic difference between the separation or apparent contour which
+corresponds to the perceived exterior of the dog and the separation which
+occurs at those perceived interior boundaries where spots are set apart
+from their surroundings. Indeed it seems clear in relation to either sort
+of case that a sensible phenomenon is set into relief in relation to other
+phenomena precisely where a discontinuity has been created by the qualitative
+moments which fill its extension. It is
+<i>separation</i>, in other words,
+which accounts for <i>salience</i>.
+<p>In giving an appropriate mathematical expression to this idea we suppose,
+with Thom and Petitot, that W is the spatio-temporal extension of a given
+phenomenon. As a portion of space-time, W is a topological space with the
+usual topology. Suppose further that the different qualities which fill
+W are expressed by degrees of <i>n</i> distinct intensive magnitudes q<sub>1</sub>,
+q<sub>2</sub>, . . . , q<sub>n</sub>, each a function of points w&nbsp;
+W. The q<sub>i</sub>(w) are then sensible qualities (colour, texture, temperature,
+reflectance, etc.), but considered physically,<sup><a href="#N_29_">(29)</a></sup>
+as immanent to the objects themselves and as associated with a certain
+possibility of measuring.<sup><a href="#N_30_">(30)</a></sup>
+<p>A point w is called <i>regular</i> if all the q<sub>i</sub>(w) are continuous
+in a neighbourhood of w. Let R be the set of regular points of W. R contains
+a neighbourhood of every one of its points, and hence it is an open set
+of W. Let K be the complementary set of R relative to W. K is the closed
+set of what we can call the non-regular or <i>singular</i> points of W.
+Clearly, w is a singular point if and only if there is at least one quality
+q<sub>i</sub> which is discontinuous at w. We shall call K the
+<i>morphology</i>
+of the phenomenon that fills W. We shall now argue that K is the system
+of qualitative discontinuities which sets this phenomenon into relief and
+makes it salient as a phenomenon. (Consider, for example, the morphological
+organization of a leaf, of a crack in a window-pane, of a dog, or of a
+photograph of a dog.)
+<p>In order to accord physical content to this definition, we must find
+some way to conceive a morphology K as a matter of physical properties
+internal to whatever underlies or causes the phenomenon in question. Condensing
+a lot of physical detail into a small space, we can say that the instantaneous
+states of a physical system <i>qua</i> physical are, when taken individually,
+<i>transient</i>:
+they are too fleeting to be observable. There are however circumstances
+in which there arise effectively observable states of a system: this occurs
+for example where trajectories manifest asymptotic behaviour, or where
+there is sufficiently rapid oscillation between one stable endpoint and
+another. Such effectively observable states, the states into which the
+system repeatedly falls, or into which it tends to fall, are for obvious
+reasons called the <i>attractors</i> of the system. Consider, for example,
+an oscillating electric circuit. From any initial state the system after
+some time reaches the stable oscillatory state and so its trajectory is
+attracted by this state.
+<p>Return, now, to our phenomenon of the spotted dog having substrate S,
+spatio-temporal extension W and morphology K. Choose a non-singular w W.
+The internal state of the substrate S at w can be physically described
+in terms of some attractor A<sub>w</sub> of some 'internal' dynamics. And
+the q<sub>i</sub>(w) are intensive quantities associated with A<sub>w</sub>.
+To explain the qualitative discontinuities of the q<sub>i</sub>(w), we
+now let w<sub>o</sub> K be some singular point within W. In moving through
+points w W the attractor A<sub>w</sub> becomes unstable when we cross w<sub>o</sub>
+and is replaced by another attractor B<sub>w</sub>. Similarly when we cross
+the exterior apparent contours of things the attractor A<sub>w</sub> disappears
+entirely. Note, in all of this, that the behaviour of the underlying physical
+system (the relevant variations themselves) are unobservable. What we experience
+as salient, and what we possess words in natural language to describe,
+is the qualitative discontinuity which is the phase transition.
+<p>One incidental outcome of this account is that, exactly in keeping with
+the common-sense perspective outlined above, it removes the justification
+from Locke's thesis to the effect that the secondary qualities of things
+are inherently subjective. Certainly there is a distinction between the
+physical structures which are, respectively, the primary and secondary
+qualities of things given in experience.<sup><a href="#N_31_">(31)</a></sup>
+This distinction does not, however, lie in any supposed 'subjectivity'
+of the latter, as Locke and many others have believed.<sup><a href="#N_32_">(32)</a></sup>
+Rather, it lies in the fact that secondary qualities are not of interest
+from the point of view of physical theory because they do not play any
+important role in the causal structure of the world independent of their
+role in perception. They reflect delineations in physical reality of a
+kind whose interest depends essentially on the existence of a certain perceptual
+apparatus on the part of human perceivers. They are not, though, dependent
+on specific perceptions or beliefs (nor, <i>a fortiori</i> on our languages
+or theories). As Hilbert writes:
+<blockquote>&nbsp;
+<br>All that is necessary for the objectivity of a property is that objects
+have or fail to have that property independently of their interactions
+with perceiving subjects. Color is objective in so far as the colors of
+objects do not depend on how they appear to observers, or even whether
+or not there are any observers . . . Although reflectance is an objective
+property in this sense and is physically well understood, it is not reducible
+to more fundamental physical properties. (1987, p. 120f.).</blockquote>
+
+<p><br>Note that one incidental implication of the thesis that naive physics
+is true, is that the world of commonsensical reality will turn out to exist
+independently of human experience: palaeontology and other related disciplines
+do after all describe the common-sense world as it was before there were
+people. Of course this world would not be interesting if there were no
+people, and so these disciplines, too, would not exist. But what the disciplines
+describe is, nevertheless, such as to
+<i>exist</i> independently of human
+beings.
+<br>&nbsp;
+<p><b>A Theory of the Common-sense World</b>
+<p>Our goal is that of providing a sound theory of that autonomous domain
+which most properly deserves the name of 'commonsensical reality'. Our
+ontology of qualitative reality can be taken only as a first step along
+this road. On the one hand the realm of qualitative reality is too wide,
+since it extends beyond the domain of commonsensical experience, for example
+in including colour-like qualitative structures outside the domain of what
+human sensory organs can detect. To correct the qualitative ontology we
+need to turn to the psychology of sensation in order to establish the limits
+of qualitative structures graspable by the human sensory system. On the
+other hand our account is too narrow, since it fails to do justice to those
+dimensions of ontological form which are embraced by the world of commonsensical
+experience but which are skew to the strictly qualitative sphere. Thus
+there remains the task of supplementing the qualitative ontology with a
+theory of such commonsensical categories as those of substance, of change
+or process, of typicality, species and categorization, of places and times,
+and so on. As in our account of the qualitative ontology, so also here,
+what matters are certain sorts of perceptually detectable (salient) boundaries
+which are present in the underlying physical reality, boundaries which
+are not addressed in quantitative physical theory. The doctrine of emergence
+that is hereby implied is accordingly one of the emergence not of <i>things</i>
+but of <i>boundaries</i> or <i>contours.</i>
+<p>From the work of Thom and Petitot we already know enough about the theory
+that will result hereby to know that it will have a power of prediction
+that is imperfect as compared to that of physics proper. Naive physics
+seeks only to fix the repertoire of qualitative and structural forms involving
+substance, accident, change, etc. which make up the world of everyday experience.
+And then it turns out that there is a restricted number of such forms into
+which the behaviours of complex systems can typically fit. What it cannot
+do is tell us when or where this or that form will come to be instantiated.
+For unlike standard physics, which applies, in its fashion, to everything,
+and therefore (if at certain restricted granularities only) leaves no predictive-explanatory
+gaps, naive physics deals with a narrow range of phenomena the explanation-prediction
+of which must in almost every case involve phenomena outside this narrow
+range. This makes it highly doubtful whether naive physics could ever serve
+the needs of artificial intelligence research for example in the sphere
+of robotics and elsewhere. Nonetheless, however, it is with the help of
+true naive-physical beliefs that human beings are able to find their stumbling
+way around the world, just as it is with the help of naive psychological
+beliefs that they are able to make normally reliable predictions about
+the actions of their fellows.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><b>References</b>
+<br>&nbsp;
+<p>Austin, J. L. 1979 "A Plea for Excuses", in Austin's <i>Philosophical
+Papers</i>, 2nd ed., Oxford: Oxford University Press, 175-204.
+<br>&nbsp;
+<p>Boden, Margaret A. (ed.) 1990 <i>The Philosophy of Artificial Intelligence</i>,
+Oxford: Oxford University Press.
+<br>&nbsp;
+<p>Bozzi, P. 1958 "Analisi fenomenologica del moto pendolare armonico",
+<i>Rivista
+di Psicologia</i>, 52, 281-302. (English translation prepared in the Department
+of Psychology, University of Arkansas at Little Rock.)
+<br>&nbsp;
+<p>-- 1959 "Le condizioni del movimento 'naturale' lungo i piani inclinati",
+<i>Rivista
+di Psicologia</i>, 53, 337-352. (English translation prepared in the Department
+of Psychology, University of Arkansas at Little Rock.)
+<br>&nbsp;
+<p>-- 1989 "Sulla preistoria della fisica ingenua", <i>Sistemi intelligenti</i>,
+1, 61-74.
+<br>&nbsp;
+<p>Carnap, Rudolf 1967 <i>The Logical Structure of the World</i>, London:
+Routledge and Kegan Paul.
+<br>&nbsp;
+<p>Clement, John 1982 "Students' Preconceptions in Introductory Mechanics",
+<i>American
+Journal of Physics</i>, 50, 66-71.
+<br>&nbsp;
+<p>D'Andrade, Roy 1987 "A Folk Model of the Mind", in Holland and Quinn,
+eds., 112-148.
+<br>&nbsp;
+<p>-- 1989 "Cultural Cognition", in M. I. Posner, ed., <i>Foundations of
+Cognitive Science</i>, Cambridge, Mass.: MIT Press, 795-830.
+<br>&nbsp;
+<p>DiSessa, A. A. 1982 "Unlearning Aristotelian Physics: A Study of Knowledge-Based
+Learning", <i>Cognitive Science</i>, 6, 37-75.
+<br>&nbsp;
+<p>-- 1985 "Learning about Knowing", <i>New Directions for Child Development</i>,
+28, 97-124.
+<br>&nbsp;
+<p>Dreyfus, H. L. 1988 "Making a Mind Versus Modeling the Brain: Artificial
+Intelligence Back at a Branchpoint", in S. R. Graubard, ed., <i>The Artificial
+Intelligence Debate. False Starts, Real Foundations</i> (<i>Daedalus</i>,
+117), Cambridge, Mass. and London: The MIT Press.
+<br>&nbsp;
+<p>Feyerabend, Paul 1978 "In Defence of Aristotle: Comments on the Condition
+of Content Increase", in G. Radnitzky and G. Andersson, eds., <i>Progress
+and Rationality</i>, Dordrecht: Reidel, 143-180.
+<br>&nbsp;
+<p>Forbus, K. 1983 "Qualitative Reasoning about Space and Motion", in Gentner
+and Stevens, eds., 53-73.
+<br>&nbsp;
+<p>-- 1984 "Qualitative Process Theory", <i>Artificial Intelligence</i>,
+24, 85-168.
+<br>&nbsp;
+<p>-- 1985 "The Role of Qualitative Dynamics in Naive Physics", in Hobbs
+and Moore, eds., 185-226
+<br>&nbsp;
+<p>Forguson, Lynd 1989 <i>Common Sense</i>, London and New York: Routledge.
+<br>&nbsp;
+<p>Gambardella, L. M. 1985 <i>A Graphic Approach to Naive Physics</i>,
+Masters Thesis, Pisa University.
+<br>&nbsp;
+<p>Gardin, Francesco and Meltzer, Bernard 1989 "Analogical Representations
+of Naive Physics",
+<i>Artificial Intelligence</i>, 38, 139-59.
+<br>&nbsp;
+<p>Gentner, D. and Stevens, A. L. eds. 1983 <i>Mental Models</i>, Hillsdale,
+N.J.: Lawrence Erlbaum Associates.
+<br>&nbsp;
+<p>Gibson, J. J. 1979 <i>The Ecological Approach to Visual Perception</i>,
+Boston: Houghton-Mifflin.
+<br>&nbsp;
+<p>Graham, G. and Horgan, T. 1988 "How to be Realistic about Folk Psychology",
+<i>Philosophical
+Psychology</i>, 1, 69-81.
+<br>&nbsp;
+<p>Hager, Greg 1985 "Naive Physics of Materials: A Recon Mission", in <i>Commonsense
+Summer: Final Report</i>, Report No. CSLI-85-35, Center for the Study of
+Language and Information, Stanford University, Stanford, California.
+<br>&nbsp;
+<p>Hayes, Patrick J. 1985 "The Second Naive Physics Manifesto", in Hobbs
+and Moore, eds., 1-36.
+<br>&nbsp;
+<p>-- 1985a "Naive Physics I: Ontology for Liquids", in Hobbs and Moore,
+eds., 71-107.
+<br>&nbsp;
+<p>Hilbert, D. R. 1987 <i>Color and Color Perception: A Study in Anthropocentric
+Realism</i>, CSLI Lecture Note Series, Chicago: University of Chicago Press.
+<br>&nbsp;
+<p>Hobbs, J. R., Croft, W., Davies, T., Edwards, D. and Laws, K. 1988 "Common-sense
+Metaphysics and Lexical Semantics", Manuscript, forthcoming in <i>Computational
+Linguistics</i>.
+<br>&nbsp;
+<p>Hobbs, J. R. and Moore, R. C. eds. 1985 <i>Formal Theories of the Common-sense
+World</i>, Norwood: Ablex.
+<br>&nbsp;
+<p>Holland, D. and Quinn, N. eds. 1987 <i>Cultural Models in Language and
+Thought</i>, Cambridge: Cambridge University Press.
+<br>&nbsp;
+<p>Holland, John H., Holyoak, Keith J., Nisbett, Richard E. and Thagard,
+Paul R. 1986 <i>Induction. Processes of Inference, Learning, and Discovery</i>,
+Cambridge, Mass. and London: MIT Press.
+<br>&nbsp;
+<p>Horton, Robin 1982 "Tradition and Modernity Revisited" in M. Hollis
+and S. Lukes, eds.,
+<i>Rationality and Relativism</i>, Oxford: Blackwell,
+201-260.
+<br>&nbsp;
+<p>Husserl, E. 1970 <i>Logical Investigations</i>, 2 vols., trans. J. N.
+Findlay, London: Routledge and Kegan Paul.
+<br>&nbsp;
+<p>-- 1970a <i>The Crisis of European Sciences</i> <i>and Transcendental
+Phenomenology. An Introduction to Phenomenological Philosophy</i>, trans.
+by D. Carr, Evanston: Northwestern University Press.
+<br>&nbsp;
+<p>Kaiser, M. K, Jonides, J. and Alexander, J. 1986 "Intuitive Reasoning
+about Abstract and Familiar Physics Problems", <i>Memory and Cognition</i>,
+14, 308-312.
+<br>&nbsp;
+<p>Kanizsa, Gaetano 1979 <i>Organization in Vision. Essays on Gestalt Perception</i>,
+New York: Praeger.
+<br>&nbsp;
+<p>Keil, F. C. 1979 <i>Semantic and Conceptual Development: An Ontological
+Perspective</i>, Cambridge: Harvard University Press.
+<br>&nbsp;
+<p>Kempton, Willett 1987 "Two Theories of Home Heat Control", in Holland
+and Quinn, eds., 222-242.
+<br>&nbsp;
+<p>Kleer, J. D. de and Brown, J. S. 1984 "A Qualitative Physics Based on
+Confluences", <i>Artificial Intelligence</i>, 24, 7-84 and in Hobbs and
+Moore (eds.), 109-183.
+<br>&nbsp;
+<p>Kleer, J. D. de and Bobrow, D. G. 1984 "Qualitative Reasoning with Higher-Order
+Derivatives", <i>Proceedings of the Fourth National Conference on Artificial
+Intelligence</i>, 86-91.
+<br>&nbsp;
+<p>K&ouml;hler, Wolfgang 1921 "Intelligenzpr&uuml;fungen an Anthropoiden",
+<i>Abhandlungen
+der Preussischen Akademie der Wissenschaften. Jahrgang 1917, Physikal.-Mathem.
+Klasse</i>, 1; Eng. trans. of 2nd German ed. as
+<i>The Mentality of Apes</i>,
+London: Kegan Paul, Trench, Tr&uuml;bner, 1927.
+<br>&nbsp;
+<p>Kuipers, B. 1986 "Qualitative Simulation", <i>Artificial Intelligence</i>,
+29, 289-388.
+<br>&nbsp;
+<p>Lipmann, Otto and Bogen, Hellmuth 1923 <i>Naive Physik. Arbeiten aus
+dem Institut f&uuml;r angewandte Psychologie in Berlin. Theoretische und
+experimentelle Untersuchungen &uuml;ber die F&auml;higkeit zu intelligentem
+Handeln</i>. Leipzig: Johann Ambrosius Barth.
+<br>&nbsp;
+<p>McCloskey, M. 1983 "Naive Theories of Motion", in Gentner and Stevens,
+eds., 299-324.
+<br>&nbsp;
+<p>-- 1983a "Intuitive Physics", <i>Scientific American</i>, 248(4), 122-130.
+<br>&nbsp;
+<p>McCloskey, M., Carmazza, A. and Green, B. 1980 "Curvilinear Motion in
+the Absence of External Forces. Naive Beliefs about the Motion of Objects",
+<i>Science</i>,
+210, 1139-1141.
+<br>&nbsp;
+<p>McCloskey, M., Washburn, A. and Felch, L. 1983 "Intuitive Physics: The
+Straight-Down Belief and Its Origin", <i>Journal of Experimental Psychology:
+Learning, Memory and Cognition</i>, 9,
+<br>&nbsp;
+<p>McDermott, Drew 1990 "A Critique of Pure Reason", in Boden, ed., 206-230.
+<br>&nbsp;
+<p>Michotte, Albert 1946, <i>La perception de la causalit&eacute;</i>,
+Louvain: Institut sup&eacute;rieur de la Philosophie, Eng. trans. by T.
+R. Miles, <i>The Perception of Causality</i>, London: Methuen, 1963.
+<br>&nbsp;
+<p>Moore, G. E. 1959 "A Defence of Common Sense", in G. E. Moore, <i>Philosophical
+Papers</i>, London: George Allen and Unwin, 60-88.
+<br>&nbsp;
+<p>Peters, P. C. 1982 "Even Honors Students have Conceptual Difficulties
+with Physics", <i>American Journal of Physics</i>, 50, 501-508.
+<br>&nbsp;
+<p>Petitot, J. 1985 <i>Morphogen&egrave;se de Sens</i>, Paris: P. U. F.
+<br>&nbsp;
+<p>-- 1989 "Morphodynamics and the Categorial Perception of Phonological
+Units", <i>Theoretical Linguistics</i>, 15, 25-71.
+<br>&nbsp;
+<p>-- 1989a "Hypoth&eacute;se localiste, Mod&egrave;les morphodynamiques
+et Th&eacute;ories cognitives", <i>Semiotica</i>, 77, 65-119.
+<br>&nbsp;
+<p>-- 1990 "Le Physique, le Morphologique, le Symbolique. Remarques sur
+la Vision", <i>Revue de Synth&eacute;se</i>, 4, 139-183.
+<br>&nbsp;
+<p>Petitot, J. and Smith, B. 1989 "Physics and the Phenomenal World", Manuscript,
+E. H. E. S. S., Paris and International Academy for Philosophy, Liechtenstein.
+<br>&nbsp;
+<p>-- 1990 "New Foundations for Qualitative Physics", J. E. Tiles, G. T.
+McKee and C. G. Dean, eds., <i>Evolving Knowledge in Natural Science and
+Artificial Intelligence</i>, London: Pitman Publishing, 231-249.
+<br>&nbsp;
+<p>Philipse, Herman 1989 "The Absolute Network Theory of Language and Traditional
+Epistemology. On the Philosophical Foundations of Paul Churchland's Scientific
+Realism",
+<i>Inquiry</i>, 33, 127-78.
+<br>&nbsp;
+<p>Rickey, F. 1975 "Creative Definitions in Propositional Calculi", <i>Notre
+Dame Journal of Formal Logic</i>, 16, 273-94.
+<br>&nbsp;
+<p>Roncato, S. and Rumiati, R. 1986 "Naive Statics: Current Misconceptions
+on Equilibrium",
+<i>Journal of Experimental Psychology: Learning, Memory
+and Cognition</i>, 12, 361-377.
+<br>&nbsp;
+<p>Rosch, E., Mervis, C.B., Gray, W., Johnson, D. and Bayes-Braem, P. 1976
+"Basic Objects in Natural Categories", <i>Cognitive Psychology</i>, 8,
+382-439.
+<br>&nbsp;
+<p>Searle, John R. 1983 <i>Intentionality</i>, Cambridge: Cambridge University
+Press.
+<br>&nbsp;
+<p>Shanon, Benny 1976 "Aristotelianism, Newtonianism and the Physics of
+the Layman",
+<i>Perception</i>, 5, 241-243.
+<br>&nbsp;
+<p>Smith, B. ed. 1982 <i>Parts and Moments. Studies in Logic and Formal
+Ontology</i>, Munich: Philosophia.
+<br>&nbsp;
+<p>Stroll, A. 1985/86 "The Role of Surfaces in an Ecological Theory of
+Perception", <i>Philosophy and Phenomenological Research</i>, 46, 437-453.
+<br>&nbsp;
+<p>-- 1987 "Counting Surfaces", <i>American Philosophical Quarterly</i>,
+24, 97-101.
+<br>&nbsp;
+<p>-- 1988 <i>Surfaces</i>, Minneapolis: University of Minnesota Press.
+<br>&nbsp;
+<p>-- 1990 "Holism and the Perception of Surfaces", unpublished MS.
+<br>&nbsp;
+<p>Thom, Ren&eacute; 1972 <i>Stabilit&eacute; structurelle et Morphogen&egrave;se</i>,
+New York: Benjamin, Paris: Ediscience.
+<br>&nbsp;
+<p>-- 1988 <i>Esquisse d'une s&eacute;miophysique</i>, Paris: Inter&eacute;ditions,
+Eng. trans. by V. Meyer, as <i>Semio Physics: A Sketch. Aristotelian Physics
+and Catastrophe Theory</i>, Redwood City, etc.: Addison-Wesley, 1990.
+<br>&nbsp;
+<p>Weld, D. and Kleer, J. de, eds. 1989 <i>Readings in Qualitative Reasoning
+about Physical Systems</i>, Los Altos: Morgan Kaufmann.
+<br>&nbsp;
+<p><b>Endnotes</b>
+<p><a NAME="N_1_"></a>1. 1. Thanks are due to R. Casati, V. Gadenne, J.
+Petitot, H. Philipse and J. Seifert for helpful comments.
+<p><a NAME="N_2_"></a>2. 2. See especially Thom 1988, Petitot 1985.
+<p><a NAME="N_3_"></a>3. 3. See Kanizsa 1979 and Bozzi 1958, etc.
+<p><a NAME="N_4_"></a>4. 4. Cf. Gibson 1979 and also Stroll 1988, in which
+the ontology of surfaces, conceived on broadly Gibsonian lines, is for
+the first time worked out in detail.
+<p><a NAME="N_5_"></a>5. 5. Cf. Rosch <i>et al</i>. 1976, Keil 1979.
+<p><a NAME="N_6_"></a>6. 6. See on this also Forbus 1983, 1984, 1985, Kuipers
+1986, Weld and Kleer, eds., 1989.
+<p><a NAME="N_7_"></a>7. 7. Cf. Gardin and Meltzer 1989.
+<p><a NAME="N_8_"></a>8. 8. Gravity, for example, is stored as a tendency
+for an element to move in a certain direction by a distance that is determined
+by a parameter coding the intensity of the force applied. See Gardin and
+Meltzer 1989, p. 143, citing Gambardella 1985.
+<p><a NAME="N_9_"></a>9. 9. Hobbs, <i>et al</i>.; Hager 1985.
+<p><a NAME="N_10_"></a>10. 10. Hobbs, <i>et al.</i>
+<p><a NAME="N_11_"></a>11. 11. I ignore, here, the considerable technical
+difficulties which would have to be overcome in order to construct the
+necessary hardware.
+<p><a NAME="N_12_"></a>12. 12. See Rickey 1975.
+<p><a NAME="N_13_"></a>13. 13. See also McDermott 1990, who rightly criticizes
+Hayes' 'logicist' assumption to the effect that it is by means of deductions
+from axioms that we use naive physics to find our way around the world.
+There are other central aspects of Hayes' work to which one could object.
+Thus for example the account of the ontology of liquids presented in Hayes
+1985a is flawed in virtue of the fact that it rests essentially on the
+highly non-commonsensical (Quine-inspired) trick of reducing objects to
+four-dimensional histories. As R. Casati has shown in as yet unpublished
+papers, this leads to highly counter-commonsensical consequences.
+<p><a NAME="N_14_"></a>14. 14. See especially the papers by Bozzi listed
+below, and more recently also e.g. McCloskey 1983a, Holland, <i>et al.</i>
+1986, p. 208.
+<p><a NAME="N_15_"></a>15. 15. Thus Aristotle was perfectly clear, for
+example, that solid bodies will fall towards the centre of the earth if
+not impeded in their fall.
+<p><a NAME="N_16_"></a>16. 16. Thus for example the corpuscular philosophers
+held that the majority of our ordinary perceptual judgments 'must be <u>literally
+false</u>, because the redness or the warmth we think we perceive are not
+really the qualities or states of material things we take them commonly
+to be.' (Cf. Philipse 1989, p. 143.)
+<p><a NAME="N_17_"></a>17. 17. Cf. Bozzi, 1958, p. 2f. of translation.
+<p><a NAME="N_18_"></a>18. 18. See e.g. Gentner and Stevens, eds. 1983.
+<p><a NAME="N_19_"></a>19. 19. See e.g. Shanon 1976, Peters 1982, Clement
+1982, DiSessa 1982, Kaiser, Jonides and Alexander 1986, Roncato and Rumiati
+1986.
+<p><a NAME="N_20_"></a>20. 20. As McCloskey puts it in regard to the 'remarkably
+well-articulated na&iuml;ve theories of motion' people develop on the basis
+of their everyday experience:
+<p>theories developed by different individuals are best described as different
+forms of the same basic theory. Although this basic theory appears to be
+a reasonable outcome of experience with real-world motion, it is strikingly
+inconsistent with the fundamental principles of classical physics. In fact,
+the naive theory is remarkably similar to a pre-Newtonian theory popular
+in the fourteenth through sixteenth centuries. (1983, p. 299)
+<p>See also p. 318 on the remarkable persistence of folk theory in the
+face of formal physics training, as well as McCloskey 1983a, McCloskey
+<i>et
+al</i>. 1980, and Forguson 1989.
+<p><a NAME="N_21_"></a>21. 21. K&ouml;hler's 1921 is to no small part devoted
+to the naive physics of chimpanzees. K&ouml;hler argues above all that
+there is practically no <i>statics</i> in the chimpanzee, and he notes
+that something similar holds, too, of very young children. See also Lipmann
+and Bogen (1923), an experimental study of human naive physics by students
+of K&ouml;hler in Berlin.
+<p><a NAME="N_22_"></a>22. 22. Cf. Graham and Horgan 1988. See also Forguson
+1989 on 'rational psychology'.
+<p><a NAME="N_23_"></a>23. 23. This is clearly brought out in D'Andrade
+1987, which incidentally reveals also the remarkable similarity between
+folk-psychological models and the work of traditional philosophers on the
+structures of mind.
+<p><a NAME="N_24_"></a>24. 24. We cannot, however, use the theory of evolution
+to provide a proof of common sense. For this theory, like all developed
+scientific theories, rests on evidence whose interpretation itself presupposed
+the truth of common sense.
+<p><a NAME="N_25_"></a>25. 25. Searle 1983, p. 265. Note, however, that
+the precise meaning of phrases like 'realized in' remains in need of detailed
+elucidation, elucidation which Searle himself seems not to see the necessity
+of providing.
+<p><a NAME="N_26_"></a>26. 26. The ideas in this section are due to Jean
+Petitot.
+<p><a NAME="N_27_"></a>27. 27. Hilbert 1987.
+<p><a NAME="N_28_"></a>28. 28. See the papers collected in Smith, ed.,
+1982, and also Husserl's third Logical Investigation.
+<p><a NAME="N_29_"></a>29. 29. Certain simplifications are involved here.
+Thus there is no single property of surface spectral reflectance, which
+is a macroscopic approximation of a more fine-grained system on the quantum
+level of a range of properties having to do with the emission-absorption
+spectra of the atoms constituting the substrate.
+<p><a NAME="N_30_"></a>30. 30. Note that, since colour is dissective only
+to a certain extent, one should strictly speaking speak of colour not at
+a point but over an interval; this adjustment does not affect the validity
+of the account put forward in the text however.
+<p><a NAME="N_31_"></a>31. 31. On the nature of these differences, and
+on the manifold varieties of secondary qualities in general, see Witschel
+1961 which summarizes Husserl's position.
+<p><a NAME="N_32_"></a>32. 32. Note that this account, which is derived
+from Hilbert 1987, is distinct from that of Thom/Petitot, which sees colours
+is being merely associated with certain underlying physical qualities,
+not as identical therewith.</blockquote>
+
+</body>
+</html>

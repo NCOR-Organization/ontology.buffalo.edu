@@ -1,0 +1,87 @@
+UL {
+	LIST-STYLE-TYPE: disc
+}
+.BIBLIO {
+	MARGIN-LEFT: 2em; TEXT-INDENT: -2em
+}
+.PARA {
+	TEXT-INDENT: 2em
+}
+.JUS {
+	TEXT-ALIGN: justify
+}
+A.IDs:link {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A.IDs:visited {
+	COLOR: blue; TEXT-DECORATION: none
+}
+A.IDs:active {
+	COLOR: green; TEXT-DECORATION: none
+}
+A.IDs:hover {
+	COLOR: #ff0000
+}
+A.BWMENU:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.BWMENU:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A.BWMENU:active {
+	COLOR: #ffffcc; TEXT-DECORATION: none
+}
+A.BWMENU:hover {
+	COLOR: #ffff99
+}
+A.WBMENU:link {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.WBMENU:visited {
+	COLOR: black; TEXT-DECORATION: none
+}
+A.WBMENU:active {
+	COLOR: green; TEXT-DECORATION: none
+}
+A.WBMENU:hover {
+	COLOR: blue
+}
+A.BKPAGE:link {
+	COLOR: #33ffff; TEXT-DECORATION: none
+}
+A.BKPAGE:visited {
+	COLOR: #33ffff; TEXT-DECORATION: none
+}
+A.BKPAGE:active {
+	COLOR: #ffffcc; TEXT-DECORATION: none
+}
+A.BKPAGE:hover {
+	COLOR: #ffff99
+}
+A.BLPAGE:link {
+	COLOR: #f5f5dc; TEXT-DECORATION: none
+}
+A.BLPAGE:visited {
+	COLOR: #f5f5dc; TEXT-DECORATION: none
+}
+A.BLPAGE:active {
+	COLOR: #f5f5dc; TEXT-DECORATION: none
+}
+A.BLPAGE:hover {
+	COLOR: #ffff99
+}
+.DIVH2 {
+	FONT-WEIGHT: bold; FONT-SIZE: large
+}
+.DIVH3 {
+	FONT-WEIGHT: bold; FONT-SIZE: medium
+}
+HR {
+	COLOR: black
+}
+HR.REDLINE {
+	COLOR: #cc0033
+}
+HR.WHITE {
+	COLOR: white
+}

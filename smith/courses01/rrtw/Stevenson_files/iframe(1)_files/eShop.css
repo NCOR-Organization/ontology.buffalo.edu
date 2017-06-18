@@ -1,0 +1,24 @@
+.offerText {
+	FONT-SIZE: 0.66em; COLOR: #333333; FONT-FAMILY: verdana
+}
+.promoText {
+	COLOR: #ff6600
+}
+.salesText {
+	COLOR: #ff6600
+}
+.moreDiv {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 0.62em; BACKGROUND: #ccccff; PADDING-BOTTOM: 2px; PADDING-TOP: 0px; FONT-FAMILY: verdana
+}
+.moreSale {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 0.62em; BACKGROUND: #cccccc; PADDING-BOTTOM: 2px; PADDING-TOP: 0px; FONT-FAMILY: verdana
+}
+.shopBy {
+	PADDING-LEFT: 6px; FONT-SIZE: 0.66em; COLOR: #ff6600; FONT-FAMILY: verdana
+}
+.shopLink {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; PADDING-TOP: 3px; FONT-FAMILY: verdana
+}
+.shopDesc {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 0.55em; PADDING-BOTTOM: 3px; COLOR: #666666; PADDING-TOP: 0px; FONT-FAMILY: verdana
+}

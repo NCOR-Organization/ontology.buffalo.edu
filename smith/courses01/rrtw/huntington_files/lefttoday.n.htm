@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/lefttoday.n.html? -->
+<HTML><HEAD><TITLE>The Sunday Times - Left Frame Today</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<SCRIPT language=JavaScript>
+<!--
+//
+// 
+// requires specific page to inlcude definitions:
+//  Specifics for this navigation
+//
+        var img_dir="/standing/sti/"
+        section = new Array(0);
+//
+
+// common code
+
+// 
+//Initialise
+//
+browserName=navigator.appName;
+browserVer=parseInt(navigator.appVersion);
+//        if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+    if (browserVer >= 3) version = "n3";
+        else version = "x";
+//
+	var loaded = 0;
+	var selected = "none";
+	var sect_count=section.length;
+
+function refresh()
+{
+document.location=document.location;
+}
+
+function clicked_it(imgName)
+{
+  if ( loaded == "1" )
+  {
+	last = selected
+     	selected = imgName;
+	img_inact(last);
+     	img_act(imgName);
+  }
+}
+function img_act(imgName)
+{
+        if ( loaded == "1" )
+        {
+         imgOn=eval(imgName+"on.src")
+         document [imgName].src = imgOn;
+        }
+}
+function img_inact(imgName)
+{
+      if ( loaded == "1" && selected != imgName && imgName != "none" )
+        {
+         imgOff = eval(imgName+"off.src")
+         document [imgName].src = imgOff;
+        }
+}
+
+//
+// This function loads all the graphics
+//
+function load_src()
+{
+  if ( version == "n3" )
+  {
+
+// look for all images that have names
+
+	img_count=document.images.length
+	var name_count=0;
+	for ( var i=0; i<img_count; i++ ) 
+	{
+	img_name = document.images[i].name
+		if ( img_name != "" )
+		{
+			section[name_count]=img_name;
+			name_count++;
+		}
+
+	}
+//   check how many we have
+	var sect_count=section.length
+
+	for ( var i=0; i<sect_count; i++ ) 
+	{
+	var str=section[i]+"on = new Image(85,11)";
+	eval (str);
+       	var str=section[i]+'on.src = "'+img_dir+section[i]+'baron2.gif"';
+	eval (str);
+	var str=section[i]+"off = new Image(85,11)";
+	eval (str);
+        var str=section[i]+'off.src = "'+img_dir+section[i]+'baroff2.gif"';
+	eval (str);
+	}
+  loaded = 1;
+  }
+}
+//
+// -->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY text=#ffffff bgColor=#666699 onload=load_src();><!--<IMG SRC="/standing/sti/topnav.gif" WIDTH=86 HEIGHT=12 ALT="*"><BR><A HREF="/news/pages/resources/sunday_times_searchpage.html?" TARGET="content" 
+	onMouseOver="img_act('search')" 
+	onMouseOut="img_inact('search')"  
+	onClick="clicked_it('search')"
+><IMG SRC="/standing/sti/searchbaroff2.gif" WIDTH=86 HEIGHT=18 BORDER=0 ALT="Search" NAME="front"></A><BR><A HREF="http://www.the-times.co.uk/news/pages/resources/sti_trading.n.html?" TARGET="_top"><IMG SRC="/standing/sti/tplaceoff.gif" WIDTH=86 HEIGHT=15 ALT="The Times" BORDER=0></A><BR><IMG SRC="/standing/sti/navstrip.gif" WIDTH=86 HEIGHT=1 ALT="*"><BR>--><A 
+onmouseover="img_act('front')" onclick="clicked_it('front')" 
+onmouseout="img_inact('front')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/fpcontent.html?" 
+target=content><IMG height=18 alt=Front src="lefttoday.n_files/frontbaroff2.gif" 
+width=86 border=0 name=front></A><BR><A onmouseover="img_act('con')" 
+onclick="clicked_it('con')" onmouseout="img_inact('con')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/sticoncon01001.html?" 
+target=content><IMG height=18 alt=Index src="lefttoday.n_files/conbaroff2.gif" 
+width=86 border=0 name=con></A><BR><A onmouseover="img_act('qui')" 
+onclick="clicked_it('qui')" onmouseout="img_inact('qui')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiquicon01001.html?" 
+target=content><IMG height=18 alt="Quick Links" 
+src="lefttoday.n_files/quibaroff2.gif" width=86 border=0 name=qui></A><BR><!--START DYNAMIC DAILY NAVIGATION--><A 
+onmouseover="img_act('usa')" onclick="clicked_it('usa')" 
+onmouseout="img_inact('usa')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiusacon01001.html?" 
+target=content><IMG height=18 alt=TERRORISM 
+src="lefttoday.n_files/usabaroff2.gif" width=86 border=0 name=usa></A><BR><A 
+onmouseover="img_act('nwe')" onclick="clicked_it('nwe')" 
+onmouseout="img_inact('nwe')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stinwecon01001.html?" 
+target=content><IMG height=18 alt=NEWS src="lefttoday.n_files/nwebaroff2.gif" 
+width=86 border=0 name=nwe></A><BR><A onmouseover="img_act('sco')" 
+onclick="clicked_it('sco')" onmouseout="img_inact('sco')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiscocon01001.html?" 
+target=content><IMG height=18 alt=SCOTLAND 
+src="lefttoday.n_files/scobaroff2.gif" width=86 border=0 name=sco></A><BR><A 
+onmouseover="img_act('ire')" onclick="clicked_it('ire')" 
+onmouseout="img_inact('ire')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiirecon01001.html?" 
+target=content><IMG height=18 alt=IRELAND src="lefttoday.n_files/irebaroff2.gif" 
+width=86 border=0 name=ire></A><BR><A onmouseover="img_act('fgn')" 
+onclick="clicked_it('fgn')" onmouseout="img_inact('fgn')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stifgncon01001.html?" 
+target=content><IMG height=18 alt=WORLD src="lefttoday.n_files/fgnbaroff2.gif" 
+width=86 border=0 name=fgn></A><BR><A onmouseover="img_act('rev')" 
+onclick="clicked_it('rev')" onmouseout="img_inact('rev')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stirevcon01001.html?" 
+target=content><IMG height=18 alt="NEWS REVIEW" 
+src="lefttoday.n_files/revbaroff2.gif" width=86 border=0 name=rev></A><BR><A 
+onmouseover="img_act('foo')" onclick="clicked_it('foo')" 
+onmouseout="img_inact('foo')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stifoocon01001.html?" 
+target=content><IMG height=18 alt=FOOTBALL 
+src="lefttoday.n_files/foobaroff2.gif" width=86 border=0 name=foo></A><BR><A 
+onmouseover="img_act('sps')" onclick="clicked_it('sps')" 
+onmouseout="img_inact('sps')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stispscon01001.html?" 
+target=content><IMG height=18 alt=SPORT src="lefttoday.n_files/spsbaroff2.gif" 
+width=86 border=0 name=sps></A><BR><A onmouseover="img_act('bus')" 
+onclick="clicked_it('bus')" onmouseout="img_inact('bus')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stibuscon01001.html?" 
+target=content><IMG height=18 alt=BUSINESS 
+src="lefttoday.n_files/busbaroff2.gif" width=86 border=0 name=bus></A><BR><A 
+onmouseover="img_act('mon')" onclick="clicked_it('mon')" 
+onmouseout="img_inact('mon')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stimoncon01001.html?" 
+target=content><IMG height=18 alt=MONEY src="lefttoday.n_files/monbaroff2.gif" 
+width=86 border=0 name=mon></A><BR><A onmouseover="img_act('pty')" 
+onclick="clicked_it('pty')" onmouseout="img_inact('pty')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiptycon01001.html?" 
+target=content><IMG height=18 alt=PROPERTY 
+src="lefttoday.n_files/ptybaroff2.gif" width=86 border=0 name=pty></A><BR><A 
+onmouseover="img_act('maz')" onclick="clicked_it('maz')" 
+onmouseout="img_inact('maz')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stimazcon01001.html?" 
+target=content><IMG height=18 alt="SUNDAY TIMES MAGAZINE" 
+src="lefttoday.n_files/mazbaroff2.gif" width=86 border=0 name=maz></A><BR><A 
+onmouseover="img_act('trl')" onclick="clicked_it('trl')" 
+onmouseout="img_inact('trl')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stitrlcon01001.html?" 
+target=content><IMG height=18 alt=TRAVEL src="lefttoday.n_files/trlbaroff2.gif" 
+width=86 border=0 name=trl></A><BR><A onmouseover="img_act('cul')" 
+onclick="clicked_it('cul')" onmouseout="img_inact('cul')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/sticulcon01001.html?" 
+target=content><IMG height=18 alt=CULTURE src="lefttoday.n_files/culbaroff2.gif" 
+width=86 border=0 name=cul></A><BR><A onmouseover="img_act('boo')" 
+onclick="clicked_it('boo')" onmouseout="img_inact('boo')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiboocon01001.html?" 
+target=content><IMG height=18 alt=BOOKS src="lefttoday.n_files/boobaroff2.gif" 
+width=86 border=0 name=boo></A><BR><A onmouseover="img_act('dor')" 
+onclick="clicked_it('dor')" onmouseout="img_inact('dor')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stidorcon01001.html?" 
+target=content><IMG height=18 alt=DOORS src="lefttoday.n_files/dorbaroff2.gif" 
+width=86 border=0 name=dor></A><BR><A onmouseover="img_act('stl')" 
+onclick="clicked_it('stl')" onmouseout="img_inact('stl')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stistlcon01001.html?" 
+target=content><IMG height=18 alt=STYLE src="lefttoday.n_files/stlbaroff2.gif" 
+width=86 border=0 name=stl></A><BR><A onmouseover="img_act('mot')" 
+onclick="clicked_it('mot')" onmouseout="img_inact('mot')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stimotcon01001.html?" 
+target=content><IMG height=18 alt=MOTORING 
+src="lefttoday.n_files/motbaroff2.gif" width=86 border=0 name=mot></A><BR><A 
+onmouseover="img_act('app')" onclick="clicked_it('app')" 
+onmouseout="img_inact('app')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stiappcon01001.html?" 
+target=content><IMG height=18 alt=APPOINTMENTS 
+src="lefttoday.n_files/appbaroff2.gif" width=86 border=0 name=app></A><BR><A 
+onmouseover="img_act('pap')" onclick="clicked_it('pap')" 
+onmouseout="img_inact('pap')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stipapcon01001.html?" 
+target=content><IMG height=18 alt="PARENT POWER" 
+src="lefttoday.n_files/papbaroff2.gif" width=86 border=0 name=pap></A><BR><!--END DYNAMIC DAILY NAVIGATION--><A 
+onmouseover="img_act('hor')" onclick="clicked_it('hor')" 
+onmouseout="img_inact('hor')" 
+href="http://www.sunday-times.co.uk/news/pages/sti/2001/10/14/stihorcon01001.html?" 
+target=content><IMG height=18 alt=Horoscopes 
+src="lefttoday.n_files/horbaroff2.gif" width=86 border=0 name=hor></A> <BR><OAS 
+URL="trans.sunday-times.co.uk/navfront/index.html@Frame1">
+<SCRIPT language=JavaScript> <!-- 
+_version=10; //--> </SCRIPT>
+
+<SCRIPT language=JavaScript1.1> <!--
+_version=11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1){
+_version=10;} // --> </SCRIPT>
+
+<SCRIPT language=JavaScript> <!-- 
+var server = 'multi1.rmuk.co.uk';
+var sitepage = "trans.sunday-times.co.uk/navfront/index.html";
+var position ="Frame1";
+if (! (RN)) {
+var RN = new String (Math.random());
+var RNS = RN.substring (2, 11);
+}
+var oas='http://' + server + '/RealMedia/ads/';
+var oaspage= sitepage + '/1' + RNS + '@' + position;
+if (_version < 11) {
+  document.write ('<A HREF="' + oas + 'click_nx.ads/'+ oaspage + '" TARGET="" ><IMG SRC="' + oas + 'adstream_nx.ads/' + oaspage + '"  BORDER="0"  WIDTH="" HEIGHT=""  ALT="" ></a>');
+} else {
+  document.write ('<SCRIPT LANGUAGE="JavaScript1.1" SRC="' + oas + 'adstream_jx.ads/' + oaspage + '">');
+  document.write ('\<\!-- --\>');
+  document.write ('\<\/SCRIPT\>');
+  document.write ('\<\!-- --\>');
+}
+// -->
+</SCRIPT>
+</OAS></BODY></HTML>

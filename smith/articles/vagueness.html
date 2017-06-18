@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0057)http://ontology.buffalo.edu/smith/articles/vagueness.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 10">
+<meta name="Originator" content="Microsoft Word 10">
+<title>Granular Partitions and Vagueness</title>
+</head><body lang="EN-US" link="blue" vlink="blue" style="tab-interval:.5in"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceType">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceName">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="State">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="country-region">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Barry Smith</o:Author>
+  <o:LastAuthor>Barry Smith</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>25</o:TotalTime>
+  <o:Created>2005-10-07T14:06:00Z</o:Created>
+  <o:LastSaved>2005-10-07T14:06:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>367</o:Words>
+  <o:Characters>2092</o:Characters>
+  <o:Company> UB</o:Company><o:Lines>17</o:Lines><o:Paragraphs>4</o:Paragraphs><o:CharactersWithSpaces>2455</o:CharactersWithSpaces><o:Version>10.6735</o:Version></o:DocumentProperties></xml>
+<![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>140</w:Zoom>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.email, li.email, div.email
+	{mso-style-name:email;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Courier;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Level1, li.Level1, div.Level1
+	{mso-style-name:"Level 1";
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+.auto-style1 {
+	font-size: medium;
+}
+</style>
+<![endif]-->
+<meta name="author" content="Thomas Bittner and Barry Smith">
+<meta name="description" content="Vagueness, Ontology, Granular Partitions, Semantics">
+
+
+
+
+<div class="Section1">
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">A Unified Theory of Truth and Reference<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center">Barry Smith and Berit
+Brogaard, <i>Logique <span class="GramE">et</span> Analyse,</i><span style="mso-bidi-font-style:italic"> No. 169-170 (2000, published 2003)</span>,
+49–93.<b><span style="font-size:14.0pt"><o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><a href="http://ontology.buffalo.edu/smith/articles/truthandreference.pdf"><span class="GramE">pdf</span> file </a></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">Quantum Mereotopology<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center">Barry Smith and Berit
+Brogaard</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><i>Annals of
+Mathematics and Artificial Intelligence</i>, 35/1–2, (2002),
+153–175.</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><a href="http://ontology.buffalo.edu/smith/articles/QM.htm"><span class="GramE">pdf</span>
+file</a></p>
+	<p class="MsoNormal" align="center" style="text-align:center">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><strong>
+<span class="auto-style1">Approximate Qualitative Temporal Reasonin</span>g
+</strong></p>
+	<p class="MsoNormal" align="center" style="text-align:center">Thomas Bittner </p>
+	<p class="MsoNormal" align="center" style="text-align:center"><em>Annals of 
+	Mathematics and Artificial Intelligence</em>, 35/1–2, (2002), 39-80. </p>
+	<p class="MsoNormal" align="center" style="text-align:center">
+	<a href="http://www.thomasebittner.com//BittnerProfessional/Publications_files/Approximate%20qualitative%20temporal%20reasoning.pdf">
+	pdf file</a> <o:p></o:p>
+	</p>
+	<p class="MsoNormal" align="center" style="text-align:center">
+	<o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">A Theory of Granular Partitions</span></b><br>
+Thomas Bittner and Barry Smith <br>
+<span style="mso-spacerun:yes">&nbsp;</span><i>Foundations of Geographic Information
+Science</i>, <br>
+M. Duckham, M. F. Goodchild and M. F. Worboys, eds., London: Taylor &amp;
+Francis Books, 2003, 117-151<br>
+<a href="http://ontology.buffalo.edu/smith/articles/partitions.pdf">pdf
+file<br>
+<br>
+</a><b style="mso-bidi-font-weight:normal"><span style="font-size:14.0pt">Endurants
+and Perdurants in Directly Depicting Ontologies<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center">T. Bittner, M.
+Donnelly and B. Smith</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><i style="mso-bidi-font-style:
+normal">AI Communications</i>, IOS Press, 2004, Vol. 13, Nr. 4, 247-258</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><a href="http://ontology.buffalo.edu/smith/articles/EPDDO.pdf"><span class="GramE">pdf</span>
+file</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">Vague Reference and Approximating Judgments</span></b><b><span style="font-size:18.0pt"> </span></b><br>
+Thomas Bittner and Barry Smith<br>
+<span style="mso-spacerun:yes">&nbsp;</span><i>Spatial Cognition and Computation</i><span style="mso-bidi-font-style:italic">,<i> </i>3: 2 (2003), 137–156</span><br>
+<a href="http://ontology.buffalo.edu/smith/articles/vraj.pdf">pdf
+file</a> <br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--><b><span style="font-size:14.0pt">Granular Partitions and Vagueness<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" align="center" style="text-align:center">Thomas Bittner and
+Barry Smith<b><span style="font-size:18.0pt"><br>
+</span></b>in: Christopher Welty and Barry Smith (eds.), <i>Formal Ontology and
+Information Systems</i>, <st1:state><st1:place>New York</st1:place></st1:state>:
+ACM Press, 2001, 309–321<span style="mso-bidi-font-size:18.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><a href="http://ontology.buffalo.edu/smith/articles/vagueness.pdf"><span class="GramE">pdf</span> file</a> <span style="font-size:18.0pt"><br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></span><b><span style="font-size:14.0pt">Carving <span class="GramE">Up</span> Reality</span></b><span style="font-size:14.0pt"><o:p></o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><span class="GramE">in</span>:
+M. Gorman and J. Sanford (eds.), </p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><i style="mso-bidi-font-style:
+normal">Categories: Historical and Systematic Essays</i>, <st1:place><st1:city>Washington</st1:city>
+ <st1:state>DC</st1:state></st1:place>: <st1:place><st1:placename>Catholic</st1:placename>
+ <st1:placetype>University</st1:placetype></st1:place> of <st1:country-region><st1:place>America</st1:place></st1:country-region>
+Press, 2004, 225–237</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><a href="http://ontology.buffalo.edu/smith/articles/Carving.pdf"><span class="GramE">pdf</span> file</a></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:14.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">Systems of Granular Partitions</span></b><br>
+Thomas Bittner, Barry Smith and Maureen Donnelly<a href="http://ontology.buffalo.edu/smith/articles/BittnerSmithDonnelly.pdf"><br>
+pdf file</a></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:14.0pt">Granular Spatio-Temporal Ontologies</span></b><br>
+Thomas Bittner and Barry Smith</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><i style="mso-bidi-font-style:
+normal">AAAI Symposium: Foundations and Applications of Spatio-Temporal
+Reasoning</i> </p>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+<p class="MsoNormal" align="center" style="text-align:center">(FASTR 2003), 12-17.<br>
+<a href="http://ontology.buffalo.edu/smith/articles/granular_ontologies.pdf"><span class="GramE">pdf</span> file</a></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt">
+
+<blockquote style="margin-top:5.0pt;margin-bottom:5.0pt"><span lang="ES" style="mso-ansi-language:ES">
+  <o:p>&nbsp;</o:p>
+</span></blockquote>
+</blockquote>
+
+</blockquote>
+
+</div>
+
+
+
+
+</o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></body></html>

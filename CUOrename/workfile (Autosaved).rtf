@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf949\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\fs24 \cf0 \
+\
+%Instantiation \'a0\
+% Instantiates: unary instantiation for occurrents\
+% Exemplifies: unary instantiation for continuants with time argument \
+% Instantiates: unary rigid instantiation \
+\
+(forall x x1 y t (if(Instantiates x x1)(not(Exemplifies y x1 t))))\
+(forall x x1 y t (if(Instantiates x x1)(not(Exemplifies x y1 t))))\
+\
+\
+\
+(if(Instantiates x x1)(and(Universal x)(Instantiates Instance x1)))\
+(if(Exemplifies x x1 t)(and(Universal x)(and(Instantiates Continuant x1)(Instantiates Timepoint t))))\
+\
+\
+\
+(iff(Instance x)(or(Instantiates Occurrent x)(Instantiates Continuant x)))\
+(iff(Instantiates Occurrent x)(or(Instantiates Event x)(or(Instantiates Developmental_process x)(or(Instantiates Developmental_stage x)(Instantiates Timepoint x)))))\
+(if(Universal x)(not(Instance x)))\
+(if(Universal x)(exists(y)(exists(t1)(or(Instantiates x y)(Exemplifies x y t1)))))\
+(if(Instance y)(exists(x)(exists(t1)(or(Instantiates x y)(Exemplifies x y t1)))))\
+(or(Universal x)(Instance x))\
+(if(Disjoint x y)(and(Universal x)(and(Universal y)(forall(z)(forall(t)(and(not(and(Instantiates x z)(Instantiates y z)))(not(and(Exemplifies x z t)(Exemplifies y z t)))))))))\
+(Disjoint Occurrent Continuant)\
+(Disjoint Event Developmental_process)\
+(Disjoint Developmental_stage Developmental_process)\
+(Disjoint Developmental_stage Event)\
+(Disjoint Timepoint Developmental_process)\
+(Disjoint Timepoint Developmental_stage)\
+(Disjoint Timepoint Event)\
+(if(and(Universal x)(Universal y))(or(is_a x y)(or(is_a y x)(Disjoint x y))))\
+(if(befsim x y)(and(Instantiates Timepoint x)(Instantiates Timepoint y)))\
+(if(and(befsim x y)(befsim y z))(befsim x z))\
+\
+(if(and(befsim x y)(befsim y x))(= x y))\
+\
+(if(and(Instantiates Timepoint x)(Instantiates Timepoint y))(or(befsim x y)(befsim y x)))\
+(iff(before x y)(and(befsim x y)(not(= x y))))\
+(iff(simultaneous x y)(and(= x y)(and(Instantiates Timepoint x)(Instantiates Timepoint y))))\
+(Instantiates Timepoint(alpha x))\
+(Instantiates Timepoint(omega x))\
+(if(Instantiates Timepoint x)(= x(alpha x)))\
+(if(Instantiates Timepoint x)(= x(omega x)))\
+(if(Instantiates Event x)(=(alpha x)(omega x)))\
+(if(or(Instantiates Continuant x)(or(Instantiates Developmental_process x)(Instantiates Developmental_stage x)))(before(alpha x)(omega x)))\
+(if(and(Instance x)(Instance y))(iff(during x y)(and(befsim(alpha y)(alpha x))(befsim(omega x)(omega y)))))\
+(if(and(Instance x)(Instance y))(iff(concomitant x y)(or(before(alpha x)(omega y))(before(alpha y)(omega x)))))\
+(if(ilo_part x y)(and(Instantiates Occurrent x)(Instantiates Occurrent y)))\
+(if(Instantiates Occurrent x)(ilo_part x x))\
+(if(and(ilo_part x y)(ilo_part y z))(ilo_part x z))\
+(if(ilo_part x y)(during x y))\
+(iff(exists_at x t)(and(Instantiates Continuant x)(and(Instantiates Timepoint t)(and(befsim(alpha x) t)(befsim t(omega x))))))\
+(iff(occurrs_at x t)(and(Instantiates Occurrent x)(and(Instantiates Timepoint t)(and(befsim(alpha x) t)(befsim t(omega x))))))\
+(if(ilc_part x y t)(and(Instantiates Continuant x)(and(Instantiates Continuant y)(Instantiates Timepoint t))))\
+(if(ilc_part x y t)(and(exists_at x t)(exists_at y t)))\
+(if(and(ilc_part x y t)(ilc_part y z t))(ilc_part x z t))\
+(if(and(Instantiates Continuant x)(exists_at x t))(ilc_part x x t))\
+(if(participates_in x y t)(and(Instantiates Continuant x)(and(Instantiates Occurrent y)(Instantiates Timepoint t))))\
+(if(participates_in x y t)(and(exists_at x t)(occurrs_at y t)))\
+(if(or(part_of x y)(has_part x y))(and(Universal x)(Universal y)))\
+(iff(is_a_o x y)(and(Universal x)(and(Universal y)(forall(z)(if(Instantiates x z(Instantiates y z)))))))\
+(iff(is_a_c x y)(and(Universal x)(and(Universal y)(forall(z)(forall(t1)(if(Exemplifies x z t1(Exemplifies y z t1))))))))\
+(if(and(is_a_o x y)(Instantiates x x1))(is_a x y))\
+(if(and(is_a_c x y)(Exemplifies x x1 t))(is_a x y))\
+(if(is_a x y)(and(is_a_o x y)(is_a_c x y)))\
+(if(part_of x y)(iff(is_a x Occurrent)(is_a y Occurrent)))\
+(if(is_a x Occurrent)(iff(part_of x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(ilo_part x1 y1)))))))\
+(if(has_part x y)(iff(is_a x Occurrent)(is_a y Occurrent)))\
+(if(is_a x Occurrent)(iff(has_part x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(ilo_part y1 x1)))))))\
+(if(Instantiates Continuant x1)(exists(t1)(participates_in x1(refoccurrent x1) t1)))\
+(if(Instantiates Occurrent x1)(ilo_part x1(refoccurrent x1)))\
+(if(and(participates_in x y t)(=(refoccurrent y) z))(participates_in x z t))\
+(if(referenceoccurrent x y)(and(Universal x)(is_a y Occurrent)))\
+(if(and(referenceoccurrent x y)(referenceoccurrent x z))(= y z))\
+(if(and(referenceoccurrent x y)(is_a x Occurrent))(forall(x1)(if(Instantiates x x1)(and(Instantiates y(refoccurrent x1))(and(ilo_part x1(refoccurrent x1))(and(forall(y1)(if(and(Instantiates y y1)(ilo_part x1 y1))(= y1(refoccurrent x1))))(forall(x2)(if(and(Instantiates x x2)(ilo_part x2(refoccurrent x1)))(= x1 x2)))))))))\
+(if(and(referenceoccurrent x y)(is_a x Continuant))(forall(x1)(forall(t)(if(Exemplifies x x1 t)(and(Instantiates y(refoccurrent x1))(and(exists(t1)(and(Exemplifies x x1 t1)(participates_in x1(refoccurrent x1) t1)))(and(forall(y1)(forall(t2)(if(and(Instantiates y y1)(participates_in x1 y1 t2))(= y1(refoccurrent x1)))))(forall(x2)(forall(t3)(if(and(Exemplifies x x2 t3)(participates_in x2(refoccurrent x1) t3))(=(refoccurrent x1)(refoccurrent x2))))))))))))\
+(if(or(happens_during x y)(or(begins_during x y)(or(ends_during x y)(or(begins_at_end_of x y)(or(begins_after x y)(or(ends_before x y)(or(simultaneous_with x y)(or(last_exists_during x y)(first_exists_during x y)))))))))(exists(z)(and(referenceoccurrent x z)(referenceoccurrent y z))))\
+(if(or(begins_during x y)(or(ends_during x y)(or(begins_at_end_of x y)(or(begins_after x y)(or(ends_before x y)(or(simultaneous_with x y)(happens_during x y)))))))(and(is_a x Occurrent)(is_a y Occurrent)))\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(begins_during x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(befsim(alpha y1)(alpha x1))(befsim(alpha x1)(omega y1))))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(ends_during x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(befsim(alpha y1)(omega x1))(befsim(omega x1)(omega y1))))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(begins_at_end_of x y)(and(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(simultaneous(alpha x1)(omega y1)))))))(forall(y1)(if(Instantiates y y1)(exists(x1)(and(Instantiates x x1)(and(=(refoccurrent x1)(refoccurrent y1))(simultaneous(alpha x1)(omega y1))))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(ends_before x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(befsim(omega x1)(alpha y1)))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(begins_after x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(befsim(omega y1)(alpha x1)))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(simultaneous_with x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(simultaneous(alpha x1)(alpha y1))(simultaneous(omega x1)(omega y1))))))))))\
+\
+(if(and(is_a x Occurrent)(is_a y Occurrent))(iff(happens_during x y)(forall(x1)(if(Instantiates x x1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(during x1 y1))))))))\
+(if(develops_from x y)(and(is_a x Continuant)(is_a y Continuant)))\
+(if(tr_integral_part_of x y)(and(is_a x Continuant)(is_a y Continuant)))\
+(if(and(is_a x Continuant)(is_a y Continuant))(iff(develops_from x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t)(or(and(exists(t2)(and(Exemplifies y x1 t2)(before t2 t1)))(forall(t3)(if(Instantiates Timepoint x)(not(and(Exemplifies x x1 t3)(Exemplifies y x1 t3))))))(exists(t4)(exists(y1)(and(Exemplifies y y1 t4)(arises_from x y))))))))))\
+\
+(if(succeeds x y)(arises_from x y))\
+(if(buds_from x y)(arises_from x y))\
+(if(and(arises_from x y)(succeeds y z))(arises_from x z))\
+(if(and(arises_from x y)(buds_from y z))(arises_from x z))\
+(iff(succeeds x y)(and(simultaneous(omega x)(alpha y))(and(exists(z)(and(ilc_part z x(omega x))(ilc_part z y(alpha y))))(and(is_a x Continuant)(is_a y Continuant)))))\
+(iff(buds_from x y)(and(and(is_a x Continuant)(is_a y Continuant))(and(forall(t1)(not(ilc_part x y t1)))(exists(z)(and(is_a z Continuant)(and(ilc_part z y(omega z))(succeeds x z)))))))\
+(iff(tr_part_of x y)(and(and(is_a x Continuant)(is_a y Continuant))(forall(x1)(forall(t)(if(Exemplifies x x1 t)(exists(y1)(and(exists(t1)(and(Exemplifies y y1 t1)(ilc_part x1 y1 t1)))(forall(t2)(if(and(exists_at x1 t2)(exists_at y1 t2))(ilc_part x1 y1 t2))))))))))\
+(iff(tr_has_part x y)(and(and(is_a x Continuant)(is_a y Continuant))(forall(x1)(forall(t)(if(Exemplifies x x1 t)(exists(y1)(and(exists(t1)(and(Exemplifies y y1 t1)(ilc_part y1 x1 t1)))(forall(t2)(if(and(exists_at x1 t2)(exists_at y1 t2))(ilc_part y1 x1 t2))))))))))\
+(iff(tr_integral_part_of x y)(and(and(is_a x Continuant)(is_a y Continuant))(and(forall(x1)(forall(t)(if(Exemplifies x x1 t)(exists(y1)(and(exists(t1)(and(Exemplifies y y1 t1)(ilc_part x1 y1 t1)))(forall(t2)(if(and(exists_at x1 t2)(exists_at y1 t2))(ilc_part x1 y1 t2))))))))(forall(y1)(forall(t)(if(Exemplifies y y1 t)(exists(x1)(and(exists(t1)(and(Exemplifies x x1 t1)(ilc_part x1 y1 t1)))(forall(t2)(if(and(exists_at y1 t2)(exists_at x1 t2))(ilc_part x1 y1 t2)))))))))))\
+(if(or(first_exists_during x y)(or(last_exists_during x y)(or(all_cease_to_exist_during x y)(or(begins_to_exist_after x y)(or(ceases_to_exist_before x y)(or(begins_to_exist_at_end_of x y)(all_begin_to_exist_during x y)))))))(and(is_a x Continuant)(is_a y Occurrent)))\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(first_exists_during x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t1)(exists(y1)(exists(x2)(exists(t2)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(Exemplifies x x2 t2)(and(=(refoccurrent x1)(refoccurrent x2))(and(befsim(alpha x2)(omega y1))(forall(x3)(forall(t3)(if(and(Exemplifies x x3 t3)(participates_in x3(refoccurrent x1) t3))(befsim(alpha y1)(alpha x3))))))))))))))))))\
+\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(last_exists_during x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t1)(exists(y1)(exists(x2)(exists(t2)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(Exemplifies x x2 t2)(and(=(refoccurrent x1)(refoccurrent x2))(and(befsim(alpha y1)(alpha x2))(forall(x3)(forall(t3)(if(and(Exemplifies x x3 t3)(participates_in x3(refoccurrent x1) t3))(befsim(omega x3)(omega y1))))))))))))))))))\
+\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(all_begin_to_exist_during x y)(forall(x1)(forall(t)(if(Exemplifies x x1 t)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(befsim(alpha y1)(alpha x1))(befsim(alpha x1)(omega y1)))))))))))\
+\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(all_cease_to_exist_during x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(and(befsim(alpha y1)(omega x1))(befsim(omega x1)(omega y1)))))))))))\
+\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(begins_to_exist_after x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(befsim(omega y1)(alpha x1))))))))))\
+\
+(if(and(is_a x Continuant)(is_a y Occurrent))(iff(ceases_to_exist_before x y)(forall(x1)(forall(t1)(if(Exemplifies x x1 t1)(exists(y1)(and(Instantiates y y1)(and(=(refoccurrent x1)(refoccurrent y1))(befsim(omega x1)(alpha y1))))))))))\
+\
+}

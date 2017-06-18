@@ -1,0 +1,658 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Corel WordPerfect 8">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win98; I) [Netscape]">
+   <title>Legal Domain Ontologies</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" alink="#FF0000">
+
+<ul>&nbsp;
+<center>
+<p><b><font size=+1>Ontologies in the Design of Legal Knowledge Systems;</font></b>
+<br><b>Towards a Library of Legal Domain Ontologies</b>
+<p><br>
+<p><i>Pepijn R.S. Visser</i> and<i> Trevor J.M. Bench-Capon</i>
+<p>LIAL - Legal Informatics at Liverpool
+<br>University of Liverpool - Department of Computer Science
+<br>PO Box 147, Liverpool, L69 7ZF, United Kingdom
+<br>0151 - 794 3792 {pepijn, tbc}@csc.liv.ac.uk
+<br>http://www.csc.liv.ac.uk/~lial/
+<p><b>Abstract</b></center>
+
+<p><font size=-1>Legal ontologies are useful in the design of knowledge
+systems because they are reusable. A library of such ontologies could greatly
+enhance the development of legal knowledge systems. In this article we
+address the creation of such a library. In particular, we discuss four
+legal ontologies and investigate how the ontologies can be indexed and
+represented in a library.</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><b>1. Introduction</b>
+<p>What are the building blocks of legal knowledge? Legal philosophers
+have pondered over this question for a long time. Research in Artificial
+Intelligence and Law has also run up against this question, albeit from
+a different angle. Arguably, the creation of a legal knowledge representation
+requires a conceptualisation of the building blocks of legal knowledge.
+Eventually, these building blocks will form the basis for operational legal
+knowledge systems.
+<br>&nbsp;
+<p>An important reason for producing ontologies is that they form reusable
+building blocks for the design of (legal) knowledge systems. Many development
+methodologies for knowledge systems, such as CommonKADS (Breuker and Van
+de Velde, 1994), recognise the role of ontologies. Although literature
+is showing efforts to create ontology libraries (Farquhar <i>et al</i>.,
+1997) there are no such efforts in the legal domain. In this article we
+address the creation of libraries of legal (domain) ontologies. Crucial
+to the success of such a library is that its users are aware of what the
+library contains. This is less trivial than it seems. For books there are
+well established methods of classification, typically based on subject,
+and the physical organisation of the library uses this. Since the title,
+author and subject of a book provides a reasonably good idea of the contents,
+users can browse the library on these items. The problems with an legal
+ontology library are different: while there will be far fewer items in
+the library, there are no well understood principles of organisation. In
+this article we suggest some features of, and relations between, ontologies,
+which could serve as the basis for structuring the contents of a library
+of legal ontologies.
+<br>&nbsp;
+<p>This article is structured as follows. In section 2 we briefly discuss
+four legal ontologies which can be used in the method. In section 3 we
+address the development of a library of legal ontologies and in particular
+we discuss the indexing mechanisms of the library. In section 4 we draw
+conclusions.
+<br>&nbsp;
+<p><b>2. Four Legal Ontologies</b>
+<p>Ontologies are reusable building blocks for knowledge system design
+(Visser <i>et al.</i>, 1997). However, AI and Law research so far has not
+produced very many legal ontologies for this purpose. Only a small number
+of explicit conceptualisations of the legal domain is available (for an
+overview on legal ontologies for system design, see Visser and Winkels,
+1997). Below, we discuss four well known legal ontologies that could be
+used in the design of a LKS: (<i>a</i>) McCarty's LLD, (<i>b</i>) Stamper's
+NORMA, (<i>c</i>) Valente's Functional Ontology of Law and (<i>d</i>) the
+Frame-based Ontology of Van Kralingen and Visser.
+<br>&nbsp;
+<p><i>(a) LLD</i>
+<p>McCarty (1989) has proposed a language for legal discourse (lld). He
+considered the language to be a first step towards a general applicable
+representation language for legal knowledge. Although lld itself is a representational
+language and not an ontology it clearly reveals a generic conceptualisation
+of the legal domain. The basic components of lld are atomic formulae and
+rules. <i>Atomic formulae</i> are merely predicate relations used to express
+factual assertions. A distinction is made between <i>count terms</i> (to
+express tangible objects, such as houses, and persons) and <i>mass terms</i>
+(to express intangible objects, such as cash, and stock). <i>Rules </i>are
+formed by connecting atomic formulae with logical connectives. They have
+a left-hand side which is an atomic formula, and a right-hand side which
+is a compound expression. The compound expression determines the type of
+rule involved. There are five types of rules: (1) horn clauses, (2) 'horn
+clauses' with embedded implications, (3) 'horn clauses' with embedded negations,
+(4) default rules, and (5) prototype-and-deformations. Together atomic
+formulae and rules allow the creation first-order expressions. Modalities
+are stated as second-order expressions. The following modalities are supported:
+time, events and actions, and deontic expressions (McCarty, 1989). To express
+temporal statements lld recognises states. A state essentially is the (temporal)
+reification of a predicate relation. Predicate relations can be reified
+both with points of time, as well as with intervals (two points of time).
+Changes in states are realised by events. Events are either elementary
+(<i>viz</i>. a state-change) or complex (<i>viz</i>. elementary events
+connected by the operations of disjunction, sequential and parallel composition,
+and universal and existential quantification applied to the elementary
+events). An action is the relation between an actor and an event. With
+regards to deontic statements, lld supports four modal operators: permitted
+(P), forbidden (F), obligatory (O), and enabled (E). Modalities, such as
+time and permissions, are stated as second-order expressions. For more
+details on lld we refer to McCarty (1989; 1993).
+<br>&nbsp;
+<p><i>(b) NORMA</i>
+<p>Stamper has criticised the use of traditional logics for the representation
+of (legal) knowledge because they suffer from some important semantic problems
+(Stamper, 1991). Briefly stated, traditional logics rely on symbolic representations
+that have only a very weak connection to the real-world concepts they intend
+to denote. In particular, symbolic representations rely (according to Stamper
+- invalid) on notions such as truth, individuality, and identity. Accordingly,
+expressing legal knowledge in the form of rules is an over simplification
+of what legal knowledge is about. To overcome these problems Stamper argues
+that there is need to escape from the frame of reference of classical logic
+(Stamper, 1991, p.229). Building on his LEGOL work (see Stamper, 1980),
+he proposed the norma formalism (Stamper, 1991). norma, which means 'logic
+of norms and affordances', is based on two main philosophical assumptions:
+(1) there is no knowledge without a knower, and (2) the knowledge of a
+knower depends on his behaviour (Stamper, 1996). Using norma (henceforth:
+nor) the entities in the world are described by their behaviour rather
+than by assigning them an individuality and truth values. The main ontological
+concepts are (a) <i>agents</i>, (b) <i>behavioural invariants</i>, and
+(c) <i>realisations</i>. An agent is an organism standing at the centre
+of reality. It gains knowledge, regulates, and modifies the world by means
+of actions. For its actions the agent takes responsibility. The concept
+of an <i>agent </i>(a) can be extended to include groups, teams, companies,
+social agents or even nation states. A <i>behavioural invariant </i>(b)
+is a description (<i>e.g.</i>, using verbs, nouns, or adjectives) of a
+'situation' whose features remain invariant. Here, a situation loosely
+denotes some knowledge of the world, such as an object (<i>e.g.,</i> a
+cup, a piano) or a state of affairs (<i>e.g.,</i> walking, paying). The
+realisation of a situation - a <i>realisation </i>(c)- is specified as
+the combination of (1) an agent and (2) a behavioural invariant, shortly
+written as <i>Ax </i>(the situation, denoted by behavioural invariant <i>x</i>,
+that is<i> </i>realised by agent <i>A</i>). An example of a realisation
+<i>Ax</i>
+is <i>John walks</i>. Different kinds of realisations are recognised, for
+instance, <i>Ax*</i> (denoting the ability of <i>A</i> to realise <i>x</i>),
+<i>Ax@</i>
+(denoting the authority of <i>A</i> to realise <i>x</i>), <i>Ax+</i> (denoting
+<i>A </i>starts to realise <i>x</i>), <i>Ax-</i> (denoting <i>A</i> finishes
+the realisation of <i>x</i>), and <i>Ax#</i> (denotes that <i>x</i> can
+be divided into individuals, <i>cf.</i> classes and objects). By combining
+behavioural invariants composite realisations can be made. We here mention
+the most important composite realisations: <i>Axy</i> (denoting that <i>A</i>
+cannot realise <i>y</i> without first realising <i>x</i>), <i>A.x.y </i>(denoting
+that <i>x</i> is a part of <i>A</i> and <i>y</i> is a part of <i>x</i>),
+<i>A(x
+while y)</i>, <i>A(x orwhile y)</i>, <i>A(x whilenot y)</i>, <i>A(x whenever
+y)</i> (denotes that <i>x</i> is realised whenever <i>y</i> is realised);
+<i>A(x then y</i>) (denotes that if <i>x</i> is realised then y is be realised),
+<i>A "Bx"</i> (denoting that an agent <i>A</i> can tell another agent <i>B</i>
+to bring about <i>x</i>, for instance by commanding or suggesting), and
+<i>A(a:b:c) d)</i> (denoting that <i>a</i>, <i>b</i>, and <i>c</i> are
+instances of <i>d</i>). For a more extensive discussion we refer to Stamper
+(1991; 1996)<sup><a href="#N_1_">(1)</a></sup>.
+<br>&nbsp;
+<p><i>(c) The Functional Ontology of Law</i>
+<p>Valente's ontology of law (1995) - LFU - is based on a functional perspective
+of the legal system. The legal system is considered an instrument to change
+or influence society in specific directions, determined by social goals.
+Its main function is reacting to social behaviour. This main function can
+be decomposed into six primitive functions, each corresponding with a category
+of primitive legal knowledge in lfu. Accordingly, lfu distinguishes six
+categories of legal knowledge: (a) normative knowledge, (b) world knowledge,
+(c) responsibility knowledge, (d) reactive knowledge, (e) meta-legal knowledge,
+and (f) creative knowledge.
+<br>&nbsp;
+<p><i>Normative knowledge </i>(a) is characterised as knowledge that defines
+a standard of social behaviour. It thereby prescribes behaviour of the
+people in society. The standard is defined by issuing individual norms,
+expressing what ought to be the case. In lfu <i>world knowledge
+</i>is
+legal knowledge that describes the world that is being regulated. It delineates
+the possible behaviour of (people, and institutions) in society, and thereby
+it provides a framework to define what behaviour ought (and ought not)
+to be performed. It can be considered to be an interface between the commonsense
+knowledge of people in society and the normative knowledge. Within the
+world knowledge Valente distinguishes (b.1) definitional knowledge, and
+(b.2) causal knowledge. The definitional knowledge is the static part,
+it consists of definitions of (b.1.1) legal concepts (<i>e.g.</i>, agents,
+objects), (b.1.2) legal relations (<i>e.g.</i>, legal qualifications of
+actions), (b.1.3) a case (<i>viz</i>. the problem case under investigation),
+(b.1.4) circumstances (<i>viz</i>. the grounded facts, or, building blocks
+of a case), (b.1.5) generic cases (<i>viz</i>. typical generic legal cases),
+and (b.1.6) conditions (<i>viz</i>. the building blocks of the generic
+legal cases). Together these constructs provide a vocabulary which can
+be used to describe the relevant aspects of the world under a specific
+perspective taken by the legislator. The causal knowledge (b.2) is the
+dynamic part, describing the behaviour of people in society in terms of
+the definitional knowledge. <i>Responsibility knowledge </i>(c) is legal
+knowledge that either extends (assigns), or restricts the responsibility
+of an agent for its behaviour. Its function is to provide the legal means
+to reject the common idea that someone is only responsible for what one
+causes. <i>Reactive knowledge </i>(d) is legal knowledge that specifies
+which reaction should be taken (and how) if an agent violates a primary
+norm. <i>Meta-legal knowledge </i>(e) is legal knowledge about legal knowledge,
+or, legal knowledge that refers to other legal knowledge. There are four
+sub categories of meta-legal knowledge: (e1) norm data, (e2) ordering norms,
+(e3) normative default, and (e4) validity knowledge. Norm data (e1) includes
+information about norms, such as their scope of application, their type,
+their place in the norm hierarchy, their power origin, their promulgation,
+and the norm goal. Ordering norms (e2) are norms that determine how to
+solve conflicts. <i>Creative knowledge </i>is legal knowledge that allows
+the creation of previously non-existent legal entities. For more details
+on this ontology we refer to Valente (1995).
+<br>&nbsp;
+<p><i>(d) FBO: Van Kralingen and Visser's Frame-based Ontology</i>
+<p>Van Kralingen (1995) and Visser (1995) argue that robust (conceptual
+and formal) ontologies of the legal domain are necessities for reducing
+the task-dependency of legal knowledge specifications. Although there are
+some minor differences between the (conceptual) ontology as defined by
+Van Kralingen, and the (formal) ontology as defined by Visser, their similarities
+allow us to treat them as one ontology. The main ontological distinction
+in fbo concerns the generic legal ontology and the statute-specific ontology.
+The distinction is based on the observation that some parts of an ontology
+are reusable across different legal subdomains.
+<br>&nbsp;
+<p>The <i>generic legal ontology</i> (GLO), in contrast to the statute-specific
+ontology, is the generic and reusable part of the ontology. It divides
+legal knowledge over three distinct entities: norms, acts and concept descriptions.
+For each of these entities the ontology defines a template (also referred
+to as frame structure) that lists all attributes relevant for the entity.
+<i>Norms</i> are the general rules, standards and principles of behaviour
+that subjects of law are enjoined to comply with. In the ontology a norm
+comprises the following eight elements: (1) a norm identifier (used as
+a point of reference for the norm), (2) a norm type (either norm of conduct
+or norm of competence), (3) a promulgation (the source of the norm), (4)
+the scope (the range of application of the norm), (5) the conditions of
+application (the circumstances under which the norm is applicable), (6)
+the norm subject (the person or persons to whom the norm is addressed),
+(7) the legal modality (either ought, ought not, may or can), and (8) the
+act identifier (used as a reference to a separate act description). <i>Acts</i>
+represent the dynamic aspects which effect changes in the state of the
+world. Within the category of acts two distinctions are made. The first
+distinction is between <i>events</i> and
+<i>processes</i>. Events represent
+an instantaneous change between two states, while processes have duration.
+The second distinction is between
+<i>institutional acts</i> and <i>physical
+acts</i>. The former type of acts are considered legal (institutional)
+versions of the (physical) acts that occur in the real world (more precisely:
+an institutional act is a legal qualification of a physical act). Note
+that these two distinctions result in four different types of acts. All
+acts are assumed to have the following thirteen elements: (1) the act identifier
+(used as a point of reference for the act), (2) a promulgation (the source
+of the act description), (3) the scope (the range of application of the
+act description), (4) the agent (an individual, a set of individuals, an
+aggregate or a conglomerate), (5) the act type (both basic acts, and acts
+that have been specified elsewhere can be used), (6) the modality of means
+(material objects used in the act or sub acts; <i>e.g.</i>, a gun), (7)
+the modality of manner (the way in which objects have been used or sub
+acts have been performed) (<i>e.g.</i>, aggressively), (8) the temporal
+aspects (an absolute time specification;
+<i>e.g.</i>, on the first of August,
+on Sundays, at night, etc, but not: during a fire, after the King dies,
+etc), (9) the spatial aspects (a specification of the location where the
+act takes place; <i>e.g.</i>, in the Netherlands, in Leiden, on a train),
+(9) the circumstantial aspects (a description of the circumstances under
+which the act takes place; <i>e.g.</i>, during a war), (10) the cause of
+the action (a specification of the reason(s) to perform the action, <i>e.g.</i>,
+revenge), (11) the aim of the action (the goal visualised by the agent;
+<i>e.g.</i>, with a view to unlawfully appropriate an object), (12) the
+intentionality of an action (the state of mind of the agent; <i>e.g.</i>,
+voluntary), and (13) the final state (the results and consequences of an
+action; <i>e.g.</i>, the death of the victim). <i>Concept descriptions</i>
+deal with the meanings of the concepts found in the domain. They may be
+definitions or deeming provisions and can be used to determine definitively
+the meaning of a notion, either by, as in the case of the former, providing
+necessary and sufficient conditions, or, as in the case of the latter,
+establishing a legal fiction. Another type of concept is the factor, which
+may either establish a sufficient condition, or indicate some contribution
+to the applicability of the concept, as discussed above. Finally there
+are meta concepts which are provisions governing the application of other
+provisions. Concept descriptions comprise the following seven elements:
+(1) the concept to be described, (2) the concept type (definition, deeming
+provision, factor, or meta), (3) the priority (the weight assigned to a
+factor), (4) the promulgation (the source of the concept description),
+(5) the scope (the range of application of the concept description), (6)
+the conditions under which a concept is applicable, and (7) an enumeration
+of instances of the concept.
+<br>&nbsp;
+<p>The <i>statute-specific ontology </i>consists of predicate relations
+that are used to complement the terminology for norms, acts and concept
+descriptions. The statute-specific ontology cannot be reused for other
+legal subdomains, and should always be created for each legal sub domain
+under consideration. The statute-specific ontology states the vocabulary
+with which the knowledge base is constructed. A more elaborate discussion
+of the legal and the statute-specific ontology can be found in Van Kralingen
+(1995) and Visser (1995), which gives a statute-specific ontology for the
+Dutch Unemployment Benefits Act (DUBA). An ontolingua specification of
+the legal ontology is given by Visser and Bench-Capon (1996).
+<br>&nbsp;
+<p><b>3. The Ontology Library</b>
+<p>The ontologies discussed in the previous section differ substantially
+in the way they conceptualise the legal domain even though all four ontologies
+are intended to support the construction of legal knowledge or information
+systems (LKS). Visser and Bench-Capon (1998) - after a comparison of these
+ontologies - argue that no ontology is necessarily better than another.
+Which ontology is most adequate depends on the specific application being
+developed. The indexing of the ontologies in our library should allow for
+the selection of the ontology that best suits the intended application.
+Otherwise stated, the ontology indexing mechanism should reveal the differences
+between the ontologies. In this section we address the structure and indexing
+mechanism of the legal ontology library. In section 3.1 we discuss related
+work on ontology indexing schemes. In section 3.2 we address ontology relations
+between ontologies in the library. Then, in section 3.3 we propose a set
+of questions that can be used to index the library.
+<br>&nbsp;
+<p><b>3.1 Ontology Indexing Schemes: Related Work</b>
+<p>Any library indexing mechanism is based on distinguishable features
+of ontologies. Indexing mechanisms differ in the features that are distinguished
+and in the way they are expressed. To create a library of legal ontologies,
+and thus, to determine what ontology features we will distinguish we first
+make an inventory of related work on this matter. Below, we list the ontology
+features distinguished in five different research efforts.
+<br>&nbsp;
+<p>Gruber (1995) formulates five design criteria for ontologies in the
+context of knowledge sharing and interoperation among programs. The ontology
+features he distinguishes are: (1) <i>clarity</i>, (2) <i>coherence</i>,
+(3) <i>extendibility</i>, (4) <i>encoding bias</i>, and (5) <i>ontological
+commitment</i>.
+<br>&nbsp;
+<p>Visser and Bench-Capon (1998) build on the work of Gruber and others
+and present a taxonomic structure of ontology-comparison criteria. The
+ontology features they distinguish are: (1) <i>epistemological adequacy
+</i>(1.1
+<i>epistemological clarity</i>; 1.2 <i>epistemological intuitiveness</i>;
+1.3 <i>epistemological relevance</i>; 1.4 <i>epistemological completeness</i>;
+1.5 <i>discriminative power</i>), (2) <i>operationality</i> (2.1 <i>encoding
+bias</i>; 2.2 <i>coherence</i>; 2.3 <i>computationality</i>), (3) <i>reusability
+</i>(3.1
+<i>task-and-method reusability</i>; 3.2 <i>domain reusability</i>).
+<br>&nbsp;
+<p>Farquhar <i>et al.</i> (1997) describe the Ontolingua Ontology Library.
+They distinguish four type of ontology relations (1)
+<i>inclusion</i>,
+(2) <i>restriction</i>, (3) <i>polymorphic refinement</i> and (4) <i>circularity</i>.
+Currently, the indexing of ontologies in the library is done via full text
+and context-sensitive search facilities. Also, the ontology library has
+an inclusion lattice which shows the inclusion relations between the different
+ontologies.
+<br>&nbsp;
+<p>Fridman-Noy and Hafner (1997) have compared 10 large ontology projects.
+In their survey they used the following (groups of) features to distinguish
+the ontologies: (1) <i>general</i>, (2) <i>design process</i>, (3) <i>taxonomy,
+</i>(4) <i>internal concept structure and relations between concepts</i>,
+(5) <i>axioms, </i>(6) <i>inference mechanism, </i>(7) <i>applications
+</i>and
+(8) <i>contributions</i>.
+<br>&nbsp;
+<p>Van Heijst <i>et al </i>(1997) address the issues in creating an ontology
+library. Ontologies are indexed using dimensions <i>task / method dependency
+</i>and <i>domain dependency</i>. These dimensions are used to partition
+the library into two regions: a <i>core library </i>and a <i>peripheral
+library</i>. The former contains ontologies that are generic with respect
+to task / method and domain, and the latter contains ontologies that are
+both domain and task / method specific. Other library construction issues
+are the <i>language </i>in which ontologies are stated (inclusive whether
+it supports <i>higher-order expressions</i>), the <i>modularity</i> of
+the ontologies as building reusable blocks, and the option to allow
+<i>alternative
+(and possibly inconsistent) ontologies</i>.
+<br>&nbsp;
+<p>It should be noted that none of the features mentioned above is currently
+measurable in a unique way. Scaling the ontologies on ontology features
+remains a subjective task (Visser and Bench-Capon, 1998). Some of the features
+are not directly usable for our ontology library. For instance, Gruber's
+'minimal ontological commitment' criterion. In the context of a library
+this criteria is not relevant, as is distinguishing the ontological-commitment
+feature of ontologies. We note that there seem to be two broad categories
+of features, namely (1) <i>intra-ontology features</i>, and (2) <i>inter-ontology
+features</i>. Gruber, Fridman &amp; Hafner, Van Heijst <i>et al.</i>, and
+Visser and Bench-Capon seem to emphasise the former type of ontology features,
+Farquhar <i>et al.</i> seem to emphasise the latter type of features. Here,
+we deem both type of features to be useful for our ontology indexing mechanism.
+Since the intra-ontology features have been addressed extensively in the
+work mentioned above, in the next section we concentrate on the inter-ontology
+features.
+<br>&nbsp;
+<p><b>3.2 Inter-Ontology Features</b>
+<p>One approach to find ontologies in the ontology library is to exploit
+the relations between different ontologies in the library. One ontology
+might, for instance, be an extension of another ontology in the library
+(this is the case with the <i>statute-specific ontology</i> of Van Kralingen
+and Visser, which is an extension of the <i>generic legal ontology</i>).
+In this section we address how ontologies can be characterised by their
+relation to other ontologies. In particular, we look into the question
+(I) how component ontologies can be identified and (II) what relations
+can exist between them<sup><a href="#N_2_">(2)</a></sup>.
+<br>&nbsp;
+<p>(I) <i>identify component ontologies</i>
+<p>We assumed that an ontology consists of a set of definitions of classes,
+relations, instances, functions, and axioms. Identifying component ontologies
+implies isolating multiple sets of ontology definitions. Below, we list
+five principles that can be used to define multiple, but related, ontologies.
+<br>&nbsp;
+<p><i>1. Domain partitioning</i>: An obvious way to identify multiple ontologies
+is to partition the domain itself in logical units, each representing another
+fragment of the domain. The Ontolingua ontology library, for instance,
+holds a collection ontologies for sets, numbers, lists, etc. (Farquhar
+<i>et al., </i>1997).
+<p><i>2. Alternative domain views</i>: Multiple ontologies can be created
+by allowing different - possibly inconsistent - views of the same fragment
+of the domain (Van Heijst <i>et al., </i>1997). This principle covers the
+<i>polymorphic refinement </i>operator as defined by Farquhar <i>et al.
+</i>(1997, p.713).
+<p><i>3. Abstraction</i>: Multiple ontologies can be defined by allowing
+both abstract and detailed ontologies. For instance, one can define generic
+legal concepts (<i>e.g.</i>, norm, modality, definition, act, law) and
+some statute-specific legal concepts (<i>e.g.</i>, definition-of-employee,
+forbidden, kill, penal-law). A top-level ontology (Sowa, 1995; Guarino,
+1997a) is an example of an abstract ontology.
+<p><i>4. Primary ontologies versus Secondary</i> <i>ontologies</i>: Multiple
+ontologies can be defined by allowing both primary ontologies and secondary
+ontologies. The distinction being that a primary ontology defines the basic
+concepts and relations in a domain (<i>e.g.,</i> apple, pear) and the secondary
+ontology adds a dimension to the concepts and relations (<i>e.g.,</i> rotten,
+red) by distinguishing additional features (<i>e.g.</i>, Borst <i>et al.,
+</i>1996).
+<p><i>5.</i> <i>Terminological, Information and Knowledge modelling ontologies</i>:
+The difference between these three types of ontologies is defined by 'the
+amount and type of structure in an ontology' (Van Heijst, 1995; Van Heijst
+<i>et al., </i>1997). Terminological ontologies define a lexicon, Information
+ontologies define record structures of databases, and knowledge modelling
+ontologies specify knowledge (with a richer internal structure than information
+ontologies)<sup><a href="#N_3_">(3)</a></sup>.
+<br>&nbsp;
+<p>(II) <i>defining ontology relations</i>
+<p>The principles above enable us to define multiple sets of ontology definitions.
+We have not yet addressed how these ontology definitions are related. Below,
+we list three kinds of relations that might be defined between component
+ontologies. The kind of relations that can be defined between component
+ontologies is greatly influenced by the way these component ontologies
+are identified.
+<br>&nbsp;
+<p><i>a. Subset / Superset relation. </i>Ontology O<sub>1</sub> is a subset
+of ontology O<sub>2</sub> if all definitions in O<sub>1</sub> are contained
+in O<sub>2</sub> (O<sub>2</sub> is the superset of O<sub>1</sub>). Strictly
+speaking, this kind of relation cannot occur with any of the above mentioned
+principles since all principles create ontologies without overlap (a primary
+and a secondary ontology, for instance, do not overlap). If we relax the
+definitions of the partitioning principles so as to allow overlap between
+the ontologies we can use this relation in combination with principles
+domain partitioning, abstraction, primary versus secondary ontologies,
+and terminological / information / knowledge modelling ontologies.
+<p><i>b. Extension Relation. </i>Ontology O<sub>2</sub> is an extension
+of ontology O<sub>1</sub> if all definitions in ontology O<sub>1</sub>
+are available in ontology O<sub>2</sub>. The difference with subset /superset
+relations is that the definitions contained in O1 are themselves not contained
+in ontology O<sub>2</sub>. This kind of relation can be used in combination
+with domain partitioning, abstraction, primary versus secondary ontologies,
+and terminological / information / knowledge modelling ontologies.
+<p><i>c. Restriction</i>. Ontology O<sub>2</sub> is a restriction of ontology
+O<sub>1</sub> if all definitions in ontology O<sub>1</sub> are available
+in ontology O<sub>2</sub> except for those that are redefined (<i>cf. </i>Farquhar<i>
+et al. </i>1997). This kind of relation can be used in combination with
+alternative domain views, abstraction, primary and secondary ontologies,
+and terminology / information / knowledge modelling ontologies.
+<p><i>d. Mapping Relation. </i>O<sub>1</sub> is mapped onto O<sub>2</sub>
+if some expression in O<sub>1</sub> is linked to an expression in O<sub>2</sub>
+where both expressions are (assumed to be) semantically equivalent or similar.
+This kind of relation can only be used in combination with alternative
+domain views since equivalent or similar expressions cannot occur using
+the other partitioning principles.
+<br>&nbsp;
+<p>Both the principles to define multiple ontologies and the ontology relations
+can be exploited as indexing mechanisms. In the next section we propose
+a set of questions that can be used to index the ontologies in the library.
+<br>&nbsp;
+<p><b>3.3 Indexing the Ontologies in the Library</b>
+<p>The indexing mechanism of the legal ontology library consists of two
+groups of features: (I) the intra ontology features, and (II) the inter-ontology
+features. Below, we present a set of questions for each group.
+<br>&nbsp;
+<p><i>Intra Ontology Features</i>
+<ul>Supply name of the ontology, its author(s), their affiliation, relevant
+publications, relevant URLs, and the date at which it is designed?
+<p>What tools were used to design the ontology?
+<p>What is the purpose of the ontology?
+<p>Does the ontology make method / task-specific commitments? If so, to
+what method(s) / task(s).
+<p>Does the ontology make specific commitments towards legal subdomains
+(is the ontology reusable throughout all legal subdomains)? If so, state
+the restrictions and commitments?
+<p>Does the ontology make any commitments towards representational formalisms
+(which)?
+<p>What language is used to specify the ontology?
+<p>What are the most fundamental distinctions in the ontology?
+<p>How many concepts are defined (how many classes, relations, functions,
+instances and axioms)?
+<p>Has the ontology been used in practical information-system applications
+(prototype, operational)?
+<p>Sketch the internal structure of the ontology: (a) it is only a set
+of terms, (b) there is some structure, or (c) it has a high degree of structuring?
+<p>What organisation principle is used (a) none, (b) hierarchy, (c) graph.
+<br>&nbsp;
+<p><i>Inter Ontology Features</i>
+<p>Does the ontology include all definitions of another ontology in the
+library (which)?
+<p>Are all definitions in the ontology included in another ontology in
+the library (which)?
+<p>Does the ontology assume all definitions of another ontology in the
+library to be known (which)?
+<p>Are all definitions in the ontology assumed to be known in another ontology
+in the library (which)?
+<p>Does the ontology provide an alternative view on the legal domain than
+another ontology in the library (which)?
+<p>Is the ontology an specialisation of another ontology in the library
+(which)?
+<p>Is the ontology an abstraction of another ontology in the library (which)?
+<p>Is the ontology a restriction on another ontology (which)?
+<p>Can the ontology be mapped onto another ontology in the library? If
+so, what is the nature of this mapping (a) method to domain, (b) domain
+to method, (c) method to method, (d) domain to domain?
+<br>&nbsp;
+<p>The idea to distinguish inter-ontology features next to the intra-ontology
+features allows us to build a lattice of ontologies showing how the ontologies
+relate to one another. If, while browsing through the library, one dislikes
+the commitments of a particular ontology then the inter-ontology links
+will lead to similar ontologies in the library which make different commitments.
+Alternatively, we could depict the ontologies according to method and domain
+specificity, when the core ontologies will tend to lie towards the origin.
+This is illustrated in figure 1 (<i>cf</i>. Van Heijst <i>et al., </i>1997).
+<br>&nbsp;
+<br>&nbsp;
+<p><b>4. Conclusions</b>
+<p>If we try to relate our indexing questions to the four legal ontologies
+discussed in section 2 the result is at first sight a bit disappointing.
+Almost all the answers are no; the only exceptions being whether the ontologies
+give different views of the domain, and, if we include the statute specific
+ontology for the DUBA as a different ontology from the generic ontology,
+the former can be seen as an extension of the latter. This is readily explained,
+however, if we consider Figure 1. From this we can see that all the four
+ontologies we discussed earlier are intended to be core ontologies. As
+such, they record rather fundamental decisions about how the domain is
+to be conceptualised, and represent fundamentally different conceptualisations.
+If we had, for example, more examples of statute specific ontologies developed
+from LFU, we would find considerable inter-ontology relations with the
+statute specific ontology of the DUBA, particularly if they were in similar
+areas of law, such as equal employment law. Our indexing questions are
+most appropriate for rather detailed ontologies.
+<br>&nbsp;
+<p><img SRC="visse0{image0}.gif" height=330 width=399 align=LEFT>At the
+level of core ontologies, the users of the library will want to select
+an ontology which embodies the fundamental design choices that they find
+congenial. This really means that they have to look at the highest level
+distinctions; for example the norm / concept / event distinction of FBO
+or the distinction into six kinds of knowledge of LFU. What the users need
+to do therefore, is to be able to browse and preferably compare, the competing
+ontologies starting with the top-level concepts. This will at once alert
+them to the fundamental design choices to be made, and enable them to decide
+which one is most in accord with their own conceptualisation. Armed with
+this knowledge, they will then be able to select a more refined ontology
+which conforms to this conceptualisation, using the other indexing questions.
+We observe that to construct a software tool to support this activity it
+is desirable that the language in which the ontologies are stated is formal
+and standardised.
+<br>&nbsp;
+<p><b>Acknowledgements</b>
+<p>The authors want to thank Radboud Winkels, Dean Jones and Robert van
+Kralingen for their contribution.
+<br>&nbsp;
+<p><b>References</b>
+<p>Bench-Capon, T.J.M. (1991). <i>Knowledge-Based Systems and Legal Applications</i>,
+APIC series, No. 36, Academic Press, London, United Kingdom.
+<p>Bench-Capon, T.J.M., and F.P. Coenen (1992). Isomorphism and Legal Knowledge
+Based Systems, <i>Artificial Intelligence and Law</i>, Vol. 1, No. 1, pp.65-86.
+<p>Borst, P., J. Benjamin, B. Wielinga, and H. Akkermans (1996). An Application
+of Ontology Construction, <i>ECAI '96 Workshop on Ontological Engineering</i>,
+Budapest, Hungary.
+<p>Breuker, J.A., and W. van de Velde (1994). <i>CommonKADS Library for
+Expertise Modelling, Reusable Problem Solving Components</i>, J.A. Breuker,
+and W. van de Velde (<i>eds</i>.), IOS Press, Amsterdam, the Netherlands.
+<p>Farquhar, A., R. Fikes, and J. Rice (1997). The Ontolingua Server: A
+Tool for Collaborative Ontology Construction, Int. Journal of Human-Computer
+Studies, 46, pp.707-727.
+<p>Fridman Noy, N. and C.D. Hafner (1997). The State of the Art in Ontology
+Design, A Survey and Comparative Review, <i>AI Magazine,
+</i>4,pp.53-74.
+<p>Gruber, T.R. (1995). Toward principles for the design of Ontologies
+used for Knowledge Sharing, <i>Int. Journal of Human-Computer Studies</i>,
+43, pp.907-928.
+<p>Guarino, N. (1997a). Some Organizing Principles for a Unified Top-Level
+Ontology, Revised version of a paper appeared at AAAI 1997 Spring Symposium
+on Ontological Engineering (LADSEB-CNR Int. Rep. 02/97, V3.0, Italy).
+<p>Guarino, N. (1997b). Understanding, Building and Using Ontologies. A
+Commentary to "Using Explicit Ontologies in KBS Development", by van Heijst,
+Schreiber, and Wielinga, <i>International Journal of Human and Computer
+Studies</i>, Vol. 46 n. 2/3, pp. 293-310.
+<p>Heijst, G. van (1995). The Role of Ontologies in Knowledge Engineering,
+PhD. Thesis, University of Amsterdam, The Netherlands.
+<p>Heijst, G. van, A. Th. Schreiber, and B.J. Wielinga (1997). Using Explicit
+Ontologies in KBS Development, <i>Int. Journal of Human-Computer Studies</i>,
+Vol. 45, pp.183-292.
+<p>Kralingen, R.W. van (1995). <i>Frame-based conceptual models of statute
+law</i>, Computer/Law Series, No.16, Kluwer Law International, The Hague,
+the Netherlands.
+<p>McCarty, L.T. (1989). A Language for Legal Discourse, I. Basic Features,
+<i>Proceedings of the Second International Conference on Artificial Intelligence
+and Law</i>, pp.180-189, Vancouver, Canada.
+<p>McCarty, L.T. (1993). OWNERSHIP: A Case Study in the Representation
+of Legal Concepts, Presented at a Conference in Celebration of the 25th
+Anniversary of the Istituto Documentazione Giuridica, Florence, Italy,
+1993.
+<p>Sowa, J.F. (1995). Top-level ontological categories, <i>Int. Journal
+of Human-Computer Studies</i>, Vol 43, pp.669-685.
+<p>Stamper, R.K. (1980). LEGOL: Modelling Legal Rules by Computer, <i>Computer
+Science and Law</i>, Bryan Niblett (<i>ed.</i>), Cambridge University Press,
+Cambridge, United Kingdom.
+<p>Stamper, R.K. (1991). The Role of Semantics in Legal Expert Systems
+and Legal Reasoning, <i>Ratio Juris</i>, Vol. 4, No. 2, pp.219-244.
+<p>Stamper, R.K. (1996). Signs, Information, Norms and Systems,
+<i>Signs
+at Work</i>, B. Holmqvist, and P.B. Andersen (<i>eds</i>.), De Bruyter,
+Berlin, Germany.
+<p>Valente, A. (1995). <i>Legal Knowledge Engineering; A Modelling Approach</i>,
+University of Amsterdam, The Netherlands, IOS Press, Amsterdam, The Netherlands.
+<p>Visser, P.R.S. (1995). <i>Knowledge Specification for Multiple Legal
+Tasks; A Case Study of the Interaction Problem in the Legal Domain, </i>Computer
+/ Law Series, No. 17, Kluwer Law International, The Hague, The Netherlands.
+<p>Visser, P.R.S., and T.J.M. Bench-Capon (1996). The Formal Specification
+of a Legal Ontology, <i>Proceedings of the Ninth International Conference
+on Legal Knowledge-Based Systems</i> (JURIX'96), Van Kralingen
+<i>et al.
+</i>(<i>eds</i>.), Tilburg, The Netherlands, pp.15-24.
+<p>Visser, P.R.S. (1997). <i>Structuring Multiple Ontologies in Heterogeneous
+Distributed Architectures</i>, Fellowship Report, Intelligent Business
+Systems, BT Laboratories, Martlesham Heath, Ipswich, UK.
+<p>Visser, P.R.S. and R.G.F. Winkels (1997). <i>Proceedings of the First
+International Workshop on Legal Ontologies; LEGONT '97</i>, University
+of Melbourne, Law School, Melbourne, Victoria, Australia.
+<p>Visser, P.R.S., R.W. van Kralingen and T.J.M. Bench-Capon (1997), A
+Method for the Development of Legal Knowledge Systems, <i>Proceedings of
+the Sixth International Conference on Artificial Intelligence and Law </i>(ICAIL'97),
+Melbourne, Australia.
+<p>Visser, P.R.S. and T.J.M. Bench-Capon (1998). A Comparison of Four Ontologies
+for the Design of Legal Knowledge Systems, <i>Artificial Intelligence and
+Law</i> (accepted for publication).
+<br>&nbsp;
+<p><b>Endnotes</b><b></b>
+<p><a NAME="N_1_"></a>1.&nbsp; A full appreciation of Stamper's theory
+requires a more extensive discussion than the - necessarily very brief
+- description presented in this article. We have attempted to compile Stamper's
+1991 and his 1996 article although there are some notable differences between
+both articles. When confusion could arise, we have used his 1996 article.
+<p><a NAME="N_2_"></a>2. This section is based on a similar discussion
+in Visser (1997).
+<p><a NAME="N_3_"></a>3.&nbsp; For a critical review of these distinctions,
+see Guarino (1997b).</ul>
+</ul>
+
+</body>
+</html>

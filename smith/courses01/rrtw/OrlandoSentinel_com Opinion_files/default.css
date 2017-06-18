@@ -1,0 +1,153 @@
+#deckhead {
+	FONT-WEIGHT: bold; FONT-SIZE: smaller; COLOR: gray
+}
+#headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt
+}
+#story-headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt
+}
+#nodecoration {
+	TEXT-DECORATION: none
+}
+#subhead {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: gray
+}
+#byline {
+	FONT-WEIGHT: bold
+}
+#titleline {
+	FONT-SIZE: xx-small; FONT-FAMILY: Arial, Helvetica
+}
+#date {
+	FONT-SIZE: smaller; COLOR: gray
+}
+#source-credit {
+	FONT-WEIGHT: normal; FONT-SIZE: smaller; FONT-STYLE: normal
+}
+#copyright {
+	FONT-SIZE: xx-small; FONT-STYLE: italic
+}
+#text {
+	
+}
+#caption {
+	
+}
+#credit {
+	FONT-SIZE: smaller; COLOR: gray
+}
+#note {
+	FONT-SIZE: xx-small; COLOR: gray
+}
+#rail-credit {
+	COLOR: gray
+}
+#rail-date {
+	COLOR: gray
+}
+#heading {
+	COLOR: #336699; FONT-FAMILY: Arial, Helvetica
+}
+#subheading {
+	FONT-SIZE: smaller; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica
+}
+#poll-question {
+	FONT-WEIGHT: normal
+}
+#poll-choice {
+	COLOR: gray
+}
+#quiz-question {
+	FONT-WEIGHT: normal
+}
+#quiz-choice {
+	FONT-SIZE: smaller; COLOR: gray
+}
+#quiz-correct {
+	FONT-SIZE: medium
+}
+#quiz-incorrect {
+	FONT-SIZE: medium; COLOR: red
+}
+#quiz-score {
+	FONT-SIZE: smaller
+}
+#quiz-explanation {
+	COLOR: gray
+}
+#quiz-selected {
+	FONT-WEIGHT: normal; COLOR: blue
+}
+#graffiti-topic {
+	FONT-WEIGHT: normal
+}
+#graffiti-comment {
+	COLOR: gray
+}
+#form-title {
+	FONT-WEIGHT: normal; COLOR: gray
+}
+#form-description {
+	
+}
+#form-label {
+	FONT-WEIGHT: normal; COLOR: gray
+}
+#column-title {
+	TEXT-TRANSFORM: uppercase; COLOR: gray
+}
+#columnist-name {
+	FONT-SIZE: medium; COLOR: darkred
+}
+#brief {
+	FONT-FAMILY: Arial, Helvetica
+}
+#brief-headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt
+}
+#brief-main-headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt
+}
+#navi-hover {
+	COLOR: #003399; TEXT-DECORATION: underline
+}
+#navi-hover:hover {
+	COLOR: #fbebb9; TEXT-DECORATION: none
+}
+#specialbreaking {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cc9900; TEXT-DECORATION: none
+}
+A.specialbreaking:link {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.specialbreaking:active {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.specialbreaking:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.p2i:link {
+	FONT-WEIGHT: bold; COLOR: #39875b
+}
+A.p2i:active {
+	FONT-WEIGHT: bold; COLOR: #fbebb9
+}
+A.p2i:visited {
+	FONT-WEIGHT: bold; COLOR: #39875b
+}
+A.windoidbar:link {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+A.windoidbar:active {
+	FONT-WEIGHT: bold; COLOR: #fbebb9
+}
+A.windoidbar:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+#broadbandnavi-hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline; link: #ffffff; alink: #ffffff
+}

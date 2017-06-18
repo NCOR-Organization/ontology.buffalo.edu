@@ -1,0 +1,75 @@
+A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ulink {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #990033
+}
+.text {
+	FONT-SIZE: 11pt; COLOR: #333333; TEXT-INDENT: 11pt; LINE-HEIGHT: 13pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.head {
+	FONT-SIZE: 16pt; COLOR: #003366; FONT-FAMILY: "Arial", serif
+}
+.subhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003366; LINE-HEIGHT: 14pt; FONT-FAMILY: "Helvetica", Arial, sans-serif
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #333333; LINE-HEIGHT: 16pt; FONT-FAMILY: "Helvetica", Arial, sans-serif
+}
+.listtext {
+	FONT-SIZE: 11pt; COLOR: #333333; LINE-HEIGHT: 14pt; FONT-FAMILY: "Arial", Times, serif
+}
+.tocdescrip {
+	FONT-SIZE: 10pt; COLOR: #333333; LINE-HEIGHT: 11pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.bibtext {
+	FONT-SIZE: 9pt; COLOR: #333333; LINE-HEIGHT: 11pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #003366; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.cqr {
+	FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #003366; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.subtitle {
+	FONT-SIZE: 14pt; COLOR: #003366; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.bibtitle {
+	COLOR: #003366; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.author {
+	FONT-SIZE: 11pt; COLOR: #333333; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.copyright {
+	FONT-SIZE: 9pt; COLOR: #333333; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.caption {
+	FONT-SIZE: 10pt; COLOR: #333333; LINE-HEIGHT: 13pt; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.subhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003366; LINE-HEIGHT: 14pt; FONT-FAMILY: "Helvetica", Arial, sans-serif
+}
+.subsubhead {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003366; LINE-HEIGHT: 13pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.resources-sub {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003366; LINE-HEIGHT: 14pt; FONT-FAMILY: "Helvetica", Arial, sans-serif
+}
+.text-leftjustified {
+	FONT-SIZE: 11pt; COLOR: #333333; LINE-HEIGHT: 14pt; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.atext-leftjustified {
+	FONT-SIZE: 10pt; COLOR: #333333; LINE-HEIGHT: 13pt; FONT-FAMILY: "Arial", Times, serif
+}
+.date {
+	FONT-SIZE: 10pt; COLOR: #333333; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.footnote {
+	FONT-SIZE: 9pt; COLOR: #333333; LINE-HEIGHT: 11pt; FONT-FAMILY: "Times New Roman", Times , serif
+}
+.sidebar-header {
+	MARGIN-TOP: 0.5in; FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003366; LINE-HEIGHT: 14pt; FONT-FAMILY: "Helvetica", Arial, sans-serif
+}

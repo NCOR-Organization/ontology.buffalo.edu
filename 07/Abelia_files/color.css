@@ -1,0 +1,412 @@
+/* STIL FOR TOPPEN MED HOVEDMENY */
+
+div.framework div.header h1 {
+	color:#ffffff;
+	background:#005a80;
+}
+
+/* Hovedmeny */
+div.framework div.header div.mainmenu {
+	background:#005a80;
+}
+
+div.framework div.header div.mainmenu li a {
+	color:white;
+	background:url(img/decor_mainmenu_a.gif) top left no-repeat #005a80;
+}
+
+div.framework div.header div.mainmenu li a:hover {
+	color:white;
+	background:url(img/decor_mainmenu_a_hover.gif) top left no-repeat #00759f;
+}
+
+div.framework div.header div.mainmenu li a.active {
+	color:white;
+	background:url(img/decor_mainmenu_a_hover.gif) top left no-repeat #00759f;
+}
+
+div.framework div.header div.mainmenu form {
+	background:url(img/decor_header_search.gif) top right no-repeat #005a80;
+}
+
+div.framework div.header div.mainmenu form input.text {
+	border-top:1px solid #154c63;
+	border-right:1px solid #0190c3;
+	border-bottom:1px solid #0190c3;
+	border-left:1px solid #154c63;
+	background:#0082b0;
+	color:#bae6fb;
+}
+
+div.framework div.header div.mainmenu form input.button {
+	background:url(img/button_sok.gif) no-repeat #005a80;
+}
+
+div.framework div.header div.mainmenu div.clear {
+	background:#ffffff;
+}
+
+
+
+/* STIL TIL VENSTRE KOLONNE */
+
+div.framework div.center {
+	background:url(img/decor_center_background.gif);
+}
+
+div.framework div.center div.left {
+	background:#eef1f1;
+}
+
+div.framework div.center div.left h2 {
+	color:#ffffff;
+	background:url(img/decor_left_header_background.gif) no-repeat #00759f;
+}
+
+/* Undermeny */
+div.framework div.center div.left div.submenu ul {
+	background:#ffffff;
+}
+
+div.framework div.center div.left div.submenu li {
+	background:url(img/list_style_image1.gif) 11px 9px no-repeat #d5dddd;
+}
+
+div.framework div.center div.left div.submenu li a {
+	color:#005a80;
+}
+
+div.framework div.center div.left div.submenu li a:hover {
+	color:#00759f;
+}
+
+div.framework div.center div.left div.submenu li.open {
+	background:url(img/list_style_image1_open.gif) 11px 10px no-repeat #d5dddd;
+}
+
+div.framework div.center div.left div.submenu li.open a {
+	color:#00759f;
+}
+
+div.framework div.center div.left div.submenu li.project {
+	background:url(img/list_style_image1_project.gif) 11px 10px no-repeat #00759f;
+}
+
+div.framework div.center div.left div.submenu li.project a {
+	color:#d5dddd;
+}
+
+div.framework div.center div.left div.submenu li.project a:hover {
+	color:#d5dddd;
+}
+
+div.framework div.center div.left div.submenu li ul {
+	border-top:2px solid #ffffff;
+	background:#f7f8f8;
+}
+
+div.framework div.center div.left div.submenu li ul li {
+	background:#f7f8f8;
+}
+
+div.framework div.center div.left div.submenu li.open ul li a {
+	color:#5e757d;
+}
+
+div.framework div.center div.left div.submenu li.open ul li a:hover {
+	color:#000000;
+}
+
+div.framework div.center div.left div.submenu li ul li.active a {
+	color:#000000;
+}
+
+/* Nyhetsbrev */
+div.framework div.center div.left div.newsletter p {
+	color:#000000;
+	background:url(img/icon_envelope.gif) 10px 11px no-repeat;
+}
+
+/* Medlemslogin */
+div.framework div.center div.left div.memberlogin input {
+	border:1px solid #a8a8a8;
+}
+
+div.framework div.center div.left div.memberlogin a {
+	color:#00759f;
+}
+
+div.framework div.center div.left div.memberlogin a:hover {
+	color:#666666;
+}
+
+div.framework div.center div.left div.banners {
+	border-top:2px solid #ffffff;
+}
+
+/* MIDTERSTE KOLONNE: HOVEDINNHOLD */
+
+div.framework div.center div.content {
+	background:#f7f8f8;
+}
+
+div.framework div.center div.content h1,h2,h3 {
+	color:#005A80;
+}
+
+div.framework div.center div.content span.imgtext {
+	color:#666666;
+}
+
+div.framework div.center div.content h3 a {
+	color:#005A80;
+}
+
+div.framework div.center div.content a {
+	color:#000000;
+}
+
+div.framework div.center div.content a.blue {
+	color:#00759f;
+}
+
+div.framework div.center div.content a.button {
+	color:#005a80;
+}
+
+div.framework div.center div.content a.button:hover {
+	color:#005a80;
+}
+
+div.framework div.center div.content a:hover {
+	color:#666666;
+}
+
+div.framework div.center div.content a span.more {
+	color:#006f9e;
+}
+
+div.framework div.center div.content a:hover span.more {
+	color:#666666;
+}
+
+div.framework div.center div.content a.archive {
+	color:#00759f;
+}
+
+div.framework div.center div.content a.archive:hover {
+	color:#666666;
+}
+
+div.framework div.center div.content span.date {
+	color:#5e757d;
+}
+
+div.framework div.center div.content span.message {
+	color:#f49300;
+}
+
+div.framework div.center div.content p.ingress {
+	
+}
+
+div.framework div.center div.content div.breadcrumbs {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.breadcrumbs a {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.breadcrumbs a:hover {
+	color:#666666;
+}
+
+div.framework div.center div.content div.contentpadding div.tipprint {
+	background:#ffffff;
+}
+
+div.framework div.center div.content div.contentpadding div.tipprint a {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.contentpadding div.tipprint a:hover {
+	color:#666666;
+}
+
+div.framework div.center div.content caption {
+	color:#005a80;
+	background:#d5dddd;
+}
+
+div.framework div.center div.content th {
+	color:#666666;
+	background:#eef1f1;
+}
+
+div.framework div.center div.content td {
+	background:#ffffff;
+}
+
+div.framework div.center div.content td a {
+	color:#00759f;
+}
+
+div.framework div.center div.content table.calender td {
+	border-bottom:1px solid #eef1f1;
+}
+
+div.framework div.center div.content table.calender tr.lastrow td {
+	border-bottom:1px solid #d5dddd;
+}
+
+div.framework div.center div.content table.relations td {
+	color:#000000;
+}
+
+div.framework div.center div.content table.filelist th {
+	background:#d5dddd;
+}
+
+
+div.framework div.center div.content li {
+	list-style:square;
+	color:#005a80;
+	margin-left:13px;
+}
+
+div.framework div.center div.content li span {
+	color:#000000;
+}
+
+div.framework div.center div.content td.rightborder {
+	border-right:2px solid #f7f8f8;
+}
+
+div.framework div.center div.content th.rightborder {
+	border-right:2px solid #f7f8f8;
+}
+
+div.framework div.center div.content tr.stripe td {
+	background:#eef1f1;
+}
+
+div.framework div.center div.content div.paging {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.paging a {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.paging span {
+	color:#666666;
+}
+
+div.framework div.center div.content div.match a {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.match a.header {
+	background:#eef1f1;
+}
+
+div.framework div.center div.content div.person {
+	background:#eef1f1;
+}
+
+div.framework div.center div.content div.person h3 {
+	color:#000000;
+}
+
+div.framework div.center div.content div.person a {
+	color:#00759f;
+}
+
+div.framework div.center div.content div.person a:hover {
+	color:#666666;
+}
+
+div.framework div.center div.content td {
+	color:#666666;
+}
+
+div.framework div.center div.content form.dynamicform input {
+	border:1px solid #a8a8a8;
+}
+
+div.framework div.center div.content form.dynamicform input.radio {
+	border:none;
+}
+div.framework div.center div.content form.dynamicform input.checkbox {
+	border:none;
+}
+
+div.framework div.center div.content form.dynamicform select {
+	border:1px solid #a8a8a8;
+}
+
+
+/* HØYRE KOLONNE */
+
+div.framework div.center div.right {
+	background:#eef1f1;
+}
+
+div.framework div.center div.right h2 {
+	color:#ffffff;
+	background:url(img/decor_right_header_background.gif) no-repeat #005a80;
+}
+
+/* Kalender */
+div.framework div.center div.right div.calender h3 {
+	color:#005a80;
+}
+
+div.framework div.center div.right div.calender a {
+	color:#00759f;
+}
+
+div.framework div.center div.right div.calender a:hover {
+	color:#666666;
+}
+
+/* Poll */
+div.framework div.center div.right div.poll td.column {
+	background:#d5dddd;
+}
+
+/* Tema */
+div.framework div.center div.right div.topical h3 {
+	color:#005a80;
+}
+
+div.framework div.center div.right div.topical a {
+	color:#00759f;
+}
+
+div.framework div.center div.right div.topical a:hover {
+	color:#666666;
+}
+
+div.framework div.footer {
+	color:#666666;
+}
+
+div.framework div.footer div.left a {
+	color:#006f9e;
+}
+
+div.framework div.footer div.left a:hover {
+	color:#666666;
+}
+
+
+
+/* LØSE KLASSER */
+.button {
+	border:1px solid #a8a8a8;
+	background:url(img/decor_button_background.gif) center left repeat-x;
+	color:#005a80;
+}
+

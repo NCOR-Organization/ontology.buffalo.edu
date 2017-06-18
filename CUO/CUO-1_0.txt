@@ -1,0 +1,41 @@
+CUO is_a hierarchy in simple text format
+	
+entity
+    continuant
+	independent continuant
+	    	material entity
+        		object	
+        		object aggregate					
+        		fiat object part	
+        	object boundary	
+        	site
+        dependent continuant
+        	generically dependent continuant
+        	specifically dependent continuant
+        		quality
+        		realizable entity
+        		function
+        		role		
+        		disposition
+	spatial region
+		zero-dimensional region		
+		one-dimensional region
+		two-dimensional region
+		three-dimensional region
+    occurrent
+	processual entity
+        	process
+        	process aggregate
+        	fiat process part
+        	process boundary
+        spatiotemporal region
+        	scattered spatiotemporal region
+        	connected spatiotemporal region
+        		spatiotemporal instant
+        		spatiotemporal interval
+        temporal region
+        	scattered temporal region
+        	connected temporal region
+        		temporal instant
+        		temporal interval
+
