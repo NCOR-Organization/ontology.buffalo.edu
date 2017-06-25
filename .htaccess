@@ -1,0 +1,2 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/baarle/derby.bmp" "http://acsu.buffalo.edu/~ontdocs/derby.bmp"
