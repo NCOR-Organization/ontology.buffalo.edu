@@ -1,0 +1,2 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/02/berlin/BS6.pdf" "http://www.acsu.buffalo.edu/~ontdocs/BS6.pdf"

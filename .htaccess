@@ -1,2 +1,14 @@
 # 301 Redirects to retain old URLs
-Redirect 301 "/smith/baarle/derby.bmp" "http://acsu.buffalo.edu/~ontdocs/derby.bmp"
+Redirect 301 "/12/immunology_ontology/Courtot_CytometryOntologyFramework.pdf" "http://www.acsu.buffalo.edu/~ontdocs/Courtot_CytometryOntologyFramework.pdf"
+
+Redirect 301 "/bio/BioPAX_06/OBOFoundryNov06.ppt" "http://www.acsu.buffalo.edu/~ontdocs/OBOFoundryNov06.ppt"
+
+Redirect 301 "/smith/baarle/derby.bmp" "http://www.acsu.buffalo.edu/~ontdocs/derby.bmp"
+
+Redirect 301 "/smith/ppt/Terrorism_War/Kamikazi.ppt" "http://www.acsu.buffalo.edu/~ontdocs/Kamikazi.ppt"
+Redirect 301 "/smith/ppt/Lublin/2Kamikazi.ppt" "http://www.acsu.buffalo.edu/~ontdocs/2Kamikazi.ppt"
+Redirect 301 "/smith/ppt/Truthmaking_UTTR/truthmakers-June2015.ppt" "http://www.acsu.buffalo.edu/~ontdocs/truthmakers-June2015.ppt"
+Redirect 301 "/smith/ppt/IAO/IAO-and-Aboutness-Oct-2013.pptx" "http://www.acsu.buffalo.edu/~ontdocs/IAO-and-Aboutness-Oct-2013.pptx"
+Redirect 301 "/smith/ppt/UMLS/Bremen_July_2003.ppt" "http://www.acsu.buffalo.edu/~ontdocs/Bremen_July_2003.ppt"
+Redirect 301 "/smith/ppt/Geography/Bremen_July_2003.ppt" "http://www.acsu.buffalo.edu/~ontdocs/Bremen_July_2003.ppt"
+Redirect 301 "/smith/ppt/Terrorism_War/Kamikazi(eng).ppt" "http://www.acsu.buffalo.edu/~ontdocs/Kamikazi(eng).ppt"
