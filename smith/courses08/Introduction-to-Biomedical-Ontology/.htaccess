@@ -1,0 +1,9 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD1.wmv" "https://buffalo.box.com/shared/static/6n8u4gqbiu3wwjb8bemkiqawp0nchwdi.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD2.wmv" "https://buffalo.box.com/shared/static/e16xynwnkpbhjprmsayy6llwrf2ghs60.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD3.wmv" "https://buffalo.box.com/shared/static/ehlqd66184k9j9w5mw35gem1lwav2tq8.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD4.wmv" "https://buffalo.box.com/shared/static/pdn0w7lclg6tozoyg7oqkm5pzv53h92h.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD5.wmv" "https://buffalo.box.com/shared/static/3uf9iowr9oyy5fw4mxw2rx4z8billdwi.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD6.wmv" "https://buffalo.box.com/shared/static/n1ouerk1p5kce8dfac1v2gdpnaes8xyv.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD7.wmv" "https://buffalo.box.com/shared/static/jf8of2dohcekviheuw9h3mrp49yww29y.wmv"
+Redirect 301 "/smith/courses08/Introduction-to-Biomedical-Ontology/DVD8.wmv" "https://buffalo.box.com/shared/static/7n9md7a5r82f316gr8xk8zj7uxd93plm.wmv"

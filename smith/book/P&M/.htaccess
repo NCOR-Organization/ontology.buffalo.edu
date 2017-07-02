@@ -1,0 +1,11 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/book/P&M/Bibliography.pdf" "https://buffalo.box.com/shared/static/qq5az9q3u1jnar2b25jd1ipxqsbrf12i.pdf"
+Redirect 301 "/smith/book/P&M/ginsberg.pdf" "https://buffalo.box.com/shared/static/xotfu483cm2wlr06z6zmhfm9iu2xbzgk.pdf"
+Redirect 301 "/smith/book/P&M/index.pdf" "https://buffalo.box.com/shared/static/usjupfijylk9lobde9o7vnndqmaatn2q.pdf"
+Redirect 301 "/smith/book/P&M/Intro_Reinach.pdf" "https://buffalo.box.com/shared/static/yqcajughawqkpve5stdprzb8re38t68r.pdf"
+Redirect 301 "/smith/book/P&M/Kuenne.pdf" "https://buffalo.box.com/shared/static/sw4m6mhylqh4y4gel68j22ebywb59obu.pdf"
+Redirect 301 "/smith/book/P&M/Null.pdf" "https://buffalo.box.com/shared/static/tvjv9i9rn2q9dbjq3qexw9m7ynlvn71k.pdf"
+Redirect 301 "/smith/book/P&M/pieces.pdf" "https://buffalo.box.com/shared/static/uyzk07ef3o8qkgtu6zugh8nhl3x2zfyw.pdf"
+Redirect 301 "/smith/book/P&M/Reinach_Negative_Judgment.pdf" "https://buffalo.box.com/s/bu50qosbget3t8waacm35fbv2xasffjl"
+Redirect 301 "/smith/book/P&M/simons.pdf" "https://buffalo.box.com/shared/static/uvzeogxwnr6ubrv3spvv5hf8c27kiqjr.pdf"
+Redirect 301 "/smith/book/P&M/Willard.pdf" "https://buffalo.box.com/shared/static/ej839vl7da2kqcqsmprifdcbj6msipzg.pdf"
