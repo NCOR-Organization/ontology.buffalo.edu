@@ -72,8 +72,6 @@ Redirect 301 "/smith/book/Reinach/reinach_biography.pdf" "https://buffalo.box.co
 
 Redirect 301 "/smith/articles/Einleitung.pdf" "https://buffalo.box.com/shared/static/96ar208xg7stb7omafdsy26oku8bskm1.pdf"
 Redirect 301 "/smith/articles/Introduction.pdf" "https://buffalo.box.com/shared/static/tl91nlp7x6yx8eiqpgd7pj3862g4o21p.pdf"
-Redirect 301 "" ""
-Redirect 301 "" ""
 
 
 
