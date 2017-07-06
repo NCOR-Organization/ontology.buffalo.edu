@@ -1,0 +1,9 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/courses03/md/Khamara.pdf" "https://buffalo.box.com/shared/static/dkr2vx5po8knhbajvprcuc1lu6g5bg9z.pdf"
+Redirect 301 "/smith/courses03/md/Nerlich.pdf" "https://buffalo.box.com/shared/static/0h6l2u8ou0v5xn8lnqcrum0sa6igenih.pdf"
+Redirect 301 "/smith/courses03/tb/pieces.pdf" "https://buffalo.box.com/shared/static/o2a8z37vvu02h68nvzktp6ekhu6616m7.pdf"
+Redirect 301 "/smith/courses03/tb/PribbenowMidwinters.pdf" "https://buffalo.box.com/shared/static/3cbftl0cdy39jseql5ts4srjsqquos75.pdf"
+Redirect 301 "/smith/courses03/md/Sklar.pdf" "https://buffalo.box.com/shared/static/j4dapu4084ehkehh0qzvyljcm9gkujog.pdf"
+Redirect 301 "/smith/courses03/tb/ThompsonIdentityOverTime.pdf" "https://buffalo.box.com/shared/static/oje89j0xwog3f417m125bndlth18r6b2.pdf"
+Redirect 301 "/smith/courses03/md/VieuSpRep.pdf" "https://buffalo.box.com/shared/static/l69got8e753hd7jbe1zzpqvhbnlqv7ze.pdf"
+Redirect 301 "/smith/courses03/tb/WonderWebD17V2.0.pdf" "https://buffalo.box.com/shared/static/f3mnpukt73ag1aelgn52kgi6w17mvin6.pdf"

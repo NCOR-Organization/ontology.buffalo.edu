@@ -1,0 +1,9 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/book/Reinach/Einleitung.pdf" "https://buffalo.box.com/shared/static/adl76d6lmfry01jv3dvmrezf1myv00i6.pdf"
+Redirect 301 "/smith/book/Reinach/Introduction.pdf" "https://buffalo.box.com/shared/static/etk3wzw7irp18ooqongyz0oxpmap5hbq.pdf"
+Redirect 301 "/smith/book/Reinach/reinach_biography.pdf" "https://buffalo.box.com/shared/static/hly5ikizk77li0p76yjgkg1xqfbuhsu7.pdf"
+Redirect 301 "/smith/book/mystery-of-capital.pdf" "https://buffalo.box.com/shared/static/a7ud2xqd2rjyj8wwji36rvjtf8xub44l.pdf"
+Redirect 301 "/smith/book/Parts-and-Moments.pdf" "https://buffalo.box.com/shared/static/pcdb1u85je4izok061yma9vuwgykfbnw.pdf"
+Redirect 301 "/smith/book/Philosophy-and-the-Cognitive-Sciences.pdf" "https://buffalo.box.com/shared/static/7k1dk6dyrnbb93i7ejwepw4y0tj79v0k.pdf"
+Redirect 301 "/smith/book/Rationality.pdf" "https://buffalo.box.com/shared/static/o3ss3qvo0dnjfuv6oid92fy7ub7xt2jh.pdf"
+Redirect 301 "/smith/book/Structure_and_Gestalt.pdf" "https://buffalo.box.com/shared/static/xv7t7tskgkp01ra3kirfdhv79vderlau.pdf"

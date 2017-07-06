@@ -1,0 +1,11 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/book/FoGT/Ehrenfels_Gestalt.pdf" "https://buffalo.box.com/shared/static/4fy2hl2v6wl0kwbi52ln77ahv8xuvz1w.pdf"
+Redirect 301 "/smith/book/FoGT/Bibliography.pdf" "https://buffalo.box.com/shared/static/77tu5mt8mgoiejq0rwtp6bcmwxttdn46.pdf"
+Redirect 301 "/smith/book/FoGT/Ehrenfels_Gestalt_1932.pdf" "https://buffalo.box.com/shared/static/5rc0eskpay9kmri9ashay2d8p5c2k6k5.pdf"
+Redirect 301 "/smith/book/FoGT/Ehrenfels_Purity.pdf" "https://buffalo.box.com/shared/static/gsicro9h6quk2vu11qfn41hchiixyoos.pdf"
+Redirect 301 "/smith/book/FoGT/Grelling.pdf" "https://buffalo.box.com/shared/static/6jma0ufrpoeft1ew6fqol6wz4lqf6zas.pdf"
+Redirect 301 "/smith/book/FoGT/Grelling_Gestalt.pdf" "https://buffalo.box.com/shared/static/h79hr134tsgtjdadb3xkilfyqu5ec104.pdf"
+Redirect 301 "/smith/book/FoGT/Grelling_Supplement.pdf" "https://buffalo.box.com/shared/static/jgusmam6s25hq23snhhozxi37zxt8reg.pdf"
+Redirect 301 "/smith/book/FoGT/Grelling-Logic-of-Dependence.pdf" "https://buffalo.box.com/shared/static/mawyzxjafbfnsvnbrfa14i6dzj0xky39.pdf"
+Redirect 301 "/smith/book/FoGT/index.pdf" "https://buffalo.box.com/shared/static/vib4n085bo2sscpve4tttnnm4xceqxg9.pdf"
+Redirect 301 "/smith/book/FoGT/Simons_on_Grelling.pdf" "https://buffalo.box.com/shared/static/0no2emqujjyj13ff5imwsta9difmf0r5.pdf"

@@ -1,6 +1,8 @@
 # 301 Redirects to retain old URLs
 Redirect 301 "/medo/WorkshopAMIA2003_files/Audio1.wma" "https://buffalo.box.com/shared/static/6lmzggxwt4nujf1254wq2tmxzty5vcqu.wma"
 Redirect 301 "/medo/WorkshopAMIA2003_files/Audio1.wma" "https://buffalo.box.com/shared/static/a5b2n6ecj8f2jzlfvkzniepc3od4ftob.wma"
+Redirect 301 "/medo/WorkshopAMIA2003_files/Workshop1.ppt" "https://buffalo.box.com/shared/static/n9hw16xcxcnc197pybc16o2xooxirpju.ppt"
+Redirect 301 "/medo/WorkshopAMIA2003_files/Workshop2.ppt" "https://buffalo.box.com/shared/static/sbmbk4nzzl3mjap02shzrdebpxn7d4r3.ppt"
 Redirect 301 "/medo/ACAAI-2012.pdf" "https://buffalo.box.com/shared/static/ewkma7d4ab312jhfx4ibc0f8szjt05b9.pdf"
 Redirect 301 "/medo/ACGT.pdf" "https://buffalo.box.com/shared/static/5iis3jzbohl9zfqggh56fkzz2skkleat.pdf"
 Redirect 301 "/medo/adaptivity.pdf" "https://buffalo.box.com/shared/static/mth7st6uhm6erw8y73fmgqq68v3oucv9.pdf"

@@ -1,0 +1,9 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/05/fb/smith.ppt" "https://buffalo.box.com/shared/static/lshss5rdriqpcfmpygpzmix0hjh6xm4z.ppt"
+Redirect 301 "/05/fb/schulz1.ppt" "https://buffalo.box.com/shared/static/hc62d31noxlppgohy58rnjn55zcjqi32.ppt"
+Redirect 301 "/05/fb/donnelly.ppt" "https://buffalo.box.com/shared/static/yeij7u2wgic3knoy1xuqe1b58lw1s5gz.ppt"
+Redirect 301 "/05/fb/bittner.ppt" "https://buffalo.box.com/shared/static/jv70t32ambh19oekl4ry4ecr1p9pbyz9.ppt"
+Redirect 301 "/05/fb/schulz2.ppt" "https://buffalo.box.com/shared/static/tby1t17l4a6q838z4in4bqqjl6yo8qy3.ppt"
+Redirect 301 "/05/fb/novotny.ppt" "https://buffalo.box.com/shared/static/zwz80fg1m24tu9dowm8o88dbqj14gqfi.ppt"
+Redirect 301 "/05/fb/hennig.ppt" "https://buffalo.box.com/shared/static/v3tr5jsvl1a2uca0okrhj58qitdtrsng.ppt"
+Redirect 301 "/05/fb/Boeker.pdf" "https://buffalo.box.com/shared/static/r7sasn3it5vl03a7gneomnntckmpm6nf.pdf"

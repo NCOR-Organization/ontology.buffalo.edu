@@ -1,0 +1,13 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/06/os2/musen1.ppt" "https://buffalo.box.com/shared/static/w0lp6bov2x0vs6yjgmw2wtr54aw7t0w7.ppt"
+Redirect 301 "/06/os2/musen2.ppt" "https://buffalo.box.com/shared/static/nzeaznsztceerifxe5ptpk3wfai6q5t0.ppt"
+Redirect 301 "/06/os2/smith1.ppt" "https://buffalo.box.com/shared/static/1mzpdk2aspqbv0mabcgq3hcg4ia3qfok.ppt"
+Redirect 301 "/06/os2/bodenreider1.ppt" "https://buffalo.box.com/shared/static/6jlc0gvfgdpux7mlzc718jp1j476hnyj.ppt"
+Redirect 301 "/06/os2/smith2.ppt" "https://buffalo.box.com/shared/static/ciszu5niff1zpe7p31pzsoi453xy943d.ppt"
+Redirect 301 "/06/os2/musen3.ppt" "https://buffalo.box.com/shared/static/tuheyp20h8n4vkj2bv5tsjrtidsl4u5g.ppt"
+Redirect 301 "/06/os2/ceusters1.ppt" "https://buffalo.box.com/shared/static/y7wjkuwij6n3dfj1ub1bdc0kr9iudf96.ppt"
+Redirect 301 "/06/os2/ceusters2.ppt" "https://buffalo.box.com/shared/static/0au8arlzcfw1a8ql6o66j7x6d1sr5kk5.ppt"
+Redirect 301 "/06/os2/ceusters3.ppt" "https://buffalo.box.com/shared/static/7me14zo319p3yhkovmr8jutveekhj8i2.ppt"
+Redirect 301 "/06/os2/bodenreider2.ppt" "https://buffalo.box.com/shared/static/6iyul9nv3k0nrig8kttlqxrg59pprqbi.ppt"
+Redirect 301 "/06/os2/bodenreider3.ppt" "https://buffalo.box.com/shared/static/fb55up2wq4bocxklrdzv83ho6ur37k6a.ppt"
+Redirect 301 "/06/os2/smith3.ppt" "https://buffalo.box.com/shared/static/nssu27ytuo776c33a0mxyefvxu0t13b3.ppt"

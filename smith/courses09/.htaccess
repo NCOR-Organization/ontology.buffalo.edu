@@ -1,0 +1,9 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/courses09/1_Aristotle.ppt" "https://buffalo.box.com/shared/static/x8iv5auyvpznwebiolova0elwbcr8al6.ppt"
+Redirect 301 "/smith/courses09/2_Fantology.ppt" "https://buffalo.box.com/shared/static/yj3hsutopjplq4aqj6nh7u724fmsz3z2.ppt"
+Redirect 301 "/smith/courses09/3_Searle_Documents.ppt" "https://buffalo.box.com/shared/static/5y1o905rciabpl12sda4xut6jn56cspk.ppt"
+Redirect 301 "/smith/courses09/4_WhyIamNotaPhilosopherOct06.ppt" "https://buffalo.box.com/shared/static/ey4xtzsujafhm571dh84cbrs250f2nr4.ppt"
+Redirect 301 "/smith/courses09/5_computer science_long.ppt" "https://buffalo.box.com/shared/static/aflah6d2ob0o9frta8bs06gqwtx0i71t.ppt"
+Redirect 301 "/smith/courses09/6_Semantic_Web.ppt" "https://buffalo.box.com/shared/static/t36kve7if5b0ei206dayunenohxm9bzz.ppt"
+Redirect 301 "/smith/courses09/7_BFO_Common_Standard.ppt" "https://buffalo.box.com/shared/static/tk4u6gtwiwu97if9iwy35u9ym611ic1l.ppt"
+Redirect 301 "/smith/courses09/8_UCoreSL.ppt" "https://buffalo.box.com/shared/static/xeu3zihadleehw1eh37a54d7i4sbh9dw.ppt"

@@ -1,0 +1,7 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/08/TrainingCourse/1-Introduction.pdf" "https://buffalo.box.com/shared/static/krtwfbabvkzvjaeibamngzryo4xgndob.pdf"
+Redirect 301 "/08/TrainingCourse/3-OpenBiomedicalOntologies.pdf" "https://buffalo.box.com/shared/static/f013mhzqswamvsbf64j19pqxtqeitimu.pdf"
+Redirect 301 "/08/TrainingCourse/5-OrganismFunctionDisease.pdf" "https://buffalo.box.com/shared/static/2m8b7807cwqev5q77cs0yfiqrvodntca.pdf"
+Redirect 301 "/08/TrainingCourse/6-GO-FMA-IDO.pdf" "https://buffalo.box.com/shared/static/a2kga6df714e6vlp2xt16luuuqacvm3e.pdf"
+Redirect 301 "/08/TrainingCourse/8-FurtherApplications.pdf" "https://buffalo.box.com/shared/static/669hnw9umza6ysfg37bmfff74mdnwczj.pdf"
+Redirect 301 "/08/TrainingCourse/Slides.pdf" "https://buffalo.box.com/shared/static/avvnxb1i3ffg0pwd506mbxnpt8yxvlvo.pdf"

@@ -1,0 +1,13 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/book/austrian_philosophy/Introduction.pdf" "https://buffalo.box.com/shared/static/um0ositwg4fwikungrmbio2ainc75tv0.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/References.pdf" "https://buffalo.box.com/shared/static/knl7twztrwf2aangq9wkditcvvbrbq4o.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH1.pdf" "https://buffalo.box.com/shared/static/fgpoi2w2433ngd7590m9bt13wrv62wrx.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH2.pdf" "https://buffalo.box.com/shared/static/28rshv7b7jsz34uml4k2gtaif6oa9whr.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH3.pdf" "https://buffalo.box.com/shared/static/djebfwp6akr2qdxsbkekc3qfuoge71rl.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH4.pdf" "https://buffalo.box.com/shared/static/ydnhbm3v7j1mq7ubm5bur2i8103pithz.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH5.pdf" "https://buffalo.box.com/shared/static/jp7mrnbbr5u3hicp847j5kw9uux6ytaw.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH6.pdf" "https://buffalo.box.com/shared/static/noxd5f30japevoel3xkafrprbtnr0x0d.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH7.pdf" "https://buffalo.box.com/shared/static/nwox5aodi4ab2dz9ctqjfheyqvbiw17z.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH8.pdf" "https://buffalo.box.com/shared/static/bbaufv3x8xyvvi6v27m3xw35n75smu6d.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH9.pdf" "https://buffalo.box.com/shared/static/dg0ew2r10bfjp9zs0k4pxhvj2aph7t94.pdf"
+Redirect 301 "/smith/book/austrian_philosophy/CH10.pdf" "https://buffalo.box.com/shared/static/vxd52t2upc83acq6phrdja2v1lsqc35r.pdf"
