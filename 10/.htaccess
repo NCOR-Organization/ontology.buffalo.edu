@@ -1,0 +1,5 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/10/Searle_MSW_Basel_Aug2010.ppt" "https://buffalo.box.com/shared/static/2zu3vzbpgaxrzm1zrg5mb42yzfil1bxh.ppt"
+Redirect 301 "/10/Bozzi_Program.pdf" "https://buffalo.box.com/shared/static/sfqgobmfluxul4mdx640j30ds3u7w3ud.pdf"
+Redirect 301 "/10/HowToBuildAnOntology_Oct2010.ppt" "https://buffalo.box.com/shared/static/8524az14v01wqe9et8s9y1uiof44baw5.ppt"
+Redirect 301 "/10/protege61.pdf" "https://buffalo.box.com/shared/static/j2v9o8otmfaqtlsncct95jfm3unnplgi.pdf"
