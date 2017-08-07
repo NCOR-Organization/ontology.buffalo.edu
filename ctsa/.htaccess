@@ -1,0 +1,5 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/ctsa/Orlando-Feb-2013/Grando-CTSA-Ontology.pptx" "https://buffalo.box.com/shared/static/qqunrflw2mwlao46b1k3y3451rgts37t.pptx"
+Redirect 301 "/ctsa/Orlando-Feb-2013/He-CTSA-Ontology.ppt" "https://buffalo.box.com/shared/static/jl3msvvkihmoc4vocoq4nm15577dqdsb.pptx"
+Redirect 301 "/ctsa/Orlando-Feb-2013/Holmes-CTSA-Ontology.pptx" "https://buffalo.box.com/shared/static/1fhzmav3jeo61xhijarm9wcn8y7kvht3.pdf"
+Redirect 301 "/ctsa/Orlando-Feb-2013/Kibbe-Disease-Ontology.pptx" "https://buffalo.box.com/shared/static/8dy85ubhuv1l43ms3f7epke6w18b4n64.pptx"
