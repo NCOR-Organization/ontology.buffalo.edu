@@ -1,0 +1,2 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/IMMPORT/UB-IMMPORT.pdf" "https://buffalo.box.com/shared/static/ccjghwdf3hu8wrzxafr489trcfuyyf66.pdf"
