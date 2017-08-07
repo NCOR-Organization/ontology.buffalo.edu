@@ -1,0 +1,6 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/ppt/MIE/HL7_RIM_MIE06.ppt" "https://buffalo.box.com/shared/static/7x41qciqy6elthzxt28ttjuslz0gpmup.ppt"
+Redirect 301 "/smith/ppt/Immunology/BISC-Science-Meeting-Feb-27-2014.pptx" "https://buffalo.box.com/shared/static/yai3m0yex138ie2upnt67b6l5ejrlidm.pptx"
+Redirect 301 "/smith/ppt/Immunology/HowToBuildAnOntology-Immunology-June2013.ppt" "https://buffalo.box.com/shared/static/2jnlaqkvwdkuktj8r6o4ehuvjz3ieyt1.ppt"
+Redirect 301 "/smith/ppt/Immunology/IDO-Staph-Goldfain.pptx" "https://buffalo.box.com/shared/static/bu0um71qz6y0vtklt1i71eqqhqpc4pxc.pptx"
+Redirect 301 "/smith/ppt/Immunology/ImmPort-Aug-1-2013.pptx" "https://buffalo.box.com/shared/static/kir1fw30updcx4h6z5hpr7u6gtvc4au5.pptx"
