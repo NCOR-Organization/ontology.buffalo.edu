@@ -1,0 +1,2 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/ACMI.mp4" "https://buffalo.box.com/shared/static/1kx8wjxzuzesykl5cv9rr7kvf4uhpj7s.mp4"
