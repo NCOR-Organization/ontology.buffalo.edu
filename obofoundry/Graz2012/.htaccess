@@ -1,0 +1,5 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/obofoundry/Graz2012/1-The_OBO_Foundry.ppt" "https://buffalo.box.com/shared/static/88uqpcqigtld6a58lw5tsibjquil801s.ppt"
+Redirect 301 "/obofoundry/Graz2012/3-Future.ppt" "https://buffalo.box.com/shared/static/1slgh6rtbmcjczsnz7w25s7ubg5qo4d4.ppt"
+Redirect 301 "/obofoundry/Graz2012/BestPractices.ppt" "https://buffalo.box.com/shared/static/kzw9vwz99p5xk0erdxo67y5ra4tzl4fg.ppt"
+Redirect 301 "/obofoundry/Graz2012/OBO_SemanticWeb.pdf" "https://buffalo.box.com/shared/static/g1obgptzbz7dzfrqjyqe00fajjntjxww.pdf"
