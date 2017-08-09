@@ -1,2 +1,13 @@
 # 301 Redirects to retain old URLs
+Redirect 301 "/13/6CO.pptx" "https://buffalo.box.com/shared/static/hbc4n5sl9pn0cfjbj1fpbkjrl0vomhxw.pptx"
+Redirect 301 "/13/2013_ICBO_OGMS.pptx" "https://buffalo.box.com/shared/static/vdevj9x619aj893zrq3aw88ndhhdbv5r.pptx"
+Redirect 301 "/13/Aging-Rostock-September-2013-short.wmv" "https://buffalo.box.com/shared/static/m4aszmep4l9dacscc863so3vfytlqh3h.wmv"
+Redirect 301 "/13/Aging-Talk-Sep-20-2013-full.mp4" "https://buffalo.box.com/shared/static/uwzbvxpbnh450cdutqv07eyjozjc26mn.mp4"
+Redirect 301 "/13/Death-and-Aging-August-30-2013.wmv" "https://buffalo.box.com/shared/static/71aqy50ofwz8iludf0jzl0vob70ekk3n.wmv"
+Redirect 301 "/13/Documentality-Smith.mp4" "https://buffalo.box.com/shared/static/sz1g2pk2oiub6j7fark7pzvnnud9kjsd.mp4"
 Redirect 301 "/13/ethics-informatics-obamacare.pptx" "https://buffalo.box.com/shared/static/7u52wcfrwb19n9bvj319wd6kvbiwujf9.pptx"
+Redirect 301 "/13/Feb5-DSC-Ontology-Work.pptx" "https://buffalo.box.com/shared/static/1x9d076mtn8f4lk19ks7wlufs85y3109.pptx"
+Redirect 301 "/13/Ontology-of-Aging-and-Death.pdf" "https://buffalo.box.com/shared/static/rj51z4dec44e3bwe2wjqgxkllifxasyo.pdf"
+Redirect 301 "/13/PANTC-2013.pdf" "https://buffalo.box.com/shared/static/4w2gvombxze6hzacq4ljsao0tuzfoycx.pdf"
+Redirect 301 "/13/PRO-PO-GO/TO.pptx" "https://buffalo.box.com/shared/static/jo1os6ix0j503mif3hhdual5747hhyys.pptx"
+Redirect 301 "/13/PRO-PO-GO/Foundry-efforts.pptx" "https://buffalo.box.com/shared/static/h4yyfeap7x10s9kyv55q5om8i4yzaaig.pptx"

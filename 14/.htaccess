@@ -1,3 +1,12 @@
 # 301 Redirects to retain old URLs
-Redirect 301 "/14/Rijeka/Ontology-of-Documents-May-2014-Rijeka.ppt" "https://buffalo.box.com/shared/static/zu9xm6l8qv2jycxzprz68qo5mrly8ko6.ppt"
+Redirect 301 "/14/CIE-Presentation.pptx" "https://buffalo.box.com/shared/static/acx9mfn6m1pl291yvzn44gnb8y7o68ee.pptx"
+Redirect 301 "/14/Fifth-Cycle-of-Philosophy.pptx" "https://buffalo.box.com/shared/static/8o5394hwn17c0fgxkjauofmvltqzmzqk.pptx"
+Redirect 301 "/14/Mind-Language-Austria.pptx" "https://buffalo.box.com/shared/static/ndg2vvdhj0j2rx1y22icbghxazqfs8vb.pptx"
+Redirect 301 "/14/Ontology-of-Aging-Buffalo-August-2014.pptx" "https://buffalo.box.com/shared/static/hmws3l9f92dpzfzdrek1oi905xcf2se3.pptx"
+Redirect 301 "/14/Ontology-of-Documents-May-2014.ppt" "https://buffalo.box.com/shared/static/anl6pbsm98h3ywjopy7kxmd79j6y1qzy.ppt"
+Redirect 301 "/14/Ontology-to-Engineering-Syracuse-October-2014.ppt" "https://buffalo.box.com/shared/static/mqsmpwgjh5yuo3rcng8h4o9oliln3v94.ppt"
+Redirect 301 "/14/PANTC-2014.pdf" "https://buffalo.box.com/shared/static/j3p0txid0kmm3xisywvqsaojbmjx32m9.pdf"
+Redirect 301 "/14/poker-March-2014.ppt" "https://buffalo.box.com/shared/static/e24m5gfkgjzubs7a5l1ffglvnxq3r0uy.ppt"
+Redirect 301 "/14/WINIR-Smith-Sep-2014.pptx" "https://buffalo.box.com/shared/static/66xzl8nh3kg1ujoyyum878in9ojh98fr.pptx"
 Redirect 301 "/14/Rijeka/Mind-Language-Austria-May-2014.pptx" "https://buffalo.box.com/shared/static/obwhli5qi55sw1kgm714upm9lzyw0bxr.pptx"
+Redirect 301 "/14/Rijeka/Ontology-of-Documents-May-2014-Rijeka.ppt" "https://buffalo.box.com/shared/static/zu9xm6l8qv2jycxzprz68qo5mrly8ko6.ppt"

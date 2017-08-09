@@ -1,2 +1,9 @@
 # 301 Redirects to retain old URLs
-Redirect 301 "/smith/ACMI.mp4" "https://buffalo.box.com/shared/static/1kx8wjxzuzesykl5cv9rr7kvf4uhpj7s.mp4"
+Redirect 301 "/smith/courses03/tb/cohn-geoinformatica.ps" "https://buffalo.box.com/shared/static/fiiwhbxi4h0f1l47enng63gdb33gy6ki.ps"
+Redirect 301 "/smith/baarle/coochbehar.gif" "https://buffalo.box.com/shared/static/yc8kept4dkbf6y7e9mnvhvh4fbzilicc.gif"
+Redirect 301 "/smith/baarle/military.jpg" "https://buffalo.box.com/shared/static/kptj4777d0i5oqnax0n6g0vjf4wgqvxg.jpg"
+Redirect 301 "/smith/heidegger/lied.mp3" "https://buffalo.box.com/shared/static/vihw63dhry2mm3eo1uu46s10uvltwnar.mp3"
+Redirect 301 "/smith/BSCV.pdf" "https://buffalo.box.com/shared/static/mxtpaolk8370jktb9e1dmsw8uqtj3x15.pdf"
+Redirect 301 "/smith/BSPUBLST.pdf" "https://buffalo.box.com/shared/static/nkgnt6uzwmwrxxvt8rj0osim4ngth05g.pdf"
+Redirect 301 "/smith/courses09/Handout.pdf" "https://buffalo.box.com/shared/static/cwwll4ln74lw0h3ndx191hi9r0myytiw.pdf"
+Redirect 301 "/smith/students/happold.pdf" "https://buffalo.box.com/shared/static/it0hhp486way92mkbl8dx38vcdj1jflw.pdf"

@@ -1,2 +1,9 @@
 # 301 Redirects to retain old URLs
+Redirect 301 "/16/EcoTechGender.pdf" "https://buffalo.box.com/shared/static/3z9s7kpaiz7cg1m55xe3wc0cnyk0tzu5.pdf"
+Redirect 301 "/16/EcoTechGender.pptx" "https://buffalo.box.com/shared/static/cci4bxwgntsvbbd7zgzv5t6yt540odip.pptx"
+Redirect 301 "/16/KAUST.pdf" "https://buffalo.box.com/shared/static/y1ebz6knnn8raiypcox2wid9os4v6dzx.pdf"
 Redirect 301 "/16/Ontology-of-Terrorism.pdf" "https://buffalo.box.com/shared/static/91ia4rr5mkq0ygwsvlcftqsgh3so32s6.pdf"
+Redirect 301 "/16/Organigram.pdf" "https://buffalo.box.com/shared/static/l8hgiptt621r2zq00f7gsekr6l0b4gz9.pdf"
+Redirect 301 "/16/Replication-Crisis.pptx" "https://buffalo.box.com/shared/static/8keh5otzl3yhj25q0riy9p0weon1382z.pptx"
+Redirect 301 "/16/ZiF.pdf" "https://buffalo.box.com/shared/static/4mv4uyz2nfq8rk3x1scyqeqcsybk0nlt.pdf"
+Redirect 301 "/16/ZIF.pptx" "https://buffalo.box.com/shared/static/22rtrpdsinague1il9azhb5jjb5u4cs2.pptx"
