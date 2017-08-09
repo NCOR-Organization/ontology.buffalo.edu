@@ -1,6 +1,7 @@
 # 301 Redirects to retain old URLs
 Redirect 301 "/AppliedOntology.pdf" "https://buffalo.box.com/shared/static/0n8lzeraf6qy8loa8xvb0tw8mn2nn0l6.pdf"
 Redirect 301 "/04/DLs_and_Medicine/rector.ppt" "https://buffalo.box.com/shared/static/3ij5ynwq1ab37scajvu1c9oxgg7tfyr0.ppt"
+Redirect 301 "/06/Biomedical_Imaging_Ontologies.pdf" "https://buffalo.box.com/shared/static/5xscscftg6re9l105l2hzvqukssqw9vm.pdf"
 Redirect 301 "/11/Smith1.ppt" "https://buffalo.box.com/shared/static/o1z0f7ai84b8kotakp0p0w7ki7idusfc.ppt"
 Redirect 301 "/11/Smith2.ppt" "https://buffalo.box.com/shared/static/rk7tpxp96o2evfy57khjvepapg6i74ta.ppt"
 
@@ -25,6 +26,14 @@ Redirect 301 "/hl7/Discussion.mp3" "https://buffalo.box.com/shared/static/msqim5
 Redirect 301 "/hl7/introduction.mp3" "https://buffalo.box.com/shared/static/xs2hzwt00o9p8ygekjpde6qpnnfxtrqo.mp3"
 Redirect 301 "/hl7/Presentation.mp3" "https://buffalo.box.com/shared/static/s1k6ivfeyolq0vddjgqh7wbz2umm9zbm.mp3"
 Redirect 301 "/hl7/regenstrief.ppt" "https://buffalo.box.com/shared/static/zegv7t3l9bkmyxcuu0z9f8gvjrysh76f.ppt"
+
+Redirect 301 "/HL7/AMIA_06_Audio/Ceusters.WMA" "https://buffalo.box.com/shared/static/3o8w8ks6gzb9bdvyi2mzpv4u8lpd44ab.wma"
+Redirect 301 "/HL7/AMIA_06_Audio/Chute.WMA" "https://buffalo.box.com/shared/static/iyah996obs9q56mdu62ee3dqf01e945a.wma"
+Redirect 301 "/HL7/AMIA_06_Audio/Detmer.WMA" "https://buffalo.box.com/shared/static/afs6u640vqf74v8pu1inol2q8zezjer1.wma"
+Redirect 301 "/HL7/AMIA_06_Audio/Discussion(Partial).WMA" "https://buffalo.box.com/shared/static/v7jk5ts6begynuypmncpe1z5s15rc7p0.wma"
+Redirect 301 "/HL7/AMIA_06_Audio/Mead.WMA" "https://buffalo.box.com/shared/static/aqrznlxo94mt473iwzptlb7wz6e0tguh.wma"
+Redirect 301 "/HL7/AMIA_06_Audio/Smith.WMA" "https://buffalo.box.com/shared/static/4vsq0ral501zfdp2gh0tt1hktmkg4486.wma"
+
 Redirect 301 "/medicine_and_metaphysics/M&MSmith.ppt" "https://buffalo.box.com/shared/static/ngvn75diz3xdlc5nvj8umhrwzcduifwk.ppt"
 
 Redirect 301 "/philosophome/philmap.pdf" "https://buffalo.box.com/shared/static/n3xbp7a5h3p07g02ipjtrt395wohmuba.pdf"

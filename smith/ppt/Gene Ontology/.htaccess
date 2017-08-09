@@ -1,0 +1,10 @@
+# 301 Redirects to retain old URLs
+Redirect 301 "/smith/ppt/Gene%20Ontology/Bio_Ontologies_SB_May_06.ppt" "https://buffalo.box.com/shared/static/ymqloyh36uo62l3tiisors51pj3764vp.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/From_GO_to_OBOFoundry_Sep08.ppt" "https://buffalo.box.com/shared/static/0ae5x7ondq3gks498gfww44eo45slizn.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/GO_Principles_Smith-Hill_2005.ppt" "https://buffalo.box.com/shared/static/crwq6xl0usqfq5sklxba6rh38wp1mtvq.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/GO.ppt" "https://buffalo.box.com/shared/static/1fec56fcsb851qij80fwif05e55fk62n.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/GO-Annotations_Blake_2007.ppt" "https://buffalo.box.com/shared/static/w1yhemal5zqj7vm1h7x5s1z0cc2os3ns.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/Principles_of_Ontology_Design_St_Croix_Mar05.ppt" "https://buffalo.box.com/shared/static/xj9tcts1zgfbd0cb85mvceykyd7j0gjf.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/Smith_OBOFoundry_071906.ppt" "https://buffalo.box.com/shared/static/my4pjb7epxe7n6s39jeyp99htj0jx87y.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/UB_GO_Apr_2004.ppt" "https://buffalo.box.com/shared/static/d8rh1bma0j5vrstb1v00nbvd0i2ufb0l.ppt"
+Redirect 301 "/smith/ppt/Gene%20Ontology/umelb_GO_Mar_2004.ppt" "https://buffalo.box.com/shared/static/9yiofpxty6r6b1b538iwzghxnukhyeuv.ppt"
