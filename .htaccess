@@ -1,5 +1,6 @@
 # 301 Redirects to retain old URLs
 Redirect 301 "/AppliedOntology.pdf" "https://buffalo.box.com/shared/static/0n8lzeraf6qy8loa8xvb0tw8mn2nn0l6.pdf"
+Redirect 301 "/00/Ontological-Imperialism.ppt" "https://buffalo.box.com/shared/static/t2w97j3coi9o5su1quxbqn7x71smo0qp.ppt"
 Redirect 301 "/04/DLs_and_Medicine/rector.ppt" "https://buffalo.box.com/shared/static/3ij5ynwq1ab37scajvu1c9oxgg7tfyr0.ppt"
 Redirect 301 "/06/Biomedical_Imaging_Ontologies.pdf" "https://buffalo.box.com/shared/static/5xscscftg6re9l105l2hzvqukssqw9vm.pdf"
 Redirect 301 "/11/Smith1.ppt" "https://buffalo.box.com/shared/static/o1z0f7ai84b8kotakp0p0w7ki7idusfc.ppt"
