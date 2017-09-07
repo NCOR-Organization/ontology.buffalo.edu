@@ -1,4 +1,11 @@
 # 301 Redirects to retain old URLs
+Redirect 301 "/medo/DiseaseOntology/2006/Ceusters.WMA" "https://buffalo.box.com/shared/static/ov9uwk31x0l3bqn6gmrja5yq6h1kp9dw.wma"
+Redirect 301 "/medo/DiseaseOntology/2006/Goldberg.ppt" "https://buffalo.box.com/shared/static/tc9xy7fcibyaibj8re1jlk3utzkh8szi.ppt"
+Redirect 301 "/medo/DiseaseOntology/2006/Goldberg.WMA" "https://buffalo.box.com/shared/static/k8kot7jk6l19nt0z78p2vbunef6h9nsj.wma"
+Redirect 301 "/medo/DiseaseOntology/2006/Mungall.WMA" "https://buffalo.box.com/shared/static/s220b04ep5rg8oliy1en2lh49jxlh1e9.wma"
+Redirect 301 "/medo/DiseaseOntology/2006/Smith.ppt" "https://buffalo.box.com/shared/static/fucm5gna43ndsll6txghl658y6a84r8i.ppt"
+Redirect 301 "/medo/DiseaseOntology/2006/Smith.WMA" "https://buffalo.box.com/shared/static/rjn2joa905kw1btfgbruren0hn1n3izu.wma"
+Redirect 301 "/medo/DiseaseOntology/2006/Spackman.WMA" "https://buffalo.box.com/shared/static/z5dxjahbuw01g4nio30ty5t0na2hylx7.wma"
 Redirect 301 "/medo/WorkshopAMIA2003_files/Audio1.wma" "https://buffalo.box.com/shared/static/6lmzggxwt4nujf1254wq2tmxzty5vcqu.wma"
 Redirect 301 "/medo/WorkshopAMIA2003_files/Audio1.wma" "https://buffalo.box.com/shared/static/a5b2n6ecj8f2jzlfvkzniepc3od4ftob.wma"
 Redirect 301 "/medo/WorkshopAMIA2003_files/Workshop1.ppt" "https://buffalo.box.com/shared/static/n9hw16xcxcnc197pybc16o2xooxirpju.ppt"
