@@ -1,6 +1,6 @@
 
-<!-- saved from url=(0034)http://ontology.buffalo.edu/smith/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script id="abine.stub.Google Analytics" type="text/javascript">
+<!-- saved from url=(0034)http://ontology.buffalo.edu/smith/  -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script id="abine.stub.Google Analytics" type="text/javascript">
 //<![CDATA[
   var abPrm={};var abNoOp=function(i,a){return (a&&a.length?a[0]:null)||true;},abSC=function(n,v){document.cookie=n+'='+v+';path=/;expires='+(new Date((new Date()).getTime()+(30000*60*60*24))).toGMTString();},abGC=function(n){return document.cookie.indexOf(n+'=')!=-1;},abAddNoOpMethods=function(o,m){m=m.split(',');for(var i=0;i<m.length;i++){if(m[i].match(/^#/)){o['get'+m[i].substr(1)]=o['set'+m[i].substr(1)]=abNoOp;}else{o[m[i]]=abNoOp;}}};var abClickEvent=function(n){if(n.click){n.click();}else{var e=n.ownerDocument.createEvent('MouseEvents');e.initMouseEvent('click',true, true, n.ownerDocument.defaultView, 1,0,0,0,0,false,false,false,false,0,null);n.dispatchEvent(e);}};var abTrkr={},abGT=function(){return abTrkr},_gat={_getTracker:abGT,_createTracker:abGT,_getTrackerByName:abGT,_anonymizeIp:abNoOp},urchinTracker=__utmSetTrans=__utmLinkerUrl=__utmLinkPost=__utmSetVar=__utmVisitorCode=abNoOp,_gaq={_createAsyncTracker:abTrkr,_getAsyncTracker:abTrkr,push:function(a){for (var b = arguments, c = 0, d = 0; d < b.length; d++) {try {if (typeof b[d] === 'function') b[d]();else {var e = '', f = b[d][0], k = f.lastIndexOf('.');k > 0 && (e = f[z](0, k), f = f[z](k + 1));var p = e == '_gat' ? _gat : e == '_gaq' ? _gaq : _gat._getTracker(e);p[f].apply(p, b[d].slice(1))}} catch (r) {c++}}return c;}};abAddNoOpMethods(abTrkr,'_deleteCustomVar,_getName,_getAccount,_getVersion,_getVisitorCustomVar,_initData,_setAccount,_setCookiePersistence,_setCustomVar,_setSampleRate,_setSessionTimeout,_setSessionCookieTimeout,_setVar,_setVisitorCookieTimeout,_trackPageview,_setAllowAnchor,_setCampContentKey,_setCampMediumKey,_setCampNameKey,_setCampNOKey,_setCampSourceKey,_setCampTermKey,_setCampaignTrack,_setCampaignCookieTimeout,_setCookieTimeout,_setReferrerOverride,_cookiePathCopy,_getLinkerUrl,_linkByPost,_setAllowHash,_setAllowLinker,_setCookiePath,_setDomainName,_addItem,_addTrans,_trackTrans,_trackEvent,_addIgnoredOrganic,_addIgnoredRef,_addOrganic,_clearIgnoredOrganic,_clearIgnoredRef,_clearOrganic,_trackSocial,_getClientInfo,_getDetectFlash,_getDetectTitle,_setClientInfo,_setDetectFlash,_setDetectTitle,_getLocalGifPath,_getServiceMode,_setLocalGifPath,_setLocalRemoteServerMode,_setLocalServerMode,_setRemoteServerMode,_trackPageLoadTime');abTrkr._link=__utmLinker=function(l){if(l)location.href=l;};
   //]]>
@@ -386,7 +386,7 @@ a:active {
   height:270.75pt;border-image: url(&quot;&quot;) none;-moz-background-size: auto auto;
   -moz-background-clip: -moz-initial;-moz-background-origin: -moz-initial;
   -moz-background-inline-policy: -moz-initial">
-  <p class="MsoNormal" align="center" style="text-align:center"><span style="mso-no-proof:yes"><!--[if !vml]--><img border="0" width="366" height="517" src="./index_files/C+T-cover.jpg" alt="http://ontology.buffalo.edu/smith/C+T-cover.jpg" v:shapes="Picture_x0020_1"><!--[endif]--></span><span style="font-size:10.0pt;
+  <p class="MsoNormal" align="center" style="text-align:center"><span style="mso-no-proof:yes"><!--[if !vml]--><img border="0" width="366" height="517" src="http://ontology.buffalo.edu/smith/C%2BT-cover.jpg" alt="http://ontology.buffalo.edu/smith/C+T-cover.jpg" v:shapes="Picture_x0020_1"><!--[endif]--></span><span style="font-size:10.0pt;
   font-family:&quot;Verdana&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
   color:#1C1C1C"><o:p></o:p></span></p>
   </td>
@@ -397,37 +397,37 @@ a:active {
   height:270.75pt"><br><br>
   <p class="MsoNormal"><span style="font-size:18.0pt;
   mso-bidi-font-size:18.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#0070C0;
-  background:white"><a href="https://cosmosandtaxis.files.wordpress.com/2017/06/ct_vol4_iss4.pdf"><span style="color:#0070C0"><i>Barry Smith an sich</i></span></a></span></p>
-  <p><i><a href="https://cosmosandtaxis.files.wordpress.com/2017/06/ct_vol4_iss4.pdf">COSMOS + TAXIS</a></i><a href="https://cosmosandtaxis.files.wordpress.com/2017/06/ct_vol4_iss4.pdf">, Volume 4:4 (2017), 1-104</a></p>
+  background:white"><a href="https://cosmosandtaxis.files.wordpress.com/2017/06/ct_vol4_iss4.pdf"><span style="color:#0070C0"><i>Barry Smith an sich</i></a></p>
+  <p><i><a href="https://cosmosandtaxis.files.wordpress.com/2017/06/ct_vol4_iss4.pdf">COSMOS + TAXIS</i>, Volume 4:4 (2017), 1-104</span></a></span></p>
   <p class="MsoNormal" style="text-align:justify"><span style="font-family:&quot;Verdana&quot;,sans-serif;
   color:#333333;background:white"><o:p>&nbsp;</o:p></span></p>
   <p class="MsoNormal" style="text-align:justify"><span style="font-family:&quot;Verdana&quot;,sans-serif;
   color:#333333;background:white">
-  Edited by Gloria Zúñiga y Postigo and Gerald J. Erion</span></p>
-  <p>This collection of essays is dedicated to Barry Smith by his friends. Contributions include:
+  Edited by Gloria Z&#250;&#241;iga y Postigo and Gerald J. Erion</p>
+  <p>This collection of essays is dedicated to Barry Smith by his friends. Contributions include:</span>
   <span style="font-size:12.0pt;
   mso-bidi-font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#0070C0;
   background:white">
-    </span></p><ul>
-    <li><p><font size="2">Nicola Guarino: BFO and DOLCE: So Far, So Close</font></p></li><font size="2">
-    <li>    <p><font size="2">John T. Kearns: Logic and Ontology</font></p></li><font size="2">
-    <li>    <p><font size="2">Rudolf Lüthe: On Not Being Influenced by Barry Smith's Ontologism</font></p></li><font size="2">
-    <li>    <p><font size="2">Luc Schneider: Minimal Aristotelian Ontology</font></p></li><font size="2">
-    <li>    <p><font size="2">Peter Simons: Barry Smith and His Influence On (Not Only, But Mainly My) Philosophy</font></p></li><font size="2">
-    <li>    <p><font size="2">Wojciech Zelaniec: The Liar, the Truth-Teller, and Barry Smith</font></p><font size="2"> </font></li><font size="2">
-    <li>    <p><font size="2">Jan Wolenski: Necessity and Truth Makers</font></p></li><font size="2">
-    <li>    <p><font size="2">Gloria Zúñiga y Postigo: The Church of Sunk Costs</font></p></li><o:p></o:p><p></p>
-</font></font></font></font></font></font></font></ul><font size="2"><font size="2"> 
-  <p></p>
+    <ul>
+    <li><p><font size="2">Nicola Guarino: BFO and DOLCE: So Far, So Close</p></li>
+    <li>    <p><font size="2">John T. Kearns: Logic and Ontology</p></li>
+    <li>    <p><font size="2">Rudolf L&uuml;the: On Not Being Influenced by Barry Smith's Ontologism</p></li>
+    <li>    <p><font size="2">Luc Schneider: Minimal Aristotelian Ontology</p></li>
+    <li>    <p><font size="2">Peter Simons: Barry Smith and His Influence On (Not Only, But Mainly My) Philosophy</p></li>
+    <li>    <p><font size="2">Wojciech &#379;e&#322;aniec: The Liar, the Truth-Teller, and Barry Smith</p> </li>
+    <li>    <p><font size="2">Jan Wole&#324;ski: Necessity and Truth Makers</p></li>
+    <li>    <p><font size="2">Gloria Z&#250;&#241;iga y Postigo: The Church of Sunk Costs</p></font></li></span><o:p></o:p></p></li>
+</ul> 
+  </span></p>
   <p class="MsoNormal" style="text-align:justify"><span style="font-size:16.0pt;
   mso-bidi-font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#0070C0;
   background:white"><span style="font-size:
   12.0pt;mso-bidi-font-size:10.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
-  color:#0070C0"><o:p></o:p></span></span>
-  </p><p class="MsoNormal"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;
+  color:#0070C0"><o:p></o:p></span></a></span>
+  <p class="MsoNormal"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;
   mso-fareast-font-family:&quot;Times New Roman&quot;;color:#1C1C1C">&nbsp;&nbsp;&nbsp;<o:p></o:p></span></p>
-  </font></font></td>
- </tr><tr><td width="49%" colspan="2" valign="top" style="width:49.72%;border:inset #D9D9D9 1.0pt;
+  </td>
+ </tr><td width="49%" colspan="2" valign="top" style="width:49.72%;border:inset #D9D9D9 1.0pt;
   border-bottom:none;background:white;padding:2.4pt 2.4pt 2.4pt 2.4pt;
   height:270.75pt;border-image: url(&quot;&quot;) none;-moz-background-size: auto auto;
   -moz-background-clip: -moz-initial;-moz-background-origin: -moz-initial;
@@ -609,7 +609,7 @@ a:active {
             <td style="padding: 1pt 4.3pt; border: 1pt inset rgb(217, 217, 217); border-image: url(&#39;&#39;) none; height: 32px;" colspan="2">
               <p align="center" style="margin-top: 0px; margin-bottom: 0px;"><span class="msonormal0 style2">
 			  <a style="text-decoration: none;" href="http://ontology.buffalo.edu/smith/NIHBiosketchSmith.doc"></a> <font color="#353535"><a style="text-decoration: none;" href="http://ontology.buffalo.edu/smith/BSPUBLST.htm"><span class="auto-style6">Publications</span></a></font> <span class="auto-style6">/</span> <font color="#353535">
-			  <a href="https://www.ncbi.nlm.nih.gov/myncbi/browse/collection/46125873/?sort=date&amp;direction=descending"><span class="auto-style6">PubMed</span></a> <a href="http://scholar.google.com/citations?hl=en&amp;user=icGNWj4AAAAJ&amp;view_op=list_works&amp;pagesize=80" style="text-decoration: none;"><span class="auto-style6">/ Google
+			  <a href="https://www.ncbi.nlm.nih.gov/myncbi/browse/collection/46125873/?sort=date&direction=descending"><span class="auto-style6">PubMed</span></a> <a href="http://scholar.google.com/citations?hl=en&amp;user=icGNWj4AAAAJ&amp;view_op=list_works&amp;pagesize=80" style="text-decoration: none;"><span class="auto-style6">/ Google
               Scholar</span></a></font></span></p>
             </td>
 
@@ -626,11 +626,11 @@ a:active {
             </td>
 
             <td style="padding: 1pt 4.3pt; border: 1pt inset rgb(217, 217, 217); border-image: url(&#39;&#39;) none; height: 40px;" colspan="2">
-              <p align="center" class="MsoNormal" style="text-align: center; margin-top: 0px; margin-bottom: 0px;"><span class="auto-style6" style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><a style="text-decoration: none;><span class="auto-style6"></span></a><a href="http://ncorwiki.buffalo.edu/index.php/Education"><span class="auto-style6">Teaching</span></a></span> / <a href="http://ncorwiki.buffalo.edu/index.php/Ontological Engineering" style="text-decoration: none;" class="auto-style6">Ontological Engineering (Online) Spring 2018</a></p>
+              <p align="center" class="MsoNormal" style="text-align: center; margin-top: 0px; margin-bottom: 0px;"><span class="auto-style6" style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><a style="text-decoration: none;" href="http://hl7-watch.blogspot.com/"><span class="auto-style6"></span></a><a href="http://ncorwiki.buffalo.edu/index.php/Education"><span class="auto-style6">Teaching</span></a></span> / <a href="http://ncorwiki.buffalo.edu/index.php/Advanced_Biomedical_Ontology" style="text-decoration: none;" class="auto-style6">Advanced Biomedical Ontology Course Spring 2017</a></p>
             </td>
 
             <td style="padding: 1pt 4.3pt; border: 1pt inset rgb(217, 217, 217); border-image: url(&#39;&#39;) none; width: 33%; height: 40px;">
-            <p align="center" class="MsoNormal" style="text-align: center; margin-top: 0px; margin-bottom: 0px;"><span style="color: rgb(53, 53, 53); font-family: Arial,sans-serif;"><a style="text-decoration: none;" href="http://www.cubrc.org/index.php/data-science-and-information-fusion/ontology"><span class="auto-style6" style="font-family: Arial,sans-serif;">CUBRC: Common Core Ontologies for Data Integration</span></a></span></p>
+            <p align="center" class="MsoNormal" style="text-align: center; margin-top: 0px; margin-bottom: 0px;"><span style="color: rgb(53, 53, 53); font-family: Arial,sans-serif;"><a style="text-decoration: none;" href="http://www.cubrc.org/index.php/data-science-and-information-fusion/ontology"><span class="auto-style6" style="font-family: Arial,sans-serif;">CUBRC: Common Core Ontologies for Data Integration</a></span></p>
             </td>
           </tr>
 
@@ -1130,7 +1130,7 @@ Information Artifact Ontology</span></a></span></p>
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
   //]]>
-  </script><script src="./index_files/ga.js.download" type="text/javascript"></script><script src="./index_files/ga.js(1).download" type="text/javascript"></script><script src="./index_files/ga.js(2).download" type="text/javascript"></script><script src="./index_files/ga.js(3).download" type="text/javascript"></script><script src="./index_files/ga.js(4).download" type="text/javascript"></script><script src="./index_files/ga.js(5).download" type="text/javascript"></script><script src="./index_files/ga.js(6).download" type="text/javascript"></script><script src="./index_files/ga(1).js.download" type="text/javascript"></script><script src="./index_files/ga(2).js.download" type="text/javascript"></script><script src="./index_files/ga(3).js.download" type="text/javascript"></script>
+  </script><script src="./index_files/ga.js.download" type="text/javascript"></script><script src="./index_files/ga.js(1).download" type="text/javascript"></script><script src="./index_files/ga.js(2).download" type="text/javascript"></script><script src="./index_files/ga.js(3).download" type="text/javascript"></script><script src="./index_files/ga.js(4).download" type="text/javascript"></script><script src="./index_files/ga.js(5).download" type="text/javascript"></script><script src="./index_files/ga(1).js.download" type="text/javascript"></script><script src="./index_files/ga(2).js.download" type="text/javascript"></script><script src="./index_files/ga(3).js.download" type="text/javascript"></script>
   <script src="./index_files/ga(4).js.download" type="text/javascript"></script>
   <script src="./index_files/ga(5).js.download" type="text/javascript"></script>
   <script src="./index_files/ga(6).js.download" type="text/javascript"></script>

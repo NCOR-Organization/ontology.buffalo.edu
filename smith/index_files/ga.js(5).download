@@ -3,16 +3,10 @@
 <TITLE>300 Multiple Choices</TITLE>
 </HEAD><BODY>
 <H1>Multiple Choices</H1>
-The document name you requested (<code>/smith/index_files/ga.js(4).download</code>) could not be found on this server.
+The document name you requested (<code>/smith/index_files/ga.js(2).download</code>) could not be found on this server.
 However, we found documents with names similar to the one you requested.<p>Available documents:
 <ul>
-<li><a href="/smith/index_files/ga.js(3).download">/smith/index_files/ga.js(3).download</a> (mistyped character)
-<li><a href="/smith/index_files/ga.js(2).download">/smith/index_files/ga.js(2).download</a> (mistyped character)
-<li><a href="/smith/index_files/ga.js(1).download">/smith/index_files/ga.js(1).download</a> (mistyped character)
-</ul>
-Furthermore, the following related documents were found:
-<ul>
-<li><a href="/smith/index_files/ga.js.download">/smith/index_files/ga.js.download</a> (common basename)
+<li><a href="/smith/index_files/ga.js">/smith/index_files/ga.js</a> (common basename)
 </ul>
 Please consider informing the owner of the <a href="http://ontology.buffalo.edu/smith/">referring page</a> about the broken link.
 <HR>
