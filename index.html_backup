@@ -4,16 +4,19 @@
 <body bgcolor="#9c9c9c">
 
 <table height=100% cellpadding=0 cellspacing=0 border=0>
-<td align=center valign=top>
+<tr><td align=center valign=top>
 <img src="main0_data/short_header.gif" width="390" height="93"><nobr><img src="main0_data/0_main.gif" width="412" height="93" usemap="#topmenu">
+
 <map name="topmenu">
 <area shape="RECT" coords="28,37,195,53" href="contemporary.htm" target="body">
 <area shape="RECT" coords="28,70,165,86" href="history.htm" target="body">
 <area shape="RECT" coords="207,37,375,53" href="engineering.htm" target="body">
 <area shape="RECT" coords="207,70,375,86" href="biomedical.htm" target="body">
 </map>
-<br><br>
-<img src="engineering_files/NewTree.gif" width="250" align="left" alt="Ontology tree graphic">
+
+
+
+
 </td></tr>
 </table>
 
