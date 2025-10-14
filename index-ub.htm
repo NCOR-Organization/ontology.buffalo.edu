@@ -1,0 +1,199 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Department of Philosophy – University at Buffalo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ub-blue:#0b5aa3;
+      --ub-navy:#003b71;
+      --ink:#1f2937; --muted:#6b7280; --card:#ffffff; --bg:#f8fafc;
+      --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.6;
+      letter-spacing:.01em;
+    }
+    a{color:var(--ub-blue);text-decoration:none}
+    a:hover{opacity:.9}
+
+    /* ===== UB Global Header (stable, simple) ===== */
+    .ub-global{
+      background:#fff;
+      border-bottom:1px solid var(--border);
+      width:100%;
+    }
+    .ub-global-inner{
+      max-width:1160px; margin:0 auto;
+      padding:10px 20px 6px;
+      display:flex; justify-content:space-between; align-items:flex-end;
+    }
+    .ub-brand{display:flex; align-items:flex-end; gap:12px;}
+    .ub-logo-img{height:110px; width:auto; display:block;}
+    .ub-cas{
+      background:var(--ub-navy); color:#fff;
+      padding:10px 20px; border-radius:6px;
+      font-weight:600; font-size:18px; line-height:1;
+      display:flex; align-items:center; white-space:nowrap;
+      transform:translateY(4px);
+    }
+
+    /* ===== Blue Department Banner ===== */
+    .ubbar{background:var(--ub-blue); color:#fff;}
+    .ubbar .inner{max-width:1160px; margin:0 auto; padding:16px 20px;}
+    .ubbar h1{margin:0; font-size:28px; letter-spacing:.02em;}
+
+    /* ===== Top nav ===== */
+    .topnav{background:#fff; border-bottom:1px solid var(--border)}
+    .topnav .inner{max-width:1160px; margin:0 auto; padding:0 20px; display:flex; gap:22px; overflow:auto}
+    .topnav a{display:block; padding:14px 10px; color:var(--ub-blue); font-weight:600; font-size:15px}
+    .topnav a:hover{border-bottom:3px solid var(--ub-blue)}
+
+    /* ===== Page grid ===== */
+    .page{max-width:1160px; margin:22px auto; padding:0 20px; display:grid; gap:22px}
+    @media(min-width:1000px){.page{grid-template-columns:1fr 320px}}
+    .content{display:grid; gap:18px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px}
+    .card h3{margin:0 0 8px; font-size:18px}
+    .kicker{display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px}
+
+    /* ===== Hero card ===== */
+    .hero{background:#fff; border:1px solid var(--border); border-radius:10px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.06)}
+    .hero img{width:100%; height:auto; display:block}
+    .hero .cap{padding:16px 18px; border-top:1px solid var(--border)}
+    .hero .cap h2{margin:0 0 6px;font-size:20px;font-weight:700;color:var(--ub-blue);}
+    .hero .cap p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55;}
+
+    /* ===== Buttons (compact UB style) ===== */
+    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+    .btn{display:inline-block; font-weight:700; border-radius:6px; text-transform:uppercase; letter-spacing:.035em; transition:background .2s,color .2s}
+    .btn.ub{display:block; width:100%; text-align:center; font-size:13.5px; padding:7px 10px; background:var(--ub-blue); color:#fff; border:none; box-shadow:0 1px 0 rgba(0,0,0,.06)}
+    .btn.ub:hover{background:#0d66c2}
+    .btn.hollow{display:inline-block; text-align:center; font-size:13.5px; padding:7px 10px; border:2px solid var(--ub-blue); color:var(--ub-blue); background:transparent; border-radius:6px; box-shadow:0 1px 0 rgba(0,0,0,.05)}
+    .btn.hollow:hover{background:var(--ub-blue); color:#fff}
+    .btn.ub + .btn.ub{margin-top:10px}
+    .cta-wide{max-width:820px; margin:0 auto}
+
+    /* ===== Sidebar ===== */
+    .sidebar .card + .card{margin-top:14px}
+    .btn.ub.sm{font-size:12.5px; padding:6px 8px; border-radius:6px}
+    .btn.ub.sm + .btn.ub.sm{margin-top:8px}
+
+    /* ===== Footer ===== */
+    .footer{max-width:1160px; margin:20px auto; padding:10px 20px; color:var(--muted); font-size:13px}
+    /* Make section body text match announcement */
+  .card p{color:var(--muted);} 
+  /* Visually remove bold/italics inside paragraphs */
+  .card p em, .card p strong{font-style:normal;font-weight:400;}
+</style>
+</head>
+<body>
+
+  <!-- UB global header (simple & stable) -->
+  <div class="ub-global">
+    <div class="ub-global-inner">
+      <div class="ub-brand">
+<img src="images/ub-logo.avif" alt="University at Buffalo" class="ub-logo-img">
+</div>'">
+      </div></div>
+
+  <!-- Department banner -->
+  <div class="ubbar">
+    <div class="inner">
+      <h1>Department of Philosophy</h1>
+    </div>
+  </div>
+
+  <!-- Top navigation -->
+  <div class="topnav">
+  <div class="inner">
+    <a href="#about">About</a>
+    <a href="#program">Program</a>
+    <a href="#curriculum">Curriculum</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#careers">Careers</a>
+    <a href="#partners">Partners</a>
+    <a href="#people">People</a>
+    <a href="#videos">Videos</a>
+    <a href="#apply"><strong>Apply</strong></a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div>
+
+  <!-- Main content -->
+  <div class="page">
+    <!-- Left column -->
+    <div class="content">
+      <div class="hero">
+        <img src="images/ub-campus.jpg" alt="UB campus image">
+        <div class="cap">
+  <h2><strong>University at Buffalo to offer a fully online graduate degree in ontology</strong></h2>
+  <div class="card" style="border:none;box-shadow:none;" style="margin:16px 0;text-align:center;"><p style="font-style:normal;font-weight:400;">BUFFALO, N.Y. – Search any major employment website and you’re likely to find multiple occurrences of the word “ontology.” But subsequently searching for universities that offer degrees in ontology will return a single result: the University at Buffalo. Beginning with the spring 2026 semester, UB will launch a fully online Master of Science degree (MS) in applied ontology. A sister program at the PhD level will be announced in due course. Both programs are housed within the university’s Department of Philosophy. Both will involved elective courses in Computer Science, Linguistics, Management, and Biomedical Informatics.</p></div>
+</div>
+        </div>
+      </div>
+
+      <div style="max-width:900px;margin:22px auto;text-align:center;">
+        <span class="kicker">Graduate Program</span>
+        <h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Research-driven mentoring and instruction</h3>
+        <p>Our graduate programs combine deep philosophical training with opportunities to collaborate across disciplines.</p>
+        <div class="cta-row"><a class="btn hollow" href="#">Explore Graduate</a></div>
+      </div>
+
+      <div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <span class="kicker">Applied Ontology</span>
+        <h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Earn a master’s degree in a cutting-edge research area</h3>
+        <p>Launching Spring 2026: a fully online program connecting philosophy, AI, data engineering, and knowledge graphs.</p>
+        <div class="cta-row" style="flex-direction:column">
+          <a class="btn ub" href="ao/index.htm">Learn about Applied Ontology</a>
+          <a class="btn ub" href="media/index.htm">Videos &amp; interviews</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right sidebar -->
+    <div class="sidebar">
+      <div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <div style="text-align:center;margin:14px 0 10px;"></div>
+<div class="card" style="max-width:900px;margin:22px auto;text-align:center;"><div style="text-align:center;margin-bottom:10px;"><img src="images/sculpture.avif" alt="Philosophical sculpture" style="display:block;width:100%;max-width:900px;height:240px;object-fit:cover;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.1);margin:0 auto 16px;"></div>
+<h3 style="color:var(--ub-blue);font-size:18px !important;font-weight:700;margin-bottom:10px;">About</h3>
+<p style="color:var(--muted);">Ontology is the philosophical study of what exists and how different kinds of entities relate to one another — a line of inquiry that began with Aristotle’s <em>Metaphysics</em>. Aristotle, who established a table of categories for classifying things in the world, can be seen as the world’s first ontologist. His effort to identify and organize the fundamental kinds of being laid the groundwork for later attempts to systematize knowledge. Over time, ontology has become essential to how we represent and structure information across disciplines, from science and medicine to linguistics and artificial intelligence.</p>
+
+<h3 style="color:var(--ub-blue);font-size:18px !important;font-weight:700;margin-bottom:10px;">What Is Applied Ontology</h3>
+<p style="color:var(--muted);">Applied ontology extends this ancient philosophical project into the digital age. Emerging in the 1970s alongside the growth of large computer systems and data repositories, it provides a framework for integrating diverse forms of data so that they can work together. Whereas Aristotle sought to describe the structure of the world, applied ontology seeks to make data about the world interoperable — allowing independent information systems to communicate effectively through shared concepts and definitions.</p>
+<p style="color:var(--muted);">The University at Buffalo has been a global leader in this field for more than two decades, uniting philosophers, computer scientists, linguists, and engineers in building ontology-based systems that bring philosophical precision to practical data challenges.</p>
+<div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <div style="text-align:center;margin-bottom:12px;"><img src="images/students.jpg" alt="University at Buffalo students walking on campus" style="width:100%;max-width:900px;height:auto;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.1);margin-bottom:16px;"></div>
+<h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Where do our students come from?</h3>
+        <p>Research-driven mentoring and instruction.</p>
+      </div>
+      <div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <div style="text-align:center;margin-bottom:12px;"><img src="images/jobs.jpg" alt="Applied ontology careers and technologies" style="width:100%;max-width:900px;height:auto;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.1);margin-bottom:16px;"></div>
+<h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Jobs in Applied Ontology</h3>
+        <p>Prepare for career pathways in Philosophy.</p>
+      </div>
+      <div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <div style="text-align:center;margin-bottom:12px;"><img src="images/degree1.jpg" alt="Applied Ontology MS Degree" style="width:100%;max-width:900px;height:auto;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.1);margin-bottom:16px;"></div>
+<h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Applied Ontology MS Degree</h3>
+        <p>Earn a master’s degree in a cutting-edge research area.</p>
+      </div>
+      <div class="card" style="max-width:900px;margin:22px auto;text-align:center;">
+        <h3 style="color:var(--ub-blue);text-align:center;margin-bottom:8px;">Apply Now</h3>
+        <div class="cta-row" style="flex-direction:column">
+          <a class="btn ub sm" href="#">Apply to our undergraduate program</a>
+          <a class="btn ub sm" href="#">Apply to our graduate program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© University at Buffalo — Philosophy</div>
+</body>
+</html>

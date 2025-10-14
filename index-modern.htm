@@ -1,0 +1,103 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UB Applied Ontology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --navy:#1F2F46; --gold:#C4932D; --gray:#6D7A84; --beige:#F5F1EA; --white:#fff; --ink:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--beige);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink)}
+    a{color:var(--navy)}
+    .container{max-width:960px;margin:0 auto;padding:24px}
+    .hero{background:var(--white);border-radius:14px;padding:28px 24px;box-shadow:0 3px 14px rgba(0,0,0,.06);margin-top:18px}
+    .hero h1{margin:0 0 10px;font-size:34px;line-height:1.15;color:var(--navy)}
+    .hero p{margin:0 0 16px;font-size:18px;color:var(--gray)}
+    .btns{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.primary{background:var(--navy);color:var(--white)}
+    .btn.ghost{border:2px solid var(--navy);color:var(--navy);background:transparent}
+    section{margin-top:28px;background:var(--white);border-radius:14px;padding:22px 20px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+    section h2{margin:0 0 10px 0;color:var(--navy);font-size:22px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr} .grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--beige);border-radius:12px;padding:14px}
+    .logos{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+    .logos img{height:42px;filter:grayscale(20%)}
+    .footcta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .muted{color:var(--gray);font-size:14px}
+  </style>
+</head>
+<body bgcolor="#9c9c9c">
+
+<!-- Keep legacy header + clickable imagemap -->
+<table width="100%" height=100% cellpadding=0 cellspacing=0 border=0>
+  <tr><td align=center valign=top style="padding-top:12px">
+    <img src="main0_data/short_header.gif" width="390" height="93"><nobr>
+    <img src="main0_data/0_main.gif" width="412" height="93" usemap="#topmenu">
+    <map name="topmenu">
+      <area shape="RECT" coords="28,37,195,53" href="contemporary.htm" target="body">
+      <area shape="RECT" coords="28,70,165,86" href="history.htm" target="body">
+      <area shape="RECT" coords="207,37,375,53" href="engineering.htm" target="body">
+      <area shape="RECT" coords="207,70,375,86" href="biomedical.htm" target="body">
+    </map>
+
+    <!-- Modern content wrapper -->
+    <div class="container">
+      <div class="hero">
+        <h1>UB Master’s in Applied Ontology (Fully Online)</h1>
+        <p>Launching Spring 2026 • Cross-disciplinary study across Philosophy, Computer Science, Linguistics, and Management with hands-on knowledge-graph practice.</p>
+        <div class="btns">
+          <a class="btn primary" href="ao/index.htm">Learn more</a>
+          <a class="btn ghost" href="media/index.htm">Videos &amp; highlights</a>
+        </div>
+      </div>
+
+      <section>
+        <h2>What is Applied Ontology?</h2>
+        <p>Applied ontology provides the conceptual backbone for high-integrity data and AI systems. It clarifies the kinds of things that exist in a domain and how they relate—so data can be integrated, validated, searched, and trusted at scale.</p>
+      </section>
+
+      <section>
+        <h2>Why UB?</h2>
+        <div class="grid cols-3">
+          <div class="card"><strong>Global leadership.</strong><br>Buffalo is a world center for applied ontology and home of NCOR.</div>
+          <div class="card"><strong>Interdisciplinary.</strong><br>Electives across CS, Linguistics, and Management.</div>
+          <div class="card"><strong>Practice-ready.</strong><br>Internships and projects with industry and public-sector partners.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Hear from Our Community</h2>
+        <div class="grid cols-3">
+          <div class="card">Student interview — coming soon</div>
+          <div class="card">Alumni at work — coming soon</div>
+          <div class="card">Famous ontologists — coming soon</div>
+        </div>
+        <p class="muted">Olivia will lead interviews with undergraduates, current students, alumni, and notable researchers.</p>
+      </section>
+
+      <section>
+        <h2>Research &amp; Collaborations</h2>
+        <div class="logos">
+          <img src="ao/img/ncor-brazil.png" alt="NCOR Brazil (placeholder)">
+          <img src="ao/img/swiss-cor.png" alt="Swiss COR (placeholder)">
+          <img src="ao/img/naas-ai.png" alt="Naas.ai (placeholder)">
+        </div>
+      </section>
+
+      <section>
+        <h2>Ready to Apply?</h2>
+        <div class="footcta">
+          <a class="btn primary" href="ao/index.htm#apply">Request information</a>
+          <a class="btn ghost" href="ao/index.htm#courses">See courses</a>
+          <span class="muted">Online, flexible, starting Spring 2026.</span>
+        </div>
+      </section>
+    </div>
+  </td></tr>
+</table>
+</body>
+</html>
+

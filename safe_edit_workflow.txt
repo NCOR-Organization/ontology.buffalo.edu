@@ -1,0 +1,69 @@
+BUFFALO ONTOLOGY WEBSITE – SAFE EDIT & DEPLOYMENT WORKFLOW
+===========================================================
+
+1. BACK UP BEFORE EVERY EDIT
+----------------------------
+cd ~/ontology
+cp index.htm index.htm_preedit_$(date +%F).bak
+
+(Each backup will have today’s date, so you can easily roll back.)
+
+------------------------------------------------------------
+
+2. MAKE EDITS LOCALLY
+---------------------
+Open in Nano or VS Code:
+  nano index.htm
+
+Save with:
+  Ctrl + O  (then Enter)
+Exit with:
+  Ctrl + X
+
+------------------------------------------------------------
+
+3. VERIFY LOCALLY
+-----------------
+Check that critical homepage tags are present:
+  grep -n '<map name="topmenu">' index.htm
+  grep -n 'NewTree.gif' index.htm
+
+------------------------------------------------------------
+
+4. COMMIT & PUSH
+----------------
+git add index.htm
+git commit -m "Describe your edit here"
+git push origin master
+
+------------------------------------------------------------
+
+5. DEPLOY IN OPENSHIFT
+----------------------
+1. Go to Topology page
+2. Click your site build → Start Build
+3. Wait for the build to complete
+4. If rollout doesn’t start, click deployment → Start Rollout
+5. Test site in a private/incognito browser window
+
+------------------------------------------------------------
+
+6. CONFIRM LIVE CHANGES (OPTIONAL)
+----------------------------------
+curl -s https://ontology.buffalo.edu/index.htm | grep -n "your text or image name"
+
+------------------------------------------------------------
+
+7. RESTORE A BACKUP (IF NEEDED)
+-------------------------------
+cp index.htm_preedit_YYYY-MM-DD.bak index.htm
+git add index.htm
+git commit -m "Restore previous backup"
+git push origin master
+(rebuild and rollout as usual)
+
+------------------------------------------------------------
+
+TIP:
+----
+Always check in a private browser window to avoid cached versions.

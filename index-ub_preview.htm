@@ -1,0 +1,628 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Department of Philosophy – University at Buffalo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+ <style>
+
+/* === UB Global Header === */
+.ub-global {
+  background: #fff;
+  border-bottom: 4px solid #005bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+}
+
+/* --- keep the top row anchored to the blue bar --- */
+.ub-global .ub-inner{
+  max-width:1160px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;      /* sit on same baseline */
+  padding:40px 20px 0;       /* push whole row down a bit */
+  margin-bottom:-10px;       /* tuck closer to blue bar */
+}
+/* --- UB top banner alignment and sizing --- */
+.ub-logo {
+  display: flex;
+  align-items: flex-end;
+  width: 340px; /* keeps logo proportional */
+}
+
+.ub-logo img {
+  height: 118px; /* adjust logo size */
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: -10px; /* pulls logo down slightly */
+}
+
+.ub-college {
+  width: 340px; /* match logo width */
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #003b71; /* UB dark navy */
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: -10px; /* aligns baseline with logo */
+}
+
+/* Give the logo area a fixed width so it can match the college tag */
+.ub-logo{
+  display:flex;
+  align-items:flex-end;
+  width:320px;               /* <-- width for both sides */
+}
+
+/* Logo sizing (keeps aspect ratio) */
+.ub-logo img{
+  height:118px;
+  width:auto;
+  max-width:100%;
+  vertical-align:middle;
+  margin-bottom:-10px;       /* align with bar baseline */
+}
+
+/* College tag – same width as logo, no wrapping, centered */
+.ub-college{
+  width:320px;               /* <-- same as .ub-logo above */
+  height:48px;
+  background:#003b71;
+  color:#fff;
+  display:flex;
+  justify-content:center;    /* center the text horizontally */
+  align-items:center;        /* center the text vertically */
+  white-space:nowrap;        /* keep it on one line */
+  border-radius:6px;
+  font-weight:600;
+  font-size:18px;
+  letter-spacing:0.3px;
+  box-shadow:0 1px 0 rgba(0,0,0,.06);
+  margin-bottom:-10px;       /* align with logo baseline */
+}
+
+.ub-global{
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.ub-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #005bbb;
+}
+
+.ub-college {
+  background: #003366;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 0 0 0 6px;
+  font-family: 'Open Sans', sans-serif;
+}
+    *{box-sizing:border-box}
+/* --- UB top stripe + right badge to match the UB page --- */
+.ub-global {
+  position: relative; /* create a positioning context */
+}
+
+/* Slim dark stripe behind the top row (sits under logo) */
+.ub-global::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;      /* top, full-width */
+  height: 64px;           /* stripe height (tweak if needed) */
+  background: #0E3456;    /* UB dark navy stripe */
+  z-index: 0;             /* keep it behind content */
+}
+
+/* Make the inner row sit on top of the stripe and centered vertically */
+.ub-global .ub-inner{
+  position: relative;
+  z-index: 1;             /* above the stripe */
+  align-items: center;     /* vertically center logo in stripe */
+  padding: 10px 20px 0;    /* slimmer top padding like UB site */
+  margin-bottom: 0;        /* no negative pull-down here */
+}
+
+/* Logo sits naturally on the left */
+.ub-logo{
+  position: relative;
+  z-index: 2;             /* ensure it stays above the stripe */
+}
+
+/* Right badge styled like UB: dark pill with a left chevron notch */
+.ub-college{
+  position: absolute;
+  top: 12px;              /* vertically align within the stripe */
+  right: 20px;            /* align to right edge */
+  height: 44px;           /* badge height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 28px; /* extra left space for chevron */
+  background: #0D2F4F;    /* dark navy (badge) */
+  color: #fff;
+  border-radius: 8px;     /* soft corners */
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin: 0;              /* override earlier -10px */
+  box-shadow: none;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* The chevron notch pointing left */
+.ub-college::before{
+  content: "";
+  position: absolute;
+  left: -18px;            /* distance chevron sits into the stripe */
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  margin: auto 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-right: 18px solid #0D2F4F;  /* same color as badge */
+}
+
+/* Keep the main page content from hiding under the fixed stripe if needed */
+body{
+  margin-top: 80px; /* adjust if your header is fixed; otherwise remove */
+}
+
+/* Optional: ensure the big blue banner below starts cleanly */
+/* Make the Department of Philosophy heading white */
+/* Make the announcement title UB blue */
+.cap.announcement h2 {
+  color: #005bbb !important;
+}
+
+body{
+  margin:0;
+  background:#ffffff;     /* was var(--bg) */
+  line-height:1.6;
+  letter-spacing:0.01em;
+}
+
+a{color:#005bbb;text-decoration:none}   /* was var(--ub-blue) */
+a:hover{color:#0d66c2}                   /* was var(--ub-accent) */
+
+/* UB-style banner */
+.ubbar {
+  background: #005bbb !important;
+  color: initial;
+  padding: 20px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.ubbar .inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ubbar h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: initial;
+}
+.topnav{
+  background:#ffffff;
+  border-bottom:2px solid var(--border);
+}
+.topnav .inner{
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.topnav a{
+  color:var(--ink);
+  text-decoration:none;
+  padding:14px 20px;
+  font-weight:600;
+  font-size:15px;
+}
+.topnav a:hover{ color:#0d66c2; }   /* or #005bbb if you prefer */
+}
+h1,h2,h3{
+  font-family:'Open Sans',sans-serif;
+  font-weight:700;
+   color:#111;
+ letter-spacing:0.01em;
+ line-height:1.3;
+  margin-top:0;
+  margin-bottom:0.4em;
+}
+p{
+  margin-top:0.4em;
+  margin-bottom:0.8em;
+}
+p,a,li{
+  font-family:'Open Sans',sans-serif;
+  font-weight:400;
+}
+.topnav {
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb; /* replaces var(--border) */
+}
+
+.topnav .inner {
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  gap:26px;
+  flex-wrap:wrap;
+}
+
+.topnav a {
+  display:block;
+  padding:14px 12px;
+  color:#005bbb; /* replaces var(--ub-blue) */
+  font-weight:600;
+  text-decoration:none;
+}
+
+.topnav a:hover {
+  border-bottom:3px solid #005bbb; /* replaces var(--ub-blue) */
+}
+    .page{max-width:1160px;margin:20px auto;padding:0 20px;display:grid;gap:22px}
+    @media(min-width:1000px){.page{grid-template-columns:1fr 320px}}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .btn{display:inline-block;padding:11px 16px;border-radius:8px;font-weight:700}
+    .btn.primary{background:var(--ub-blue);color:#fff}
+/* white-outline UB buttons (matched height to blue bars) */
+.btn.hollow {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+  font-weight: 700;
+  font-size: 13.5px;       /* same as .btn.ub */
+  padding: 7px 10px;       /* same height as .btn.ub */
+  border: 2px solid var(--ub-blue);
+  color: var(--ub-blue);
+  background: transparent;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn.hollow:hover {
+background:#005bbb !important;
+  color: #fff;
+}
+
+/* UB-style full-width CTA buttons (compact version) */
+.btn.ub {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+  font-weight: 700;
+  font-size: 13.5px;        /* smaller text */
+  padding: 7px 10px;        /* slimmer height */
+  border-radius: 6px;
+  background: #0b5aa3;
+  color: #fff;
+  border: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+
+.btn.ub + .btn.ub {
+  margin-top: 10px;         /* reduced gap between stacked buttons */
+}
+
+.btn.ub:hover {
+  background: #0d66c2;
+  color: #fff;}
+
+/* smaller UB bar for sidebar (extra-compact) */
+.btn.ub.sm {
+  font-size: 12.5px;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.btn.ub.sm + .btn.ub.sm { margin-top: 8px; }
+}
+
+/* limit main-column CTAs so they don't feel gigantic */
+.cta-wide { 
+  max-width: 820px; 
+  margin: 0 auto; 
+}
+
+    .content{display:grid;gap:18px}
+ .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .kicker{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+    .sidebar .card + .card{margin-top:14px}
+    .apply{background:#f0f6ff;border-color:#dbeafe}
+    .legacy{font-size:13px;margin-top:6px;display:inline-block}
+    .footer{max-width:1160px;margin:20px auto;padding:10px 20px;color:var(--muted);font-size:13px}
+
+/* === OVERRIDES to match the UB header screenshot === */
+
+/* 1) Slimmer top stripe, true UB navy */
+.ub-global::before{
+  height: 56px;            /* was 64 */
+  background:#0D2F4F;      /* darker navy */
+}
+
+/* 2) Keep the logo row clearly BELOW the stripe (no overlap) */
+.ub-global .ub-inner{
+  margin-top:56px;         /* push the white row below the stripe */
+  padding:8px 20px 0;      /* tighter like UB */
+  align-items:center;
+  margin-bottom:0;
+}
+
+/* 3) Right badge: vertically centered on the stripe, pill + chevron */
+.ub-college{
+  top:50%;                 /* center within the stripe */
+  transform:translateY(-50%);
+  right:32px;
+  height:40px;
+  padding:0 24px 0 36px;   /* room for chevron */
+  background:#0D2F4F;
+  border-radius:10px;
+  font-size:18px;
+  font-weight:600;
+  letter-spacing:.2px;
+  margin:0;
+  box-shadow:none;
+  white-space:nowrap;
+  z-index:2;
+}
+.ub-college::before{
+  left:-20px;               /* deeper chevron */
+  border-top:20px solid transparent;
+  border-bottom:20px solid transparent;
+  border-right:20px solid #0D2F4F;
+}
+
+/* 4) Remove the extra page gap if we added it earlier */
+body{ margin-top:0 !important; }
+
+/* === RESET: remove dark stripe and badge; restore spacing === */
+.ub-global::before { content: none !important; }   /* remove top stripe */
+.ub-college { display: none !important; }          /* hide the badge */
+
+.ub-global .ub-inner{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: -10px !important;
+  align-items: flex-end !important;
+}
+
+body { margin-top: 0 !important; }
+
+
+/* ===== Typography polish using existing Open Sans ===== */
+body {
+  line-height: 1.55;         /* tighter, more UB-like */
+  letter-spacing: 0.1px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;          /* semi-bold for headings */
+  color: #005bbb;            /* UB blue tone */
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
+
+p, li {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #005bbb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Force white text in the blue banner (even if it's a link) */
+/* Announcement headline color */
+.cap.announcement h2 { color: #005bbb !important; }
+
+/* Keep banner/hero headings + links white */
+/* Ensure hover underline in both areas */
+/* Sitewide default link colors (outside banner/hero) */
+body a { color: #0645ad; }
+body a:visited { color: #0b0080; }
+body a:hover { text-decoration: underline; }
+
+/* ==== RESTORE PATCH (10/09) — safe overrides to un-break layout/colors ==== */
+
+/* Base text + link colors (outside banner/hero) */
+:root { --text:#111; --link:#0645ad; --linkVisited:#0b0080; }
+html, body { color:var(--text); background:#fff; }
+body a { color:var(--link); }
+body a:visited { color:var(--linkVisited); }
+body a:hover { text-decoration: underline; }
+
+/* If something broad set everything white, pull normal text back */
+body h1, body h2, body h3, body h4, body h5, body h6,
+body p, body li, body dt, body dd, body span, body div {
+  color: var(--text);
+}
+
+/* Keep ONLY banner/hero text white (the thing you wanted) */
+/* Re-enable anything accidentally hidden */
+.hidden,[hidden]{ display: initial !important; visibility: visible !important; }
+
+/* UB global header / top row sanity */
+.ub-inner{
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+}
+.ub-logo img{
+  height:118px !important;
+  width:auto;
+  max-width:100%;
+  display:block;
+  vertical-align:middle;
+  margin-bottom:-10px;
+}
+.ub-college{ font-weight:600; }
+
+/* Make sure major blocks actually render as blocks */
+main, section, article, .cap, .content, .grid { display:block; }
+
+/* Prevent header/banner from overlaying the page content */
+.ub-global-header, </style>
+</head>
+<body>
+
+  <!-- (Optional) tiny link back to classic homepage -->
+  <div class="footer" style="text-align:right;margin-top:10px">
+    <a class="legacy" href="index.htm">Legacy archive &raquo;</a>
+  </div>
+
+<!-- UB Global Header -->
+<div class="ub-global">
+  <div class="ub-inner">
+    <div class="ub-logo">
+<img src="images/ub-logo.avif" alt="University at Buffalo logo" class="ub-logo-img">
+    </div>
+    <div class="ub-college">
+      College of Arts and Sciences
+    </div>
+  </div>
+</div>
+
+  <!-- UB-style header bar -->
+<div class="ubbar">
+  <div class="inner">
+    <h1>Department of Philosophy</h1>
+  </div>
+</div>
+
+  <!-- Top navigation -->
+  <div class="topnav">
+    <div class="inner">
+<a href="#about">About</a>
+<a href="#program">Program</a>
+<a href="#curriculum">Curriculum</a>
+<a href="#careers">Careers</a>
+<a href="#partners">Partners</a>
+<a href="#people">People</a>
+<a href="#videos">Videos</a>
+<a href="#apply">Apply</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main page grid -->
+  <div class="page">
+    <!-- Left: hero + content -->
+    <div class="content">
+      <div class="hero">
+        <!-- Replace with a campus/department image you like -->
+        <img src="ao/img/hero-placeholder.jpg" alt="University at Buffalo – Downtown view">
+<div class="cap announcement">
+  <h2>University at Buffalo to offer a fully online graduate degree in ontology</h2>
+  <p>
+    Search any major employment website and you’re likely to find multiple occurrences of the word
+    “ontology.” But subsequently searching for universities that offer degrees in ontology will return
+    a single result: the University at Buffalo. Beginning with the spring 2026 semester, UB will
+    launch a fully online Master of Science degree (MS) in applied ontology. A sister program at the
+    PhD level will be announced in due course. Both programs are housed within the university’s
+    Department of Philosophy. Both will involve elective courses in Computer Science, Linguistics,
+    Management, and Biomedical Informatics.
+  </p>
+</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="kicker">Graduate Program</span>
+        <h3>Research-driven mentoring and instruction</h3>
+        <p>Our graduate programs combine deep philosophical training with opportunities to collaborate across disciplines.</p>
+        <div class="cta-row"><a class="btn hollow" href="#">Explore Graduate</a></div>
+      </div>
+
+      <div class="card">
+        <span class="kicker">Applied Ontology</span>
+        <h3>Earn a master’s degree in a cutting-edge research area</h3>
+        <p>Launching Spring 2026: a fully online program connecting philosophy, AI, data engineering, and knowledge graphs.</p>
+<div class="cta-row" style="flex-direction:column">
+  <a class="btn ub" href="ao/index.htm">Learn about Applied Ontology</a>
+  <a class="btn ub" href="media/index.htm">Videos &amp; interviews</a>
+</div>
+      </div>
+    </div>
+
+    <!-- Right: sidebar cards -->
+    <div class="sidebar">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>A broad range of expertise with cross-disciplinary ties.</p>
+      </div>
+      <div class="card">
+        <h3>Graduate Program</h3>
+        <p>Research-driven mentoring and instruction.</p>
+      </div>
+      <div class="card">
+        <h3>Undergraduate Program</h3>
+        <p>Prepare for career pathways in Philosophy.</p>
+      </div>
+      <div class="card">
+        <h3>Applied Ontology</h3>
+        <p>Earn a master’s degree in a cutting-edge research area.</p>
+      </div>
+      <div class="card apply">
+        <h3>Apply Now</h3>
+<div class="cta-row" style="flex-direction:column">
+  <a class="btn ub" href="#">Apply to our undergraduate program</a>
+  <a class="btn ub" href="#">Apply to our graduate program</a>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© University at Buffalo — Philosophy</div>
+</body>
+</html>
+
