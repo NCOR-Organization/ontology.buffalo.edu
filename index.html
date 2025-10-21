@@ -1,22 +1,249 @@
-<html>
-<title>Buffalo Ontology Site</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>MS in Applied Ontology – University at Buffalo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fully online MS in Applied Ontology launching Spring 2026. A rigorous, career-focused program blending philosophical foundations with practical engineering." />
+  <style>
+    :root { --ub:#005bbb; --ink:#1b1f23; --muted:#5a6470; --bg:#f8fafc; }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+    a{color:var(--ub);text-decoration:none}
+    a:hover{text-decoration:underline}
 
-<body bgcolor="#9c9c9c">
+    /* Header */
+    header{padding:18px 20px;background:var(--bg);border-bottom:1px solid #e5e7eb}
+    header .wrap{max-width:1080px;margin:0 auto}
+    .eyebrow{color:var(--ub);font-weight:700;letter-spacing:.02em;text-transform:uppercase;font-size:12px}
+    header h1{margin:.35rem 0 0;font-size:28px;line-height:1.2}
+    header p{margin:.5rem 0 0;color:var(--muted);max-width:65ch}
 
-<table height=100% cellpadding=0 cellspacing=0 border=0>
-<td align=center valign=top>
-<img src="main0_data/short_header.gif" width="390" height="93"><nobr><img src="main0_data/0_main.gif" width="412" height="93" usemap="#topmenu">
-<map name="topmenu">
-<area shape="RECT" coords="28,37,195,53" href="contemporary.htm" target="body">
-<area shape="RECT" coords="28,70,165,86" href="history.htm" target="body">
-<area shape="RECT" coords="207,37,375,53" href="engineering.htm" target="body">
-<area shape="RECT" coords="207,70,375,86" href="biomedical.htm" target="body">
-</map>
-<br><br>
-<img src="engineering_files/NewTree.gif" width="250" align="left" alt="Ontology tree graphic">
-</td></tr>
-</table>
+    /* Top nav */
+    .topnav{border-bottom:1px solid #e5e7eb;background:#fff}
+    .topnav .inner{max-width:1080px;margin:0 auto;display:flex;gap:18px;align-items:center;padding:8px 20px}
+    .topnav a{font-weight:600;font-size:14px;padding:10px 6px}
+    .topnav .spacer{flex:1}
+
+    /* Layout + cards */
+    .wrap{max-width:1080px;margin:0 auto;padding:20px}
+    .cta{display:inline-block;margin-top:14px;padding:10px 16px;background:var(--ub);color:#fff;border-radius:10px}
+    .hero{margin:18px 0;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#eaf3ff,#ffffff)}
+    .hero img{display:block;width:100%;max-height:320px;object-fit:cover}
+
+    .card{padding:18px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;margin:18px 0}
+    .card h2{margin:.1rem 0 .6rem}
+    .quote{border-left:4px solid var(--ub);padding-left:12px;color:#2e3440;margin:10px 0}
+    .muted{color:var(--muted)}
+    footer{margin:32px 0 24px;color:var(--muted);font-size:14px}
+
+    /* Section with photo + text */
+    .row{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+    .row img{width:100%;height:260px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb}
+    @media (min-width:900px){ .row{grid-template-columns:1.2fr 2fr} }
+    .row.reverse{grid-template-columns:1fr; }
+    @media (min-width:900px){ .row.reverse{grid-template-columns:2fr 1.2fr} .row.reverse .text{order:1} .row.reverse .photo{order:2} }
+
+    /* Pills for quick facts (kept if needed) */
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
+    .navold{margin-top:24px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="wrap">
+    <div class="eyebrow">University at Buffalo · Department of Philosophy</div>
+    <h1>Master of Science in Applied Ontology (Fully Online)</h1>
+    <p>Launching Spring 2026 — a rigorous, career-focused MS that combines philosophical foundations with
+       practical engineering to make complex data and systems interoperate.</p>
+    <a class="cta" href="#apply">How to apply</a>
+  </div>
+</header>
+
+<!-- Top Navigation -->
+<nav class="topnav" aria-label="Primary">
+  <div class="inner">
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#research">Research</a>
+    <a href="#news">News</a>
+    <a href="#events">Events</a>
+    <div class="spacer"></div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- Hero (swap with a local image when ready) -->
+  <div class="hero">
+    <img src="https://dummyimage.com/1600x450/eaf3ff/005bbb&text=Applied+Ontology+at+UB" alt="Applied Ontology (hero)">
+  </div>
+
+  <!-- Announcement / Lead-in -->
+  <section id="announcement" class="card">
+    <div class="row">
+      <div class="photo">
+        <img src="images/degree1.jpg" alt="Online study and collaboration">
+      </div>
+      <div class="text">
+        <h2>Fully Online Graduate Degree in Applied Ontology</h2>
+        <p>
+          Beginning Spring 2026, the University at Buffalo will offer a fully online <strong>MS in Applied Ontology</strong>.
+          The program blends the depth of philosophical analysis with hands-on engineering practice to make data and
+          software systems interoperate across teams, tools, and institutions.
+        </p>
+        <p>
+          Designed for both early-career and experienced professionals, the degree emphasizes practical ontology
+          design, knowledge graph applications, and standards-based integration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About (Aristotle/history) -->
+  <section id="about" class="card">
+    <div class="row reverse">
+      <div class="text">
+        <h2>About</h2>
+        <p>
+          Ontology studies what exists and how categories of being relate—an inquiry that reaches back to
+          <em>Aristotle’s</em> <em>Metaphysics</em>. Aristotle’s system for classifying entities laid early groundwork
+          for modern ontological analysis.
+        </p>
+        <p>
+          Today, those ideas underpin computational ontologies that structure information and enable reasoning at scale.
+          This program builds from that lineage to train students to design and evaluate ontologies for real-world use.
+        </p>
+      </div>
+      <div class="photo">
+        <img src="images/aristotle.jpg" alt="Statue of Aristotle">
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Applied Ontology -->
+  <section id="what-is-ao" class="card">
+    <div class="row">
+      <div class="photo">
+        <img src="images/interoperability.jpg" alt="Interoperability and knowledge graphs">
+      </div>
+      <div class="text">
+        <h2>What Is Applied Ontology?</h2>
+        <p>
+          Applied ontology uses well-defined concepts and relations to structure data and systems so they interoperate.
+          It powers knowledge graphs, semantic search, data integration, analytics, and increasingly, AI alignment.
+        </p>
+        <div class="quote">
+          “Applied ontology turns definitions into working systems—so information truly connects across an enterprise.”
+        </div>
+        <p>
+          UB’s community has played a leading role in biomedical and enterprise ontology projects and collaborates
+          internationally across research centers and industry partners.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where students come from -->
+  <section id="students" class="card">
+    <div class="row reverse">
+      <div class="text">
+        <h2>Where Do Our Students Come From?</h2>
+        <p>
+          Students join from philosophy, linguistics, computer science, data management, health informatics, library &amp;
+          information science, and domain fields (e.g., bio/clinical, finance, defense). Many are working professionals
+          seeking to pivot into ontology-focused roles.
+        </p>
+      </div>
+      <div class="photo">
+        <img src="images/students.jpg" alt="Students on campus">
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs in Applied Ontology -->
+  <section id="jobs" class="card">
+    <div class="row">
+      <div class="photo">
+        <img src="images/jobs.jpg" alt="Workplace and technology careers">
+      </div>
+      <div class="text">
+        <h2>Jobs in Applied Ontology</h2>
+        <p>
+          Graduates are competitive for roles such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
+          <em>Data/AI Ontology Specialist</em>, and <em>Information Architect</em>.
+          Employers span healthcare &amp; pharma, government &amp; intelligence, banking/finance, e-commerce,
+          manufacturing, and tech.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applied Ontology MS Degree (program overview / CTA) -->
+  <section id="programs" class="card">
+    <div class="row reverse">
+      <div class="text">
+        <h2>Applied Ontology MS Degree</h2>
+        <p>
+          The program is fully online and interdisciplinary. You’ll learn ontology design and evaluation, knowledge
+          graphs and semantics for AI, data standards and alignment workflows, and governance for long-term adoption.
+        </p>
+        <h3>Sample topics</h3>
+        <ul>
+          <li>Foundations of ontology</li>
+          <li>Knowledge graphs &amp; AI</li>
+          <li>Biomedical &amp; enterprise ontologies</li>
+          <li>Interoperability standards and tooling</li>
+        </ul>
+        <p id="apply">
+          <a class="cta" href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology.html" target="_blank" rel="noopener">Get program details</a>
+          <!-- Replace with the official application link when available -->
+        </p>
+      </div>
+      <div class="photo">
+        <img src="images/degree2.jpg" alt="Graduate degree concept">
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty / Research / News / Events anchors (light placeholders for now) -->
+  <section id="faculty" class="card">
+    <h2>Faculty & network</h2>
+    <p>UB’s ontology community collaborates internationally (e.g., NCOR-Brazil, Swiss Center for Ontological Research, industry partners).</p>
+    <ul>
+      <li><a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html" target="_blank" rel="noopener">Ontology videos (Barry Smith)</a></li>
+      <li>Additional faculty clips coming soon (logic, engineering, domain ontology).</li>
+    </ul>
+  </section>
+
+  <section id="research" class="card">
+    <h2>Research</h2>
+    <p class="muted">Highlights of current ontology research projects will appear here.</p>
+  </section>
+
+  <section id="news" class="card">
+    <h2>News</h2>
+    <p class="muted">Program announcements and updates will be posted here.</p>
+  </section>
+
+  <section id="events" class="card">
+    <h2>Events</h2>
+    <p class="muted">Upcoming talks, info sessions, and workshops will be listed here.</p>
+  </section>
+
+  <!-- Legacy doorway (optional; keep or remove) -->
+  <p class="navold">Looking for the previous site? See
+    <a href="contemporary.htm">Contemporary Ontology</a>,
+    <a href="history.htm">History of Ontology</a>,
+    <a href="engineering.htm">Ontological Engineering</a>, and
+    <a href="biomedical.htm">Biomedical Ontology</a>.
+  </p>
+
+  <footer>© University at Buffalo · Department of Philosophy · MS in Applied Ontology</footer>
+</main>
 
 </body>
-
 </html>
