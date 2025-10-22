@@ -48,43 +48,42 @@
     .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
     .navold{margin-top:24px;color:var(--muted);font-size:14px}
 
-    /* --- Announcement layout (scoped) --- */
+    /* tighten spacing after the header */
+.grid { margin-top: 8px !important; }
+
+/* --- Announcement layout tweaks (scoped) --- */
 #announcement .row{
-  display:grid;
-  grid-template-columns: 1.2fr 2fr;   /* image | text */
-  gap:22px;
-  align-items:start;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;   /* image | text */
+  gap: 22px;
+  align-items: start;
 }
 
 #announcement .photo img{
-  width:100%;
-  height:320px;                       /* taller image for balance */
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
+  width: 100%;
+  height: 220px;                       /* smaller hero image */
+  object-fit: cover;                   /* crop nicely */
+  border-radius: 12px;
 }
 
-/* Bullets in a gentle card under the photo */
+/* Two-column bullets so they don't run long */
 #announcement .features{
-  margin-top:12px;
-  padding:12px 16px;
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-  border-radius:10px;
-  list-style:disc;
-  padding-left:20px;
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 6px;
 }
-#announcement .features li{ margin:6px 0; }
 
-/* Slightly tighter text column */
-#announcement .text{ font-size:0.97rem; }
-#announcement .text p{ max-width:70ch; }
-
-/* Mobile */
-@media (max-width:800px){
-  #announcement .row{ grid-template-columns:1fr; }
-  #announcement .photo img{ height:220px; }
+/* Stack nicely on narrow screens */
+@media (max-width: 800px){
+  #announcement .row{ grid-template-columns: 1fr; }
+  #announcement .photo img{ height: 200px; }
+  #announcement .features{ grid-template-columns: 1fr; }
 }
+
   </style>
 </head>
 <body>
@@ -115,18 +114,12 @@
 
 <main class="wrap">
 
- <!-- Announcement / Lead-in -->
+<!-- Announcement / Lead-in -->
 <section id="announcement" class="card">
   <div class="row">
     <div class="photo">
       <img src="images/ub-campus-2.jpg" alt="Online study and collaboration">
-      <ul class="features">
-        <li>Built for early-career and experienced professionals</li>
-        <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
-        <li>Flexible pacing, cross-campus electives, and internship opportunities</li>
-      </ul>
     </div>
-
     <div class="text">
       <h2>Fully Online Graduate Degree in Applied Ontology</h2>
 
@@ -143,6 +136,12 @@
         in the Department of Philosophy with electives in Computer Science, Linguistics, Management, and
         Biomedical Informatics.
       </p>
+
+      <ul class="features">
+        <li>Built for early-career and experienced professionals</li>
+        <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
+        <li>Flexible pacing, cross-campus electives, and internship opportunities</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -172,7 +171,7 @@
   <section id="what-is-ao" class="card">
     <div class="row">
       <div class="photo">
-        <img src="images/interoperability.jpg" alt="Interoperability and knowledge graphs">
+        <img src="images/jobs.jpg" alt="Workplace and technology careers">
       </div>
       <div class="text">
         <h2>What Is Applied Ontology?</h2>
@@ -212,7 +211,7 @@
   <section id="jobs" class="card">
     <div class="row">
       <div class="photo">
-        <img src="images/jobs.jpg" alt="Workplace and technology careers">
+        <img src="images/ontology-jobs.jpg" alt="Engineer working with data models and knowledge graphs on multiple screens">
       </div>
       <div class="text">
         <h2>Jobs in Applied Ontology</h2>
@@ -248,7 +247,7 @@
         </p>
       </div>
       <div class="photo">
-        <img src="images/degree2.jpg" alt="Graduate degree concept">
+        <img src="images/ao-degree2.jpg" alt="Students collaborating around a table">
       </div>
     </div>
   </section>
