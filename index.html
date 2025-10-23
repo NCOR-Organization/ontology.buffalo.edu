@@ -84,7 +84,57 @@
 @media (max-width:800px){
   #announcement .row{ grid-template-columns:1fr; }
   #announcement .photo img{ height:220px; }
+
+  
 }
+
+/* About: balance text and image on larger screens */
+@media (min-width: 900px) {
+  #about .row {
+    display: flex;
+    align-items: flex-start;   /* was: stretch */
+    gap: 1rem;                 /* was: 1.25rem */
+  }
+  #about .text,
+  #about .photo {
+    flex: 1 1 0;
+  }
+  #about .photo {
+    display: flex;
+  }
+  #about .photo img {
+    width: 100%;
+    height: auto;              /* was: 100% */
+    max-height: 420px;         /* tweak 380–440px if needed */
+    object-fit: cover;
+    object-position: center top; /* optional: bias crop upward a bit */
+    border-radius: 14px;
+  }
+}
+
+/* What Is Applied Ontology: make image match Aristotle */
+@media (min-width: 900px) {
+  #what-is-ao .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #what-is-ao .text,
+  #what-is-ao .photo {
+    flex: 1 1 0;
+  }
+  #what-is-ao .photo {
+    display: flex;       /* allow the img to fill the column’s height */
+  }
+  #what-is-ao .photo img {
+    width: 95%;
+    height: 300px;      /* ← set a fixed display height to match Aristotle */
+    object-fit: cover;   /* fill the box; crop edges as needed */
+    object-position: center top; /* similar crop bias */
+    border-radius: 14px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -143,6 +193,15 @@
         in the Department of Philosophy with electives in Computer Science, Linguistics, Management, and
         Biomedical Informatics.
       </p>
+
+      <p>
+  UB’s Department of Philosophy has long been a hub for applied ontological research, connecting philosophical theory with real-world data and information systems. Faculty collaborate with international initiatives such as the IEEE Standard Upper Ontology, the Open Biological and Biomedical Ontologies project, and the Industrial Ontologies Foundry.
+</p>
+
+<p>
+  Current research in Buffalo spans applications in medicine and biology, geographic information science, defense and security, and the ontology of artifacts. Supported by grants from the National Institutes of Health, the Department of Defense, and other agencies, UB offers students the chance to engage in funded projects and develop skills that bridge philosophy and technology.
+</p>
+
     </div>
   </div>
 </section>
@@ -152,15 +211,12 @@
     <div class="row reverse">
       <div class="text">
         <h2>About</h2>
-        <p>
-          Ontology studies what exists and how categories of being relate—an inquiry that reaches back to
-          <em>Aristotle’s</em> <em>Metaphysics</em>. Aristotle’s system for classifying entities laid early groundwork
-          for modern ontological analysis.
-        </p>
-        <p>
-          Today, those ideas underpin computational ontologies that structure information and enable reasoning at scale.
-          This program builds from that lineage to train students to design and evaluate ontologies for real-world use.
-        </p>
+   <p>
+  Ontology is the study of what exists and of how the categories of being relate to one another—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for later systems of logic and meaning that shaped how philosophers and scientists describe reality.
+</p>
+<p>
+  Those same ideas continue to inform modern formal ontologies that structure information and enable reasoning at scale. The field of applied ontology builds from this philosophical lineage to address how knowledge can be represented, organized, and shared across domains.
+</p>
       </div>
       <div class="photo">
         <img src="images/aristotle.jpg" alt="Statue of Aristotle">
@@ -172,22 +228,20 @@
   <section id="what-is-ao" class="card">
     <div class="row">
       <div class="photo">
-        <img src="images/interoperability.jpg" alt="Interoperability and knowledge graphs">
+        <img src="images/jobs.jpg" alt="Workplace and technology careers">
       </div>
       <div class="text">
-        <h2>What Is Applied Ontology?</h2>
-        <p>
-          Applied ontology uses well-defined concepts and relations to structure data and systems so they interoperate.
-          It powers knowledge graphs, semantic search, data integration, analytics, and increasingly, AI alignment.
-        </p>
-        <div class="quote">
-          “Applied ontology turns definitions into working systems—so information truly connects across an enterprise.”
-        </div>
-        <p>
-          UB’s community has played a leading role in biomedical and enterprise ontology projects and collaborates
-          internationally across research centers and industry partners.
-        </p>
-      </div>
+<div class="text">
+  <h2>What Is Applied Ontology</h2>
+
+  <p>
+    Applied ontology continues the philosophical project begun by Aristotle, turning classical analysis of kinds and relations into computable models that organize and reason over complex data in science, engineering, and everyday domains.
+  </p>
+
+  <p>
+    Emerging in the 1970s with large information systems, it uses well-defined concepts and relations to make data and software interoperate. Today it powers knowledge graphs, semantic search, data integration, analytics, and efforts toward AI alignment—turning definitions into working systems.
+  </p>
+</div>
     </div>
   </section>
 
