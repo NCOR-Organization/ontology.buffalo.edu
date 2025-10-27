@@ -48,91 +48,40 @@
     .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
     .navold{margin-top:24px;color:var(--muted);font-size:14px}
 
-    /* --- Announcement layout (scoped) --- */
+    /* tighten spacing after the header */
+.grid { margin-top: 8px !important; }
+
+/* --- Announcement layout tweaks (scoped) --- */
 #announcement .row{
-  display:grid;
-  grid-template-columns: 1.2fr 2fr;   /* image | text */
-  gap:22px;
-  align-items:start;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;   /* image | text */
+  gap: 22px;
+  align-items: start;
 }
 
 #announcement .photo img{
-  width:100%;
-  height:320px;                       /* taller image for balance */
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
+  width: 100%;
+  height: 220px;                       /* smaller hero image */
+  object-fit: cover;                   /* crop nicely */
+  border-radius: 12px;
 }
 
-/* Bullets in a gentle card under the photo */
+/* Two-column bullets so they don't run long */
 #announcement .features{
-  margin-top:12px;
-  padding:12px 16px;
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-  border-radius:10px;
-  list-style:disc;
-  padding-left:20px;
-}
-#announcement .features li{ margin:6px 0; }
-
-/* Slightly tighter text column */
-#announcement .text{ font-size:0.97rem; }
-#announcement .text p{ max-width:70ch; }
-
-/* Mobile */
-@media (max-width:800px){
-  #announcement .row{ grid-template-columns:1fr; }
-  #announcement .photo img{ height:220px; }
-
-  
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 6px;
 }
 
-/* About: balance text and image on larger screens */
-@media (min-width: 900px) {
-  #about .row {
-    display: flex;
-    align-items: flex-start;   /* was: stretch */
-    gap: 1rem;                 /* was: 1.25rem */
-  }
-  #about .text,
-  #about .photo {
-    flex: 1 1 0;
-  }
-  #about .photo {
-    display: flex;
-  }
-  #about .photo img {
-    width: 100%;
-    height: auto;              /* was: 100% */
-    max-height: 420px;         /* tweak 380–440px if needed */
-    object-fit: cover;
-    object-position: center top; /* optional: bias crop upward a bit */
-    border-radius: 14px;
-  }
-}
-
-/* What Is Applied Ontology: make image match Aristotle */
-@media (min-width: 900px) {
-  #what-is-ao .row {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  #what-is-ao .text,
-  #what-is-ao .photo {
-    flex: 1 1 0;
-  }
-  #what-is-ao .photo {
-    display: flex;       /* allow the img to fill the column’s height */
-  }
-  #what-is-ao .photo img {
-    width: 95%;
-    height: 300px;      /* ← set a fixed display height to match Aristotle */
-    object-fit: cover;   /* fill the box; crop edges as needed */
-    object-position: center top; /* similar crop bias */
-    border-radius: 14px;
-  }
+/* Stack nicely on narrow screens */
+@media (max-width: 800px){
+  #announcement .row{ grid-template-columns: 1fr; }
+  #announcement .photo img{ height: 200px; }
+  #announcement .features{ grid-template-columns: 1fr; }
 }
 
   </style>
@@ -165,18 +114,12 @@
 
 <main class="wrap">
 
- <!-- Announcement / Lead-in -->
+<!-- Announcement / Lead-in -->
 <section id="announcement" class="card">
   <div class="row">
     <div class="photo">
       <img src="images/ub-campus-2.jpg" alt="Online study and collaboration">
-      <ul class="features">
-        <li>Built for early-career and experienced professionals</li>
-        <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
-        <li>Flexible pacing, cross-campus electives, and internship opportunities</li>
-      </ul>
     </div>
-
     <div class="text">
       <h2>Fully Online Graduate Degree in Applied Ontology</h2>
 
@@ -194,14 +137,11 @@
         Biomedical Informatics.
       </p>
 
-      <p>
-  UB’s Department of Philosophy has long been a hub for applied ontological research, connecting philosophical theory with real-world data and information systems. Faculty collaborate with international initiatives such as the IEEE Standard Upper Ontology, the Open Biological and Biomedical Ontologies project, and the Industrial Ontologies Foundry.
-</p>
-
-<p>
-  Current research in Buffalo spans applications in medicine and biology, geographic information science, defense and security, and the ontology of artifacts. Supported by grants from the National Institutes of Health, the Department of Defense, and other agencies, UB offers students the chance to engage in funded projects and develop skills that bridge philosophy and technology.
-</p>
-
+      <ul class="features">
+        <li>Built for early-career and experienced professionals</li>
+        <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
+        <li>Flexible pacing, cross-campus electives, and internship opportunities</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -211,12 +151,15 @@
     <div class="row reverse">
       <div class="text">
         <h2>About</h2>
-   <p>
-  Ontology is the study of what exists and of how the categories of being relate to one another—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for later systems of logic and meaning that shaped how philosophers and scientists describe reality.
-</p>
-<p>
-  Those same ideas continue to inform modern formal ontologies that structure information and enable reasoning at scale. The field of applied ontology builds from this philosophical lineage to address how knowledge can be represented, organized, and shared across domains.
-</p>
+        <p>
+          Ontology studies what exists and how categories of being relate—an inquiry that reaches back to
+          <em>Aristotle’s</em> <em>Metaphysics</em>. Aristotle’s system for classifying entities laid early groundwork
+          for modern ontological analysis.
+        </p>
+        <p>
+          Today, those ideas underpin computational ontologies that structure information and enable reasoning at scale.
+          This program builds from that lineage to train students to design and evaluate ontologies for real-world use.
+        </p>
       </div>
       <div class="photo">
         <img src="images/aristotle.jpg" alt="Statue of Aristotle">
@@ -231,17 +174,19 @@
         <img src="images/jobs.jpg" alt="Workplace and technology careers">
       </div>
       <div class="text">
-<div class="text">
-  <h2>What Is Applied Ontology</h2>
-
-  <p>
-    Applied ontology continues the philosophical project begun by Aristotle, turning classical analysis of kinds and relations into computable models that organize and reason over complex data in science, engineering, and everyday domains.
-  </p>
-
-  <p>
-    Emerging in the 1970s with large information systems, it uses well-defined concepts and relations to make data and software interoperate. Today it powers knowledge graphs, semantic search, data integration, analytics, and efforts toward AI alignment—turning definitions into working systems.
-  </p>
-</div>
+        <h2>What Is Applied Ontology?</h2>
+        <p>
+          Applied ontology uses well-defined concepts and relations to structure data and systems so they interoperate.
+          It powers knowledge graphs, semantic search, data integration, analytics, and increasingly, AI alignment.
+        </p>
+        <div class="quote">
+          “Applied ontology turns definitions into working systems—so information truly connects across an enterprise.”
+        </div>
+        <p>
+          UB’s community has played a leading role in biomedical and enterprise ontology projects and collaborates
+          internationally across research centers and industry partners.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -266,7 +211,7 @@
   <section id="jobs" class="card">
     <div class="row">
       <div class="photo">
-        <img src="images/jobs.jpg" alt="Workplace and technology careers">
+        <img src="images/ontology-jobs.jpg" alt="Engineer working with data models and knowledge graphs on multiple screens">
       </div>
       <div class="text">
         <h2>Jobs in Applied Ontology</h2>
@@ -302,7 +247,7 @@
         </p>
       </div>
       <div class="photo">
-        <img src="images/degree2.jpg" alt="Graduate degree concept">
+        <img src="images/ao-degree2.jpg" alt="Students collaborating around a table">
       </div>
     </div>
   </section>
