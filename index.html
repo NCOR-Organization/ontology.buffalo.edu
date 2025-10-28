@@ -5,137 +5,218 @@
   <title>MS in Applied Ontology – University at Buffalo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fully online MS in Applied Ontology launching Spring 2026. A rigorous, career-focused program blending philosophical foundations with practical engineering." />
-  <style>
-    :root { --ub:#005bbb; --ink:#1b1f23; --muted:#5a6470; --bg:#f8fafc; }
-    *{box-sizing:border-box}
-    body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
-    a{color:var(--ub);text-decoration:none}
-    a:hover{text-decoration:underline}
+ <style>
+  :root { --ub:#005bbb; --ink:#1b1f23; --muted:#5a6470; --bg:#f8fafc; }
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+  a{color:var(--ub);text-decoration:none}
+  a:hover{text-decoration:underline}
 
-    /* Header */
-    header{padding:18px 20px;background:var(--bg);border-bottom:1px solid #e5e7eb}
-    header .wrap{max-width:1080px;margin:0 auto}
-    .eyebrow{color:var(--ub);font-weight:700;letter-spacing:.02em;text-transform:uppercase;font-size:12px}
-    header h1{margin:.35rem 0 0;font-size:28px;line-height:1.2}
-    header p{margin:.5rem 0 0;color:var(--muted);max-width:65ch}
+  /* Header */
+  header{padding:18px 20px;background:var(--bg);border-bottom:1px solid #e5e7eb}
+  header .wrap{max-width:1080px;margin:0 auto}
+  .eyebrow{color:var(--ub);font-weight:700;letter-spacing:.02em;text-transform:uppercase;font-size:12px}
+  header h1{margin:.35rem 0 0;font-size:28px;line-height:1.2}
+  header p{margin:.5rem 0 0;color:var(--muted);max-width:65ch}
 
-    /* Top nav */
-    .topnav{border-bottom:1px solid #e5e7eb;background:#fff}
-    .topnav .inner{max-width:1080px;margin:0 auto;display:flex;gap:18px;align-items:center;padding:8px 20px}
-    .topnav a{font-weight:600;font-size:14px;padding:10px 6px}
-    .topnav .spacer{flex:1}
+  /* Top nav */
+  .topnav{border-bottom:1px solid #e5e7eb;background:#fff}
+  .topnav .inner{max-width:1080px;margin:0 auto;display:flex;gap:18px;align-items:center;padding:8px 20px}
+  .topnav a{font-weight:600;font-size:14px;padding:10px 6px}
+  .topnav .spacer{flex:1}
 
-    /* Layout + cards */
-    .wrap{max-width:1080px;margin:0 auto;padding:20px}
-    .cta{display:inline-block;margin-top:14px;padding:10px 16px;background:var(--ub);color:#fff;border-radius:10px}
-    .hero{margin:18px 0;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#eaf3ff,#ffffff)}
-    .hero img{display:block;width:100%;max-height:320px;object-fit:cover}
+  /* Layout + cards */
+  .wrap{max-width:1080px;margin:0 auto;padding:20px}
+  .cta{display:inline-block;margin-top:14px;padding:10px 16px;background:var(--ub);color:#fff;border-radius:10px}
+  .hero{margin:18px 0;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#eaf3ff,#ffffff)}
+  .hero img{display:block;width:100%;max-height:320px;object-fit:cover}
 
-    .card{padding:18px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;margin:18px 0}
-    .card h2{margin:.1rem 0 .6rem}
-    .quote{border-left:4px solid var(--ub);padding-left:12px;color:#2e3440;margin:10px 0}
-    .muted{color:var(--muted)}
-    footer{margin:32px 0 24px;color:var(--muted);font-size:14px}
+  .card{padding:18px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;margin:18px 0}
+  .card h2{margin:.1rem 0 .6rem}
+  .quote{border-left:4px solid var(--ub);padding-left:12px;color:#2e3440;margin:10px 0}
+  .muted{color:var(--muted)}
+  footer{margin:32px 0 24px;color:var(--muted);font-size:14px}
 
-    /* Section with photo + text */
-    .row{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
-    .row img{width:100%;height:260px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb}
-    @media (min-width:900px){ .row{grid-template-columns:1.2fr 2fr} }
-    .row.reverse{grid-template-columns:1fr; }
-    @media (min-width:900px){ .row.reverse{grid-template-columns:2fr 1.2fr} .row.reverse .text{order:1} .row.reverse .photo{order:2} }
+  /* --- Banner inside a .card (your origins section uses this) --- */
+  .card .banner{
+    margin: -18px -18px 16px;          /* match .card padding for full-bleed */
+    height: clamp(160px, 22vw, 280px); /* short + wide */
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .card .banner img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;                   /* crop, don’t distort */
+    object-position:center;            /* tweak if needed: 'center 30%' etc. */
+  }
 
-    /* Pills for quick facts (kept if needed) */
-    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
-    .navold{margin-top:24px;color:var(--muted);font-size:14px}
+  /* Section with photo + text (generic row) */
+  .row{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+  .row img{width:100%;height:260px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb}
+  @media (min-width:900px){ .row{grid-template-columns:1.2fr 2fr} }
+  .row.reverse{grid-template-columns:1fr;}
+  @media (min-width:900px){
+    .row.reverse{grid-template-columns:2fr 1.2fr}
+    .row.reverse .text{order:1}
+    .row.reverse .photo{order:2}
+  }
 
-    /* --- Announcement layout (scoped) --- */
-#announcement .row{
-  display:grid;
-  grid-template-columns: 1.2fr 2fr;   /* image | text */
-  gap:22px;
-  align-items:start;
+  /* Pills for quick facts */
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
+  .navold{margin-top:24px;color:var(--muted);font-size:14px}
+
+  /* --- Announcement layout (scoped) --- */
+  #announcement .row{
+    display:grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap:22px;
+    align-items:start;
+  }
+  #announcement .photo img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+  }
+  #announcement .features{
+    margin-top:12px;
+    padding:12px 16px;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    list-style:disc;
+    padding-left:20px;
+  }
+  #announcement .features li{ margin:6px 0; }
+  #announcement .text{ font-size:0.97rem; }
+  #announcement .text p{ max-width:70ch; }
+  @media (max-width:800px){
+    #announcement .row{ grid-template-columns:1fr; }
+    #announcement .photo img{ height:220px; }
+  }
+
+  /* About: balance text and image on larger screens */
+  @media (min-width: 900px) {
+    #about .row { display:flex; align-items:flex-start; gap:1rem; }
+    #about .text, #about .photo { flex:1 1 0; }
+    #about .photo { display:flex; }
+    #about .photo img {
+      width:100%;
+      height:auto;
+      max-height:420px;
+      object-fit:cover;
+      object-position:center top;
+      border-radius:14px;
+    }
+  }
+
+  /* What Is Applied Ontology: make image match Aristotle */
+  @media (min-width: 900px) {
+    #what-is-ao .row { display:flex; align-items:flex-start; gap:1rem; }
+    #what-is-ao .text, #what-is-ao .photo { flex:1 1 0; }
+    #what-is-ao .photo { display:flex; }
+    #what-is-ao .photo img {
+      width:95%;
+      height:300px;
+      object-fit:cover;
+      object-position:center top;
+      border-radius:14px;
+    }
+  }
+
+  /* ---------- Shared styles for Jobs & Programs resources ---------- */
+  #jobs .text p{ margin-bottom:0.9rem; max-width:none; }
+  #programs .text p{ margin-bottom:0.9rem; }
+
+  /* Card container */
+  #jobs .resources, #programs .resources{
+    margin-top:1rem;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:14px 16px;
+  }
+  #jobs .resources h3, #programs .resources h3{
+    margin:0 0 .4rem 0;
+    font-size:1.05rem;
+    font-weight:600;
+  }
+
+  /* Links grid */
+  #jobs .resource-links, #programs .resource-links{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    gap:.35rem;
+  }
+  #jobs .resource-links li.divider, #programs .resource-links li.divider{
+    border-top:1px dashed #d1d5db;
+    margin:.25rem 0 .35rem;
+    height:0;
+  }
+  #jobs .resource-links a, #programs .resource-links a{
+    text-decoration:none;
+    border-radius:8px;
+    padding:.25rem .35rem;
+    display:inline-block;
+  }
+  #jobs .resource-links a:hover, #programs .resource-links a:hover{ text-decoration:underline; }
+  #jobs .resource-links .desc, #programs .resource-links .desc{
+    font-size:0.95rem;
+    line-height:1.4;
+    color:rgba(0,0,0,.70);
+    margin-top:.15rem;
+  }
+  @media (min-width: 900px){
+    #jobs .resource-links, #programs .resource-links{
+      grid-template-columns:1fr 1fr;
+      column-gap:1.25rem;
+    }
+    #jobs .resource-links li.divider, #programs .resource-links li.divider{ grid-column:1 / -1; }
+    #jobs .resource-links li.feature, #programs .resource-links li.feature{ grid-column:1 / -1; }
+  }
+
+  /* Origins: organization list */
+  #origins .org-list{
+    margin:0 0 0.5rem 1.25rem; /* neat bullet indent */
+    padding:0;
+    line-height:1.6;
+  }
+  #origins .org-list li{ margin:.5rem 0; }
+  #origins .org-list strong{ font-weight:700; }
+
+  /* ---------- Programs: Apply area spacing (Option B) ---------- */
+  #programs .apply-note{
+    margin-top:22px;
+    padding-top:10px;
+    border-top:1px dashed #d1d5db;
+  }
+  #programs .apply-note p{ margin:0 0 10px; }
+  #programs .apply-note .cta{ margin-top:6px; }
+  @media (max-width: 600px){
+    #programs .apply-note .cta{ display:block; text-align:center; }
+  }
+
+  /* Make the Origins banner slimmer (shorter height only) */
+#origins .banner{
+  height: clamp(120px, 18vw, 220px);  /* was 160/22vw/280 */
 }
 
-#announcement .photo img{
-  width:100%;
-  height:320px;                       /* taller image for balance */
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
+/* Optional: even slimmer on very wide desktops */
+@media (min-width: 1200px){
+  #origins .banner{ height: 190px; }
 }
 
-/* Bullets in a gentle card under the photo */
-#announcement .features{
-  margin-top:12px;
-  padding:12px 16px;
-  background:#f8fafc;
-  border:1px solid #e5e7eb;
-  border-radius:10px;
-  list-style:disc;
-  padding-left:20px;
+/* Optional: keep mobile readable (a bit taller if you like) */
+@media (max-width: 520px){
+  #origins .banner{ height: 150px; }
 }
-#announcement .features li{ margin:6px 0; }
-
-/* Slightly tighter text column */
-#announcement .text{ font-size:0.97rem; }
-#announcement .text p{ max-width:70ch; }
-
-/* Mobile */
-@media (max-width:800px){
-  #announcement .row{ grid-template-columns:1fr; }
-  #announcement .photo img{ height:220px; }
-
-  
-}
-
-/* About: balance text and image on larger screens */
-@media (min-width: 900px) {
-  #about .row {
-    display: flex;
-    align-items: flex-start;   /* was: stretch */
-    gap: 1rem;                 /* was: 1.25rem */
-  }
-  #about .text,
-  #about .photo {
-    flex: 1 1 0;
-  }
-  #about .photo {
-    display: flex;
-  }
-  #about .photo img {
-    width: 100%;
-    height: auto;              /* was: 100% */
-    max-height: 420px;         /* tweak 380–440px if needed */
-    object-fit: cover;
-    object-position: center top; /* optional: bias crop upward a bit */
-    border-radius: 14px;
-  }
-}
-
-/* What Is Applied Ontology: make image match Aristotle */
-@media (min-width: 900px) {
-  #what-is-ao .row {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  #what-is-ao .text,
-  #what-is-ao .photo {
-    flex: 1 1 0;
-  }
-  #what-is-ao .photo {
-    display: flex;       /* allow the img to fill the column’s height */
-  }
-  #what-is-ao .photo img {
-    width: 95%;
-    height: 300px;      /* ← set a fixed display height to match Aristotle */
-    object-fit: cover;   /* fill the box; crop edges as needed */
-    object-position: center top; /* similar crop bias */
-    border-radius: 14px;
-  }
-}
-
-  </style>
+</style>
 </head>
 <body>
 
@@ -245,67 +326,172 @@
     </div>
   </section>
 
-  <!-- Where students come from -->
-  <section id="students" class="card">
-    <div class="row reverse">
-      <div class="text">
-        <h2>Where Do Our Students Come From?</h2>
-        <p>
-          Students join from philosophy, linguistics, computer science, data management, health informatics, library &amp;
-          information science, and domain fields (e.g., bio/clinical, finance, defense). Many are working professionals
-          seeking to pivot into ontology-focused roles.
-        </p>
-      </div>
-      <div class="photo">
-        <img src="images/students.jpg" alt="Students on campus">
-      </div>
-    </div>
-  </section>
-
   <!-- Jobs in Applied Ontology -->
-  <section id="jobs" class="card">
-    <div class="row">
-      <div class="photo">
-        <img src="images/jobs.jpg" alt="Workplace and technology careers">
-      </div>
-      <div class="text">
-        <h2>Jobs in Applied Ontology</h2>
-        <p>
-          Graduates are competitive for roles such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
-          <em>Data/AI Ontology Specialist</em>, and <em>Information Architect</em>.
-          Employers span healthcare &amp; pharma, government &amp; intelligence, banking/finance, e-commerce,
-          manufacturing, and tech.
-        </p>
-      </div>
+<section id="jobs" class="card">
+  <div class="text">
+    <h2>Jobs in Applied Ontology</h2>
+    <p>
+      Graduates are competitive for positions such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
+      <em>Data/AI Ontology Specialist</em>, and <em>Information Architect</em>. Applied ontologists are in demand
+      across healthcare and pharmaceuticals, government and intelligence, banking and finance, e-commerce, manufacturing,
+      and technology. As Barry Smith notes, “Every government in the world and every intelligence agency needs ontology
+      support.” Starting salaries for UB graduates with ontology-focused degrees can reach as high as $175,000, with an
+      average ontologist salary around $92,000 in industry reports. Employers span both public and private sectors,
+      reflecting a growing demand for experts who can connect data, algorithms, and domain knowledge.
+    </p>
+    <p>
+      Students researching applied ontology at UB join a long-standing international network of collaborators that has,
+      for decades, centered in Buffalo. “With this MS degree,” says John Beverley, “we aim to more formally standardize
+      applied ontology education—not just for UB, but as an example for the ontology community worldwide.” Recent
+      commentary from industry leaders underscores this demand: organizations from Amazon and Google to Nike are hiring
+      specialists in semantic technologies such as OWL, SPARQL, and knowledge graphs.
+    </p>
+  </div>
+
+<div class="resources">
+  <h3>Explore Interviews</h3>
+<ul class="resource-links">
+  <!-- Interviews / videos (full-width items) -->
+  <li class="feature">
+    <a href="https://blog.apaonline.org/2022/09/15/careers-in-ontology-an-interview-with-professor-barry-smith/"
+       title="APA blog interview — Commercializing Ontology; Lucrative Jobs for Philosophers">
+      APA blog interview (Smith &amp; Beverley)
+    </a>
+    <div class="desc">
+      <em>Commercializing Ontology; Lucrative Jobs for Philosophers.</em> An interview on how philosophers transition
+      into interesting and lucrative public/private sector jobs in ontology.
+      <span><a href="https://blog.apaonline.org/2022/09/15/careers-in-ontology-an-interview-with-professor-barry-smith/">Read the blog</a></span>
     </div>
-  </section>
+  </li>
+
+  <li class="feature">
+    <a href="https://youtu.be/aYQgGrqUz8A" title="APA video: Careers in Ontology">
+      APA video: Careers in Ontology
+    </a>
+    <div class="desc">
+      A recent APA video on new jobs across commercial and industrial applications. Charlie Taben and Barry Smith discuss
+      why philosophers are well-suited for these tech-driven roles.
+      <span><a href="https://youtu.be/aYQgGrqUz8A">Watch the video</a></span>
+    </div>
+  </li>
+
+  <li class="feature">
+    <a href="#" title="Interviews with potential employers">Interviews with potential employers</a>
+  </li>
+
+  <li class="feature">
+    <a href="#" title="Interviews with UB alumni in ontology roles">Interviews with UB alumni</a>
+  </li>
+
+  <li class="divider" aria-hidden="true"></li>
+
+  <!-- Job boards (compact two-column items) -->
+  <li><a href="#" title="Google Careers">Google Careers</a></li>
+  <li><a href="#" title="Indeed ontologist listings">Indeed listings</a></li>
+  <li><a href="#" title="Glassdoor ontologist listings">Glassdoor listings</a></li>
+  <li><a href="#" title="ZipRecruiter ontologist listings">ZipRecruiter listings</a></li>
+  <li><a href="#" title="SimplyHired ontologist listings">SimplyHired listings</a></li>
+</ul>
+</div>
+</section>
 
   <!-- Applied Ontology MS Degree (program overview / CTA) -->
-  <section id="programs" class="card">
-    <div class="row reverse">
-      <div class="text">
-        <h2>Applied Ontology MS Degree</h2>
-        <p>
-          The program is fully online and interdisciplinary. You’ll learn ontology design and evaluation, knowledge
-          graphs and semantics for AI, data standards and alignment workflows, and governance for long-term adoption.
-        </p>
-        <h3>Sample topics</h3>
-        <ul>
-          <li>Foundations of ontology</li>
-          <li>Knowledge graphs &amp; AI</li>
-          <li>Biomedical &amp; enterprise ontologies</li>
-          <li>Interoperability standards and tooling</li>
-        </ul>
-        <p id="apply">
-          <a class="cta" href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology.html" target="_blank" rel="noopener">Get program details</a>
-          <!-- Replace with the official application link when available -->
-        </p>
-      </div>
-      <div class="photo">
-        <img src="images/degree2.jpg" alt="Graduate degree concept">
-      </div>
+<section id="programs" class="card">
+  <div class="text">
+    <h2>Applied Ontology MS Degree</h2>
+
+    <p>
+      The Applied Ontology degree prepares students from around the world for work in a rapidly growing, interdisciplinary branch of information science. It combines philosophical rigor with practical computing skills, enabling graduates to bridge the gap between conceptual modeling and data-driven systems.
+    </p>
+
+    <h3>Curriculum</h3>
+    <p>
+      The curriculum combines two complementary strands taken alongside electives: the human side of ontology, where students work with domain experts (e.g., food science, healthcare) to analyze heterogeneous data and plan interoperability; and the software side, where students use ontology tools to implement, deploy, and integrate rigorously defined models within contemporary computing environments.
+    </p>
+
+    <h3>Requirements</h3>
+    <p>
+      Admission requires an undergraduate degree. Philosophy graduates—trained in logic and argumentation—are especially well suited, and the program also welcomes applicants from computer science, management, information studies, and other STEM and humanities fields.
+    </p>
+
+    <!-- Program resources (single column, matches Jobs styling) -->
+    <div class="resources">
+      <h3>Explore the Program</h3>
+<ul class="resource-links">
+  <li>
+    <a href="#" title="Interviews with UB undergraduates">Interviews with UB undergraduates</a>
+  </li>
+
+  <li>
+    <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
+  </li>
+
+  <li>
+    <a href="#" title="Student video sampler">Student video sampler</a>
+    <div class="desc">Quick clips: lectures + student perspectives.</div>
+  </li>
+
+  <li>
+    <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html" target="_blank" rel="noopener">
+      Sample lectures: Barry Smith &amp; John Beverley
+    </a>
+    <div class="desc">Segments on ontology, interoperability, and logic.</div>
+  </li>
+
+  <li>
+    <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/donnelly.html" target="_blank" rel="noopener">
+      Logic in Applied Ontology (Donnelly)
+    </a>
+    <div class="desc">The role of logic in applied ontology.</div>
+  </li>
+
+  <li>
+    <a href="#" title="Collaborator talks: Ontology in AI">Collaborator talks: Ontology in AI</a>
+    <div class="desc">Ontology in AI and knowledge graphs.</div>
+  </li>
+</ul>
+<!-- Apply CTA -->
+<div class="apply-note">
+  <p><em>Prospective MS students can click here for admission to the Spring 2026 semester.</em></p>
+  <a class="cta" href="#" target="_blank" rel="noopener">Apply Here</a>
+</div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Where Do Our Students Come From -->
+<section id="origins" class="card">
+  <div class="banner">
+    <img src="images/columns-banner.jpg" alt="Classical columns against a blue sky">
+  </div>
+
+  <h2>Where Do Our Students Come From</h2>
+
+  <p>
+    Students in UB’s ontology programs come from a broad mix of fields—philosophy, computer science,
+    linguistics, information science, healthcare, defense, and engineering. Some join straight from
+    undergraduate study, while others bring research or industry experience. All share an interest in using
+    clear conceptual models to make data and systems work together.
+  </p>
+
+  <p>
+    Graduates and collaborators of the UB Department of Philosophy now work and study around the world
+    in government, industry, and academia. Our research community collaborates closely with institutions such as:
+  </p>
+
+  <ul>
+    <li><strong>National Center for Ontological Research (NCOR-US)</strong> – headquartered at UB, coordinating ontology efforts across domains</li>
+    <li><strong>NCOR-Brazil</strong> – advancing ontology research in Latin America</li>
+    <li><strong>Swiss Center for Ontological Research</strong> – supporting European ontology education and research</li>
+    <li><strong>Naas.ai</strong> – developing AI systems grounded in ontological frameworks</li>
+  </ul>
+
+  <p>
+    Together, these students and partners form a worldwide network contributing to the continued growth
+    and practical impact of applied ontology.
+  </p>
+</section>
 
   <!-- Faculty / Research / News / Events anchors (light placeholders for now) -->
   <section id="faculty" class="card">
