@@ -5,8 +5,19 @@
   <title>MS in Applied Ontology – University at Buffalo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fully online MS in Applied Ontology launching Spring 2026. A rigorous, career-focused program blending philosophical foundations with practical engineering." />
- <style>
-  :root { --ub:#005bbb; --ink:#1b1f23; --muted:#5a6470; --bg:#f8fafc; }
+<style>
+  :root{
+    /* global palette */
+    --ub:#005bbb;            /* site link blue */
+    --ink:#1b1f23;
+    --muted:#5a6470;
+    --bg:#f8fafc;
+
+    /* faculty extras */
+    --ub-navy:#1F2F46;       /* deep UB navy for headings/links */
+    --ub-lightblue:#EEF4FF;  /* soft blue for right cards (and optional panels) */
+  }
+
   *{box-sizing:border-box}
   body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
   a{color:var(--ub);text-decoration:none}
@@ -37,23 +48,19 @@
   .muted{color:var(--muted)}
   footer{margin:32px 0 24px;color:var(--muted);font-size:14px}
 
-  /* --- Banner inside a .card (your origins section uses this) --- */
+  /* --- Banner inside a .card (default) --- */
   .card .banner{
-    margin: -18px -18px 16px;          /* match .card padding for full-bleed */
-    height: clamp(160px, 22vw, 280px); /* short + wide */
+    margin: -18px -18px 16px;
+    height: clamp(140px, 18vw, 210px); 
     overflow: hidden;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
   .card .banner img{
-    display:block;
-    width:100%;
-    height:100%;
-    object-fit:cover;                   /* crop, don’t distort */
-    object-position:center;            /* tweak if needed: 'center 30%' etc. */
+    display:block;width:100%;height:100%;object-fit:cover;object-position:center;
   }
 
-  /* Section with photo + text (generic row) */
+  /* Standard rows */
   .row{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
   .row img{width:100%;height:260px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb}
   @media (min-width:900px){ .row{grid-template-columns:1.2fr 2fr} }
@@ -64,158 +71,321 @@
     .row.reverse .photo{order:2}
   }
 
-  /* Pills for quick facts */
+  /* Pills */
   .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef2ff;color:#374151;font-size:13px;margin:2px 6px 6px 0}
   .navold{margin-top:24px;color:var(--muted);font-size:14px}
 
-  /* --- Announcement layout (scoped) --- */
-  #announcement .row{
-    display:grid;
-    grid-template-columns: 1.2fr 2fr;
-    gap:22px;
-    align-items:start;
-  }
-  #announcement .photo img{
-    width:100%;
-    height:320px;
-    object-fit:cover;
-    border-radius:12px;
-    border:1px solid #e5e7eb;
-  }
-  #announcement .features{
-    margin-top:12px;
-    padding:12px 16px;
-    background:#f8fafc;
-    border:1px solid #e5e7eb;
-    border-radius:10px;
-    list-style:disc;
-    padding-left:20px;
-  }
-  #announcement .features li{ margin:6px 0; }
-  #announcement .text{ font-size:0.97rem; }
-  #announcement .text p{ max-width:70ch; }
+  /* Announcement (scoped) */
+  #announcement .row{display:grid;grid-template-columns:1.2fr 2fr;gap:22px;align-items:start}
+  #announcement .photo img{width:100%;height:320px;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb}
+  #announcement .features{margin-top:12px;padding:12px 16px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;list-style:disc;padding-left:20px}
+  #announcement .features li{margin:6px 0}
+  #announcement .text{font-size:.97rem}
+  #announcement .text p{max-width:70ch}
   @media (max-width:800px){
-    #announcement .row{ grid-template-columns:1fr; }
-    #announcement .photo img{ height:220px; }
+    #announcement .row{grid-template-columns:1fr}
+    #announcement .photo img{height:220px}
   }
 
-  /* About: balance text and image on larger screens */
-  @media (min-width: 900px) {
-    #about .row { display:flex; align-items:flex-start; gap:1rem; }
-    #about .text, #about .photo { flex:1 1 0; }
-    #about .photo { display:flex; }
-    #about .photo img {
-      width:100%;
-      height:auto;
-      max-height:420px;
-      object-fit:cover;
-      object-position:center top;
-      border-radius:14px;
-    }
+  /* About + What Is AO */
+  @media (min-width:900px){
+    #about .row, #what-is-ao .row{display:flex;align-items:flex-start;gap:1rem}
+    #about .text, #about .photo, #what-is-ao .text, #what-is-ao .photo{flex:1 1 0}
+    #about .photo, #what-is-ao .photo{display:flex}
+    #about .row{align-items:stretch}
+    #about .photo{align-items:center;justify-content:center}
+    #about .photo img{width:100%;height:320px !important;object-fit:cover;object-position:center 40%;border-radius:14px}
+    #what-is-ao .photo img{width:95%;height:300px;object-fit:cover;object-position:center top;border-radius:14px}
   }
 
-  /* What Is Applied Ontology: make image match Aristotle */
-  @media (min-width: 900px) {
-    #what-is-ao .row { display:flex; align-items:flex-start; gap:1rem; }
-    #what-is-ao .text, #what-is-ao .photo { flex:1 1 0; }
-    #what-is-ao .photo { display:flex; }
-    #what-is-ao .photo img {
-      width:95%;
-      height:300px;
-      object-fit:cover;
-      object-position:center top;
-      border-radius:14px;
-    }
+  /* Jobs & Programs */
+  #jobs .text p{margin-bottom:.9rem;max-width:none}
+  #programs .text p{margin-bottom:.9rem}
+  #jobs .resources, #programs .resources{margin-top:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px}
+  #jobs .resources h3, #programs .resources h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:600}
+  #jobs .resource-links, #programs .resource-links{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+  #jobs .resource-links li.divider, #programs .resource-links li.divider{border-top:1px dashed #d1d5db;margin:.25rem 0 .35rem;height:0}
+  #jobs .resource-links a, #programs .resource-links a{text-decoration:none;border-radius:8px;padding:.25rem .35rem;display:inline-block}
+  #jobs .resource-links a:hover, #programs .resource-links a:hover{text-decoration:underline}
+  #jobs .resource-links .desc, #programs .resource-links .desc{font-size:.95rem;line-height:1.4;color:rgba(0,0,0,.70);margin-top:.15rem}
+  @media (min-width:900px){
+    #jobs .resource-links, #programs .resource-links{grid-template-columns:1fr 1fr;column-gap:1.25rem}
+    #jobs .resource-links li.divider, #programs .resource-links li.divider{grid-column:1/-1}
+    #jobs .resource-links li.feature, #programs .resource-links li.feature{grid-column:1/-1}
+  }
+  #jobs .banner{height:clamp(120px,18vw,220px)!important}
+  #jobs .banner img{object-position:center 35%}
+
+  /* ============================
+     FACULTY — clean + aligned
+     ============================ */
+
+  /* grid */
+  #faculty .faculty-layout{
+    display:grid;grid-template-columns:1.8fr 1fr;gap:22px;align-items:start;
+  }
+  @media (max-width:900px){
+    #faculty .faculty-layout{grid-template-columns:1fr}
   }
 
-  /* ---------- Shared styles for Jobs & Programs resources ---------- */
-  #jobs .text p{ margin-bottom:0.9rem; max-width:none; }
-  #programs .text p{ margin-bottom:0.9rem; }
-
-  /* Card container */
-  #jobs .resources, #programs .resources{
-    margin-top:1rem;
-    background:#f8fafc;
-    border:1px solid #e5e7eb;
-    border-radius:14px;
-    padding:14px 16px;
-  }
-  #jobs .resources h3, #programs .resources h3{
-    margin:0 0 .4rem 0;
-    font-size:1.05rem;
-    font-weight:600;
+  /* nudge left column up to match right cards (desktop only) */
+  #faculty .col-main{position:relative;top:-10px}
+  @media (max-width:900px){
+    #faculty .col-main{top:0}
   }
 
-  /* Links grid */
-  #jobs .resource-links, #programs .resource-links{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:grid;
-    gap:.35rem;
+  /* header: photo | meta */
+  #faculty .bio-head{
+    display:grid;grid-template-columns:140px 1fr;gap:14px;align-items:start;margin:0;
   }
-  #jobs .resource-links li.divider, #programs .resource-links li.divider{
-    border-top:1px dashed #d1d5db;
-    margin:.25rem 0 .35rem;
-    height:0;
+  #faculty .headshot.lg{
+    width:140px;height:140px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb;
   }
-  #jobs .resource-links a, #programs .resource-links a{
-    text-decoration:none;
-    border-radius:8px;
-    padding:.25rem .35rem;
-    display:inline-block;
+  #faculty .bio-meta .name{
+    margin:0 0 4px;color:var(--ub-navy);font-weight:700;font-size:clamp(19px,1.9vw,22px);line-height:1.2;
   }
-  #jobs .resource-links a:hover, #programs .resource-links a:hover{ text-decoration:underline; }
-  #jobs .resource-links .desc, #programs .resource-links .desc{
-    font-size:0.95rem;
-    line-height:1.4;
-    color:rgba(0,0,0,.70);
-    margin-top:.15rem;
+  #faculty .bio-meta .name .postnom{font-weight:400;font-size:14px;color:var(--muted);margin-left:6px}
+  #faculty .titles{margin:0 0 22px;color:#111;font-weight:400;font-size:14.5px;line-height:1.3}
+
+  /* meta blocks: label + link */
+  #faculty .meta-blocks{margin:0;padding:0;list-style:none}
+  #faculty .meta-blocks li{margin:0 0 8px}
+  #faculty .meta-blocks .label{display:block;font-weight:400;font-size:14.5px;line-height:1.25}
+  #faculty .meta-blocks .sub{display:block;margin-top:2px;font-weight:400;font-size:14.5px}
+
+  /* Areas just under header */
+  #faculty .bio-extra{margin:-3px 0 6px}
+  #faculty .bio-extra h4{margin:0 0 2px;font-weight:700;font-size:17px}
+  #faculty .bio-extra p{margin:0;font-size:14.5px}
+
+  /* Education (white) */
+  #faculty .edu{margin:6px 0 8px;padding:0;background:transparent;border:0}
+  #faculty .edu .list-plain{margin:4px 0 0}
+
+  /* lists */
+  #faculty .list-plain{list-style:none;padding-left:0}
+  #faculty .list-plain li{margin:.18rem 0;font-size:14.5px}
+
+  /* dropdowns: label blue + arrow; content white, blue text */
+  #faculty .dropdown{border:0;background:transparent;margin:8px 0 10px}
+  #faculty .dropdown > summary{
+    cursor:pointer;list-style:none;padding:0;color:var(--ub-navy);text-decoration:none;font-weight:600;
+    display:inline-flex;align-items:center;gap:6px;font-size:14.5px;
   }
-  @media (min-width: 900px){
-    #jobs .resource-links, #programs .resource-links{
-      grid-template-columns:1fr 1fr;
-      column-gap:1.25rem;
-    }
-    #jobs .resource-links li.divider, #programs .resource-links li.divider{ grid-column:1 / -1; }
-    #jobs .resource-links li.feature, #programs .resource-links li.feature{ grid-column:1 / -1; }
+  #faculty .dropdown > summary::-webkit-details-marker{display:none}
+  #faculty .dropdown > summary::after{content:"▸";transform:translateY(1px);transition:.15s transform ease;opacity:.75}
+  #faculty .dropdown[open] > summary::after{transform:rotate(90deg) translateY(0)}
+  #faculty .dropdown > *:not(summary){margin:8px 0 8px;padding:8px 0 0;background:transparent;border:0;border-radius:0}
+  #faculty .dropdown .list-plain li, #faculty .dropdown a{color:var(--ub-navy)}
+  #faculty .dropdown a:hover{text-decoration:underline}
+
+  /* right column */
+  #faculty .col-side{align-self:start}
+  #faculty .col-side .panel{
+    background:var(--ub-lightblue);border:1px solid rgba(31,47,70,.10);border-radius:12px;padding:12px 14px;margin:0 0 12px;
+  }
+  #faculty .col-side address{font-style:normal}
+
+  /* divider between profiles */
+  #faculty .faculty-sep{border:0;border-top:1px solid #e5e7eb;margin:22px 0}
+  @media (max-width:900px){
+    #faculty .faculty-sep{margin:16px 0}
   }
 
-  /* Origins: organization list */
-  #origins .org-list{
-    margin:0 0 0.5rem 1.25rem; /* neat bullet indent */
-    padding:0;
-    line-height:1.6;
-  }
-  #origins .org-list li{ margin:.5rem 0; }
-  #origins .org-list strong{ font-weight:700; }
+  /* minor rhythm */
+  #faculty h4{margin:12px 0 6px}
+  #faculty #faculty-intro{margin:4px 0 12px;color:var(--muted)}
+  #faculty .rule-dotted{display:none!important}
 
-  /* ---------- Programs: Apply area spacing (Option B) ---------- */
-  #programs .apply-note{
-    margin-top:22px;
-    padding-top:10px;
-    border-top:1px dashed #d1d5db;
-  }
-  #programs .apply-note p{ margin:0 0 10px; }
-  #programs .apply-note .cta{ margin-top:6px; }
-  @media (max-width: 600px){
-    #programs .apply-note .cta{ display:block; text-align:center; }
-  }
-
-  /* Make the Origins banner slimmer (shorter height only) */
-#origins .banner{
-  height: clamp(120px, 18vw, 220px);  /* was 160/22vw/280 */
+/* What Is Applied Ontology: two-column prose */
+#what-is-ao .cols{
+  column-count: 2;
+  column-gap: 28px;
+}
+#what-is-ao .cols p{
+  break-inside: avoid;
+  margin: 0 0 1rem;
+}
+@media (max-width: 900px){
+  #what-is-ao .cols{ column-count: 1; }
 }
 
-/* Optional: even slimmer on very wide desktops */
-@media (min-width: 1200px){
-  #origins .banner{ height: 190px; }
+/* What Is Applied Ontology – full-width quote panel */
+#what-is-ao .ao-quote{
+  margin-top:16px;
+  padding:16px 18px;
+  background: var(--ub-lightblue);
+  border: 1px solid rgba(31,47,70,.12);
+  border-radius:12px;
+}
+#what-is-ao .ao-quote .q{
+  margin:0;
+  font-size:16px;
+  line-height:1.55;
+}
+#what-is-ao .ao-quote .attr{
+  margin:8px 0 0;
+  font-weight:600;
+  color: var(--ub-navy);
+  font-size:14px;
 }
 
-/* Optional: keep mobile readable (a bit taller if you like) */
-@media (max-width: 520px){
-  #origins .banner{ height: 150px; }
+/* What Is Applied Ontology – full-width quote panel (match “Explore Interviews”) */
+#what-is-ao .ao-quote{
+  margin-top:16px;
+  padding:16px 18px;
+  background:#f8fafc;                 /* same as the Explore Interviews panel */
+  border:1px solid #e5e7eb;            /* same border */
+  border-radius:12px;
 }
+
+#what-is-ao .ao-quote .q{
+  margin:0;
+  font-size:16px;
+  line-height:1.6;
+  font-style: italic;                   /* make the quote italic */
+  color: var(--muted);                  /* gray, matches site tone */
+}
+
+#what-is-ao .ao-quote .attr{
+  margin:8px 0 0;
+  font-weight:600;
+  color: var(--ub-navy);
+  font-size:14px;
+}
+
+/* ============================
+   ABOUT — alternating image/text slices (clean)
+   ============================ */
+
+#about.about-slices .slice{
+  display: grid;
+  grid-template-columns: 260px 1fr;   /* image | text */
+  gap: 16px;
+  align-items: start;
+  margin: 8px 0 12px;                 /* tight vertical rhythm */
+}
+
+#about.about-slices .slice.right{
+  grid-template-columns: 1fr 300px;   /* text | image (slightly wider image) */
+}
+#about.about-slices .slice.right .text{ order: 1; }
+#about.about-slices .slice.right figure{ order: 2; }
+
+/* Full-width closing paragraph slice (no image) */
+#about.about-slices .slice.full{
+  display: block;                     /* override the grid */
+  margin: 4px 0 0;
+}
+#about.about-slices .slice.full p{
+  max-width: 72ch;                    /* comfortable reading width */
+}
+
+/* Figure / image */
+#about.about-slices figure{
+  margin: 0;
+  align-self: start;
+}
+#about.about-slices figure img{
+  display: block;
+  width: 100%;
+  height: auto;                       /* allow natural height */
+  max-height: 200px;                  /* keeps images tidy; was 220px */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+#about.about-slices figure .muted{
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #6d7a84;                     /* cool gray */
+}
+
+/* Text rhythm */
+#about.about-slices h3{ margin: .25rem 0 .35rem; }
+#about.about-slices .slice .text p{ margin: 0 0 8px; }
+
+/* Responsive stack */
+@media (max-width: 820px){
+  #about.about-slices .slice,
+  #about.about-slices .slice.right{
+    grid-template-columns: 1fr;       /* stack */
+  }
+  #about.about-slices .slice{ margin: 10px 0 14px; }
+  #about.about-slices figure img{
+    max-height: 200px;
+  }
+}
+
+/* ============================
+   ABOUT — single image with wrapped text
+   (used for “Where Ontology Began”)
+   ============================ */
+
+#about.about-wrap { position: relative; }
+#about.about-wrap::after{ content:""; display:block; clear:both; }  /* clearfix */
+#about.about-wrap h2{ margin-bottom: 10px; }
+
+#about.about-wrap .hero-img{
+  float: right;
+  width: 42%;                 /* adjust 36–48% to taste */
+  max-width: 560px;
+  height: auto;
+  margin: 0 0 10px 18px;      /* space between text and image */
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  object-fit: cover;
+}
+
+#about.about-wrap p{
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 900px){
+  #about.about-wrap .hero-img{
+    float: none;
+    width: 100%;
+    margin: 0 0 12px 0;
+  }
+}
+
+/* Highlight quote panel (John Beverley) */
+.ao-highlight-quote {
+  background: #EEF4FF;                /* same soft blue as other panels */
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+
+.ao-highlight-quote .quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #334155;                     /* slightly deeper gray-blue for contrast */
+  margin: 0 0 10px 0;
+}
+
+.ao-highlight-quote .attr {
+  text-align: right;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1F2F46;                     /* UB navy */
+  margin: 0;
+}
+
+/* Slightly tighter spacing on mobile */
+@media (max-width: 820px){
+  .ao-highlight-quote {
+    padding: 16px 18px;
+    margin-top: 18px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -250,7 +420,7 @@
 <section id="announcement" class="card">
   <div class="row">
     <div class="photo">
-      <img src="images/ub-campus-2.jpg" alt="Online study and collaboration">
+      <img src="images/announcement.jpg" alt="Aerial view of UB campus by the lake at sunset">
       <ul class="features">
         <li>Built for early-career and experienced professionals</li>
         <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
@@ -287,48 +457,55 @@
   </div>
 </section>
 
-  <!-- About (Aristotle/history) -->
-  <section id="about" class="card">
-    <div class="row reverse">
-      <div class="text">
-        <h2>About</h2>
-   <p>
-  Ontology is the study of what exists and of how the categories of being relate to one another—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for later systems of logic and meaning that shaped how philosophers and scientists describe reality.
-</p>
-<p>
-  Those same ideas continue to inform modern formal ontologies that structure information and enable reasoning at scale. The field of applied ontology builds from this philosophical lineage to address how knowledge can be represented, organized, and shared across domains.
-</p>
-      </div>
-      <div class="photo">
-        <img src="images/aristotle.jpg" alt="Statue of Aristotle">
-      </div>
-    </div>
-  </section>
+<section id="about" class="card about-wrap">
+  <h2>Where Ontology Began</h2>
 
-  <!-- What is Applied Ontology -->
-  <section id="what-is-ao" class="card">
-    <div class="row">
-      <div class="photo">
-        <img src="images/jobs.jpg" alt="Workplace and technology careers">
-      </div>
-      <div class="text">
-<div class="text">
+  <!-- Single image floated right; text wraps around -->
+  <img
+    class="hero-img"
+    src="assets/img/ontology/right.jpg"
+    alt="Classical bust of Aristotle"
+    loading="lazy"
+    decoding="async"
+  >
+
+  <p><strong>Ontology is the study of what exists and of how the categories of being relate to one another</strong>—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for later systems of logic and meaning that shaped how philosophers and scientists describe reality.</p>
+
+  <p>In his analysis of being, Aristotle identified <em>substance</em> as the most fundamental kind of entity—the independent realities upon which other properties such as quantity, quality, and relation depend. He also distinguished between a thing’s <em>essence</em>—what it is—and its <em>accidents</em>—the features that can change without altering its identity. These ideas provided a systematic way to think about classification, change, and causation, themes that continue to influence how we model reality today.</p>
+
+  <p>Those same principles guide modern ontology. From medieval philosophy to the formal sciences of the modern era, the aim has remained the same: to bring order and clarity to the diversity of what exists. The field of applied ontology builds on this lineage, turning those classical insights into computable frameworks for structuring knowledge and enabling reasoning at scale.</p>
+</section>
+
+<section id="what-is-ao" class="card">
   <h2>What Is Applied Ontology</h2>
 
-  <p>
-    Applied ontology continues the philosophical project begun by Aristotle, turning classical analysis of kinds and relations into computable models that organize and reason over complex data in science, engineering, and everyday domains.
-  </p>
+  <div class="cols">
+    <p><strong>From Aristotle to AI:</strong> The philosophical questions that began with Aristotle—about what exists and how things relate—did not end in antiquity. They evolved alongside logic, mathematics, and computing, shaping how we model the world today. Modern ontology transforms those same inquiries into the foundation of digital reasoning: structuring information so that machines and humans can share understanding.</p>
 
-  <p>
-    Emerging in the 1970s with large information systems, it uses well-defined concepts and relations to make data and software interoperate. Today it powers knowledge graphs, semantic search, data integration, analytics, and efforts toward AI alignment—turning definitions into working systems.
-  </p>
+    <p>Applied ontology continues this philosophical lineage, turning classical analysis of kinds and relations into computable models that organize and reason over complex data in science, engineering, and everyday domains.</p>
+
+    <p>In the 1970s, as large information systems were developed independently, they framed data differently and could not work together—even when built for the same purpose. Applied ontology emerged to solve this problem of semantic interoperability—combining philosophical clarity about meaning with technical methods for structuring definitions and data.</p>
+
+    <p>The need for such interoperability has only grown with AI, data integration, and global collaboration. Applied ontology builds a common language that allows unrelated systems and disciplines to work together.</p>
+
+    <p><em>You encounter ontology-driven systems every day:</em> the iPhone’s Siri, integration of Human Genome Project data, linked web content, product recommendations, and semantics-aware search all rely on ontological frameworks to make data coherent and usable.</p>
+
+    <p>At the University at Buffalo, applied ontology is taught as both a philosophical discipline and a practical toolkit. Students learn to analyze conceptual structure, formalize it using logical methods, and implement it in computational environments where precision of meaning is critical. With the founding of the National Center for Ontological Research (NCOR) in 2005, UB became a world center for ontology research and education—continuing the philosophical project Aristotle began, now at computational scale.</p>
+  </div>
+</section>
+
+<!-- Highlight Quote: John Beverley -->
+<div class="ao-highlight-quote">
+  <p class="quote">“We are riding a new wave of advances in artificial intelligence, and ontologies are at the forefront of this wave.”</p>
+  <p class="attr">— John Beverley, PhD, Assistant Professor of Philosophy</p>
 </div>
-    </div>
-  </section>
 
   <!-- Jobs in Applied Ontology -->
 <section id="jobs" class="card">
-  <div class="text">
+  <div class="banner">
+    <img src="images/jobs-banner.webp" alt="Hands typing on a laptop">
+  </div>
+
     <h2>Jobs in Applied Ontology</h2>
     <p>
       Graduates are competitive for positions such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
@@ -397,7 +574,10 @@
 
   <!-- Applied Ontology MS Degree (program overview / CTA) -->
 <section id="programs" class="card">
-  <div class="text">
+  <div class="banner">
+    <img class="hero-img" src="images/applied-ontology/ao-degree-hero.jpg" alt="Applied Ontology—graduation cap in hand">
+  </div>
+
     <h2>Applied Ontology MS Degree</h2>
 
     <p>
@@ -463,7 +643,9 @@
 <!-- Where Do Our Students Come From -->
 <section id="origins" class="card">
   <div class="banner">
-    <img src="images/columns-banner.jpg" alt="Classical columns against a blue sky">
+    <img src="images/about/students-origins-hero.jpg" 
+         alt="Map with pins showing where our students come from" 
+         style="object-position:center 55%;">
   </div>
 
   <h2>Where Do Our Students Come From</h2>
@@ -493,15 +675,307 @@
   </p>
 </section>
 
-  <!-- Faculty / Research / News / Events anchors (light placeholders for now) -->
-  <section id="faculty" class="card">
-    <h2>Faculty & network</h2>
-    <p>UB’s ontology community collaborates internationally (e.g., NCOR-Brazil, Swiss Center for Ontological Research, industry partners).</p>
-    <ul>
-      <li><a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html" target="_blank" rel="noopener">Ontology videos (Barry Smith)</a></li>
-      <li>Additional faculty clips coming soon (logic, engineering, domain ontology).</li>
-    </ul>
-  </section>
+<!-- Faculty / Research / News / Events anchors -->
+<section id="faculty" class="card">
+  <h2>Our Faculty</h2>
+  <p class="muted" id="faculty-intro">UB Philosophers with a primary focus in ontology include:</p>
+
+  <div class="faculty-layout">
+    <!-- LEFT: main profile -->
+    <article class="col-main">
+      <header class="bio-head">
+        <img class="headshot lg" src="https://www.buffalo.edu/content/shared/cas/philosophy/faculty-profiles/smith/jcr:content/profileinfo.img.280.280.z.q65.jpg/1730469896235.jpg" alt="Barry Smith">
+
+        <div class="bio-meta">
+          <h3 class="name">Barry Smith <span class="postnom">PhD, FACMI</span></h3>
+
+          <p class="titles">SUNY Distinguished Professor of Philosophy<br>Julian Park Chair</p>
+
+          <ul class="meta-blocks">
+            <li>
+              <span class="label">Department of Philosophy</span>
+              <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
+            </li>
+            <li>
+              <span class="label">Director</span>
+              <a class="sub" href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a>
+            </li>
+            <li>
+              <span class="label">Affiliate Professorship</span>
+              <a class="sub" href="https://medicine.buffalo.edu/departments/biomedical-informatics.html">UB Biomedical Informatics</a>
+            </li>
+            <li>
+              <span class="label">Affiliate Professorship</span>
+              <a class="sub" href="https://engineering.buffalo.edu/computer-science-engineering.html">UB Computer Science &amp; Engineering</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Areas sits just above Education -->
+      <div class="bio-extra">
+        <h4>Areas of Specialization</h4>
+        <p>Applied Ontology; Artificial Intelligence</p>
+      </div>
+
+      <!-- Education (blue panel) -->
+      <h4>Education</h4>
+      <div class="edu">
+        <ul class="list-plain">
+          <li>PhD, Philosophy — University of Manchester (1976)</li>
+          <li>MA, Mathematics and Philosophy — Oxford University (1975)</li>
+          <li>BA, Mathematics and Philosophy (1st Class Joint Honors) — Oxford University (1973)</li>
+        </ul>
+      </div>
+
+      <!-- Link-style dropdowns (labels are blue; content panels are blue) -->
+      <div class="disclosures">
+        <details class="dropdown">
+          <summary>Courses</summary>
+          <div>
+            <ul class="list-plain">
+              <li>Ontology and Artificial Intelligence (Fall 2025)</li>
+              <li>Ontology of Economics (Fall 2024)</li>
+              <li>Nature and Culture (2023)</li>
+              <li>Philosophy of Science (2022)</li>
+              <li>American Philosophy and Its Contemporary Relevance (2021)</li>
+              <li>Philosophy and Artificial Intelligence (Crash Course, Oct 2–3, 2021)</li>
+              <li>Intelligence Analysis: A Crash Course (2019)</li>
+              <li>Applied Ontology (Fall 2018)</li>
+              <li>Ontological Engineering (Online, Spring 2018)</li>
+              <li>Advanced Biomedical Ontology (Fall 2017)</li>
+              <li>Applied Ontology (Online, Spring 2017)</li>
+              <li>Biomedical Ontology (Fall 2016)</li>
+              <li>Analytic Metaphysics (Spring 2016)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="dropdown">
+          <summary>Selected Publications</summary>
+          <div>
+            <ul class="list-plain">
+              <li>Jobst Landgrebe and Barry Smith, <em>Why Machines Will Never Rule The World — Artificial Intelligence Without Fear</em>, 2nd revised and expanded edition (Routledge, 2025).</li>
+              <li>Ludger Jansen and Barry Smith, “Categories in Top-Level Ontologies: Revisiting the Aristotelian Background,” <em>Advances in Knowledge Representation</em>, 5(3), September 2025.</li>
+              <li>S. Clint Dowland, Barry Smith, Matthew A. Diller, Jobst Landgrebe, and William R. Hogan, “Ontology of language, with applications to demographic data,” <em>Applied Ontology</em>, 1–24, 2024.</li>
+              <li>Barry Smith, “Biomedical ontologies,” in Peter Elkin (ed.), <em>Terminology, Ontology and their Implementations</em>, Springer, 2023, 125–169.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- RIGHT: Contact + Related Links (blue panels) -->
+    <aside class="col-side">
+      <div class="panel contact">
+        <h4>Contact</h4>
+        <address>
+          105 Park Hall, UB North Campus<br>
+          Buffalo, NY 14260-4150<br>
+          <span class="muted">Phone:</span> (716) 645-0160<br>
+          <span class="muted">Fax:</span> (716) 645-6559<br>
+          <a href="mailto:phismith@buffalo.edu">phismith@buffalo.edu</a>
+        </address>
+      </div>
+
+      <div class="panel">
+        <h4>Related Links</h4>
+        <ul class="list-plain">
+          <li><a href="https://ontology.buffalo.edu/smith/">Personal Website</a></li>
+          <li><a href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a></li>
+          <li><a href="https://scholar.google.com/citations?user=LW8rVVoAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://www.amia.org/fellows">Fellow, American College of Medical Informatics (FACMI)</a></li>
+          <li><a href="https://philpeople.org/profiles/barry-smith">PhilPeople</a></li>
+          <li><a href="https://ontology.buffalo.edu/smith/videos.html">Video Resources</a></li>
+          <li><a href="https://open.spotify.com/show/4W5aXxz7TSg8QSY7mL6hJk">Podcast: Exploring Career Opportunities in Tech for Non-STEM Students</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <hr class="faculty-sep">
+
+  <!-- =========================
+     John Beverley
+     ========================= -->
+<div class="faculty-layout">
+  <!-- LEFT: main profile -->
+  <article class="col-main">
+    <header class="bio-head">
+      <img class="headshot lg" src="https://www.buffalo.edu/content/shared/cas/philosophy/faculty-profiles/John-Beverley/jcr:content/profileinfo.img.280.280.z.q65.jpg/1700492743368.jpg" alt="John Beverley">
+
+      <div class="bio-meta">
+        <h3 class="name">John Beverley <span class="postnom">PhD</span></h3>
+
+        <p class="titles">Assistant Professor</p>
+
+        <ul class="meta-blocks">
+          <li>
+            <span class="label">Department of Philosophy</span>
+            <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
+          </li>
+          <li>
+            <span class="label">Co-Director</span>
+            <a class="sub" href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a>
+          </li>
+          <li>
+            <span class="label">Affiliate</span>
+            <a class="sub" href="https://www.buffalo.edu/ai-data-science.html">Institute for Artificial Intelligence and Data Science</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Areas just above Education -->
+    <div class="bio-extra">
+      <h4>Areas of Specialization</h4>
+      <p>Logic, Social Epistemology, Ethics, Applied Ontology, Race, Ethnicity, Diversity.</p>
+    </div>
+
+    <!-- Education (white; no blue) -->
+    <h4>Education</h4>
+    <div class="edu">
+      <ul class="list-plain">
+        <li>PhD, Northwestern University</li>
+        <li>MA, University at Buffalo</li>
+        <li>BS, North Carolina State University</li>
+      </ul>
+    </div>
+
+    <!-- Courses -->
+    <div class="disclosures">
+      <details class="dropdown">
+        <summary>Courses</summary>
+        <div>
+          <ul class="list-plain">
+            <li>Introduction to Philosophy</li>
+            <li>Logic of Ontology</li>
+            <li>Metaphysics</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Selected Publications -->
+      <details class="dropdown">
+        <summary>Selected Publications</summary>
+        <div>
+          <ul class="list-plain">
+            <li>“The Infectious Disease Ontology in the Age of COVID-19,” with Shane Babcock, Barry Smith, et al. <em>Journal of Biomedical Semantics</em>, 2021, 12(13): 1–20.</li>
+            <li>“BFO: Basic Formal Ontology,” with Neil Otte and Alan Ruttenberg. <em>Applied Ontology</em>, 2022, 17(1): 17–43.</li>
+            <li>“Speak No Evil: Understanding Hermeneutical (In)Justice.” <em>Episteme</em>, 2022, 19(3): 431–454.</li>
+            <li>“CIDO: Coronavirus Infectious Disease Ontology,” with Oliver He, Barry Smith, et al. <em>Scientific Data</em>, 2020, 7(181): 1–8.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- RIGHT: compact sidebar -->
+  <aside class="col-side">
+    <div class="panel contact">
+      <h4>Contact</h4>
+      <address>
+        107 Park Hall, UB North Campus<br>
+        Buffalo, NY 14260-4150<br>
+        <span class="muted">Phone:</span> (716) 849-4136<br>
+        <a href="mailto:johnbeve@buffalo.edu">johnbeve@buffalo.edu</a>
+      </address>
+    </div>
+
+    <div class="panel">
+      <h4>Related Links</h4>
+      <ul class="list-plain">
+        <li><a href="#">Personal Website</a></li>
+        <li><a href="#">ResearchGate</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- =========================
+     Regina Hurley
+     ========================= -->
+<hr class="faculty-sep">
+
+<div class="faculty-layout">
+  <!-- LEFT: main profile -->
+  <article class="col-main">
+    <header class="bio-head">
+      <img class="headshot lg" src="https://www.buffalo.edu/content/shared/cas/philosophy/faculty-profiles/Hurley/jcr:content/profileinfo.img.280.280.z.q65.jpg/1755706375195.jpg" alt="Regina Hurley">
+
+      <div class="bio-meta">
+        <h3 class="name">Regina Hurley <span class="postnom">PhD</span></h3>
+
+        <p class="titles">Assistant Professor</p>
+
+        <ul class="meta-blocks">
+          <li>
+            <span class="label">Department of Philosophy</span>
+            <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Areas just above Education -->
+    <div class="bio-extra">
+      <h4>Areas of Specialization</h4>
+      <p>Applied Ontology; Epistemology.</p>
+    </div>
+
+    <!-- Education (white; no blue) -->
+    <h4>Education</h4>
+    <div class="edu">
+      <ul class="list-plain">
+        <li>PhD, Northwestern University</li>
+      </ul>
+    </div>
+
+    <!-- Disclosures -->
+    <div class="disclosures">
+      <details class="dropdown">
+        <summary>Courses</summary>
+        <div>
+          <ul class="list-plain">
+            <li>Ethical Problems and Public Issues</li>
+            <li>Introduction to Feminist Philosophy</li>
+            <li>Environmental Ethics</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Selected Publications</summary>
+        <div>
+          <ul class="list-plain">
+            <li>“Coordinating virus research: The Virus Infectious Disease Ontology,” with John Beverley et al. <em>PLOS ONE</em>, 2024.</li>
+            <li>“Coordinating Coronavirus Research: The COVID-19 Infectious Disease Ontology,” with John Beverley et al. <em>Proceedings of the International Conference on Biomedical Ontologies</em>, 2022.</li>
+            <li>“Counternarrative Themes,” with John Beverley. <em>American Journal of Bioethics</em> 21(2): 72–74, 2021.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </article>
+
+  <!-- RIGHT: sidebar -->
+  <aside class="col-side">
+    <div class="panel contact">
+      <h4>Contact</h4>
+      <address>
+        106 Park Hall, UB North Campus<br>
+        Buffalo, NY 14260-4150<br>
+        <span class="muted">Phone:</span> (716) 645-2444<br>
+        <a href="mailto:rhurley3@buffalo.edu">rhurley3@buffalo.edu</a>
+      </address>
+    </div>
+
+    <div class="panel">
+      <h4>Office Hours</h4>
+      <p class="muted" style="margin:0;">By appointment</p>
+    </div>
+  </aside>
+</div>
+</section>
 
   <section id="research" class="card">
     <h2>Research</h2>
