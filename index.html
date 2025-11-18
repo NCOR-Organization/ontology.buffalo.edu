@@ -197,6 +197,12 @@
   #faculty #faculty-intro{margin:4px 0 12px;color:var(--muted)}
   #faculty .rule-dotted{display:none!important}
 
+  /* Make inline links in the faculty dropdowns look like links */
+.disclosures a {
+  text-decoration: underline;
+  color: #1458c3; /* optional: use your UB-ish link blue */
+}
+
 /* What Is Applied Ontology: two-column prose */
 #what-is-ao .cols{
   column-count: 2;
@@ -395,9 +401,9 @@
   <div class="wrap">
     <div class="eyebrow">University at Buffalo · Department of Philosophy</div>
     <h1>Master of Science in Applied Ontology (Fully Online)</h1>
-    <p>Launching Spring 2026 — a rigorous, career-focused MS that combines philosophical foundations with
+    <p>A rigorous, career-focused MS that combines philosophical foundations with
        practical engineering to make complex data and systems interoperate.</p>
-    <a class="cta" href="#apply">How to apply</a>
+    <a class="cta" href="#programs">How to apply</a>
   </div>
 </header>
 
@@ -405,7 +411,7 @@
 <nav class="topnav" aria-label="Primary">
   <div class="inner">
     <a href="#about">About</a>
-    <a href="#programs">Programs</a>
+    <a href="#programs">Program</a>
     <a href="#faculty">Faculty</a>
     <a href="#research">Research</a>
     <a href="#news">News</a>
@@ -422,7 +428,7 @@
     <div class="photo">
       <img src="images/about/about-ub-aerial.jpg?v=20251106b" alt="Aerial view of UB campus by the lake at sunset">
       <ul class="features">
-        <li>Built for early-career and experienced professionals</li>
+        <li>Built for ambitious beginners and early-career and experienced professionals</li>
         <li>Learn practical ontology design, knowledge-graph applications, and standards-based integration</li>
         <li>Flexible pacing, cross-campus electives, and internship opportunities</li>
       </ul>
@@ -438,7 +444,7 @@
   </p>
 
 <p>
-  Beginning Spring 2026, the University at Buffalo will offer a fully online MS in Applied Ontology.
+  Beginning in January 2026, the University at Buffalo will offer a fully online MS in Applied Ontology.
   The program provides opportunities for both STEM and non-STEM students to acquire the skills needed
   to make data and software systems interoperate across teams, tools, and institutions. Coursework is
   based in the Department of Philosophy with electives in Computer Science, Linguistics, Management,
@@ -448,9 +454,9 @@
   <p>
     UB’s Department of Philosophy has long been a hub for applied ontological research, connecting
     philosophical theory with real-world data and information systems. Faculty collaborate with
-    national and international initiatives such as the ISO Standard Upper Ontology, the Open
+    national and international initiatives such as the ISO Top-Level Ontology, the Open
     Biological and Biomedical Ontologies project, and the Industrial Ontologies Foundry. We also
-    maintain close connections to the U.S. government.
+    maintain close connections to the U.S. government, where UB ontology graduates hold leadership positions.
   </p>
 
   <p>
@@ -474,22 +480,22 @@
     loading="lazy"
     decoding="async">
 
-  <p><strong>Ontology</strong> is the study of what exists and of how the categories of being relate to one another—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for contemporary systems of logic and meaning that shape how philosophers and scientists describe reality.</p>
+  <p><strong>Ontology</strong> is the study of what exists and of how the different categories of entities relate to one another—an inquiry that reaches back to Aristotle’s <em>Metaphysics</em>. Often regarded as the first ontologist, Aristotle sought to classify the fundamental kinds of things in the world, laying the groundwork for contemporary systems of logic and meaning that shape how philosophers and scientists describe reality.</p>
 
-  <p>In his analysis of being, Aristotle identified <em>substance</em> as the most fundamental kind of entity. Qualities stand in relations to other substances and occupy time and space. These ideas provided a systematic way to think about classification, change, and causation—themes that have occupied philosophers for millennia and continue to influence how we model reality today.</p>
+  <p>Aristotle identified <em>substances</em>—for example organisms—as the most fundamental kind of entity. Qualities stand in relations to other substances and occupy time and space. These ideas provided a systematic way to think about classification, change, and causation—themes that have occupied philosophers for millennia and continue to influence how we model reality today.</p>
 
   <p>From medieval philosophy to the formal sciences of the modern era, the aim has remained the same: to bring order and clarity to the diversity of what exists. The field of applied ontology builds on this lineage, turning classical insights into computable frameworks for structuring knowledge and enabling reasoning at scale.</p>
 </section>
 
 <section id="what-is-ao" class="card">
-  <h2>What Is Applied Ontology</h2>
+  <h2>What Is ‘Applied Ontology’?</h2>
 
   <div class="cols">
-    <p>From Aristotle to AI: The questions that began with Aristotle—about what exists and how things relate—evolved alongside logic, mathematics, and computing, shaping how we model the world today. Modern ontology extends those same inquiries into digital reasoning, creating shared structures of meaning that allow humans and machines to understand data in common.</p>
+    <p>From Aristotle to AI: The questions that began with Aristotle—about what exists and how things relate to each other—evolved alongside logic, mathematics, and computing, shaping how we model the world today. Modern ontology extends those same inquiries into digital reasoning, creating shared structures of meaning that allow humans and machines to understand data in common.</p>
 
     <p>Applied ontology continues this tradition by transforming classical analysis of kinds and relations into computable models that organize and reason over complex data in science, engineering, and everyday domains.</p>
 
-    <p>When large information systems were first developed in the 1970s, they used incompatible data structures and could not work together—even when built for the same purpose. Applied ontology emerged to address this challenge, combining philosophical clarity about meaning with technical methods for structuring definitions and data. As technology advanced, the need for such interoperability only grew—with the rise of AI, large-scale data integration, and global collaboration.</p>
+    <p>When large information systems were first developed in the 1970s, they used incompatible data structures. This meant that they could not work together—even when they were built for the same purpose. Applied ontology emerged to address this challenge, combining philosophical clarity about meanings with technical methods for structuring definitions and data. As technology advanced, the need for such interoperability only grew—with the rise of AI, large-scale data integration, and global collaboration.</p>
 
     <p>Applied ontology now provides a common language that allows unrelated systems and disciplines to work together.</p>
 
@@ -505,142 +511,175 @@
   <p class="attr">— John Beverley, PhD, Assistant Professor of Philosophy</p>
 </div>
 
-  <!-- Jobs in Applied Ontology -->
+<!-- Jobs in Applied Ontology -->
 <section id="jobs" class="card">
   <div class="banner">
     <img src="images/jobs-banner.webp" alt="Hands typing on a laptop">
   </div>
 
-    <h2>Jobs in Applied Ontology</h2>
-    <p>
-      Graduates are competitive for positions such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
-      <em>Data/AI Ontology Specialist</em>, and <em>Information Architect</em>. Applied ontologists are in demand
-      across healthcare and pharmaceuticals, government and intelligence, banking and finance, e-commerce, manufacturing,
-      and technology. As Barry Smith notes, “Every government in the world and every intelligence agency needs ontology
-      support.” Starting salaries for UB graduates with ontology-focused degrees can reach as high as $175,000, with an
-      average ontologist salary around $92,000 in industry reports. Employers span both public and private sectors,
-      reflecting a growing demand for experts who can connect data, algorithms, and domain knowledge.
-    </p>
-    <p>
-      Students researching applied ontology at UB join a long-standing international network of collaborators that has,
-      for decades, centered in Buffalo. “With this MS degree,” says John Beverley, “we aim to more formally standardize
-      applied ontology education—not just for UB, but as an example for the ontology community worldwide.” Recent
-      commentary from industry leaders underscores this demand: organizations from Amazon and Google to Nike are hiring
-      specialists in semantic technologies such as OWL, SPARQL, and knowledge graphs.
-    </p>
-  </div>
+  <h2>Jobs in Applied Ontology</h2>
+  <p>
+    Our graduates are competitive for positions such as <em>Ontologist</em>, <em>Knowledge Engineer</em>,
+    <em>Data/AI Ontology Specialist</em>, and <em>Information Architect</em>. Applied ontologists are in demand
+    across healthcare and pharmaceuticals, government and intelligence, banking and finance, e-commerce, manufacturing,
+    and technology. As Barry Smith notes, “Every government in the world and every intelligence agency needs ontology
+    support.” Starting salaries for UB graduates with ontology-focused degrees can reach as high as $175,000, with an
+    average ontologist salary around $92,000 in industry reports. Employers span both public and private sectors,
+    reflecting a growing demand for experts who can connect data, algorithms, and domain knowledge.
+  </p>
+  <p>
+    Students researching applied ontology at UB join a long-standing international network of collaborators that has,
+    for decades, been centered in Buffalo. “With this MS degree,” says John Beverley, “we aim to more formally standardize
+    applied ontology education—not just for UB, but as an example for the ontology community worldwide.” Recent
+    commentary from industry leaders underscores this demand: organizations from Amazon and Google to Nike are hiring
+    specialists in semantic technologies such as OWL, SPARQL, and knowledge graphs.
+  </p>
 
-<div class="resources">
-  <h3>Explore Interviews</h3>
+  <div class="resources">
+    <h3>Background</h3>
+    <ul class="resource-links">
+      <!-- Interviews / videos (full-width items) -->
+      <li class="feature">
+        <a href="https://blog.apaonline.org/2022/09/15/careers-in-ontology-an-interview-with-professor-barry-smith/"
+           title="APA blog interview (Smith &amp; Beverley)">
+          APA blog interview (Smith &amp; Beverley)
+        </a>
+        <div class="desc">
+          An interview on how philosophers transition into interesting and lucrative public/private sector jobs in ontology.
+        </div>
+      </li>
+
+      <li class="feature">
+        <a href="https://youtu.be/aYQgGrqUz8A" title="APA video: Careers in Ontology">
+          APA video: Careers in Ontology
+        </a>
+        <div class="desc">
+          A recent APA video on new jobs across commercial and industrial applications. 
+          Charlie Taben and Barry Smith discuss why philosophers are well-suited for these tech-driven roles.
+        </div>
+      </li>
+
+      <li class="feature">
+        <a href="#" title="Interviews with potential employers">Interviews with potential employers</a>
+      </li>
+
+      <li class="feature">
+        <a href="#" title="Interviews with UB alumni in ontology roles">Interviews with UB alumni</a>
+      </li>
+
+      <li class="divider" aria-hidden="true"></li>
+    </ul>
+
+<h3>Explore Job listings</h3>
 <ul class="resource-links">
-  <!-- Interviews / videos (full-width items) -->
-  <li class="feature">
-    <a href="https://blog.apaonline.org/2022/09/15/careers-in-ontology-an-interview-with-professor-barry-smith/"
-       title="APA blog interview — Commercializing Ontology; Lucrative Jobs for Philosophers">
-      APA blog interview (Smith &amp; Beverley)
-    </a>
-    <div class="desc">
-      <em>Commercializing Ontology; Lucrative Jobs for Philosophers.</em> An interview on how philosophers transition
-      into interesting and lucrative public/private sector jobs in ontology.
-      <span><a href="https://blog.apaonline.org/2022/09/15/careers-in-ontology-an-interview-with-professor-barry-smith/">Read the blog</a></span>
-    </div>
-  </li>
-
-  <li class="feature">
-    <a href="https://youtu.be/aYQgGrqUz8A" title="APA video: Careers in Ontology">
-      APA video: Careers in Ontology
-    </a>
-    <div class="desc">
-      A recent APA video on new jobs across commercial and industrial applications. Charlie Taben and Barry Smith discuss
-      why philosophers are well-suited for these tech-driven roles.
-      <span><a href="https://youtu.be/aYQgGrqUz8A">Watch the video</a></span>
-    </div>
-  </li>
-
-  <li class="feature">
-    <a href="#" title="Interviews with potential employers">Interviews with potential employers</a>
-  </li>
-
-  <li class="feature">
-    <a href="#" title="Interviews with UB alumni in ontology roles">Interviews with UB alumni</a>
-  </li>
-
-  <li class="divider" aria-hidden="true"></li>
-
   <!-- Job boards (compact two-column items) -->
-  <li><a href="#" title="Google Careers">Google Careers</a></li>
-  <li><a href="#" title="Indeed ontologist listings">Indeed listings</a></li>
-  <li><a href="#" title="Glassdoor ontologist listings">Glassdoor listings</a></li>
-  <li><a href="#" title="ZipRecruiter ontologist listings">ZipRecruiter listings</a></li>
-  <li><a href="#" title="SimplyHired ontologist listings">SimplyHired listings</a></li>
+  <li>
+    <a href="https://www.google.com/about/careers/applications/jobs/results/?company=Google&company=Google%20Fiber&company=YouTube&employment_type=FULL_TIME&hl=en_US&jlo=en_US&q=ontologist&sort_by=relevance"
+       title="Google Careers – ontologist listings">
+      Google Careers
+    </a>
+  </li>
+  <li>
+    <a href="https://www.indeed.com/jobs?q=ontologist&l=&vjk=08ecfab6ea7555f1"
+       title="Indeed ontologist listings">
+      Indeed listings
+    </a>
+  </li>
+  <li>
+    <a href="https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=ontologist&sc.keyword=ontologist&locT=&locId=&jobType="
+       title="Glassdoor ontologist listings">
+      Glassdoor listings
+    </a>
+  </li>
+  <li>
+    <a href="https://www.ziprecruiter.com/jobs-search?location=New+York%2C+NY&radius=5000&search=Ontologist&lk=-IuYLAGkg2hzOXwJUi_-YQ&page=1"
+       title="ZipRecruiter ontologist listings">
+      ZipRecruiter listings
+    </a>
+  </li>
+  <li>
+    <a href="https://www.simplyhired.com/search?q=Ontologist&l="
+       title="SimplyHired ontologist listings">
+      SimplyHired listings
+    </a>
+  </li>
 </ul>
-</div>
+  </div>
 </section>
 
-  <!-- Applied Ontology MS Degree (program overview / CTA) -->
+<!-- Applied Ontology MS Degree (program overview / CTA) -->
 <section id="programs" class="card">
   <div class="banner">
     <img class="hero-img" src="images/applied-ontology/ao-degree-hero.jpg" alt="Applied Ontology—graduation cap in hand">
   </div>
 
-    <h2>Applied Ontology MS Degree</h2>
+  <h2>Applied Ontology MS Degree</h2>
 
-    <p>
-      The Applied Ontology degree prepares students from around the world for work in a rapidly growing, interdisciplinary branch of information science. It combines philosophical rigor with practical computing skills, enabling graduates to bridge the gap between conceptual modeling and data-driven systems.
-    </p>
+  <p>
+    The Applied Ontology degree prepares students from around the world for work in a rapidly growing, interdisciplinary branch of information science. It combines philosophical rigor with practical computing skills, enabling graduates to bridge the gap between conceptual modeling and data-driven systems.
+  </p>
 
-    <h3>Curriculum</h3>
-    <p>
-      The curriculum combines two complementary strands taken alongside electives: the human side of ontology, where students work with domain experts (e.g., food science, healthcare) to analyze heterogeneous data and plan interoperability; and the software side, where students use ontology tools to implement, deploy, and integrate rigorously defined models within contemporary computing environments.
-    </p>
+  <h3>Curriculum</h3>
+  <p>
+    The curriculum combines two complementary strands: the human side of ontology, where students work with domain experts (e.g., finance, food science, healthcare) to analyze heterogeneous data and plan interoperability; and the software side, where students use ontology tools to implement, deploy, and integrate rigorously defined models within contemporary computing environments.
+  </p>
 
-    <h3>Requirements</h3>
-    <p>
-      Admission requires an undergraduate degree. Philosophy graduates—trained in logic and argumentation—are especially well suited, and the program also welcomes applicants from computer science, management, information studies, and other STEM and humanities fields.
-    </p>
+  <h3>Requirements</h3>
+  <p>
+    Admission requires an undergraduate degree. Philosophy graduates—trained in logic and argumentation—are especially well suited, and the program also welcomes applicants from computer science, management, information studies, and other STEM and humanities fields.
+  </p>
 
-    <!-- Program resources (single column, matches Jobs styling) -->
-    <div class="resources">
-      <h3>Explore the Program</h3>
-<ul class="resource-links">
-  <li>
-    <a href="#" title="Interviews with UB undergraduates">Interviews with UB undergraduates</a>
-  </li>
+  <!-- Program resources (single column, matches Jobs styling) -->
+  <div class="resources">
+    <h3>Explore the Program</h3>
+    <ul class="resource-links">
+      <li>
+        <a href="#" title="Interviews with UB undergraduates">Interviews with UB undergraduates</a>
+      </li>
 
-  <li>
-    <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
-  </li>
+      <li>
+        <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
+      </li>
 
-  <li>
-    <a href="#" title="Student video sampler">Student video sampler</a>
-    <div class="desc">Quick clips: lectures + student perspectives.</div>
-  </li>
+      <li>
+        <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
+           target="_blank" rel="noopener"
+           title="Interview with alumnus William Mandrick">
+          Interview with alumnus William Mandrick
+        </a>
+      </li>
 
-  <li>
-    <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html" target="_blank" rel="noopener">
-      Sample lectures: Barry Smith &amp; John Beverley
-    </a>
-    <div class="desc">Segments on ontology, interoperability, and logic.</div>
-  </li>
+      <li>
+        <a href="#" title="Student video sampler">Student video sampler</a>
+        <div class="desc">Quick clips: lectures + student perspectives.</div>
+      </li>
 
-  <li>
-    <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/donnelly.html" target="_blank" rel="noopener">
-      Logic in Applied Ontology (Donnelly)
-    </a>
-    <div class="desc">The role of logic in applied ontology.</div>
-  </li>
+      <li>
+        <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html"
+           target="_blank" rel="noopener">
+          Sample lectures: Barry Smith &amp; John Beverley
+        </a>
+        <div class="desc">Segments on ontology, interoperability, and logic.</div>
+      </li>
 
-  <li>
-    <a href="#" title="Collaborator talks: Ontology in AI">Collaborator talks: Ontology in AI</a>
-    <div class="desc">Ontology in AI and knowledge graphs.</div>
-  </li>
-</ul>
-<!-- Apply CTA -->
-<div class="apply-note">
-  <p><em>Prospective MS students can click here for admission to the Spring 2026 semester.</em></p>
-  <a class="cta" href="#" target="_blank" rel="noopener">Apply Here</a>
-</div>
+      <li>
+        <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/donnelly.html"
+           target="_blank" rel="noopener">
+          Logic in Applied Ontology (Donnelly)
+        </a>
+        <div class="desc">The role of logic in applied ontology.</div>
+      </li>
 
+      <li>
+        <a href="#" title="Collaborator talks: Ontology in AI">Collaborator talks: Ontology in AI</a>
+        <div class="desc">Ontology in AI and knowledge graphs.</div>
+      </li>
+    </ul>
+
+    <!-- Apply CTA -->
+    <div class="apply-note">
+      <p><em>Prospective MS students can click here for admission to the Spring 2026 semester.</em></p>
+      <a class="cta" href="#" target="_blank" rel="noopener">Apply Here</a>
     </div>
   </div>
 </section>
@@ -656,10 +695,10 @@
   <h2>Where Do Our Students Come From</h2>
 
   <p>
-    Students in UB’s ontology programs come from a broad mix of fields—philosophy, computer science,
-    linguistics, information science, healthcare, defense, and engineering. Some join straight from
-    undergraduate study, while others bring research or industry experience. All share an interest in using
-    clear conceptual models to make data and systems work together.
+    Graduates and collaborators of the UB Department of Philosophy come from a broad mix of fields—philosophy,
+    computer science, linguistics, information science, healthcare, defense, and engineering. Some join straight
+    from undergraduate study; others bring research or industry experience. All share an interest in using clear
+    conceptual models to make data and systems work together.
   </p>
 
   <p>
@@ -668,7 +707,7 @@
   </p>
 
   <ul>
-    <li><strong>National Center for Ontological Research (NCOR-US)</strong> – headquartered at UB, coordinating ontology efforts across domains</li>
+    <li><strong>National Center for Ontological Research (NCOR-US)</strong> – headquartered in Buffalo, coordinating ontology efforts across domains</li>
     <li><strong>NCOR-Brazil</strong> – advancing ontology research in Latin America</li>
     <li><strong>Swiss Center for Ontological Research</strong> – supporting European ontology education and research</li>
     <li><strong>Naas.ai</strong> – developing AI systems grounded in ontological frameworks</li>
@@ -680,7 +719,6 @@
   </p>
 </section>
 
-<!-- Faculty / Research / News / Events anchors -->
 <section id="faculty" class="card">
   <h2>Our Faculty</h2>
   <p class="muted" id="faculty-intro">UB Philosophers with a primary focus in ontology include:</p>
@@ -692,28 +730,34 @@
         <img class="headshot lg" src="https://www.buffalo.edu/content/shared/cas/philosophy/faculty-profiles/smith/jcr:content/profileinfo.img.280.280.z.q65.jpg/1730469896235.jpg" alt="Barry Smith">
 
         <div class="bio-meta">
-          <h3 class="name">Barry Smith <span class="postnom">PhD, FACMI</span></h3>
+          <!-- Add FIAOA -->
+          <h3 class="name">Barry Smith <span class="postnom">PhD, FACMI, FIAOA</span></h3>
 
           <p class="titles">SUNY Distinguished Professor of Philosophy<br>Julian Park Chair</p>
 
           <ul class="meta-blocks">
-            <li>
-              <span class="label">Department of Philosophy</span>
-              <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
-            </li>
-            <li>
-              <span class="label">Director</span>
-              <a class="sub" href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a>
-            </li>
-            <li>
-              <span class="label">Affiliate Professorship</span>
-              <a class="sub" href="https://medicine.buffalo.edu/departments/biomedical-informatics.html">UB Biomedical Informatics</a>
-            </li>
-            <li>
-              <span class="label">Affiliate Professorship</span>
-              <a class="sub" href="https://engineering.buffalo.edu/computer-science-engineering.html">UB Computer Science &amp; Engineering</a>
-            </li>
-          </ul>
+  <li>
+    <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
+      Department of Philosophy
+    </a>
+  </li>
+  <li>
+    <span class="label">Director</span>
+    <a class="sub" href="https://ncor.buffalo.edu/">
+      National Center for Ontological Research (NCOR)
+    </a>
+  </li>
+  <li>
+    <span class="label">Cross-appointments in</span>
+    <a class="sub" href="https://medicine.buffalo.edu/departments/biomedical-informatics.html">
+      UB Biomedical Informatics
+    </a>
+    &nbsp;and&nbsp;
+    <a class="sub" href="https://engineering.buffalo.edu/computer-science-engineering.html">
+      UB Computer Science &amp; Engineering
+    </a>
+  </li>
+</ul>
         </div>
       </header>
 
@@ -729,7 +773,8 @@
         <ul class="list-plain">
           <li>PhD, Philosophy — University of Manchester (1976)</li>
           <li>MA, Mathematics and Philosophy — Oxford University (1975)</li>
-          <li>BA, Mathematics and Philosophy (1st Class Joint Honors) — Oxford University (1973)</li>
+          <!-- Remove “1st Class Joint Honors” per Barry -->
+          <li>BA, Mathematics and Philosophy — Oxford University (1973)</li>
         </ul>
       </div>
 
@@ -739,34 +784,31 @@
           <summary>Courses</summary>
           <div>
             <ul class="list-plain">
+              <!-- Keep only the courses Barry left in his sample list -->
               <li>Ontology and Artificial Intelligence (Fall 2025)</li>
               <li>Ontology of Economics (Fall 2024)</li>
-              <li>Nature and Culture (2023)</li>
-              <li>Philosophy of Science (2022)</li>
-              <li>American Philosophy and Its Contemporary Relevance (2021)</li>
-              <li>Philosophy and Artificial Intelligence (Crash Course, Oct 2–3, 2021)</li>
               <li>Intelligence Analysis: A Crash Course (2019)</li>
               <li>Applied Ontology (Fall 2018)</li>
               <li>Ontological Engineering (Online, Spring 2018)</li>
-              <li>Advanced Biomedical Ontology (Fall 2017)</li>
-              <li>Applied Ontology (Online, Spring 2017)</li>
               <li>Biomedical Ontology (Fall 2016)</li>
               <li>Analytic Metaphysics (Spring 2016)</li>
             </ul>
           </div>
         </details>
 
-        <details class="dropdown">
-          <summary>Selected Publications</summary>
-          <div>
-            <ul class="list-plain">
-              <li>Jobst Landgrebe and Barry Smith, <em>Why Machines Will Never Rule The World — Artificial Intelligence Without Fear</em>, 2nd revised and expanded edition (Routledge, 2025).</li>
-              <li>Ludger Jansen and Barry Smith, “Categories in Top-Level Ontologies: Revisiting the Aristotelian Background,” <em>Advances in Knowledge Representation</em>, 5(3), September 2025.</li>
-              <li>S. Clint Dowland, Barry Smith, Matthew A. Diller, Jobst Landgrebe, and William R. Hogan, “Ontology of language, with applications to demographic data,” <em>Applied Ontology</em>, 1–24, 2024.</li>
-              <li>Barry Smith, “Biomedical ontologies,” in Peter Elkin (ed.), <em>Terminology, Ontology and their Implementations</em>, Springer, 2023, 125–169.</li>
-            </ul>
-          </div>
-        </details>
+        <!-- Barry's doc just has “Google Scholar” here, so make this a simple GS panel -->
+    <details class="dropdown">
+  <summary>Google Scholar</summary>
+  <div>
+    <p>
+      View an up-to-date list of publications on
+      <a href="https://scholar.google.com/citations?user=icGNWj4AAAAJ&hl=en"
+         target="_blank" rel="noopener">
+        Google Scholar
+      </a>.
+    </p>
+  </div>
+</details>
       </div>
     </article>
 
@@ -783,26 +825,25 @@
         </address>
       </div>
 
-      <div class="panel">
-        <h4>Related Links</h4>
-        <ul class="list-plain">
-          <li><a href="https://ontology.buffalo.edu/smith/">Personal Website</a></li>
-          <li><a href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a></li>
-          <li><a href="https://scholar.google.com/citations?user=LW8rVVoAAAAJ&amp;hl=en">Google Scholar</a></li>
-          <li><a href="https://www.amia.org/fellows">Fellow, American College of Medical Informatics (FACMI)</a></li>
-          <li><a href="https://philpeople.org/profiles/barry-smith">PhilPeople</a></li>
-          <li><a href="https://ontology.buffalo.edu/smith/videos.html">Video Resources</a></li>
-          <li><a href="https://open.spotify.com/show/4W5aXxz7TSg8QSY7mL6hJk">Podcast: Exploring Career Opportunities in Tech for Non-STEM Students</a></li>
-        </ul>
-      </div>
+    <div class="panel">
+  <h4>Related Links</h4>
+  <ul class="list-plain">
+    <li><a href="https://ontology.buffalo.edu/smith/">Personal Website</a></li>
+    <li><a href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a></li>
+    <li><a href="https://amia.org/fellows-acmi">Fellow, American College of Medical Informatics (FACMI)</a></li>
+    <li><a href="https://philpeople.org/profiles/barry-smith">PhilPeople</a></li>
+    <li><a href="https://www.youtube.com/channel/UCDYw4LTZfK27Q0lJ8pxQC8Q">YouTube channel</a></li>
+    <li><a href="https://techguide.org/podcast/barry-smith/">Podcast: Exploring Career Opportunities in Tech for Non-STEM Students</a></li>
+  </ul>
+</div>
     </aside>
   </div>
 
   <hr class="faculty-sep">
 
-  <!-- =========================
-     John Beverley
-     ========================= -->
+<!-- =========================
+   John Beverley
+   ========================= -->
 <div class="faculty-layout">
   <!-- LEFT: main profile -->
   <article class="col-main">
@@ -847,7 +888,7 @@
       </ul>
     </div>
 
-    <!-- Courses -->
+    <!-- Courses + Google Scholar -->
     <div class="disclosures">
       <details class="dropdown">
         <summary>Courses</summary>
@@ -860,18 +901,19 @@
         </div>
       </details>
 
-      <!-- Selected Publications -->
-      <details class="dropdown">
-        <summary>Selected Publications</summary>
-        <div>
-          <ul class="list-plain">
-            <li>“The Infectious Disease Ontology in the Age of COVID-19,” with Shane Babcock, Barry Smith, et al. <em>Journal of Biomedical Semantics</em>, 2021, 12(13): 1–20.</li>
-            <li>“BFO: Basic Formal Ontology,” with Neil Otte and Alan Ruttenberg. <em>Applied Ontology</em>, 2022, 17(1): 17–43.</li>
-            <li>“Speak No Evil: Understanding Hermeneutical (In)Justice.” <em>Episteme</em>, 2022, 19(3): 431–454.</li>
-            <li>“CIDO: Coronavirus Infectious Disease Ontology,” with Oliver He, Barry Smith, et al. <em>Scientific Data</em>, 2020, 7(181): 1–8.</li>
-          </ul>
-        </div>
-      </details>
+      <!-- Google Scholar (replaces Selected Publications) -->
+     <details class="dropdown">
+  <summary>Google Scholar</summary>
+  <div>
+    <p>
+      View an up-to-date list of publications on
+      <a href="https://scholar.google.com/citations?hl=en&user=2kQK9DMAAAAJ"
+         target="_blank" rel="noopener">
+        Google Scholar
+      </a>.
+    </p>
+  </div>
+</details>
     </div>
   </article>
 
@@ -887,13 +929,28 @@
       </address>
     </div>
 
-    <div class="panel">
-      <h4>Related Links</h4>
-      <ul class="list-plain">
-        <li><a href="#">Personal Website</a></li>
-        <li><a href="#">ResearchGate</a></li>
-      </ul>
-    </div>
+<div class="panel">
+  <h4>Related Links</h4>
+  <ul class="list-plain">
+    <li>
+      <a href="https://johnbeverley.com" target="_blank" rel="noopener">
+        Personal Website
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.researchgate.net/profile/John-Beverley-2" target="_blank" rel="noopener">
+        ResearchGate
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.youtube.com/channel/UCtTRu7aZqprAf-YDSdxzUwg" target="_blank" rel="noopener">
+        YouTube Channel
+      </a>
+    </li>
+  </ul>
+</div>
   </aside>
 </div>
 
@@ -949,16 +1006,19 @@
         </div>
       </details>
 
+      <!-- Google Scholar (replaces Selected Publications + individual citations) -->
       <details class="dropdown">
-        <summary>Selected Publications</summary>
-        <div>
-          <ul class="list-plain">
-            <li>“Coordinating virus research: The Virus Infectious Disease Ontology,” with John Beverley et al. <em>PLOS ONE</em>, 2024.</li>
-            <li>“Coordinating Coronavirus Research: The COVID-19 Infectious Disease Ontology,” with John Beverley et al. <em>Proceedings of the International Conference on Biomedical Ontologies</em>, 2022.</li>
-            <li>“Counternarrative Themes,” with John Beverley. <em>American Journal of Bioethics</em> 21(2): 72–74, 2021.</li>
-          </ul>
-        </div>
-      </details>
+  <summary>Google Scholar</summary>
+  <div>
+    <p>
+      View publications on
+      <a href="https://scholar.google.com/citations?hl=en&user=vJarJDcAAAAJ"
+         target="_blank" rel="noopener">
+        Google Scholar
+      </a>.
+    </p>
+  </div>
+</details>
     </div>
   </article>
 
@@ -975,8 +1035,19 @@
     </div>
 
     <div class="panel">
-      <h4>Office Hours</h4>
-      <p class="muted" style="margin:0;">By appointment</p>
+      <h4>Related Links</h4>
+      <ul class="list-plain">
+        <li>
+          <a href="https://philpeople.org/profiles/regina-hurley" target="_blank" rel="noopener">
+            PhilPeople
+          </a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/profile/Regina-Hurley" target="_blank" rel="noopener">
+            ResearchGate
+          </a>
+        </li>
+      </ul>
     </div>
   </aside>
 </div>
