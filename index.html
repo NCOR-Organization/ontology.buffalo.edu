@@ -103,7 +103,14 @@
   #programs .text p{margin-bottom:.9rem}
   #jobs .resources, #programs .resources{margin-top:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px}
   #jobs .resources h3, #programs .resources h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:600}
+    #jobs .jobs-subheading{
+    margin-top:1.5rem;
+    margin-bottom:.75rem;
+  }
   #jobs .resource-links, #programs .resource-links{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+    #programs .resource-links{
+    row-gap:.45rem;
+  }
   #jobs .resource-links li.divider, #programs .resource-links li.divider{border-top:1px dashed #d1d5db;margin:.25rem 0 .35rem;height:0}
   #jobs .resource-links a, #programs .resource-links a{text-decoration:none;border-radius:8px;padding:.25rem .35rem;display:inline-block}
   #jobs .resource-links a:hover, #programs .resource-links a:hover{text-decoration:underline}
@@ -196,6 +203,18 @@
   #faculty h4{margin:12px 0 6px}
   #faculty #faculty-intro{margin:4px 0 12px;color:var(--muted)}
   #faculty .rule-dotted{display:none!important}
+
+  /* Faculty section subheadings (Education, Publications, etc.) */
+.edu h3 {
+  font-size: 1.1rem;       /* match other sub-headers */
+  margin-top: 1.25rem;     /* pull it up closer to the previous line */
+  margin-bottom: 0.35rem;  /* same bottom spacing as other headings */
+}
+
+/* Tighter spacing for the Google Scholar line */
+.edu .scholar-link {
+  margin-top: 0.25rem;
+}
 
   /* Make inline links in the faculty dropdowns look like links */
 .disclosures a {
@@ -384,6 +403,23 @@
   margin: 0;
 }
 
+/* Faculty section subheadings (Education, Publications, etc.) */
+.faculty-layout .edu h3 {
+  font-size: 0.95rem;       /* matches Barry & Regina */
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Specifically tighten Publications when it comes after the Courses block */
+.faculty-layout .edu .disclosures + h3 {
+  margin-top: 0.75rem;
+}
+
+/* Tighter spacing for the Google Scholar line under Publications */
+.faculty-layout .edu .scholar-link {
+  margin-top: 0.15rem;
+}
+
 /* Slightly tighter spacing on mobile */
 @media (max-width: 820px){
   .ao-highlight-quote {
@@ -448,7 +484,7 @@
   The program provides opportunities for both STEM and non-STEM students to acquire the skills needed
   to make data and software systems interoperate across teams, tools, and institutions. Coursework is
   based in the Department of Philosophy with electives in Computer Science, Linguistics, Management,
-  and Biomedical Informatics.
+  and Biomedical Informatics. A sister program at the PhD level is under development.
 </p>
 
   <p>
@@ -570,42 +606,57 @@
       <li class="divider" aria-hidden="true"></li>
     </ul>
 
-<h3>Explore Job listings</h3>
-<ul class="resource-links">
-  <!-- Job boards (compact two-column items) -->
-  <li>
-    <a href="https://www.google.com/about/careers/applications/jobs/results/?company=Google&company=Google%20Fiber&company=YouTube&employment_type=FULL_TIME&hl=en_US&jlo=en_US&q=ontologist&sort_by=relevance"
-       title="Google Careers – ontologist listings">
-      Google Careers
-    </a>
-  </li>
-  <li>
-    <a href="https://www.indeed.com/jobs?q=ontologist&l=&vjk=08ecfab6ea7555f1"
-       title="Indeed ontologist listings">
-      Indeed listings
-    </a>
-  </li>
-  <li>
-    <a href="https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=ontologist&sc.keyword=ontologist&locT=&locId=&jobType="
-       title="Glassdoor ontologist listings">
-      Glassdoor listings
-    </a>
-  </li>
-  <li>
-    <a href="https://www.ziprecruiter.com/jobs-search?location=New+York%2C+NY&radius=5000&search=Ontologist&lk=-IuYLAGkg2hzOXwJUi_-YQ&page=1"
-       title="ZipRecruiter ontologist listings">
-      ZipRecruiter listings
-    </a>
-  </li>
-  <li>
-    <a href="https://www.simplyhired.com/search?q=Ontologist&l="
-       title="SimplyHired ontologist listings">
-      SimplyHired listings
-    </a>
-  </li>
-</ul>
-  </div>
-</section>
+      <h3>Explore Job listings</h3>
+      <ul class="resource-links">
+        <li>
+          <a href="https://www.google.com/about/careers/applications/jobs/results/?company=Google&company=Google%20Fiber&company=YouTube&employment_type=FULL_TIME&hl=en_US&jlo=en_US&q=ontologist&sort_by=relevance"
+             title="Google Careers – ontologist listings">
+            Google Careers
+          </a>
+        </li>
+        <li>
+          <a href="https://www.indeed.com/jobs?q=ontologist&l="
+             title="Indeed ontologist listings">
+            Indeed listings
+          </a>
+        </li>
+        <li>
+          <a href="https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=ontologist&sc.keyword=ontologist&locT=&locId=&jobType="
+             title="Glassdoor ontologist listings">
+            Glassdoor listings
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ziprecruiter.com/jobs-search?search=Ontologist"
+             title="ZipRecruiter ontologist listings">
+            ZipRecruiter listings
+          </a>
+        </li>
+        <li>
+          <a href="https://www.simplyhired.com/search?q=Ontologist&l="
+             title="SimplyHired ontologist listings">
+            SimplyHired listings
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="jobs-subheading">More from UB Philosophy</h3>
+      <ul class="resource-links">
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/placement.html"
+             target="_blank" rel="noopener">
+            UB Philosophy Graduate Placement Record
+          </a>
+        </li>
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology/ontology-student-showcase.html"
+             target="_blank" rel="noopener">
+            Ontology Student Showcase
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 <!-- Applied Ontology MS Degree (program overview / CTA) -->
 <section id="programs" class="card">
@@ -640,14 +691,16 @@
       <li>
         <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
       </li>
-
-      <li>
-        <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
-           target="_blank" rel="noopener"
-           title="Interview with alumnus William Mandrick">
-          Interview with alumnus William Mandrick
-        </a>
-      </li>
+<li>
+  <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
+     target="_blank" rel="noopener"
+     title="Interview with alumnus William Mandrick">
+    Interview with alumnus William Mandrick
+  </a>
+  <div class="desc">
+    William’s path from UB Philosophy to ontology work in the U.S. Army.
+  </div>
+</li>
 
       <li>
         <a href="#" title="Student video sampler">Student video sampler</a>
@@ -694,24 +747,71 @@
 
   <h2>Where Do Our Students Come From</h2>
 
-  <p>
-    Graduates and collaborators of the UB Department of Philosophy come from a broad mix of fields—philosophy,
-    computer science, linguistics, information science, healthcare, defense, and engineering. Some join straight
-    from undergraduate study; others bring research or industry experience. All share an interest in using clear
-    conceptual models to make data and systems work together.
-  </p>
+<p>
+  Graduates and collaborators of the UB Department of Philosophy come from a wide range of fields—philosophy,
+  computer science, linguistics, information science, healthcare, biomedical research, geography, finance,
+  logistics, defense, engineering, publishing, manufacturing, and data-intensive industries. Some join straight
+  from undergraduate study; others bring research experience or established careers. They now work and study
+  around the world in government, industry, and academia, contributing to funded research and practical
+  applications of ontology. Our research community collaborates closely with institutions such as:
+</p>
 
-  <p>
-    Graduates and collaborators of the UB Department of Philosophy now work and study around the world
-    in government, industry, and academia. Our research community collaborates closely with institutions such as:
-  </p>
+<ul>
+  <li>
+    <strong>
+      <a href="https://ncor-network.org/" target="_blank" rel="noopener">
+        National Center for Ontological Research (NCOR-US)
+      </a>
+    </strong>
+    – headquartered in Buffalo, coordinating ontology efforts across domains
+  </li>
 
-  <ul>
-    <li><strong>National Center for Ontological Research (NCOR-US)</strong> – headquartered in Buffalo, coordinating ontology efforts across domains</li>
-    <li><strong>NCOR-Brazil</strong> – advancing ontology research in Latin America</li>
-    <li><strong>Swiss Center for Ontological Research</strong> – supporting European ontology education and research</li>
-    <li><strong>Naas.ai</strong> – developing AI systems grounded in ontological frameworks</li>
-  </ul>
+  <li>
+    <strong>
+      <a href="https://ncor-brasil.eci.ufmg.br" target="_blank" rel="noopener">
+        NCOR-Brazil
+      </a>
+    </strong>
+    – advancing ontology research in Latin America
+  </li>
+
+  <li>
+    <strong>
+      <a href="https://swissonto.ch" target="_blank" rel="noopener">
+        Swiss Center for Ontological Research
+      </a>
+    </strong>
+    – supporting European ontology education and research
+  </li>
+
+  <li>
+    <strong>
+      <a href="https://oagi.atlassian.net/wiki/spaces/IOF/overview?homepageId=146047039"
+         target="_blank" rel="noopener">
+        Industrial Ontologies Foundry (IOF)
+      </a>
+    </strong>
+    – developing shared ontology standards for industrial and manufacturing domains
+  </li>
+
+  <li>
+    <strong>
+      <a href="https://obofoundry.org" target="_blank" rel="noopener">
+        Open Biological and Biomedical Ontologies (OBO) Foundry
+      </a>
+    </strong>
+    – coordinating interoperable ontologies for biology, medicine, and related sciences
+  </li>
+
+  <li>
+    <strong>
+      <a href="https://naas.ai/" target="_blank" rel="noopener">
+        Naas.ai
+      </a>
+    </strong>
+    – developing AI systems grounded in ontological frameworks
+  </li>
+</ul>
 
   <p>
     Together, these students and partners form a worldwide network contributing to the continued growth
@@ -778,38 +878,28 @@
         </ul>
       </div>
 
-      <!-- Link-style dropdowns (labels are blue; content panels are blue) -->
-      <div class="disclosures">
-        <details class="dropdown">
-          <summary>Courses</summary>
-          <div>
-            <ul class="list-plain">
-              <!-- Keep only the courses Barry left in his sample list -->
-              <li>Ontology and Artificial Intelligence (Fall 2025)</li>
-              <li>Ontology of Economics (Fall 2024)</li>
-              <li>Intelligence Analysis: A Crash Course (2019)</li>
-              <li>Applied Ontology (Fall 2018)</li>
-              <li>Ontological Engineering (Online, Spring 2018)</li>
-              <li>Biomedical Ontology (Fall 2016)</li>
-              <li>Analytic Metaphysics (Spring 2016)</li>
-            </ul>
-          </div>
-        </details>
+<!-- Courses + Publications -->
+<div class="disclosures">
+  <details class="dropdown">
+    <summary>Courses</summary>
+    <div>
+      <ul class="list-plain">
+        <li>Introduction to Philosophy</li>
+        <li>Logic of Ontology</li>
+        <li>Metaphysics</li>
+      </ul>
+    </div>
+  </details>
 
-        <!-- Barry's doc just has “Google Scholar” here, so make this a simple GS panel -->
-    <details class="dropdown">
-  <summary>Google Scholar</summary>
-  <div>
-    <p>
-      View an up-to-date list of publications on
-      <a href="https://scholar.google.com/citations?user=icGNWj4AAAAJ&hl=en"
-         target="_blank" rel="noopener">
-        Google Scholar
-      </a>.
-    </p>
-  </div>
-</details>
-      </div>
+  <h3>Publications</h3>
+  <p class="scholar-link">
+    View an up-to-date list of publications on
+    <a href="https://scholar.google.com/citations?user=icGNWj4AAAAJ&hl=en"
+       target="_blank" rel="noopener">
+      Google Scholar
+    </a>.
+  </p>
+</div>
     </article>
 
     <!-- RIGHT: Contact + Related Links (blue panels) -->
@@ -857,9 +947,10 @@
 
         <ul class="meta-blocks">
           <li>
-            <span class="label">Department of Philosophy</span>
-            <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
-          </li>
+  <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
+    Department of Philosophy
+  </a>
+</li>
           <li>
             <span class="label">Co-Director</span>
             <a class="sub" href="https://ncor.buffalo.edu/">National Center for Ontological Research (NCOR)</a>
@@ -888,34 +979,34 @@
       </ul>
     </div>
 
-    <!-- Courses + Google Scholar -->
-    <div class="disclosures">
-      <details class="dropdown">
-        <summary>Courses</summary>
-        <div>
-          <ul class="list-plain">
-            <li>Introduction to Philosophy</li>
-            <li>Logic of Ontology</li>
-            <li>Metaphysics</li>
-          </ul>
-        </div>
-      </details>
-
-      <!-- Google Scholar (replaces Selected Publications) -->
-     <details class="dropdown">
-  <summary>Google Scholar</summary>
-  <div>
-    <p>
-      View an up-to-date list of publications on
-      <a href="https://scholar.google.com/citations?hl=en&user=2kQK9DMAAAAJ"
-         target="_blank" rel="noopener">
-        Google Scholar
-      </a>.
-    </p>
-  </div>
-</details>
+<!-- Courses -->
+<div class="disclosures">
+  <details class="dropdown">
+    <summary style="font-size:1rem; font-weight:600;">
+  Courses
+</summary>
+    <div>
+      <ul class="list-plain">
+        <li>Introduction to Philosophy</li>
+        <li>Logic of Ontology</li>
+        <li>Metaphysics</li>
+      </ul>
     </div>
-  </article>
+  </details>
+</div>
+
+<h3 style="font-size:1rem; margin-top:1.25rem; margin-bottom:0.35rem;">
+  Publications
+</h3>
+<p class="scholar-link">
+  View an up-to-date list of publications on
+  <a href="https://scholar.google.com/citations?user=2kQK9DMAAAAJ&hl=en"
+     target="_blank" rel="noopener">
+    Google Scholar
+  </a>.
+</p>
+
+</article>
 
   <!-- RIGHT: compact sidebar -->
   <aside class="col-side">
@@ -971,10 +1062,11 @@
         <p class="titles">Assistant Professor</p>
 
         <ul class="meta-blocks">
-          <li>
-            <span class="label">Department of Philosophy</span>
-            <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">Department of Philosophy</a>
-          </li>
+        <li>
+  <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
+    Department of Philosophy
+  </a>
+</li>
         </ul>
       </div>
     </header>
@@ -985,7 +1077,7 @@
       <p>Applied Ontology; Epistemology.</p>
     </div>
 
-    <!-- Education (white; no blue) -->
+    <!-- Education -->
     <h4>Education</h4>
     <div class="edu">
       <ul class="list-plain">
@@ -993,32 +1085,27 @@
       </ul>
     </div>
 
-    <!-- Disclosures -->
+    <!-- Courses + Publications -->
     <div class="disclosures">
       <details class="dropdown">
         <summary>Courses</summary>
         <div>
           <ul class="list-plain">
-            <li>Ethical Problems and Public Issues</li>
-            <li>Introduction to Feminist Philosophy</li>
-            <li>Environmental Ethics</li>
+            <li>Logic</li>
+            <li>Introduction to Philosophy</li>
+            <li>Other courses in metaphysics and ontology</li>
           </ul>
         </div>
       </details>
 
-      <!-- Google Scholar (replaces Selected Publications + individual citations) -->
-      <details class="dropdown">
-  <summary>Google Scholar</summary>
-  <div>
-    <p>
-      View publications on
-      <a href="https://scholar.google.com/citations?hl=en&user=vJarJDcAAAAJ"
-         target="_blank" rel="noopener">
-        Google Scholar
-      </a>.
-    </p>
-  </div>
-</details>
+      <h3>Publications</h3>
+      <p class="scholar-link">
+        View an up-to-date list of publications on
+        <a href="https://scholar.google.com/citations?hl=en&user=vJarJDcAAAAJ"
+           target="_blank" rel="noopener">
+          Google Scholar
+        </a>.
+      </p>
     </div>
   </article>
 
@@ -1051,22 +1138,118 @@
     </div>
   </aside>
 </div>
+
+<!-- =========================
+     Thomas E. Bittner
+     ========================= -->
+<hr class="faculty-sep">
+
+<div class="faculty-layout">
+  <!-- LEFT: main profile -->
+  <article class="col-main">
+    <header class="bio-head">
+      <img
+        class="headshot lg"
+        src="https://www.buffalo.edu/content/shared/cas/philosophy/faculty-profiles/bittner/jcr:content/profileinfo.img.280.280.z.q65.jpg/1692806596234.jpg"
+        alt="Thomas E. Bittner">
+
+      <div class="bio-meta">
+        <h3 class="name">Thomas E. Bittner <span class="postnom">PhD</span></h3>
+
+        <p class="titles">Associate Professor</p>
+
+        <ul class="meta-blocks">
+       <li>
+  <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
+    Department of Philosophy
+  </a>
+</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Areas just above Education -->
+    <div class="bio-extra">
+      <h4>Areas of Specialization</h4>
+      <p>
+        Formal and Applied Ontology; Ontology of Space, Time and Spatial Entities; Spatio-Temporal
+        Reasoning; Bio-Medical Ontology.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <h4>Education</h4>
+    <div class="edu">
+      <ul class="list-plain">
+        <li>PhD, Technical University of Vienna</li>
+      </ul>
+    </div>
+
+    <!-- Courses + Publications -->
+    <div class="disclosures">
+      <details class="dropdown">
+        <summary>Courses</summary>
+        <div>
+          <ul class="list-plain">
+            <li>Logic</li>
+            <li>Spatial Ontology</li>
+          </ul>
+        </div>
+      </details>
+
+      <h3>Publications</h3>
+      <p class="scholar-link">
+        View an up-to-date list of publications on
+        <a href="https://scholar.google.com/citations?user=SA_SErsAAAAJ&hl=en"
+           target="_blank" rel="noopener">
+          Google Scholar
+        </a>.
+      </p>
+    </div>
+  </article>
+
+  <!-- RIGHT: sidebar -->
+  <aside class="col-side">
+    <div class="panel contact">
+      <h4>Contact</h4>
+      <address>
+        109 Park Hall, UB North Campus<br>
+        Buffalo, NY 14260-4150<br>
+        <span class="muted">Phone:</span> (716) 645-5149<br>
+        <span class="muted">Fax:</span> (716) 645-6559<br>
+        <a href="mailto:bittner3@buffalo.edu">bittner3@buffalo.edu</a>
+      </address>
+    </div>
+
+    <div class="panel">
+      <h4>Related Links</h4>
+      <ul class="list-plain">
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/bittner.html"
+             target="_blank" rel="noopener">
+            Department Profile
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
 </section>
 
-  <section id="research" class="card">
-    <h2>Research</h2>
-    <p class="muted">Highlights of current ontology research projects will appear here.</p>
-  </section>
+<section id="research" class="card">
+  <h2>Research</h2>
+  <p class="muted">Coming soon: highlights of current ontology research projects.</p>
+</section>
 
-  <section id="news" class="card">
-    <h2>News</h2>
-    <p class="muted">Program announcements and updates will be posted here.</p>
-  </section>
+<section id="news" class="card">
+  <h2>News</h2>
+  <p class="muted">Coming soon: program announcements and updates.</p>
+</section>
 
-  <section id="events" class="card">
-    <h2>Events</h2>
-    <p class="muted">Upcoming talks, info sessions, and workshops will be listed here.</p>
-  </section>
+<section id="events" class="card">
+  <h2>Events</h2>
+  <p class="muted">Coming soon: upcoming talks, info sessions, and workshops.</p>
+</section>
 
   <!-- Legacy doorway (optional; keep or remove) -->
   <p class="navold">Looking for the previous site? See
