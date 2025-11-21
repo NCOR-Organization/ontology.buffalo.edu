@@ -123,6 +123,17 @@
   #jobs .banner{height:clamp(120px,18vw,220px)!important}
   #jobs .banner img{object-position:center 35%}
 
+  /* Extra spacing for the 'More from UB Philosophy' block */
+.resources .program-extra {
+  margin-top: 12px;      /* push it down a bit from the links above */
+  padding-top: 6px;      /* small internal buffer */
+  border-top: 1px solid #e5e7eb;  /* light separator line */
+}
+
+.resources .program-extra h3 {
+  margin-top: 0;         /* keep the heading tight to the new block */
+}
+
   /* ============================
      FACULTY — clean + aligned
      ============================ */
@@ -439,7 +450,13 @@
     <h1>Master of Science in Applied Ontology (Fully Online)</h1>
     <p>A rigorous, career-focused MS that combines philosophical foundations with
        practical engineering to make complex data and systems interoperate.</p>
-    <a class="cta" href="#programs">How to apply</a>
+
+    <a class="cta"
+       href="https://www.buffalo.edu/cas/philosophy/grad-study/ms.html"
+       target="_blank"
+       rel="noopener">
+      How to apply
+    </a>
   </div>
 </header>
 
@@ -599,13 +616,17 @@
         </div>
       </li>
 
-      <li class="feature">
-        <a href="#" title="Interviews with potential employers">Interviews with potential employers</a>
-      </li>
+    <li class="feature">
+  <a href="#" title="Interviews with potential employers (forthcoming)">
+    Interviews with potential employers (forthcoming)
+  </a>
+</li>
 
-      <li class="feature">
-        <a href="#" title="Interviews with UB alumni in ontology roles">Interviews with UB alumni</a>
-      </li>
+<li class="feature">
+  <a href="#" title="Interviews with UB alumni in ontology roles (forthcoming)">
+    Interviews with UB alumni (forthcoming)
+  </a>
+</li>
 
       <li class="divider" aria-hidden="true"></li>
     </ul>
@@ -621,41 +642,25 @@
         <li>
           <a href="https://www.indeed.com/jobs?q=ontologist&l="
              title="Indeed ontologist listings">
-            Indeed listings
+            Indeed
           </a>
         </li>
         <li>
           <a href="https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword=ontologist&sc.keyword=ontologist&locT=&locId=&jobType="
              title="Glassdoor ontologist listings">
-            Glassdoor listings
+            Glassdoor
           </a>
         </li>
         <li>
           <a href="https://www.ziprecruiter.com/jobs-search?search=Ontologist"
              title="ZipRecruiter ontologist listings">
-            ZipRecruiter listings
+            ZipRecruiter
           </a>
         </li>
         <li>
           <a href="https://www.simplyhired.com/search?q=Ontologist&l="
              title="SimplyHired ontologist listings">
-            SimplyHired listings
-          </a>
-        </li>
-      </ul>
-
-      <h3 class="jobs-subheading">More from UB Philosophy</h3>
-      <ul class="resource-links">
-        <li>
-          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/placement.html"
-             target="_blank" rel="noopener">
-            UB Philosophy Graduate Placement Record
-          </a>
-        </li>
-        <li>
-          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology/ontology-student-showcase.html"
-             target="_blank" rel="noopener">
-            Ontology Student Showcase
+            SimplyHired
           </a>
         </li>
       </ul>
@@ -695,16 +700,17 @@
       <li>
         <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
       </li>
-<li>
-  <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
-     target="_blank" rel="noopener"
-     title="Interview with alumnus William Mandrick">
-    Interview with alumnus William Mandrick
-  </a>
-  <div class="desc">
-    William’s path from UB Philosophy to ontology work in the U.S. Army.
-  </div>
-</li>
+
+      <li>
+        <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
+           target="_blank" rel="noopener"
+           title="Interview with alumnus William Mandrick">
+          Interview with alumnus William Mandrick
+        </a>
+        <div class="desc">
+          William’s path from UB Philosophy to ontology work in the U.S. Army.
+        </div>
+      </li>
 
       <li>
         <a href="#" title="Student video sampler">Student video sampler</a>
@@ -733,21 +739,40 @@
       </li>
     </ul>
 
- <!-- Apply CTA -->
-<div class="apply-note">
-  <p>
-    <em>
-      Prospective MS students can click below to apply for admission to the Spring 2026 semester.
-    </em>
-  </p>
+    <!-- NEW: More from UB Philosophy -->
+    <div class="program-extra">
+      <h3>More from UB Philosophy</h3>
+      <ul class="resource-links">
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/placement.html"
+             target="_blank" rel="noopener">
+            UB Philosophy Graduate Placement Record
+          </a>
+        </li>
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology/ontology-student-showcase.html"
+             target="_blank" rel="noopener">
+            Ontology Student Showcase
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <a class="cta"
-     href="https://ubgradconnect.buffalo.edu/apply/?sr=273262f1-a0b7-4960-8f17-6eabaa1e277b"
-     target="_blank"
-     rel="noopener">
-    Apply Here
-  </a>
-</div>
+    <!-- Apply CTA -->
+    <div class="apply-note">
+      <p>
+        <em>
+          Prospective MS students can click below to apply for admission to the Spring 2026 semester.
+        </em>
+      </p>
+
+      <a class="cta"
+         href="https://ubgradconnect.buffalo.edu/apply/?sr=273262f1-a0b7-4960-8f17-6eabaa1e277b"
+         target="_blank"
+         rel="noopener">
+        Apply Here
+      </a>
+    </div>
   </div>
 </section>
 
@@ -759,7 +784,7 @@
          style="object-position:center 55%;">
   </div>
 
-  <h2>Where Do Our Students Come From</h2>
+  <h2>Where Do Our Students Come From?</h2>
 
 <p>
   Graduates and collaborators of the UB Department of Philosophy come from a wide range of fields—philosophy,
@@ -895,12 +920,27 @@
 <!-- Courses + Publications -->
 <div class="disclosures">
   <details class="dropdown">
-    <summary>Courses</summary>
+    <summary>Sample Courses</summary>
     <div>
       <ul class="list-plain">
-        <li>Introduction to Philosophy</li>
-        <li>Logic of Ontology</li>
-        <li>Metaphysics</li>
+        <li>
+          <a href="https://ncorwiki.buffalo.edu/index.php/Ontology_and_Artificial_Intelligence_-_Fall_2025"
+             target="_blank" rel="noopener">
+            Ontology and Artificial Intelligence
+          </a>
+        </li>
+        <li>
+          <a href="https://ncorwiki.buffalo.edu/index.php/Ontology_of_Economics"
+             target="_blank" rel="noopener">
+            Ontology of Economics
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PLyngZgIl3WTjov-UhEW7N145LVBPrRYLZ"
+             target="_blank" rel="noopener">
+            Introduction to Philosophy from an Ontological Perspective
+          </a>
+        </li>
       </ul>
     </div>
   </details>
