@@ -98,40 +98,172 @@
     #what-is-ao .photo img{width:95%;height:300px;object-fit:cover;object-position:center top;border-radius:14px}
   }
 
-  /* Jobs & Programs */
-  #jobs .text p{margin-bottom:.9rem;max-width:none}
-  #programs .text p{margin-bottom:.9rem}
-  #jobs .resources, #programs .resources{margin-top:1rem;background:#f8fafc;border:1px solid #e5e7eb;border-radius:14px;padding:14px 16px}
-  #jobs .resources h3, #programs .resources h3{margin:0 0 .4rem;font-size:1.05rem;font-weight:600}
-    #jobs .jobs-subheading{
-    margin-top:1.5rem;
-    margin-bottom:.75rem;
-  }
-  #jobs .resource-links, #programs .resource-links{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
-    #programs .resource-links{
-    row-gap:.45rem;
-  }
-  #jobs .resource-links li.divider, #programs .resource-links li.divider{border-top:1px dashed #d1d5db;margin:.25rem 0 .35rem;height:0}
-  #jobs .resource-links a, #programs .resource-links a{text-decoration:none;border-radius:8px;padding:.25rem .35rem;display:inline-block}
-  #jobs .resource-links a:hover, #programs .resource-links a:hover{text-decoration:underline}
-  #jobs .resource-links .desc, #programs .resource-links .desc{font-size:.95rem;line-height:1.4;color:rgba(0,0,0,.70);margin-top:.15rem}
-  @media (min-width:900px){
-    #jobs .resource-links, #programs .resource-links{grid-template-columns:1fr 1fr;column-gap:1.25rem}
-    #jobs .resource-links li.divider, #programs .resource-links li.divider{grid-column:1/-1}
-    #jobs .resource-links li.feature, #programs .resource-links li.feature{grid-column:1/-1}
-  }
-  #jobs .banner{height:clamp(120px,18vw,220px)!important}
-  #jobs .banner img{object-position:center 35%}
-
-  /* Extra spacing for the 'More from UB Philosophy' block */
-.resources .program-extra {
-  margin-top: 12px;      /* push it down a bit from the links above */
-  padding-top: 6px;      /* small internal buffer */
-  border-top: 1px solid #e5e7eb;  /* light separator line */
+/* Jobs & Programs */
+#jobs .text p { 
+  margin-bottom: .9rem;
+  max-width: none;
 }
 
-.resources .program-extra h3 {
-  margin-top: 0;         /* keep the heading tight to the new block */
+#programs .text p {
+  margin-bottom: .9rem;
+}
+
+#jobs .resources,
+#programs .resources {
+  margin-top: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+#jobs .resources h3,
+#programs .resources h3 {
+  margin: 0 0 .4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+#jobs .jobs-subheading {
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+/* -------------------------------------
+   JOBS LIST (keep 2-column grid)
+-------------------------------------- */
+#jobs .resource-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .35rem;
+}
+
+#jobs .resource-links li.divider {
+  border-top: 1px dashed #d1d5db;
+  margin: .25rem 0 .35rem;
+  height: 0;
+}
+
+#jobs .resource-links a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: .25rem .35rem;
+  display: inline-block;
+}
+
+#jobs .resource-links a:hover {
+  text-decoration: underline;
+}
+
+#jobs .resource-links .desc {
+  font-size: .95rem;
+  line-height: 1.4;
+  color: rgba(0,0,0,.70);
+  margin-top: .15rem;
+}
+
+@media (min-width:900px) {
+  #jobs .resource-links {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.25rem;
+  }
+  #jobs .resource-links li.divider,
+  #jobs .resource-links li.feature {
+    grid-column: 1 / -1;
+  }
+}
+
+/* -------------------------------------
+   PROGRAMS LIST  (NO GRID — vertical list)
+-------------------------------------- */
+#programs .resource-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#programs .resource-links li + li {
+  margin-top: .25rem;
+}
+
+#programs .resource-links a {
+  text-decoration: none;
+  border-radius: 8px;
+  padding: .25rem .35rem;
+  display: inline-block;
+}
+
+#programs .resource-links a:hover {
+  text-decoration: underline;
+}
+
+#programs .resource-links .desc {
+  font-size: .95rem;
+  line-height: 1.4;
+  color: rgba(0,0,0,.70);
+  margin-top: .15rem;
+}
+
+/* -------------------------------------
+   EXPLORE THE PROGRAM — 2 COLUMN GRID
+   (THIS IS THE NEW CLEAN SECTION)
+-------------------------------------- */
+.resources .resource-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.resources .resource-column h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.resources .resource-links {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.resources .resource-links li + li {
+  margin-top: 0.25rem;
+}
+
+.resources .desc {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.resources .desc {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  font-style: italic;
+  margin-top: 0.15rem;
+  margin-left: 0.9rem;  /* nudge right so it visually sits under the link */
+}
+
+/* More from UB Philosophy: place links in two columns */
+.resources .program-extra .resource-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2rem;
+}
+
+/* Keep list items aligned at the top of each column */
+.resources .program-extra .resource-links li {
+  align-self: start;
+}
+
+/* On small screens, stack them again */
+@media (max-width: 700px) {
+  .resources .program-extra .resource-links {
+    grid-template-columns: 1fr;
+  }
 }
 
   /* ============================
@@ -689,74 +821,110 @@
     Admission requires an undergraduate degree. Philosophy graduates—trained in logic and argumentation—are especially well suited, and the program also welcomes applicants from computer science, management, information studies, and other STEM and humanities fields.
   </p>
 
-  <!-- Program resources (single column, matches Jobs styling) -->
-  <div class="resources">
-    <h3>Explore the Program</h3>
-    <ul class="resource-links">
-      <li>
-        <a href="#" title="Interviews with UB undergraduates">Interviews with UB undergraduates</a>
-      </li>
+<!-- Program resources (2-column, aligned) -->
+<div class="resources">
+  <h3>Explore the Program</h3>
 
-      <li>
-        <a href="#" title="Interviews with current AO students">Interviews with current AO students</a>
-      </li>
+  <div class="resource-columns">
+    <!-- LEFT COLUMN -->
+    <div class="resource-column">
 
-      <li>
-        <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
-           target="_blank" rel="noopener"
-           title="Interview with alumnus William Mandrick">
-          Interview with alumnus William Mandrick
-        </a>
-        <div class="desc">
-          William’s path from UB Philosophy to ontology work in the U.S. Army.
-        </div>
-      </li>
-
-      <li>
-        <a href="#" title="Student video sampler">Student video sampler</a>
-        <div class="desc">Quick clips: lectures + student perspectives.</div>
-      </li>
-
-      <li>
-        <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html"
-           target="_blank" rel="noopener">
-          Sample lectures: Barry Smith &amp; John Beverley
-        </a>
-        <div class="desc">Segments on ontology, interoperability, and logic.</div>
-      </li>
-
-      <li>
-        <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/donnelly.html"
-           target="_blank" rel="noopener">
-          Logic in Applied Ontology (Donnelly)
-        </a>
-        <div class="desc">The role of logic in applied ontology.</div>
-      </li>
-
-      <li>
-        <a href="#" title="Collaborator talks: Ontology in AI">Collaborator talks: Ontology in AI</a>
-        <div class="desc">Ontology in AI and knowledge graphs.</div>
-      </li>
-    </ul>
-
-    <!-- NEW: More from UB Philosophy -->
-    <div class="program-extra">
-      <h3>More from UB Philosophy</h3>
-      <ul class="resource-links">
+      <!-- These three links now sit directly under "Explore the Program" -->
+      <ul class="resource-links primary-program-links">
         <li>
-          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/placement.html"
+          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/ms.html"
              target="_blank" rel="noopener">
-            UB Philosophy Graduate Placement Record
+            UB MS Program Details
           </a>
         </li>
         <li>
-          <a href="https://www.buffalo.edu/cas/philosophy/grad-study/ontology/ontology-student-showcase.html"
+          <a href="https://catalogs.buffalo.edu/preview_program.php?catoid=19&poid=8500&returnto=1039"
              target="_blank" rel="noopener">
-            Ontology Student Showcase
+            UB MS Program Requirements (Catalog)
+          </a>
+        </li>
+        <li>
+<a href="docs/UB-AO-Masters-Handbook.pdf" target="_blank">
+  Download the UB AO Masters Handbook here
+</a>
+    </li>
+      </ul>
+
+      <h4>Student &amp; Alumni Perspectives</h4>
+      <ul class="resource-links">
+        <li>
+          <a href="#" title="Interviews with UB undergraduates">
+            Interviews with UB undergraduates
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Interviews with current AO students">
+            Interviews with current AO students
+          </a>
+        </li>
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/alumni/william-mandrick.html"
+             target="_blank" rel="noopener"
+             title="Interview with alumnus William Mandrick">
+            Interview with alumnus William Mandrick
+          </a>
+       <div class="desc">
+  William’s path from UB Philosophy to ontology in the U.S. Army.
+</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="resource-column">
+      <h4>Sample Lectures &amp; Talks</h4>
+      <ul class="resource-links">
+        <li>
+          <a href="#" title="Student video sampler">
+            Student video sampler
+          </a>
+          <div class="desc">
+            Quick clips: lectures + student perspectives.
+          </div>
+        </li>
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/smith-b/ontology-videos.html"
+             target="_blank" rel="noopener">
+            Sample lectures: Barry Smith &amp; John Beverley
+          </a>
+        </li>
+        <li>
+          <a href="#" title="Collaborator talks: Ontology in AI">
+            Collaborator talks: Ontology in AI
+          </a>
+        </li>
+        <li>
+          <a href="https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/donnelly.html"
+             target="_blank" rel="noopener">
+            Logic in Applied Ontology (Donnelly)
           </a>
         </li>
       </ul>
     </div>
+  </div>
+
+  <!-- More from UB Philosophy stays inside the blue panel -->
+  <div class="program-extra">
+    <h3>More from UB Philosophy</h3>
+    <ul class="resource-links">
+      <li>
+        <a href="https://www.buffalo.edu/cas/philosophy/graduate/placement.html" target="_blank" rel="noopener">
+          UB Philosophy Graduate Placement Record
+        </a>
+      </li>
+      <li>
+        <a href="https://ontology.buffalo.edu/student-showcase.html" target="_blank" rel="noopener">
+          Ontology Student Showcase
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
     <!-- Apply CTA -->
     <div class="apply-note">
@@ -1116,11 +1284,11 @@
         <p class="titles">Assistant Professor</p>
 
         <ul class="meta-blocks">
-        <li>
-  <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
-    Department of Philosophy
-  </a>
-</li>
+          <li>
+            <a class="sub" href="https://www.buffalo.edu/cas/philosophy.html">
+              Department of Philosophy
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -1139,18 +1307,23 @@
       </ul>
     </div>
 
-    <!-- Courses + Publications -->
+    <!-- Sample Courses + Publications -->
     <div class="disclosures">
-      <details class="dropdown">
-        <summary>Courses</summary>
-        <div>
-          <ul class="list-plain">
-            <li>Logic</li>
-            <li>Introduction to Philosophy</li>
-            <li>Other courses in metaphysics and ontology</li>
-          </ul>
-        </div>
-      </details>
+<details class="dropdown">
+  <summary>Sample courses</summary>
+  <div>
+    <ul class="list-plain">
+      <li>
+        <strong>PHI 637: Special Topics – Ontologies of Solitude and Gerotranscendence</strong><br>
+        Seminar clarifying major constructs such as solitude, loneliness, and psychological well-being 
+        while engaging students in the development of the Solitude and Gerotranscendence Ontologies. 
+        Work extends from the Behavior Change Intervention Ontology and directly supports the 
+        NIA–NIH funded PHASES project, providing hands-on training in ontology engineering and 
+        contemporary solitude research.
+      </li>
+    </ul>
+  </div>
+</details>
 
       <h3>Publications</h3>
       <p class="scholar-link">
